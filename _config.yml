@@ -2,7 +2,7 @@ title: GlareDB Docs
 description: Documentation for GlareDB
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://docs.glaredb.com
 
 favicon_ico: "/assets/images/favicon.svg"
 logo: "/assets/images/logo.svg"
@@ -13,3 +13,9 @@ aux_links:
 aux_links_new_tab: true
 
 color_scheme: glaredb
+
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/glaredb/glaredb.github.io"
+gh_edit_branch: "main"
+gh_edit_view_mode: "tree"
