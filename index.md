@@ -1,9 +1,9 @@
 ---
-title: Home
+title: About GlareDB
 layout: home
 ---
 
-Hello world.
+# Hello world.
 
 This is a *bare-minimum* template to create a Jekyll site that uses the [Just
 the Docs] theme. You can easily set the created site to be published on [GitHub
