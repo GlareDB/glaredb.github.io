@@ -5,23 +5,24 @@ parent: System catalog
 ---
 
 # `glare_catalog`
+
 {: .no_toc}
 
 The `glare_catalog` schema provides a variety of tables and views for allowing
 introspection into the system.
 
 {: .warning}
+
 > `glare_catalog` does not currently have any stability guarantees.
 
-- TOC
-{:toc}
+- TOC {:toc}
 
 ## `databases`
 
 Stores information about databases.
 
 | Field           | Description                                                             |
-|-----------------|-------------------------------------------------------------------------|
+| --------------- | ----------------------------------------------------------------------- |
 | `oid`           | Internal identifier for this object.                                    |
 | `database_name` | Name of the database inside GlareDB.                                    |
 | `builtin`       | If this database is builtin.                                            |
@@ -33,7 +34,7 @@ Stores information about databases.
 Stores information about schemas.
 
 | Field           | Description                                         |
-|-----------------|-----------------------------------------------------|
+| --------------- | --------------------------------------------------- |
 | `oid`           | Internal identifier for this object.                |
 | `database_oid`  | Identifier for the database containing this schema. |
 | `database_name` | Name of the owning database.                        |
@@ -45,7 +46,7 @@ Stores information about schemas.
 Stores information about tables.
 
 | Field          | Description                                                          |
-|----------------|----------------------------------------------------------------------|
+| -------------- | -------------------------------------------------------------------- |
 | `oid`          | Internal identifier for this object.                                 |
 | `database_oid` | Identifier for the database containing this table.                   |
 | `schema_oid`   | Identifier for the schema containing this table.                     |
@@ -60,7 +61,7 @@ Stores information about tables.
 Stores information about views.
 
 | Field          | Description                                       |
-|----------------|---------------------------------------------------|
+| -------------- | ------------------------------------------------- |
 | `oid`          | Internal identifier for this object.              |
 | `database_oid` | Identifier for the database containing this view. |
 | `schema_oid`   | Identifier for the schema containing this view.   |
@@ -74,7 +75,7 @@ Stores information about views.
 Stores information about columns.
 
 | Field            | Description                                               |
-|------------------|-----------------------------------------------------------|
+| ---------------- | --------------------------------------------------------- |
 | `schema_oid`     | Identifier for the schema containing this column's table. |
 | `table_oid`      | Identifier for the table containing this column.          |
 | `table_name`     | Name of the table containing this column.                 |
@@ -83,8 +84,7 @@ Stores information about columns.
 | `data_type`      | Data type of this column.                                 |
 | `is_nullable`    | If this column is nullable.                               |
 
-[CREATE EXTERNAL TABLE]: {{site.baseurl}}/docs/sql-commands/create-external-table
-[CREATE EXTERNAL DATABASE]: {{site.baseurl}}/docs/sql-commands/create-external-database
-
-
-
+[CREATE EXTERNAL TABLE]:
+  {{site.baseurl}}/docs/sql-commands/create-external-table
+[CREATE EXTERNAL DATABASE]:
+  {{site.baseurl}}/docs/sql-commands/create-external-database

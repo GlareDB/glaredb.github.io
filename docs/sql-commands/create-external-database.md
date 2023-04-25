@@ -11,14 +11,14 @@ learn more.
 
 ## Syntax
 
-``` sql
+```sql
 CREATE EXTERNAL DATABASE <database-name>
     FROM <data-source-type>
     OPTIONS (<data-source-options>);
 ```
 
 | Field                 | Description                                      |
-|-----------------------|--------------------------------------------------|
+| --------------------- | ------------------------------------------------ |
 | `database-name`       | Name of the database as it appears in GlareDB.   |
 | `data-source-type`    | The type of data source, for example `postgres`. |
 | `data-source-options` | Options specific to this data source type.       |
@@ -29,7 +29,7 @@ Note that `database-name` must be unique within a GlareDB deployment.
 
 Create an external database using a Postgres data source.
 
-``` sql
+```sql
 CREATE EXTERNAL DATABASE external_db
     FROM postgres
     OPTIONS (

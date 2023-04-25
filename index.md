@@ -12,10 +12,10 @@ Postgres, MySQL, and much more.
 
 ![Where GlareDB fits]
 
-A GlareDB deployment sits between your data applications and your data sources. Any
-application or client that can talk the Postgres protocol can connect directly
-to GlareDB. Once connected, applications can start executing SQL queries that
-interact with any number of data sources.
+A GlareDB deployment sits between your data applications and your data sources.
+Any application or client that can talk the Postgres protocol can connect
+directly to GlareDB. Once connected, applications can start executing SQL
+queries that interact with any number of data sources.
 
 ## Why GlareDB?
 

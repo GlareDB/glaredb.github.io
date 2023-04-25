@@ -24,4 +24,3 @@ running system.
   Postgres compatability.
 - `information_schema`: A set of views on top of `glare_catalog` for providing
   standard information schema compatability.
-

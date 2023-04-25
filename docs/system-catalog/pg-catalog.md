@@ -5,4 +5,3 @@ parent: System catalog
 ---
 
 # `pg_catalog`
-

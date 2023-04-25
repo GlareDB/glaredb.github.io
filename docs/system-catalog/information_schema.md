@@ -5,4 +5,3 @@ parent: System catalog
 ---
 
 # `information_schema`
-

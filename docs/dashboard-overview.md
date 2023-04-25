@@ -8,4 +8,5 @@ nav_order: 2
 
 ![Deployment overview]
 
-[Deployment overview]: {{site.baseurl}}/assets/images/dashboard/deployment-overview.png
+[Deployment overview]:
+  {{site.baseurl}}/assets/images/dashboard/deployment-overview.png
