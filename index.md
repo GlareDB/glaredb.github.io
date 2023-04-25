@@ -1,6 +1,7 @@
 ---
 title: About GlareDB
 layout: home
+nav_order: 1
 ---
 
 # What is GlareDB?

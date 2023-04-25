@@ -21,3 +21,15 @@ gh_edit_branch: "main"
 gh_edit_view_mode: "tree"
 
 enable_copy_code_button: false
+
+callouts_level: quiet # or loud
+callouts:
+  important:
+    title: Note
+    color: blue
+  new:
+    title: New
+    color: green
+  warning:
+    title: Warning
+    color: yellow
