@@ -1,0 +1,11 @@
+{
+  "name": "glaredb.github.io",
+  "private": true,
+  "scripts": {
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8"
+  }
+}

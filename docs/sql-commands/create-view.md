@@ -13,4 +13,3 @@ Create a view.
 ```sql
 CREATE VIEW simple_select AS SELECT 1;
 ```
-

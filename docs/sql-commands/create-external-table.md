@@ -9,4 +9,3 @@ parent: SQL commands
 Create an external table.
 
 ## Examples
-

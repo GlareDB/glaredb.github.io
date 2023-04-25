@@ -14,7 +14,7 @@ entire database may be added as a data source.
 Adding an external table can be done through the [CREATE EXTERNAL TABLE]
 command.
 
-``` sql
+```sql
 CREATE EXTERNAL TABLE <table-name>
 	FROM bigquery
 	OPTIONS (
@@ -31,7 +31,7 @@ optionally be qualified with a schema name.
 ### Options
 
 | Field                 | Description                                               |
-|-----------------------|-----------------------------------------------------------|
+| --------------------- | --------------------------------------------------------- |
 | `gcp-service-account` | The JSON encoded service account key.                     |
 | `gcp-project`         | The GCP project containing the dataset/table of interest. |
 | `dataset-id`          | The ID of the dataset containing the table of interes.    |
@@ -42,7 +42,7 @@ optionally be qualified with a schema name.
 An entire BigQuery database can be added using the [CREATE EXTERNAL DATABASE]
 command.
 
-``` sql
+```sql
 CREATE EXTERNAL DATABASE <database-name>
 	FROM bigquery
 	OPTIONS (
@@ -57,7 +57,7 @@ qualified, and must be unique across all other databases in the deployment.
 ### Options
 
 | Field                 | Description                                               |
-|-----------------------|-----------------------------------------------------------|
+| --------------------- | --------------------------------------------------------- |
 | `gcp-service-account` | The JSON encoded service account key.                     |
 | `gcp-project`         | The GCP project containing the dataset/table of interest. |
 
@@ -65,5 +65,7 @@ qualified, and must be unique across all other databases in the deployment.
 
 - Querying views defined in BigQuery is currently unsupported.
 
-[CREATE EXTERNAL TABLE]: {{site.baseurl}}/docs/sql-commands/create-external-table
-[CREATE EXTERNAL DATABASE]: {{site.baseurl}}/docs/sql-commands/create-external-database
+[CREATE EXTERNAL TABLE]:
+  {{site.baseurl}}/docs/sql-commands/create-external-table
+[CREATE EXTERNAL DATABASE]:
+  {{site.baseurl}}/docs/sql-commands/create-external-database
