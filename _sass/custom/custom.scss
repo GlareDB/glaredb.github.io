@@ -1,0 +1,43 @@
+.side-bar {
+    @include mq(lg) {
+        width: unset !important;
+    }
+}
+
+.main {
+    @include mq(lg) {
+        margin-left: $nav-width !important;
+        max-width: unset !important;
+    }
+}
+
+.main-header {
+    @include mq(lg) {
+        border-left: $border $border-color;
+    }
+}
+
+.main-content-wrap {
+    @include mq(md) {
+        position: relative;
+        max-width: $content-width;
+    }
+
+    @include mq(lg) {
+        margin: 0 auto;
+    }
+}
+
+pre {
+    font-size: $font-size-6;
+    line-height: $body-line-height;
+}
+
+img {
+    border-radius: $border-radius;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.highlight {
+    border-radius: $border-radius;
+}
