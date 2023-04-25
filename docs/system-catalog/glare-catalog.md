@@ -5,12 +5,16 @@ parent: System catalog
 ---
 
 # `glare_catalog`
+{: .no_toc}
 
 The `glare_catalog` schema provides a variety of tables and views for allowing
 introspection into the system.
 
 {: .warning}
 > `glare_catalog` does not currently have any stability guarantees.
+
+- TOC
+{:toc}
 
 ## `databases`
 
