@@ -24,4 +24,5 @@ Or write to us [support@glaredb.com]
 
 ### Ready to invite your team?
 
-Check out docs: TODO
+Check out our
+[docs on users and organizations](../users-and-organizations/index.md)
