@@ -1,5 +1,8 @@
-<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 80C4 38.0264 38.0264 4 80 4H236V160C236 201.974 201.974 236 160 236H4V80Z" stroke="#E9482B" stroke-width="8"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M88 24C52.6538 24 24 52.6538 24 88V160H72V72L160 72L168 72H216V24H88ZM216 80H168V168L88 168H24V216H152C187.346 216 216 187.346 216 152V80Z" fill="#E9482B"/>
-<circle cx="120" cy="120" r="32" fill="#E9482B"/>
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M88 12H244V168C244 209.974 209.974 244 168 244H12V88C12 46.0264 46.0264 12 88 12Z" fill="white"
+    stroke="black" stroke-width="8" />
+  <path fill-rule="evenodd" clip-rule="evenodd"
+    d="M96 32C60.6538 32 32 60.6538 32 96V168H80V80L168 80L176 80H224V32H96ZM224 88H176V176L96 176H32V224H160C195.346 224 224 195.346 224 160V88Z"
+    fill="black" />
+  <circle cx="128" cy="128" r="32" fill="black" />
 </svg>
