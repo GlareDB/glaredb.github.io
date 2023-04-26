@@ -1,9 +1,9 @@
-# GlareDB Docs
+# GlareDB docs
 
 GlareDB docs are built using
 [Just the docs](https://just-the-docs.github.io/just-the-docs/)
 
-## Development Environment
+## Development environment
 
 The following are needed:
 
@@ -21,7 +21,7 @@ Once the above are installed, install [`jekyll`](https://jekyllrb.com) and
 gem install jekyll bundler
 ```
 
-## Getting Started
+## Getting started
 
 Install project dependencies:
 
@@ -52,7 +52,7 @@ Adding plugins:
     - "<plugin>"
   ```
 
-## Licensing and Attribution
+## Licensing and attribution
 
 This repository is licensed under the [MIT License]. You are generally free to
 reuse or extend upon this code as you see fit; just include the original copy of
