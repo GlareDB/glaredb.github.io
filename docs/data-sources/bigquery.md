@@ -16,19 +16,19 @@ command.
 
 ```sql
 CREATE EXTERNAL TABLE <table-name>
-	FROM bigquery
-	OPTIONS (
-		service_account_key = <gcp-service-account>,
-		project_id = <gcp-project>,
-		dataset_id = <dataset-id>,
-		table_id = <table-id>
-	);
+ FROM bigquery
+ OPTIONS (
+  service_account_key = <gcp-service-account>,
+  project_id = <gcp-project>,
+  dataset_id = <dataset-id>,
+  table_id = <table-id>
+ );
 ```
 
 `table-name` will be the name of the table inside GlareDB. `table-name` may
 optionally be qualified with a schema name.
 
-### Options
+### External table options
 
 | Field                 | Description                                               |
 | --------------------- | --------------------------------------------------------- |
@@ -44,17 +44,17 @@ command.
 
 ```sql
 CREATE EXTERNAL DATABASE <database-name>
-	FROM bigquery
-	OPTIONS (
-		service_account_key = <gcp-service-account>,
-		project_id = <gcp-project>,
-	);
+ FROM bigquery
+ OPTIONS (
+  service_account_key = <gcp-service-account>,
+  project_id = <gcp-project>,
+ );
 ```
 
 `database-name` will be the name of the database inside GlareDB. This cannot be
 qualified, and must be unique across all other databases in the deployment.
 
-### Options
+### External database options
 
 | Field                 | Description                                               |
 | --------------------- | --------------------------------------------------------- |

@@ -4,7 +4,7 @@ title: Dashboard overview
 nav_order: 2
 ---
 
-# Dashboard Overview
+# Dashboard overview
 
 ![Deployment overview]
 

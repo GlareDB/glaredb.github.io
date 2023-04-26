@@ -4,7 +4,11 @@ title: CREATE VIEW
 parent: SQL commands
 ---
 
+<!-- markdownlint-disable title-case-style -->
+
 # CREATE VIEW
+
+<!-- markdownlint-enable title-case-style -->
 
 Create a view.
 

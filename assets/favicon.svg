@@ -1,0 +1,8 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M88 12H244V168C244 209.974 209.974 244 168 244H12V88C12 46.0264 46.0264 12 88 12Z" fill="white"
+    stroke="black" stroke-width="8" />
+  <path fill-rule="evenodd" clip-rule="evenodd"
+    d="M96 32C60.6538 32 32 60.6538 32 96V168H80V80L168 80L176 80H224V32H96ZM224 88H176V176L96 176H32V224H160C195.346 224 224 195.346 224 160V88Z"
+    fill="black" />
+  <circle cx="128" cy="128" r="32" fill="black" />
+</svg>

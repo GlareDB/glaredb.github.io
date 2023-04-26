@@ -4,7 +4,11 @@ title: CREATE EXTERNAL DATABASE
 parent: SQL commands
 ---
 
+<!-- markdownlint-disable title-case-style -->
+
 # CREATE EXTERNAL DATABASE
+
+<!-- markdownlint-enable title-case-style -->
 
 Use an external database as a data source in GlareDB. See [Data sources] to
 learn more.
