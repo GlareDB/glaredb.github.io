@@ -4,8 +4,8 @@ theme: just-the-docs
 
 url: https://docs.glaredb.com
 
-favicon_ico: "/assets/images/favicon.svg"
-logo: "/assets/images/logo.svg"
+favicon_ico: "/assets/favicon.svg"
+logo: "/assets/logo.svg"
 
 aux_links:
   Get access: https://glaredb.com
