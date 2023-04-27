@@ -29,24 +29,24 @@ tools you already know.
 
 The example below uses `psql` to perform the following steps:
 
-1. Connect GlareDB to a PostgreSQL database named `my_db`
-2. Query a table `animals` on `my_db`
+1. Connect a GlareDB deployment named `gdb` to a PostgreSQL
+2. Query a table `public.animals` on the PostgreSQl database
 
 Connecting:
 
 ```console
-psql "postgresql://user:password@proxy.glaredb.com:6543/my_db"
+psql "postgresql://user:password@proxy.glaredb.com:6543/gdb"
 ```
 
 Response:
 
 ```console
-my_db=>
+gdb=>
 ```
 
-Connecting GlareDB to `my_db`:
+Connecting GlareDB to a PostgreSQL database:
 
-> **Note**: This only needs to be done once. `my_db` will be recognized as a
+> **Note**: This only needs to be done once. `pg_db` will be recognized as a
 > data source for future sessions and queries, unless it is explicitly removed.
 
 ```sql
@@ -67,10 +67,10 @@ Response:
 CREATE DATABASE
 ```
 
-Querying `my_db`:
+Querying `pg_db`:
 
 ```sql
-SELECT * from pg_db.public.animals
+SELECT * from pg_db.public.animals;
 ```
 
 Response:
@@ -78,8 +78,8 @@ Response:
 ```console
  animal
 --------
- dog
  cat
+ dog
  monkey
 (3 rows)
 ```
