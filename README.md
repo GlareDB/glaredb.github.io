@@ -41,16 +41,16 @@ Adding plugins:
 
 - Add the following to your site's `Gemfile`:
 
-  ```ruby
-  gem "<plugin>"
-  ```
+```ruby
+gem "<plugin>"
+```
 
 - And add the following to your site's `_config.yml`:
 
-  ```yaml
-  plugins:
-    - "<plugin>"
-  ```
+```yaml
+plugins:
+  - "<plugin>"
+```
 
 ## Licensing and attribution
 

@@ -65,7 +65,5 @@ qualified, and must be unique across all other databases in the deployment.
 
 - Querying views defined in BigQuery is currently unsupported.
 
-[CREATE EXTERNAL TABLE]:
-  {{site.baseurl}}/docs/sql-commands/create-external-table
-[CREATE EXTERNAL DATABASE]:
-  {{site.baseurl}}/docs/sql-commands/create-external-database
+[CREATE EXTERNAL TABLE]: {{site.baseurl}}/docs/sql-commands/create-external-table
+[CREATE EXTERNAL DATABASE]: {{site.baseurl}}/docs/sql-commands/create-external-database
