@@ -22,10 +22,7 @@ freshest data.
 GlareDB gracefully plugs into your stack and allows you to use the languages and
 tools you already know.
 
-### Example
-
-> **Note**: To learn about the data sources we support, refer to
-> [data sources documentation](../data-sources/index.md).
+### Example: Query an external PostgreSQL database in 2 steps
 
 The example below uses `psql` to perform the following steps:
 
@@ -46,8 +43,10 @@ gdb=>
 
 Connecting GlareDB to a PostgreSQL database:
 
-> **Note**: This only needs to be done once. `pg_db` will be recognized as a
-> data source for future sessions and queries, unless it is explicitly removed.
+{: .important}
+
+> This only needs to be done once. `pg_db` will be recognized as a data source
+> for future sessions and queries, unless it is explicitly removed.
 
 ```sql
 CREATE EXTERNAL DATABASE pg_db
@@ -83,3 +82,7 @@ Response:
  monkey
 (3 rows)
 ```
+
+{: .important}
+
+> Refer to [data sources documentation] for more information on data sources
