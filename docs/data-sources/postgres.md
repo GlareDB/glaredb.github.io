@@ -14,9 +14,11 @@ database or a single table may be added as a data source.
 An entire Postgres database can be added using the [CREATE EXTERNAL DATABASE]
 command.
 
-There are two formats, both of which work exactly the same. In both cases
-`database-name` will be the name of the database inside GlareDB. This cannot be
-qualified, and must be unique across all other databases in the deployment.
+{: .important}
+
+> There are two equivalent foramts. In both formats, `database-name` will be the
+> name of the database inside GlareDB. This cannot be qualified, and must be
+> unique across all other databases in the deployment.
 
 ### External database long format
 
@@ -65,11 +67,13 @@ CREATE EXTERNAL DATABASE <database-name>
 Adding an external table can be done through the [CREATE EXTERNAL TABLE]
 command.
 
-There are two formats, both of which work exactly the same. In both cases
-`table-name` will be the name of the table inside GlareDB. `table-name` may
-optionally be qualified with a schema name.
+{: .important}
 
-### External table Long format
+> There are two equivalent foramts. In both formats, `table-name` will be the
+> name of the database inside GlareDB. `table-name` may optionally be qualified
+> with a schema name.t.
+
+### External table long format
 
 ```sql
 CREATE EXTERNAL TABLE <table-name>

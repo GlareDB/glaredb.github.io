@@ -4,7 +4,8 @@
   "scripts": {
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
-    "lint": "markdownlint --rules markdownlint-rule-title-case-style '**/*.md'"
+    "lint": "markdownlint --rules markdownlint-rule-title-case-style '**/*.md'",
+    "lint:fix": "markdownlint --fix --rules markdownlint-rule-title-case-style '**/*.md'"
   },
   "devDependencies": {
     "markdownlint": "^0.28.1",
