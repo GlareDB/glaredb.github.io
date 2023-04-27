@@ -22,7 +22,11 @@ freshest data.
 GlareDB gracefully plugs into your stack and allows you to use the languages and
 tools you already know.
 
+<!-- markdownlint-disable title-case-style -->
+
 ### Example: Query an external PostgreSQL database in 2 steps
+
+<!-- markdownlint-enable title-case-style -->
 
 The example below uses `psql` to perform the following steps:
 

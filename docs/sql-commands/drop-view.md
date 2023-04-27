@@ -20,7 +20,7 @@ DROP VIEW [IF EXISTS] <view-name>;
 ```
 
 | Field       | Description       |
-|-------------|-------------------|
+| ----------- | ----------------- |
 | `view-name` | The view to drop. |
 
 `view-name` may optionally be qualified with a schema name.

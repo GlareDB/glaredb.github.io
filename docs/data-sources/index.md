@@ -10,5 +10,4 @@ Data sources are what allows GlareDB to query external data.
 
 ![Data sources dialog]
 
-[Data sources dialog]:
-  {{site.baseurl}}/assets/images/dashboard/datasources-dialog.png
+[Data sources dialog]: {{site.baseurl}}/assets/images/dashboard/datasources-dialog.png

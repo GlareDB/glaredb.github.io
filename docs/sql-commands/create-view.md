@@ -19,7 +19,7 @@ CREATE [OR REPLACE] VIEW <view-name> AS <select-statement>;
 ```
 
 | Field              | Description                               |
-|--------------------|-------------------------------------------|
+| ------------------ | ----------------------------------------- |
 | `view-name`        | Name of the view.                         |
 | `select-statement` | The select statement to use for the view. |
 

@@ -84,7 +84,5 @@ Stores information about columns.
 | `data_type`      | Data type of this column.                                 |
 | `is_nullable`    | If this column is nullable.                               |
 
-[CREATE EXTERNAL TABLE]:
-  {{site.baseurl}}/docs/sql-commands/create-external-table
-[CREATE EXTERNAL DATABASE]:
-  {{site.baseurl}}/docs/sql-commands/create-external-database
+[CREATE EXTERNAL TABLE]: {{site.baseurl}}/docs/sql-commands/create-external-table
+[CREATE EXTERNAL DATABASE]: {{site.baseurl}}/docs/sql-commands/create-external-database

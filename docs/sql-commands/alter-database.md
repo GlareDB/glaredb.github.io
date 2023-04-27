@@ -21,7 +21,7 @@ ALTER DATABASE <database-name> RENAME TO <new-name>;
 ```
 
 | Field           | Description                     |
-|-----------------|---------------------------------|
+| --------------- | ------------------------------- |
 | `database-name` | Name of the database to rename. |
 | `new-name`      | New name for the database.      |
 

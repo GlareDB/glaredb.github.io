@@ -20,7 +20,7 @@ DROP SCHEMA [IF EXISTS] <schema-name> [CASCADE];
 ```
 
 | Field        | Description        |
-|--------------|--------------------|
+| ------------ | ------------------ |
 | `table-name` | The table to drop. |
 
 `schema-name` may optionally be qualified with a schema name.

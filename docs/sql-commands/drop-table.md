@@ -20,14 +20,15 @@ DROP TABLE [IF EXISTS] <table-name>;
 ```
 
 | Field        | Description        |
-|--------------|--------------------|
+| ------------ | ------------------ |
 | `table-name` | The table to drop. |
 
 `table-name` may optionally be qualified with a schema name.
 
 ## Examples
 
-Drop a table named `my_table`. See [CREATE EXTERNAL TABLE] for how to create an external table.
+Drop a table named `my_table`. See [CREATE EXTERNAL TABLE] for how to create an
+external table.
 
 ```sql
 DROP TABLE my_table;
