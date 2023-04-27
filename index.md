@@ -22,3 +22,9 @@ application or client that can communicate using the PostgreSQL protocol can
 connect directly to GlareDB.
 
 ![Where GlareDB fits](/assets/images/where-glaredb-fits.png)
+
+## Fully Managed
+
+Whether you use our serverless (free) or dedicated (team plan) databases,
+GlareDB is fully managed. With a few clicks, a GlareDB deployment will be ready
+and highly available for you to use.
