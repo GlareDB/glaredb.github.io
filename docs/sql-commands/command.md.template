@@ -1,0 +1,32 @@
+---
+layout: default
+title: YOUR COMMAND
+parent: SQL commands
+---
+
+<!-- markdownlint-disable title-case-style -->
+
+# YOUR COMMAND
+
+<!-- markdownlint-enable title-case-style -->
+
+Description
+
+## Syntax
+
+```sql
+command syntax
+```
+
+| Field   | Description        |
+|---------|--------------------|
+| `field` | Field description. |
+
+## Examples
+
+Example description
+
+```sql
+example
+```
+

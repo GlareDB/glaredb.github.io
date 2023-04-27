@@ -31,7 +31,7 @@ Note that `database-name` must be unique within a GlareDB deployment.
 
 ## Examples
 
-Create an external database using a Postgres data source.
+Create an external database named `external_db` using a Postgres data source.
 
 ```sql
 CREATE EXTERNAL DATABASE external_db
