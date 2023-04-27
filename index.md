@@ -23,7 +23,11 @@ using basic SQL
 
 [Learn more about data sources]
 
+<!-- markdownlint-disable title-case-style -->
+
 ## Where does GlareDB fit into your stack?
+
+<!-- markdownlint-enable title-case-style -->
 
 GlareDB sits between your data applications and your data sources. Any
 application or client that can communicate using the PostgreSQL protocol can
@@ -31,7 +35,7 @@ connect directly to GlareDB.
 
 ![Where GlareDB fits](/assets/images/where-glaredb-fits.png)
 
-## Fully Managed
+## Fully managed
 
 Whether you use our serverless (free) or dedicated (team plan) databases,
 GlareDB is fully managed. With a few clicks, a GlareDB deployment will be ready

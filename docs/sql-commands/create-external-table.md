@@ -21,7 +21,7 @@ CREATE EXTERNAL TABLE [IF NOT EXISTS] <table-name>
 ```
 
 | Field                 | Description                                      |
-|-----------------------|--------------------------------------------------|
+| --------------------- | ------------------------------------------------ |
 | `table-name`          | Name of the database as it appears in GlareDB.   |
 | `data-source-type`    | The type of data source, for example `postgres`. |
 | `data-source-options` | Options specific to this data source type.       |
@@ -50,4 +50,3 @@ CREATE EXTERNAL TABLE external_table
         table = 'users'
     );
 ```
-

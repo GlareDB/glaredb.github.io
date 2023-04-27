@@ -22,7 +22,7 @@ ALTER TABLE <table-name> RENAME TO <new-name>;
 ```
 
 | Field        | Description                  |
-|--------------|------------------------------|
+| ------------ | ---------------------------- |
 | `table-name` | Name of the table to rename. |
 | `new-name`   | New name for the table.      |
 

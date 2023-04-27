@@ -22,7 +22,7 @@ DROP DATABASE [IF EXISTS] <database>;
 ```
 
 | Field      | Description           |
-|------------|-----------------------|
+| ---------- | --------------------- |
 | `database` | The database to drop. |
 
 ## Examples
