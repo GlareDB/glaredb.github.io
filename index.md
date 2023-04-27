@@ -11,9 +11,17 @@ has_children: true
 
 <!-- markdownlint-enable title-case-style -->
 
-GlareDB is a database that provides a single SQL interface across your data
-sources. With GlareDB, you can query Postgres, MySQL, BigQuery and much more
-using basic SQL commands you already know and use.
+GlareDB is a database that provides a single SQL interface for accessing your
+data sources. With GlareDB you can query and join all of your data using basic
+SQL commands you already know and use.
+
+## What is a data source?
+
+We currently support multiple databases and files in object storage. For
+example, you can join data existing in a Postgres database with a CSV in S3
+using basic SQL
+
+[Learn more about data sources]
 
 ## Where does GlareDB fit into your stack?
 
@@ -28,3 +36,5 @@ connect directly to GlareDB.
 Whether you use our serverless (free) or dedicated (team plan) databases,
 GlareDB is fully managed. With a few clicks, a GlareDB deployment will be ready
 and highly available for you to use.
+
+[Learn more about data sources]: ./docs/data-sources/
