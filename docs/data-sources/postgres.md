@@ -16,7 +16,7 @@ command.
 
 {: .important}
 
-> There are two equivalent foramts. In both formats, `database-name` will be the
+> There are two equivalent formats. In both formats, `database-name` will be the
 > name of the database inside GlareDB. This cannot be qualified, and must be
 > unique across all other databases in the deployment.
 
@@ -43,8 +43,6 @@ CREATE EXTERNAL DATABASE <database-name>
 | `user`     | A database role with login (see [CREATE USER])                       |
 | `password` | The password associated to the above `user`                          |
 | `database` | The name of the database (see [CREATE DATABASE])                     |
-| `schema`   | The name of the schema where the table resides (see [CREATE SCHEMA]) |
-| `table`    | The name of the table (see [CREATE TABLE])                           |
 
 ### External database compact format
 
@@ -71,7 +69,7 @@ command.
 
 > There are two equivalent foramts. In both formats, `table-name` will be the
 > name of the database inside GlareDB. `table-name` may optionally be qualified
-> with a schema name.t.
+> with a schema name.
 
 ### External table long format
 
