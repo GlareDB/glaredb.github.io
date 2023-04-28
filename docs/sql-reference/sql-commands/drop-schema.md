@@ -2,6 +2,7 @@
 layout: default
 title: DROP SCHEMA
 parent: SQL commands
+grand_parent: SQL reference
 ---
 
 <!-- markdownlint-disable title-case-style -->

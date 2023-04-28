@@ -2,6 +2,7 @@
 layout: default
 title: System catalog
 has_children: true
+parent: SQL reference
 ---
 
 # System catalog
