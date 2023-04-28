@@ -2,6 +2,7 @@
 layout: default
 title: glare_catalog
 parent: System catalog
+grand_parent: SQL reference
 ---
 
 # `glare_catalog`
@@ -15,7 +16,8 @@ introspection into the system.
 
 > `glare_catalog` does not currently have any stability guarantees.
 
-- TOC {:toc}
+- TOC 
+{:toc}
 
 ## `databases`
 
