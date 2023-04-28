@@ -56,9 +56,9 @@ CREATE EXTERNAL DATABASE <database-name>
 
 ### External database compact format options
 
-| Field               | Description                                     |
-|---------------------|-------------------------------------------------|
-| `connection_string` | Key value string containing connection details. |
+| Field               | Description                                                              |
+|---------------------|--------------------------------------------------------------------------|
+| `connection_string` | A mysql connection string, e.g. `mysql://user:password@myhost:3307/mydb` |
 
 ## External table
 
