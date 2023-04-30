@@ -16,6 +16,34 @@
   }
 }
 
+.aux-nav-list-item {
+  display: flex !important;
+  align-items: center;
+}
+
+.aux-nav {
+  padding: 0 $gutter-spacing-sm;
+}
+
+.site-button {
+  @include fs-4;
+  height: auto;
+  padding: 10px 14px;
+  border: 1px solid #55a39b;
+  border-radius: 4px;
+}
+
+#menu-button {
+  margin-right: $gutter-spacing-sm;
+}
+
+.site-button:hover {
+  background-image: linear-gradient(
+    -90deg,
+    rgba($feedback-color, 1) 0%,
+    rgba($feedback-color, 0.8) 100%
+  );
+}
 
 .main {
   @include mq(lg) {
