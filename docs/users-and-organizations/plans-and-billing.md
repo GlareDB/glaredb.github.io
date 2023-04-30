@@ -8,12 +8,10 @@ parent: Users and organizations
 
 Billing information for an organization can be found in **Settings -> Billing**.
 
-![Billing panel]
-
 ## Free plan
 
 GlareDB offers a free plan to allow for exploration and hobby usage of the
 platform. This plan is limited in the number of resources that can be used, and
 the number of data sources that can be hooked into GlareDB.
 
-[Billing panel]: {{site.baseurl}}/assets/images/dashboard/billing-panel.png
+[Billing panel]: /assets/images/billing-panel.png
