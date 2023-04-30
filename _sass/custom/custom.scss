@@ -4,6 +4,19 @@
   }
 }
 
+.nav-list {
+  .nav-list-item {
+    @include mq(md) {
+      @include fs-4;
+    }
+  }
+
+  .nav-list-link {
+    color: #766E6F;
+  }
+}
+
+
 .main {
   @include mq(lg) {
     margin-left: $nav-width !important;
@@ -43,5 +56,5 @@ img {
 }
 
 body {
-  color: #051014;
+  color: #2A040A;
 }
