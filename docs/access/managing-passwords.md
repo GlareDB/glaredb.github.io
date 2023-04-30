@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Managing passwords
-parent: Connect
+parent: Access deployments
 ---
 
 # Managing passwords

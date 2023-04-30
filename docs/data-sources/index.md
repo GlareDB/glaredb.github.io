@@ -1,13 +1,9 @@
 ---
 layout: default
-title: Data sources
+title: Connect data sources
 has_children: true
 ---
 
-# Data sources
+# Connect data sources
 
-Data sources are what allows GlareDB to query external data.
-
-![Data sources dialog]
-
-[Data sources dialog]: {{site.baseurl}}/assets/images/dashboard/datasources-dialog.png
+Learn how to connect and manage data sources.

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Troubleshooting
-parent: Connect
+parent: Access deployments
 ---
 
 # Troubleshooting connections
