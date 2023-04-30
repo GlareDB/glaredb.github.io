@@ -2,7 +2,7 @@
 layout: default
 title: MongoDB
 parent: Supported data sources
-grand_parent: Connect data sources
+grand_parent: Data sources
 ---
 
 # MongoDB

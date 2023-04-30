@@ -1,15 +1,11 @@
 ---
 layout: default
-title: Overview
-parent: Connect data sources
+title: Connecting data sources
+parent: Data sources
 ---
 
-# Data sources overview
+# Connecting data sources
 {: .no_toc}
-
-Data sources are a way for GlareDB deployments to access and query external
-data. When you add a data source to a deployment, that data source can be used
-inside any SQL query.
 
 Connecting data sources can be done either through the dashboard, or through SQL
 commands.
