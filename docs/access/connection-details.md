@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Connection details
-parent: Connect
+parent: Access deployments
 ---
 
 # Connection details

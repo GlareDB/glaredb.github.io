@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Connect
+title: Access deployments
 has_children: true
 ---
 
-# Connect to GlareDB
+# Accessing GlareDB deployments
 
 Learn how to connect to your GlareDB deployments using your favorite Postgres
 tools and clients.

@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Snowflake
-parent: Data sources
+parent: Supported data sources
+grand_parent: Connect data sources
 ---
 
 # Snowflake
