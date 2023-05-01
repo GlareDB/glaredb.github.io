@@ -86,7 +86,7 @@ CREATE EXTERNAL TABLE <table-name>
 
 <!-- markdownlint-disable line-length -->
 
-[CREATE EXTERNAL TABLE]: {{site.baseurl}}/docs/sql-commands/create-external-table
-[CREATE EXTERNAL DATABASE]: {{site.baseurl}}/docs/sql-commands/create-external-database
+[CREATE EXTERNAL TABLE]: /docs/sql-reference/sql-commands/create-external-table
+[CREATE EXTERNAL DATABASE]: /docs/sql-reference/sql-commands/create-external-database
 
 <!-- markdownlint-enable line-length -->

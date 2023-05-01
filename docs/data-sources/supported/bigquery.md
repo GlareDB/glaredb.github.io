@@ -68,5 +68,5 @@ optionally be qualified with a schema name.
 
 - Querying views defined in BigQuery is currently unsupported.
 
-[CREATE EXTERNAL TABLE]: {{site.baseurl}}/docs/sql-commands/create-external-table
-[CREATE EXTERNAL DATABASE]: {{site.baseurl}}/docs/sql-commands/create-external-database
+[CREATE EXTERNAL TABLE]: /docs/sql-reference/sql-commands/create-external-table
+[CREATE EXTERNAL DATABASE]: /docs/sql-reference/sql-commands/create-external-database

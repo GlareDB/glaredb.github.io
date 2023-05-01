@@ -48,6 +48,6 @@ of your choice.
 
 See [Managing passwords] for more on passwords.
 
-[Managing passwords]: /docs/connect/managing-passwords
+[Managing passwords]: /docs/access/managing-passwords/
 [Connection details]: /assets/images/connection-details.png
 [New password]: /assets/images/new-password.png
