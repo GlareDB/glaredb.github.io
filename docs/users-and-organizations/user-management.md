@@ -1,6 +1,6 @@
 ---
 layout: default
-title: User management
+title: Organization management
 parent: Users and organizations
 nav_order: 1
 ---
