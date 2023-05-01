@@ -21,7 +21,6 @@ command.
 > name of the database inside GlareDB. This cannot be qualified, and must be
 > unique across all other databases in the deployment.
 
-
 ```sql
 CREATE EXTERNAL DATABASE <database-name>
   FROM snowflake
@@ -38,7 +37,7 @@ CREATE EXTERNAL DATABASE <database-name>
 ### External database long format options
 
 | Field       | Description                                               |
-|-------------|-----------------------------------------------------------|
+| ----------- | --------------------------------------------------------- |
 | `account`   | Account containing the Snowflake warehouse to connect to. |
 | `username`  | Name of the user to login as.                             |
 | `password`  | Password for the above user.                              |
@@ -75,7 +74,7 @@ CREATE EXTERNAL TABLE <table-name>
 ### External table long format options
 
 | Field       | Description                                               |
-|-------------|-----------------------------------------------------------|
+| ----------- | --------------------------------------------------------- |
 | `account`   | Account containing the Snowflake warehouse to connect to. |
 | `username`  | Name of the user to login as.                             |
 | `password`  | Password for the above user.                              |
@@ -91,4 +90,3 @@ CREATE EXTERNAL TABLE <table-name>
 [CREATE EXTERNAL DATABASE]: {{site.baseurl}}/docs/sql-commands/create-external-database
 
 <!-- markdownlint-enable line-length -->
-

@@ -11,7 +11,7 @@ system. Internally, all values are represented using Arrow. This section
 provides a mapping between SQL types and Arrow types.
 
 | SQL type                  | Arrow type                   |
-|---------------------------|------------------------------|
+| ------------------------- | ---------------------------- |
 | BOOLEAN                   | Boolean                      |
 | TINYINT                   | Int8                         |
 | SMALLINT                  | Int16                        |
@@ -31,7 +31,7 @@ provides a mapping between SQL types and Arrow types.
 The `arrow_typeof` function can be used to determine the arrow type used for a
 given SQL expression.
 
-``` sql
+```sql
 glaredb=> select arrow_typeof(1);
  arrowtypeof(Int64(1))
 -----------------------

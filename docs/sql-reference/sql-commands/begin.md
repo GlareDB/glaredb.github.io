@@ -15,4 +15,3 @@ grand_parent: SQL reference
 support.
 
 [Transactions]: {{site.baseurl}}/docs/sql-reference/transactions
-

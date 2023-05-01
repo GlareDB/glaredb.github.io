@@ -13,7 +13,7 @@ Deployments inside an organization can be view from the **Deployments** page.
 
 ![Org deployments]
 
-## Dedicated vs Serverless
+## Dedicated vs serverless
 
 Deployments come in two variants: dedicated and serverless.
 

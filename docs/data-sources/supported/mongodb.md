@@ -15,7 +15,6 @@ or a single collection may be added as a data source.
 > The MongoDB data source is currently in preview. Features may be missing, and
 > options are subject to change.
 
-
 ## External database
 
 An entire MongoDB database can be added using the [CREATE EXTERNAL DATABASE]
@@ -44,7 +43,7 @@ CREATE EXTERNAL DATABASE <database-name>
 ### External database long format options
 
 | Field      | Description                                                                                         |
-|------------|-----------------------------------------------------------------------------------------------------|
+| ---------- | --------------------------------------------------------------------------------------------------- |
 | `protocol` | The protocol to user. Either `mongodb` or `mongodb+srv`.                                            |
 | `host`     | The host that the MongoDB service is available on.                                                  |
 | `port`     | The port the MongoDB database is available on. Should only be specified if `protocol` is `mongodb`. |
@@ -64,7 +63,7 @@ CREATE EXTERNAL DATABASE <database-name>
 ### External database compact format options
 
 | Field               | Description                  |
-|---------------------|------------------------------|
+| ------------------- | ---------------------------- |
 | `connection_string` | A MongoDB connection string. |
 
 ## External table
@@ -97,7 +96,7 @@ CREATE EXTERNAL TABLE <table-name>
 #### External table long format options
 
 | Field        | Description                                                                                         |
-|--------------|-----------------------------------------------------------------------------------------------------|
+| ------------ | --------------------------------------------------------------------------------------------------- |
 | `protocol`   | The protocol to user. Either `mongodb` or `mongodb+srv`.                                            |
 | `host`       | The host that the MongoDB service is available on.                                                  |
 | `port`       | The port the MongoDB database is available on. Should only be specified if `protocol` is `mongodb`. |
@@ -121,7 +120,7 @@ CREATE EXTERNAL TABLE <table-name>
 #### External table compact format options
 
 | Field               | Description                                    |
-|---------------------|------------------------------------------------|
+| ------------------- | ---------------------------------------------- |
 | `connection_string` | Key value string containing connection details |
 | `database`          | The name of the schema where the table resides |
 | `collection`        | The name of the collection                     |
@@ -132,4 +131,3 @@ CREATE EXTERNAL TABLE <table-name>
 [CREATE EXTERNAL DATABASE]: {{site.baseurl}}/docs/sql-commands/create-external-database
 
 <!-- markdownlint-enable line-length -->
-
