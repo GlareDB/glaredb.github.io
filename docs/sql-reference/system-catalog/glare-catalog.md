@@ -6,8 +6,7 @@ grand_parent: SQL reference
 ---
 
 # `glare_catalog`
-
-{: .no_toc}
+{: .no_toc }
 
 The `glare_catalog` schema provides a variety of tables and views for allowing
 introspection into the system.
@@ -16,7 +15,7 @@ introspection into the system.
 
 > `glare_catalog` does not currently have any stability guarantees.
 
-- TOC 
+- TOC
 {:toc}
 
 ## `databases`

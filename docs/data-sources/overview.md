@@ -4,13 +4,15 @@ title: Connecting data sources
 parent: Data sources
 ---
 
+<!-- markdownlint-disable MD022 -->
 # Connecting data sources
-{: .no_toc}
+{: .no_toc }
+<!-- markdownlint-enable MD022 -->
 
 Connecting data sources can be done either through the dashboard, or through SQL
 commands.
 
-- TOC 
+- TOC
 {:toc}
 
 ## Connecting data sources using the dashboard
@@ -44,7 +46,9 @@ source is now able to be queried from within your deployment.
 
 ![Postgres success]
 
+<!-- markdownlint-disable title-case-style -->
 ## Connecting data sources using SQL commands
+<!-- markdownlint-enable title-case-style -->
 
 Alternatively, data sources can be added using [CREATE EXTERNAL TABLE] or
 [CREATE EXTERNAL DATABASE].
@@ -66,8 +70,9 @@ glare=> CREATE EXTERNAL DATABASE external_db
 When we submit this command, validation is done to ensure we can properly
 connect. Any errors connecting will be returned, for example:
 
-```
-ERROR:  External database validation failed: Failed to connect to Postgres instance: error connecting to server: Connection refused (os error 111)
+```text
+ERROR:  External database validation failed: Failed to connect to Postgres
+instance: error connecting to server: Connection refused (os error 111)
 ```
 
 If everything validates and no errors are returned, the data source is then
@@ -81,4 +86,3 @@ available to query from within the deployment.
 [Postgres data source]: /docs/data-sources/supported/postgres
 [CREATE EXTERNAL DATABASE]: /docs/sql-reference/sql-commands/create-external-database
 [CREATE EXTERNAL TABLE]: /docs/sql-reference/sql-commands/create-external-table
-[Supported data sources]: /docs/data-sources/supported

@@ -5,7 +5,7 @@ nav_order: 5
 ---
 
 # Working with your data
-{: .no_toc}
+{: .no_toc }
 
 After setting up some [data sources], it's time to begin querying your data.
 GlareDB is designed to run analytical queries that access data from multiple
@@ -56,7 +56,7 @@ The real power of GlareDB is being able to work with multiple data sources in a
 single query. Let's work through an example using a BigQuery and Postgres data
 source.
 
-``` sql
+```sql
 my_deployment=> select datasource, name, object_type from glare_catalog.external_datasources;
  datasource | name  | object_type
 ------------+-------+-------------
@@ -119,8 +119,6 @@ could be used for generating a report in Tableau and also be accessible in
 See [CREATE VIEW] for the reference doc on views.
 
 [data sources]: /docs/data-sources/overview
-[SQL reference]: /docs/sql-reference
 [CREATE EXTERNAL DATABASE]: /docs/sql-reference/sql-commands/create-external-database
 [CREATE EXTERNAL TABLE]: /docs/sql-reference/sql-commands/create-external-table
 [CREATE VIEW]: /docs/sql-reference/sql-commands/create-view
-

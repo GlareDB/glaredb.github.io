@@ -19,13 +19,13 @@ using properly supports SNI (Server Name Indication).
 If you get an error like the following, it's likely that your client does not
 support SNI:
 
-```
+```text
 missing org ID: pass it as an option, or subdomain in proxy or in database as '<org>/<db>'
 ```
 
 To work arround this, we also accept connection strings in this form:
 
-```
+```text
 postgresql://<user>:<password>@proxy.glaredb.com:6543/<org-name>/<deployment-name>
 ```
 
@@ -35,7 +35,7 @@ database name.
 For example, a deployment named "my_deployment" inside an organization named
 "my_org" would be formatted like so:
 
-```
+```text
 postgresql://<user>:<password>@proxy.glaredb.com:6543/my_org/my_deployment
 ```
 
