@@ -11,7 +11,7 @@ nav_order: 4
 
 > GlareDB is currently in the version 0.0.X ranges. With feedback from the
 > technical preview phase, we're working towards a stable version with core
-> feature completeness and full Postgres compatibility.
+> feature completeness and additional Postgres compatibility.
 
 GlareDB started with a Limited Preview started in December, 2022, and was made
 available to a small number of select users and friends.
