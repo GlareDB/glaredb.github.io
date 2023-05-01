@@ -26,25 +26,25 @@ command.
 CREATE EXTERNAL DATABASE <database-name>
   FROM snowflake
   OPTIONS (
-    account_name = '<account-name>',
-    login_name = '<login-name>',
+    account = '<account>',
+    username = '<username>',
     password = '<password>',
-    database_name = '<database_name>',
+    database = '<database>',
     warehouse = '<warehouse>',
-    role_name = '<role-name>',
+    role = '<role>',
   );
 ```
 
 ### External database long format options
 
-| Field           | Description                                               |
-|-----------------|-----------------------------------------------------------|
-| `account-name`  | Account containing the Snowflake warehouse to connect to. |
-| `login-name`    | Name of the user to login as.                             |
-| `password`      | Password for the above user.                              |
-| `database-name` | Name of the database to connect to.                       |
-| `warehouse`     | Name of the warehouse to connect to.                      |
-| `role-name`     | Role to use when connecting.                              |
+| Field       | Description                                               |
+|-------------|-----------------------------------------------------------|
+| `account`   | Account containing the Snowflake warehouse to connect to. |
+| `username`  | Name of the user to login as.                             |
+| `password`  | Password for the above user.                              |
+| `database`  | Name of the database to connect to.                       |
+| `warehouse` | Name of the warehouse to connect to.                      |
+| `role`      | Role to use when connecting.                              |
 
 ## External table
 
@@ -61,29 +61,29 @@ command.
 CREATE EXTERNAL TABLE <table-name>
   FROM snowflake
   OPTIONS (
-    account_name = '<account-name>',
-    login_name = '<login-name>',
+    account = '<account>',
+    username = '<username>',
     password = '<password>',
-    database_name = '<database_name>',
+    database = '<database>',
     warehouse = '<warehouse>',
-    role_name = '<role-name>',
-    schema_name = '<schema-name>',
-    table_name = '<table-name>',
+    role = '<role>',
+    schema = '<schema>',
+    table = '<table>',
   );
 ```
 
 ### External table long format options
 
-| Field           | Description                                               |
-|-----------------|-----------------------------------------------------------|
-| `account-name`  | Account containing the Snowflake warehouse to connect to. |
-| `login-name`    | Name of the user to login as.                             |
-| `password`      | Password for the above user.                              |
-| `database-name` | Name of the database to connect to.                       |
-| `warehouse`     | Name of the warehouse to connect to.                      |
-| `role-name`     | Role to use when connecting.                              |
-| `schema-name`   | The name of the schema where the table resides            |
-| `table-name`    | The name of the table                                     |
+| Field       | Description                                               |
+|-------------|-----------------------------------------------------------|
+| `account`   | Account containing the Snowflake warehouse to connect to. |
+| `username`  | Name of the user to login as.                             |
+| `password`  | Password for the above user.                              |
+| `database`  | Name of the database to connect to.                       |
+| `warehouse` | Name of the warehouse to connect to.                      |
+| `role`      | Role to use when connecting.                              |
+| `schema`    | The name of the schema where the table resides            |
+| `table`     | The name of the table                                     |
 
 <!-- markdownlint-disable line-length -->
 
