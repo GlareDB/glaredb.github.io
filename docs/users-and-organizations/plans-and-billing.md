@@ -2,6 +2,7 @@
 layout: default
 title: Plans and billing
 parent: Users and organizations
+nav_order: 2
 ---
 
 # Plans and billing
