@@ -30,8 +30,8 @@ Or write to us [support@glaredb.com]
 
 ## Ready to invite your team?
 
-Check out our
-[docs on users and organizations](../users-and-organizations/index.md)
+Check out our docs on [users and organizations]
 
 [Onboarding]: /assets/images/onboarding.png
 [Signin]: /assets/images/signin.png
+[users and organizations]: /docs/users-and-organizations/
