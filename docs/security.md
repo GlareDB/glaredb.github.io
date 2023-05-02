@@ -9,11 +9,7 @@ nav_order: 7
 GlareDB is committed to keeping customer data safe and building trust with our
 users.
 
-<!-- markdownlint-disable title-case-style -->
-
 ## What data does GlareDB store?
-
-<!-- markdownlint-enable title-case-style -->
 
 GlareDB stores information required to access your databases and services, which
 may include items such has host names, usernames, and passwords. This data is
@@ -63,11 +59,7 @@ following:
 In some cases, we may request additional information to more accurately assess
 the vulnerability. Any information shared will be treated as confidential.
 
-<!-- markdownlint-disable title-case-style -->
-
-## SOC2 Compliance
-
-<!-- markdownlint-enable title-case-style -->
+## SOC2 compliance
 
 We are in the process of achieving SOC 2 Type 2 compliance.
 

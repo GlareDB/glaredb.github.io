@@ -5,11 +5,7 @@ parent: What is GlareDB?
 nav_order: 1
 ---
 
-<!-- markdownlint-disable title-case-style -->
-
 # Why GlareDB?
-
-<!-- markdownlint-enable title-case-style -->
 
 GlareDB is designed to make **time to first insight** as quick as possible.
 Instead of having to rely on ETL (Extract-Transform-Load) pipelines to move data

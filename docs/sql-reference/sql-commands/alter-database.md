@@ -5,11 +5,7 @@ parent: SQL commands
 grand_parent: SQL reference
 ---
 
-<!-- markdownlint-disable title-case-style -->
-
 # ALTER DATABASE
-
-<!-- markdownlint-enable title-case-style -->
 
 Alter a database. The `default` database cannot be dropped.
 

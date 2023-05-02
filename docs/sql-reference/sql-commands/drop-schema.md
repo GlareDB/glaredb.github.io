@@ -5,11 +5,7 @@ parent: SQL commands
 grand_parent: SQL reference
 ---
 
-<!-- markdownlint-disable title-case-style -->
-
 # DROP SCHEMA
-
-<!-- markdownlint-enable title-case-style -->
 
 Drop a schema. Note that builtin schemas cannot be dropped. See [system catalog]
 for an overview of builtin schemas.
