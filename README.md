@@ -77,7 +77,7 @@ The deployment GitHub Actions workflow is heavily based on GitHub's mixed-party
 
 [console.glaredb.com]: https://console.glaredb.com
 [Contributing guidelines]: https://github.com/GlareDB/glaredb.github.io/blob/main/.github/CONTRIBUTING.md
-[file an issue]: https://github.com/GlareDB/glaredb.github.io/issues
+[file an issue]: https://github.com/GlareDB/glaredb.github.io/issues/new/choose
 [Just the docs]: https://just-the-docs.github.io/just-the-docs/
 [Ruby]: https://www.ruby-lang.org/en/documentation/installation/
 [RubyGems]: https://rubygems.org/
