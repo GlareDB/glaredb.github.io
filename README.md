@@ -9,7 +9,8 @@ hear from you - please [file an issue].
 
 ## Contributions
 
-We welcome contributions and fixes to our documentation.
+We welcome contributions and fixes to our documentation. For more information
+on contributing, see our [Contributing guidelines].
 
 ## Development environment
 
@@ -75,6 +76,7 @@ The deployment GitHub Actions workflow is heavily based on GitHub's mixed-party
 <!-- Links -->
 
 [console.glaredb.com]: https://console.glaredb.com
+[Contributing guidelines]: https://github.com/GlareDB/glaredb.github.io/blob/main/.github/CONTRIBUTING.md
 [file an issue]: https://github.com/GlareDB/glaredb.github.io/issues
 [Just the docs]: https://just-the-docs.github.io/just-the-docs/
 [Ruby]: https://www.ruby-lang.org/en/documentation/installation/
