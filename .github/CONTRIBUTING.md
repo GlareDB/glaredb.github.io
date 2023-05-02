@@ -35,7 +35,9 @@ like to make a pull request, please create an issue first.
 
 ### Commits
 
-GlareDB follows [conventional commits].
+GlareDB follows [conventional commits]. While PRs may contain various styles of
+commit messages, we ask that the **title of the PR** use [conventional commits]
+style.
 
 [README]: https://github.com/GlareDB/glaredb.github.io/blob/main/README.md
 [conventional commits]: https://www.conventionalcommits.org/en/v1.0.0/
