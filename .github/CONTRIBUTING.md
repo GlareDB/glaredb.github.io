@@ -20,7 +20,7 @@ When using an issue template, the title of the issue will be pre-filled, for
 example:
 
 ```text
-Chore: 
+Chore:
 ```
 
 Please leave these, and add the remainder of the title.

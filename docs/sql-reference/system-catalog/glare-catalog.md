@@ -5,8 +5,14 @@ parent: System catalog
 grand_parent: SQL reference
 ---
 
+<!-- markdownlint-disable MD022 -->
+
+<!-- prettier-ignore-start -->
 # `glare_catalog`
 {: .no_toc }
+<!-- prettier-ignore-end -->
+
+<!-- markdownlint-enable MD022 -->
 
 The `glare_catalog` schema provides a variety of tables and views for allowing
 introspection into the system.
@@ -15,6 +21,7 @@ introspection into the system.
 
 > `glare_catalog` does not currently have any stability guarantees.
 
+<!-- prettier-ignore -->
 - TOC
 {:toc}
 

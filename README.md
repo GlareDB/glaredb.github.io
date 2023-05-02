@@ -73,6 +73,7 @@ The deployment GitHub Actions workflow is heavily based on GitHub's mixed-party
 [actions/starter-workflows].
 
 <!-- Links -->
+
 [console.glaredb.com]: https://console.glaredb.com
 [file an issue]: https://github.com/GlareDB/glaredb.github.io/issues
 [Just the docs]: https://just-the-docs.github.io/just-the-docs/
