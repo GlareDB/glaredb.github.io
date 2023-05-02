@@ -5,7 +5,7 @@ guidelines for contributing to this repository.
 
 ## Issues
 
-When filing an issue, please select the template that best matches your request.
+When [filing an issue], please select the template that best matches your request.
 
 Each template has sections with markdown comments. The comments indicate whether
 or not that section is optional or required. Please fill out required sections
@@ -39,5 +39,6 @@ GlareDB follows [conventional commits]. While PRs may contain various styles of
 commit messages, we ask that the **title of the PR** use [conventional commits]
 style.
 
+[filing an issue]: https://github.com/GlareDB/glaredb.github.io/issues/new/choose
 [README]: https://github.com/GlareDB/glaredb.github.io/blob/main/README.md
 [conventional commits]: https://www.conventionalcommits.org/en/v1.0.0/
