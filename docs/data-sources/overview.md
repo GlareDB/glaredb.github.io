@@ -5,13 +5,18 @@ parent: Data sources
 ---
 
 <!-- markdownlint-disable MD022 -->
+
+<!-- prettier-ignore-start -->
 # Connecting data sources
 {: .no_toc }
+<!-- prettier-ignore-end -->
+
 <!-- markdownlint-enable MD022 -->
 
 Connecting data sources can be done either through the dashboard, or through SQL
 commands.
 
+<!-- prettier-ignore -->
 - TOC
 {:toc}
 
@@ -47,7 +52,9 @@ source is now able to be queried from within your deployment.
 ![Postgres success]
 
 <!-- markdownlint-disable title-case-style -->
+
 ## Connecting data sources using SQL commands
+
 <!-- markdownlint-enable title-case-style -->
 
 Alternatively, data sources can be added using [CREATE EXTERNAL TABLE] or

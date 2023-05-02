@@ -4,13 +4,20 @@ title: Working with your data
 nav_order: 5
 ---
 
+<!-- markdownlint-disable MD022 -->
+
+<!-- prettier-ignore-start -->
 # Working with your data
 {: .no_toc }
+<!-- prettier-ignore-end -->
+
+<!-- markdownlint-enable MD022 -->
 
 After setting up some [data sources], it's time to begin querying your data.
 GlareDB is designed to run analytical queries that access data from multiple
 sources, and writing SQL queries that reference multiple sources is easy.
 
+<!-- prettier-ignore -->
 - TOC
 {:toc}
 
