@@ -52,7 +52,7 @@ command.
 
 {: .important}
 
-> There are two equivalent foramts. In both formats, `table-name` will be the
+> There are two equivalent formats. In both formats, `table-name` will be the
 > name of the database inside GlareDB. `table-name` may optionally be qualified
 > with a schema name.
 

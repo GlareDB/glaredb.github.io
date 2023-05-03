@@ -22,6 +22,6 @@ running system.
 - `glare_catalog`: A schema containing internal information about the
   deployment.
 - `pg_catalog`: A set of views on top of `glare_catalog` that aims to provide
-  Postgres compatability.
+  Postgres compatibility.
 - `information_schema`: A set of views on top of `glare_catalog` for providing
-  standard information schema compatability.
+  standard information schema compatibility.

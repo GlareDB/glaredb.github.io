@@ -28,7 +28,7 @@ a wider audience with early access codes.
 
 ## Deployment updates
 
-While in technical preview, GlareDB deplyoments are updated as follows:
+While in technical preview, GlareDB deployments are updated as follows:
 
 1. **Serverless** - updated live as we cut new releases.
 

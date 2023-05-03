@@ -22,7 +22,7 @@ can be configured to best fit the workload being run. Dedicated deployments are
 only available on a paid plan.
 
 **Serverless** deployments run all workloads on a shared set of compute nodes.
-Resources are not guaranteed, and performance can flucuate depending on
+Resources are not guaranteed, and performance can fluctuate depending on
 activity. Serverless deployments are available on free and paid plans.
 
 ## Creating deployments
