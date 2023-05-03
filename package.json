@@ -8,6 +8,7 @@
     "lint:fix": "markdownlint-cli2-fix \"**/*.{md,mdx}\" \"!node_modules\" \"!_site\""
   },
   "devDependencies": {
+    "cspell": "^6.31.1",
     "markdownlint": "^0.28.1",
     "markdownlint-cli2": "^0.7.1",
     "markdownlint-rule-title-case-style": "^0.2.4",
