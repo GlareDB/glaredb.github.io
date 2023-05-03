@@ -10,7 +10,7 @@ assignees: ""
 
 <!-- (Required): What are we doing? -->
 
-## What This Enables
+## What this enables
 
 <!-- (Required): Why are we doing this? -->
 

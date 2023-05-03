@@ -5,11 +5,7 @@ parent: SQL commands
 grand_parent: SQL reference
 ---
 
-<!-- markdownlint-disable title-case-style -->
-
 # CREATE EXTERNAL TABLE
-
-<!-- markdownlint-enable title-case-style -->
 
 Create an external table backed by a data source.
 

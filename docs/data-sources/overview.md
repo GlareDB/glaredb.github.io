@@ -51,11 +51,7 @@ source is now able to be queried from within your deployment.
 
 ![Postgres success]
 
-<!-- markdownlint-disable title-case-style -->
-
 ## Connecting data sources using SQL commands
-
-<!-- markdownlint-enable title-case-style -->
 
 Alternatively, data sources can be added using [CREATE EXTERNAL TABLE] or
 [CREATE EXTERNAL DATABASE].

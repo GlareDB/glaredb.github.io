@@ -5,11 +5,7 @@ parent: SQL commands
 grand_parent: SQL reference
 ---
 
-<!-- markdownlint-disable title-case-style -->
-
 # DROP VIEW
-
-<!-- markdownlint-enable title-case-style -->
 
 Drop a view. Note that builtin system views cannot be dropped. See [system
 catalog] for an overview of builtin tables and views.

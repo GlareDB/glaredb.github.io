@@ -5,11 +5,7 @@ parent: SQL commands
 grand_parent: SQL reference
 ---
 
-<!-- markdownlint-disable title-case-style -->
-
 # COMMIT
-
-<!-- markdownlint-enable title-case-style -->
 
 `COMMIT` currently has no affect. See [Transactions] for our current transaction
 support.

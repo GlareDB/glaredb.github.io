@@ -5,11 +5,7 @@ parent: SQL commands
 grand_parent: SQL reference
 ---
 
-<!-- markdownlint-disable title-case-style -->
-
 # ALTER TABLE
-
-<!-- markdownlint-enable title-case-style -->
 
 Alter a table. Note that builtin system tables cannot be altered. See [system
 catalog] for an overview of builtin tables and views.

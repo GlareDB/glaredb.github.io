@@ -5,11 +5,7 @@ parent: What is GlareDB?
 nav_order: 1
 ---
 
-<!-- markdownlint-disable title-case-style -->
-
 # Why GlareDB?
-
-<!-- markdownlint-enable title-case-style -->
 
 GlareDB is designed to make **time to first insight** as quick as possible.
 Instead of having to rely on ETL (Extract-Transform-Load) pipelines to move data
@@ -22,11 +18,7 @@ freshest data.
 GlareDB gracefully plugs into your stack and allows you to use the languages and
 tools you already know.
 
-<!-- markdownlint-disable title-case-style -->
-
-### Example: Query an external PostgreSQL database in 2 steps
-
-<!-- markdownlint-enable title-case-style -->
+### Example: query an external PostgreSQL database in 2 steps
 
 The example below uses `psql` to perform the following steps:
 
