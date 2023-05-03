@@ -16,22 +16,25 @@ analyze it.
 
 We currently support multiple databases and files in object storage. For
 example, you can join data existing in a Postgres database with a CSV in S3
-using basic SQL
+using basic SQL.
 
 [Learn more about data sources]
 
 ## Where does GlareDB fit into your stack?
 
 GlareDB sits between your data applications and your data sources. Any
-application or client that can communicate using the PostgreSQL protocol can
+application or client that can communicate using the Postgres protocol can
 connect directly to GlareDB.
 
 ![Where GlareDB fits](/assets/images/where-glaredb-fits.png)
 
 ## Fully managed
 
-Whether you use our serverless (free) or dedicated (team plan) databases,
+Whether you use our serverless (free) or dedicated (paid plan) databases,
 GlareDB is fully managed. With a few clicks, a GlareDB deployment will be ready
 and highly available for you to use.
 
+[Learn more about serverless and dedicated]
+
 [Learn more about data sources]: ./docs/data-sources/
+[Learn more about serverless and dedicated]: ./docs/deployments.html#dedicated-vs-serverless
