@@ -22,7 +22,7 @@ completion of the query.
 
 Intermediate results during a query may be written out to disk to accommodate
 larger than memory queries, and are automatically removed following completion
-of the query. Intermediate results are never conmingled with other running
+of the query. Intermediate results are never commingled with other running
 queries.
 
 ## Who can access my data?

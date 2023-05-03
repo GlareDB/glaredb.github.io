@@ -34,3 +34,6 @@ jobs:
 
       - name: Format
         run: yarn format
+
+      - name: Check spelling
+        run: yarn cspell
