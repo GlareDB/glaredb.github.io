@@ -2,6 +2,7 @@
   "name": "glaredb.github.io",
   "private": true,
   "scripts": {
+    "check:all": "yarn lint && yarn format && yarn cspell",
     "cspell": "cspell lint --config=cspell.json '**/*.md'",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",

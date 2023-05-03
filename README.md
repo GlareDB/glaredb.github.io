@@ -53,12 +53,15 @@ bundle exec jekyll serve
 ### Static analysis
 
 We use `markdownlint` for linting and `prettier` for formatting. To see the
-configurations, check out `.markdownlint.jsonc` and `.prettierrc.json`
+configurations, check out `.markdownlint-cli2.jsonc` and `.prettierrc.json`
 respectively.
 
 From the root of the project:
 
 ```console
+# Checks spelling
+yarn cspell
+
 # Checks code format
 yarn format
 
@@ -71,6 +74,12 @@ yarn lint
 # Attempts to automatically fix any lint violations
 yarn lint:fix
 ```
+
+#### Spell checking
+
+See `cspell.json` for spell checking configuration. The `patterns` are regular
+expressions for which spell checking is ignored (example: in code blocks).
+The `words` array is a list of words to ignore.
 
 ### Adding plugins
 
