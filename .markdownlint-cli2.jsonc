@@ -18,6 +18,7 @@
         "GlareDB",
         "ISOLATION",
         "LEVEL",
+        "PostgreSQL",
         "ROLLBACK",
         "SCHEMA",
         "SHOW",
