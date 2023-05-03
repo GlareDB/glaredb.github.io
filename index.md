@@ -12,8 +12,9 @@ has_children: true
 <!-- markdownlint-enable title-case-style -->
 
 GlareDB is a database that provides a single SQL interface for accessing your
-data sources. With GlareDB you can query and join all of your data using basic
-SQL commands you already know and use.
+data sources. With GlareDB you can query and join all of your data using just
+SQL. No need for complex ETL pipelines to move data around before being able to
+analyze it.
 
 ## What is a data source?
 
