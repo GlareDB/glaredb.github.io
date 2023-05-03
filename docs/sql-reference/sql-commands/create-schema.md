@@ -5,11 +5,7 @@ parent: SQL commands
 grand_parent: SQL reference
 ---
 
-<!-- markdownlint-disable title-case-style -->
-
 # CREATE SCHEMA
-
-<!-- markdownlint-enable title-case-style -->
 
 Create a schema in the `default` database.
 

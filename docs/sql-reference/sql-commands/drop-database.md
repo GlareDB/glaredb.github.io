@@ -5,11 +5,7 @@ parent: SQL commands
 grand_parent: SQL reference
 ---
 
-<!-- markdownlint-disable title-case-style -->
-
 # DROP DATABASE
-
-<!-- markdownlint-enable title-case-style -->
 
 Drop a database. The `default` database cannot be dropped.
 

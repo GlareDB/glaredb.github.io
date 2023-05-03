@@ -23,7 +23,7 @@ support SNI:
 missing org ID: pass it as an option, or subdomain in proxy or in database as '<org>/<db>'
 ```
 
-To work arround this, we also accept connection strings in this form:
+To work around this, we also accept connection strings in this form:
 
 ```text
 postgresql://<user>:<password>@proxy.glaredb.com:6543/<org-name>/<deployment-name>

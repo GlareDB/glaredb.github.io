@@ -29,11 +29,7 @@ For example, if client 'A' executes `BEGIN; CREATE SCHEMA my_schema;`, client
 commit this change. If client 'A' executes `ROLLBACK`, the schema `my_schema`
 will _not_ be removed from the system.
 
-<!-- markdownlint-disable title-case-style -->
-
 ### SHOW TRANSACTION ISOLATION LEVEL
-
-<!-- markdownlint-enable title-case-style -->
 
 `SHOW TRANSACTION ISOLATION LEVEL` will return "read uncommitted".
 

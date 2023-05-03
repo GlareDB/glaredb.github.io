@@ -5,11 +5,7 @@ nav_order: 1
 has_children: true
 ---
 
-<!-- markdownlint-disable title-case-style -->
-
 # What is GlareDB?
-
-<!-- markdownlint-enable title-case-style -->
 
 GlareDB is a database that provides a single SQL interface for accessing your
 data sources. With GlareDB you can query and join all of your data using just
@@ -24,11 +20,7 @@ using basic SQL
 
 [Learn more about data sources]
 
-<!-- markdownlint-disable title-case-style -->
-
 ## Where does GlareDB fit into your stack?
-
-<!-- markdownlint-enable title-case-style -->
 
 GlareDB sits between your data applications and your data sources. Any
 application or client that can communicate using the PostgreSQL protocol can

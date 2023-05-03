@@ -1,0 +1,34 @@
+{
+  "config": {
+    "MD013": {
+      "tables": false
+    },
+    "MD025": {
+      "front_matter_title": ""
+    },
+    "title-case-style": {
+      "ignore": [
+        "ALTER",
+        "BEGIN",
+        "COMMIT",
+        "CREATE",
+        "DATABASE",
+        "DROP",
+        "EXTERNAL",
+        "GlareDB",
+        "ISOLATION",
+        "LEVEL",
+        "PostgreSQL",
+        "ROLLBACK",
+        "SCHEMA",
+        "SHOW",
+        "SOC2",
+        "SQL",
+        "TABLE",
+        "TRANSACTION",
+        "VIEW"
+      ]
+    }
+  },
+  "customRules": ["markdownlint-rule-title-case-style"]
+}
