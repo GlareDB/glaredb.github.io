@@ -22,7 +22,7 @@ tools you already know.
 
 The example below uses `psql` to perform the following steps:
 
-1. Connect a GlareDB deployment named `gdb` to a PostgreSQL
+1. Connect a GlareDB deployment named `gdb` to a PostgreSQL database
 2. Query a table `public.animals` on the PostgreSQl database
 
 Connecting:
@@ -81,4 +81,6 @@ Response:
 
 {: .important}
 
-> Refer to [data sources documentation] for more information on data sources
+> Refer to [data sources] for more information on data sources
+
+[data sources]: ../data-sources

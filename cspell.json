@@ -45,9 +45,6 @@
     "mydb",
     "myhost",
     "psql",
-    "signin",
-    "Signin",
-    "signup",
     "SMALLINT",
     "TINYINT",
     "typeof"
