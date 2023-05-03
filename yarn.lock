@@ -152,10 +152,10 @@ markdownlint-micromark@0.1.2:
   resolved "https://registry.yarnpkg.com/markdownlint-micromark/-/markdownlint-micromark-0.1.2.tgz#5520e04febffa46741875a2f297509ffdb561f5c"
   integrity sha512-jRxlQg8KpOfM2IbCL9RXM8ZiYWz2rv6DlZAnGv8ASJQpUh6byTBnEsbuMZ6T2/uIgntyf7SKg/mEaEBo1164fQ==
 
-markdownlint-rule-title-case-style@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/markdownlint-rule-title-case-style/-/markdownlint-rule-title-case-style-0.2.2.tgz#b6620cf551786f6b7e7474734d38c3f37c5274dd"
-  integrity sha512-/au2jODJ8CxVtyuVGgRVOjk6PurCHdwxwa91tdhT1t5ACtWiGPd6/35A2Q5lNefJvKmSijFphoQIijRzZyIQ6g==
+markdownlint-rule-title-case-style@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/markdownlint-rule-title-case-style/-/markdownlint-rule-title-case-style-0.2.4.tgz#86d220ce5cc16d3fb24465e0c4f315319c0d7a0e"
+  integrity sha512-sYpp93p+8XTqQlYvyMur7I+I1+/yeVmeOyQ8lJ5Jcg5QAKTdSXGRjh5E+WjDS+yRJ60cFh6fQt8ONO2j7jFuyg==
   dependencies:
     markdownlint "^0.28.1"
     title-case "^3.0.3"
