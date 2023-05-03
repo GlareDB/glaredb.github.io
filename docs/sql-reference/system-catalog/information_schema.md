@@ -67,7 +67,7 @@ from information_schema.columns;
 
 ```sql
 select table_schema, table_name
-from information_schema.tabes;
+from information_schema.tables;
 ```
 
 ```text
