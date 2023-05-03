@@ -23,7 +23,7 @@ options to sign in and sign up.
 
 GlareDB supports the following ways of signing in:
 
-- Google social login
+- Google social sign-in
 - Email/password
 
 ### Primary sign-in method
@@ -43,7 +43,7 @@ method.
 ## Signing out
 
 To sign out, click the avatar in the top right of the dashboard and select the
-**Log out** option from the menu.
+**Sign out** option from the menu.
 
 ## Notifications
 
@@ -53,4 +53,4 @@ you have not yet accepted.
 
 [console.glaredb.com]: https://console.glaredb.com
 [sign in]: /assets/images/signin.png
-[primary sign-in method]: /assets/images/primary-login.png
+[primary sign-in method]: /assets/images/primary-sign-in.png
