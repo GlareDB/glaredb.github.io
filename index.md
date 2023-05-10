@@ -12,7 +12,7 @@ data sources. With GlareDB you can query and join all of your data using just
 SQL. No need for complex ETL pipelines to move data around before being able to
 analyze it.
 
-GlareDb is in [Technical Preview] and is generally available to everyone with
+GlareDB is in [Technical Preview] and is generally available to everyone with
 a free tier. Get started at [console.glaredb.com].
 
 ## What is a data source?
