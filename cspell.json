@@ -45,6 +45,7 @@
     "mydb",
     "myhost",
     "psql",
+    "SELECT",
     "SMALLINT",
     "TINYINT",
     "typeof"
