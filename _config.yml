@@ -8,7 +8,7 @@ favicon_ico: "/assets/favicon.svg"
 logo: "/assets/logo.svg"
 
 aux_links:
-  Get access: https://glaredb.com/#early-access
+  Go to console: https://console.glaredb.com
 
 aux_links_new_tab: true
 

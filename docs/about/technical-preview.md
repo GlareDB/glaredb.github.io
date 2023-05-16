@@ -19,6 +19,9 @@ available to a small number of select users and friends.
 On May 1st, 2023, GlareDB moved into Technical Preview, and became available to
 a wider audience with early access codes.
 
+On May 11, 2023, the Technical Preview became generally available. It is
+available to everyone with a free tier to get started.
+
 ## Stability
 
 {: .important}
