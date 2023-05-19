@@ -90,7 +90,8 @@ available to query from within the deployment.
 For scenarios whereby a data source does not have a public access point, GlareDB
 can use a tunnel to make the connection.
 
-SSH tunnels are specified per deployment, and can be used by many data sources.
+SSH tunnels are specified per deployment, and can be reused by multiple data
+sources for that deployment.
 
 ### Creating and using SSH tunnels using the dashboard
 
@@ -111,7 +112,31 @@ SSH tunnels are specified per deployment, and can be used by many data sources.
 
 ### Creating and using SSH tunnels using SQL commands
 
-blah blah blah
+1. Create the tunnel
+
+   ```sql
+   CREATE TUNNEL example_tunnel FROM ssh OPTIONS (
+      host = '1.2.3.4',
+      port = '22',
+      user = 'example_ssh_user'
+   );
+   ```
+
+2. Get the public key and add it to your SSH server
+
+   ```sql
+   SELECT public_key FROM glare_catalog.ssh_keys
+      WHERE ssh_tunnel_name = 'example_tunnel';
+   ```
+
+3. Create the data source with the tunnel
+
+   ```sql
+   CREATE EXTERNAL DATABASE my_pg
+      FROM postgres
+      TUNNEL example_tunnel
+      OPTIONS ( connection_string = '<connection-string>' );
+   ```
 
 [Data sources table]: /assets/images/data-sources-table.png
 [Data sources dialog]: /assets/images/data-sources-dialog.png
