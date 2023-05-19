@@ -98,13 +98,13 @@ and can be reused by multiple data sources for that deployment.
 
    ![SSH tunnel settings]
 
-3. Click **New tunnel** and add the host, port and user for the server that SSH
-   server that will access the data source
+3. Click **New tunnel** and add the host, port and user for the SSH server that
+   will be used to connect to the data source
 
    ![Create SSH tunnel]
 
-4. After creating the tunnel, a public key will be presented. Add this key to
-   as an authorized key to your SSH server (for example `~/.ssh/authorized_keys`)
+4. After creating the tunnel a public key will be presented. Add this key to
+   your SSH server (for example `~/.ssh/authorized_keys`)
 
    ![SSH tunnel public key]
 
