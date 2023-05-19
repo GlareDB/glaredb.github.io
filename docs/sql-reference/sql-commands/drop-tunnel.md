@@ -17,7 +17,7 @@ DROP TUNNEL [IF EXISTS] <tunnel-name>;
 
 | Field         | Description        |
 | ------------- | ------------------ |
-| `tunnel-name` | The table to drop. |
+| `tunnel-name` | The tunnel to drop. |
 
 ## Examples
 
