@@ -12,7 +12,7 @@ users.
 ## What data does GlareDB store?
 
 GlareDB stores information required to access your databases and services, which
-may include items such has host names, usernames, and passwords. This data is
+may include items such as host names, usernames, and passwords. This data is
 encrypted at rest, and is completely isolated from other tenants within GlareDB.
 
 During query execution, GlareDB will attempt to pull in data from connected data
