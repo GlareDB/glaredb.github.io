@@ -15,8 +15,8 @@ Drop a tunnel.
 DROP TUNNEL [IF EXISTS] <tunnel-name>;
 ```
 
-| Field         | Description        |
-| ------------- | ------------------ |
+| Field         | Description         |
+| ------------- | ------------------- |
 | `tunnel-name` | The tunnel to drop. |
 
 ## Examples
