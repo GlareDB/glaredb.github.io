@@ -62,7 +62,7 @@ CREATE EXTERNAL DATABASE <database-name>
 
 | Field               | Description                                                                |
 | ------------------- | -------------------------------------------------------------------------- |
-| `tunnel-name` | The name of the SSH tunnel to connect with         |
+| `tunnel-name`       | The name of the SSH tunnel to connect with                                 |
 | `connection_string` | Key value string containing connection details (see [Connection Strings]). |
 
 ## External table
@@ -95,16 +95,16 @@ CREATE EXTERNAL TABLE <table-name>
 
 #### External table long format options
 
-| Field      | Description                                                          |
-| ---------- | -------------------------------------------------------------------- |
-| `tunnel-name` | The name of the SSH tunnel to connect with         |
-| `host`     | The host that the postgres service is available on                   |
-| `port`     | The port the postgres database is available on                       |
-| `user`     | A database role with login (see [CREATE USER])                       |
-| `password` | The password associated to the above `user`                          |
-| `database` | The name of the database (see [CREATE DATABASE])                     |
-| `schema`   | The name of the schema where the table resides (see [CREATE SCHEMA]) |
-| `table`    | The name of the table (see [CREATE TABLE])                           |
+| Field         | Description                                                          |
+| ------------- | -------------------------------------------------------------------- |
+| `tunnel-name` | The name of the SSH tunnel to connect with                           |
+| `host`        | The host that the postgres service is available on                   |
+| `port`        | The port the postgres database is available on                       |
+| `user`        | A database role with login (see [CREATE USER])                       |
+| `password`    | The password associated to the above `user`                          |
+| `database`    | The name of the database (see [CREATE DATABASE])                     |
+| `schema`      | The name of the schema where the table resides (see [CREATE SCHEMA]) |
+| `table`       | The name of the table (see [CREATE TABLE])                           |
 
 ### External table compact format
 
@@ -123,7 +123,7 @@ CREATE EXTERNAL TABLE <table-name>
 
 | Field               | Description                                                                |
 | ------------------- | -------------------------------------------------------------------------- |
-| `tunnel-name` | The name of the SSH tunnel to connect with         |
+| `tunnel-name`       | The name of the SSH tunnel to connect with                                 |
 | `connection_string` | Key value string containing connection details (see [Connection Strings]). |
 | `schema`            | The name of the schema where the table resides (see [CREATE SCHEMA])       |
 | `table`             | The name of the table (see [CREATE TABLE])                                 |
