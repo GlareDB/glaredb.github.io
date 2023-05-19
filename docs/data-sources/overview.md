@@ -88,10 +88,8 @@ available to query from within the deployment.
 > Currently only MySQL and Postgres data sources support SSH tunnels
 
 For scenarios whereby a data source does not have a public access point, GlareDB
-can use a tunnel to make the connection.
-
-SSH tunnels are specified per deployment, and can be reused by multiple data
-sources for that deployment.
+can use a tunnel to make the connection. SSH tunnels are specified per deployment,
+and can be reused by multiple data sources for that deployment.
 
 ### Creating and using SSH tunnels using the dashboard
 
