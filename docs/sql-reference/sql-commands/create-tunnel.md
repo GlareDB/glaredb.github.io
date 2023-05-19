@@ -7,7 +7,7 @@ grand_parent: SQL reference
 
 # CREATE TUNNEL
 
-Create a SSH Tunnel
+Create an SSH Tunnel
 
 ## Syntax
 
