@@ -92,5 +92,27 @@ Stores information about columns.
 | `data_type`      | Data type of this column.                                 |
 | `is_nullable`    | If this column is nullable.                               |
 
-[CREATE EXTERNAL TABLE]: {{site.baseurl}}/docs/sql-commands/create-external-table
-[CREATE EXTERNAL DATABASE]: {{site.baseurl}}/docs/sql-commands/create-external-database
+## `tunnels`
+
+Stores information about [SSH tunnels].
+
+| Field         | Description                          |
+| ------------- | ------------------------------------ |
+| `oid`         | Internal identifier for this object. |
+| `tunnel_name` | Name of the tunnel.                  |
+| `builtin`     | If this tunnel is builtin.           |
+| `tunnel_type` | Type of the tunnel (ex: `ssh`)       |
+
+## `ssh_keys`
+
+Stores information about public keys associated to `tunnels`.
+
+| Field             | Description                     |
+| ----------------- | ------------------------------- |
+| `ssh_tunnel_oid`  | `oid` of the `tunnel`           |
+| `ssh_tunnel_name` | `tunnel_name` of the `tunnel`   |
+| `public_key`      | Public SSH key for the `tunnel` |
+
+[CREATE EXTERNAL TABLE]: /docs/sql-reference/sql-commands/create-external-table.html
+[CREATE EXTERNAL DATABASE]: /docs/sql-reference/sql-commands/create-external-database.html
+[SSH tunnels]: /docs/data-sources/overview.html#securing-connections-with-ssh-tunnels

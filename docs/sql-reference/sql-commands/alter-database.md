@@ -32,4 +32,4 @@ Rename database `db1` to `db2`. See [CREATE EXTERNAL DATABASE] for adding a data
 ALTER DATABASE db1 RENAME TO db2;
 ```
 
-[CREATE EXTERNAL DATABASE]: {{site.baseurl}}/docs/sql-commands/create-external-database
+[CREATE EXTERNAL DATABASE]: /docs/sql-reference/sql-commands/create-external-database.html

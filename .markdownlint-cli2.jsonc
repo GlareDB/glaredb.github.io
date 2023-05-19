@@ -23,10 +23,12 @@
         "ROLLBACK",
         "SCHEMA",
         "SHOW",
+        "SSH",
         "SOC2",
         "SQL",
         "TABLE",
         "TRANSACTION",
+        "TUNNEL",
         "VIEW"
       ]
     }

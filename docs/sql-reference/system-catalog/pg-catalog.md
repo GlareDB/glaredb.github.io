@@ -34,4 +34,4 @@ where table_schema = 'pg_catalog';
 ```
 
 [Postgres catalog]: https://www.postgresql.org/docs/current/catalogs.html
-[Technical Preview]: ../../about/technical-preview.html
+[Technical Preview]: /docs/about/technical-preview.html

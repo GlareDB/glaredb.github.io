@@ -70,6 +70,8 @@ necessary to move towards a stable version range.
    In order to support more architectures, we are working on support for
    connecting to data sources through ssh tunnels.
 
+   **Update**: as of `v0.0.25` we now support SSH tunnels for MySQL and Postgres.
+
 3. Regional support
 
    Supported regions are limited while in technical preview. Users from anywhere

@@ -30,5 +30,5 @@ Drop a view named `my-view`. See [CREATE VIEW] for how to create a view.
 DROP VIEW my-view;
 ```
 
-[CREATE VIEW]: {{site.baseurl}}/docs/sql-commands/create-view
-[system catalog]: {{site.baseurl}}/docs/system-catalog
+[CREATE VIEW]: /docs/sql-reference/sql-commands/create-view.html
+[system catalog]: /docs/sql-reference/system-catalog/
