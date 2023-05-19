@@ -26,6 +26,7 @@ command.
 ```sql
 CREATE EXTERNAL DATABASE <database-name>
  FROM postgres
+ [TUNNEL <tunnel-name>]
  OPTIONS (
   host = '<host>',
   port = '<port>',
@@ -37,19 +38,21 @@ CREATE EXTERNAL DATABASE <database-name>
 
 ### External database long format options
 
-| Field      | Description                                        |
-| ---------- | -------------------------------------------------- |
-| `host`     | The host that the postgres service is available on |
-| `port`     | The port the postgres database is available on     |
-| `user`     | A database role with login (see [CREATE USER])     |
-| `password` | The password associated to the above `user`        |
-| `database` | The name of the database (see [CREATE DATABASE])   |
+| Field           | Description                                          |
+| --------------- | ---------------------------------------------------- |
+| `tunnel-name`   | The name of the SSH tunnel to connect with           |
+| `host`          | The host that the postgres service is available on   |
+| `port`          | The port the postgres database is available on       |
+| `user`          | A database role with login (see [CREATE USER])       |
+| `password`      | The password associated to the above `user`          |
+| `database`      | The name of the database (see [CREATE DATABASE])     |
 
 ### External database compact format
 
 ```sql
 CREATE EXTERNAL DATABASE <database-name>
  FROM postgres
+ [TUNNEL <tunnel-name>]
  OPTIONS (
   connection_string = '<connection-string>',
  );
@@ -77,6 +80,7 @@ command.
 ```sql
 CREATE EXTERNAL TABLE <table-name>
  FROM postgres
+ [TUNNEL <tunnel-name>]
  OPTIONS (
   host = '<host>',
   port = '<port>',
@@ -105,6 +109,7 @@ CREATE EXTERNAL TABLE <table-name>
 ```sql
 CREATE EXTERNAL TABLE <table-name>
  FROM postgres
+ [TUNNEL <tunnel-name>]
  OPTIONS (
   connection_string = '<connection-string>',
   schema = '<schema>',

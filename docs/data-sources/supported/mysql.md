@@ -26,6 +26,7 @@ command.
 ```sql
 CREATE EXTERNAL DATABASE <database-name>
  FROM mysql
+ [TUNNEL <tunnel-name>]
  OPTIONS (
   host = '<host>',
   port = '<port>',
@@ -50,6 +51,7 @@ CREATE EXTERNAL DATABASE <database-name>
 ```sql
 CREATE EXTERNAL DATABASE <database-name>
  FROM mysql
+ [TUNNEL <tunnel-name>]
  OPTIONS (
   connection_string = '<connection-string>',
  );
@@ -77,6 +79,7 @@ command.
 ```sql
 CREATE EXTERNAL TABLE <table-name>
  FROM mysql
+ [TUNNEL <tunnel-name>]
  OPTIONS (
   host = '<host>',
   port = '<port>',
@@ -105,6 +108,7 @@ CREATE EXTERNAL TABLE <table-name>
 ```sql
 CREATE EXTERNAL TABLE <table-name>
  FROM MySQL
+ [TUNNEL <tunnel-name>]
  OPTIONS (
   connection_string = '<connection-string>',
   schema = '<schema>',
