@@ -31,5 +31,5 @@ external table.
 DROP TABLE my_table;
 ```
 
-[CREATE EXTERNAL TABLE]: {{site.baseurl}}/docs/sql-commands/create-external-table
-[system catalog]: {{site.baseurl}}/docs/system-catalog
+[CREATE EXTERNAL TABLE]: /docs/sql-reference/sql-commands/create-external-table.html
+[system catalog]: /docs/sql-reference/system-catalog/

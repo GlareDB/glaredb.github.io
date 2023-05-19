@@ -38,14 +38,14 @@ CREATE EXTERNAL DATABASE <database-name>
 
 ### External database long format options
 
-| Field           | Description                                          |
-| --------------- | ---------------------------------------------------- |
-| `tunnel-name`   | The name of the SSH tunnel to connect with           |
-| `host`          | The host that the postgres service is available on   |
-| `port`          | The port the postgres database is available on       |
-| `user`          | A database role with login (see [CREATE USER])       |
-| `password`      | The password associated to the above `user`          |
-| `database`      | The name of the database (see [CREATE DATABASE])     |
+| Field         | Description                                        |
+| ------------- | -------------------------------------------------- |
+| `tunnel-name` | The name of the SSH tunnel to connect with         |
+| `host`        | The host that the postgres service is available on |
+| `port`        | The port the postgres database is available on     |
+| `user`        | A database role with login (see [CREATE USER])     |
+| `password`    | The password associated to the above `user`        |
+| `database`    | The name of the database (see [CREATE DATABASE])   |
 
 ### External database compact format
 

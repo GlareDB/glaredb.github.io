@@ -35,5 +35,5 @@ schema. See [CREATE SCHEMA] for how to create a schema.
 DROP SCHEMA my_schema CASCADE;
 ```
 
-[CREATE SCHEMA]: {{site.baseurl}}/docs/sql-commands/create-schema
-[system catalog]: {{site.baseurl}}/docs/system-catalog
+[CREATE SCHEMA]: /docs/sql-reference/sql-commands/create-schema.html
+[system catalog]: /docs/sql-reference/system-catalog/

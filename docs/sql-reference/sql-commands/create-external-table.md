@@ -14,6 +14,7 @@ Create an external table backed by a data source.
 ```sql
 CREATE EXTERNAL TABLE [IF NOT EXISTS] <table-name>
     FROM <data-source-type>
+    [TUNNEL <tunnel-name>]
     OPTIONS (<data-source-options>);
 ```
 
@@ -21,6 +22,7 @@ CREATE EXTERNAL TABLE [IF NOT EXISTS] <table-name>
 | --------------------- | ------------------------------------------------ |
 | `table-name`          | Name of the database as it appears in GlareDB.   |
 | `data-source-type`    | The type of data source, for example `postgres`. |
+| `tunnel-name`         | [SSH tunnel] to connect with.                    |
 | `data-source-options` | Options specific to this data source type.       |
 
 `table-name` may optionally be qualified with a schema.
@@ -47,3 +49,5 @@ CREATE EXTERNAL TABLE external_table
         table = 'users'
     );
 ```
+
+[SSH tunnel]: /docs/data-sources/overview.html#securing-connections-with-ssh-tunnels
