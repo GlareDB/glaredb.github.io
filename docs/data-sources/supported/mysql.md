@@ -40,6 +40,7 @@ CREATE EXTERNAL DATABASE <database-name>
 
 | Field      | Description                                     |
 | ---------- | ----------------------------------------------- |
+| `tunnel-name` | The name of the SSH tunnel to connect with         |
 | `host`     | The host that the MySQL service is available on |
 | `port`     | The port the MySQL database is available on     |
 | `user`     | A MySQL database user                           |
@@ -61,6 +62,7 @@ CREATE EXTERNAL DATABASE <database-name>
 
 | Field               | Description                                                              |
 | ------------------- | ------------------------------------------------------------------------ |
+| `tunnel-name` | The name of the SSH tunnel to connect with         |
 | `connection_string` | A mysql connection string, e.g. `mysql://user:password@myhost:3307/mydb` |
 
 ## External table
@@ -95,6 +97,7 @@ CREATE EXTERNAL TABLE <table-name>
 
 | Field      | Description                                     |
 | ---------- | ----------------------------------------------- |
+| `tunnel-name` | The name of the SSH tunnel to connect with         |
 | `host`     | The host that the MySQL service is available on |
 | `port`     | The port the MySQL database is available on     |
 | `user`     | A MySQL database user                           |
@@ -120,6 +123,7 @@ CREATE EXTERNAL TABLE <table-name>
 
 | Field               | Description                                    |
 | ------------------- | ---------------------------------------------- |
+| `tunnel-name` | The name of the SSH tunnel to connect with         |
 | `connection_string` | Key value string containing connection details |
 | `schema`            | The name of the schema where the table resides |
 | `table`             | The name of the table                          |
