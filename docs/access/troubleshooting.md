@@ -23,17 +23,17 @@ support SNI:
 missing org ID: pass it as an option, or subdomain in proxy or in database as '<org>/<db>'
 ```
 
-To work arround this, we also accept connection strings in this form:
+To work around this, we also accept connection strings in this form:
 
 ```text
 postgresql://<user>:<password>@proxy.glaredb.com:6543/<org-name>/<deployment-name>
 ```
 
-The main difference here the organization name being provided as part of the
+The main difference is the organization name being provided as part of the
 database name.
 
 For example, a deployment named "my_deployment" inside an organization named
-"my_org" would be formatted like so:
+"my_org" would be formatted as:
 
 ```text
 postgresql://<user>:<password>@proxy.glaredb.com:6543/my_org/my_deployment

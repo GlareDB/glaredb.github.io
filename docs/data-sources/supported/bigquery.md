@@ -61,7 +61,7 @@ optionally be qualified with a schema name.
 | --------------------- | --------------------------------------------------------- |
 | `gcp-service-account` | The JSON encoded service account key.                     |
 | `gcp-project`         | The GCP project containing the dataset/table of interest. |
-| `dataset-id`          | The ID of the dataset containing the table of interes.    |
+| `dataset-id`          | The ID of the dataset containing the table of interest.   |
 | `table-id`            | The ID of the table to add to GlareDB.                    |
 
 ## Known issues

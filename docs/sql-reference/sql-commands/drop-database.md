@@ -5,11 +5,7 @@ parent: SQL commands
 grand_parent: SQL reference
 ---
 
-<!-- markdownlint-disable title-case-style -->
-
 # DROP DATABASE
-
-<!-- markdownlint-enable title-case-style -->
 
 Drop a database. The `default` database cannot be dropped.
 
@@ -34,4 +30,4 @@ Drop a database named `pg`. See [CREATE EXTERNAL DATABASE] for adding a database
 DROP DATABASE pg;
 ```
 
-[CREATE EXTERNAL DATABASE]: {{site.baseurl}}/docs/sql-commands/create-external-database
+[CREATE EXTERNAL DATABASE]: /docs/sql-reference/sql-commands/create-external-database.html

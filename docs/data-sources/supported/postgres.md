@@ -26,6 +26,7 @@ command.
 ```sql
 CREATE EXTERNAL DATABASE <database-name>
  FROM postgres
+ [TUNNEL <tunnel-name>]
  OPTIONS (
   host = '<host>',
   port = '<port>',
@@ -37,19 +38,21 @@ CREATE EXTERNAL DATABASE <database-name>
 
 ### External database long format options
 
-| Field      | Description                                        |
-| ---------- | -------------------------------------------------- |
-| `host`     | The host that the postgres service is available on |
-| `port`     | The port the postgres database is available on     |
-| `user`     | A database role with login (see [CREATE USER])     |
-| `password` | The password associated to the above `user`        |
-| `database` | The name of the database (see [CREATE DATABASE])   |
+| Field         | Description                                        |
+| ------------- | -------------------------------------------------- |
+| `tunnel-name` | The name of the SSH tunnel to connect with         |
+| `host`        | The host that the postgres service is available on |
+| `port`        | The port the postgres database is available on     |
+| `user`        | A database role with login (see [CREATE USER])     |
+| `password`    | The password associated to the above `user`        |
+| `database`    | The name of the database (see [CREATE DATABASE])   |
 
 ### External database compact format
 
 ```sql
 CREATE EXTERNAL DATABASE <database-name>
  FROM postgres
+ [TUNNEL <tunnel-name>]
  OPTIONS (
   connection_string = '<connection-string>',
  );
@@ -59,6 +62,7 @@ CREATE EXTERNAL DATABASE <database-name>
 
 | Field               | Description                                                                |
 | ------------------- | -------------------------------------------------------------------------- |
+| `tunnel-name`       | The name of the SSH tunnel to connect with                                 |
 | `connection_string` | Key value string containing connection details (see [Connection Strings]). |
 
 ## External table
@@ -68,7 +72,7 @@ command.
 
 {: .important}
 
-> There are two equivalent foramts. In both formats, `table-name` will be the
+> There are two equivalent formats. In both formats, `table-name` will be the
 > name of the database inside GlareDB. `table-name` may optionally be qualified
 > with a schema name.
 
@@ -77,6 +81,7 @@ command.
 ```sql
 CREATE EXTERNAL TABLE <table-name>
  FROM postgres
+ [TUNNEL <tunnel-name>]
  OPTIONS (
   host = '<host>',
   port = '<port>',
@@ -90,21 +95,23 @@ CREATE EXTERNAL TABLE <table-name>
 
 #### External table long format options
 
-| Field      | Description                                                          |
-| ---------- | -------------------------------------------------------------------- |
-| `host`     | The host that the postgres service is available on                   |
-| `port`     | The port the postgres database is available on                       |
-| `user`     | A database role with login (see [CREATE USER])                       |
-| `password` | The password associated to the above `user`                          |
-| `database` | The name of the database (see [CREATE DATABASE])                     |
-| `schema`   | The name of the schema where the table resides (see [CREATE SCHEMA]) |
-| `table`    | The name of the table (see [CREATE TABLE])                           |
+| Field         | Description                                                          |
+| ------------- | -------------------------------------------------------------------- |
+| `tunnel-name` | The name of the SSH tunnel to connect with                           |
+| `host`        | The host that the postgres service is available on                   |
+| `port`        | The port the postgres database is available on                       |
+| `user`        | A database role with login (see [CREATE USER])                       |
+| `password`    | The password associated to the above `user`                          |
+| `database`    | The name of the database (see [CREATE DATABASE])                     |
+| `schema`      | The name of the schema where the table resides (see [CREATE SCHEMA]) |
+| `table`       | The name of the table (see [CREATE TABLE])                           |
 
 ### External table compact format
 
 ```sql
 CREATE EXTERNAL TABLE <table-name>
  FROM postgres
+ [TUNNEL <tunnel-name>]
  OPTIONS (
   connection_string = '<connection-string>',
   schema = '<schema>',
@@ -116,6 +123,7 @@ CREATE EXTERNAL TABLE <table-name>
 
 | Field               | Description                                                                |
 | ------------------- | -------------------------------------------------------------------------- |
+| `tunnel-name`       | The name of the SSH tunnel to connect with                                 |
 | `connection_string` | Key value string containing connection details (see [Connection Strings]). |
 | `schema`            | The name of the schema where the table resides (see [CREATE SCHEMA])       |
 | `table`             | The name of the table (see [CREATE TABLE])                                 |

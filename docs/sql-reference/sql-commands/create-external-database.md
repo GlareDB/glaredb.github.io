@@ -5,11 +5,7 @@ parent: SQL commands
 grand_parent: SQL reference
 ---
 
-<!-- markdownlint-disable title-case-style -->
-
 # CREATE EXTERNAL DATABASE
-
-<!-- markdownlint-enable title-case-style -->
 
 Use an external database as a data source in GlareDB. See [Data sources] to
 learn more.
@@ -19,6 +15,7 @@ learn more.
 ```sql
 CREATE EXTERNAL DATABASE <database-name>
     FROM <data-source-type>
+    [TUNNEL <tunnel-name>]
     OPTIONS (<data-source-options>);
 ```
 
@@ -26,6 +23,7 @@ CREATE EXTERNAL DATABASE <database-name>
 | --------------------- | ------------------------------------------------ |
 | `database-name`       | Name of the database as it appears in GlareDB.   |
 | `data-source-type`    | The type of data source, for example `postgres`. |
+| `tunnel-name`         | [SSH tunnel] to connect with.                    |
 | `data-source-options` | Options specific to this data source type.       |
 
 Note that `database-name` must be unique within a GlareDB deployment.
@@ -46,4 +44,5 @@ CREATE EXTERNAL DATABASE external_db
     );
 ```
 
-[Data sources]: {{site.baseurl}}/docs/data-sources
+[Data sources]: /docs/data-sources
+[SSH tunnel]: /docs/data-sources/overview.html#securing-connections-with-ssh-tunnels

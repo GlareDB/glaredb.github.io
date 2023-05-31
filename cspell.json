@@ -1,0 +1,53 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "ignorePaths": ["_site", ".github", "node_modules"],
+  "patterns": [
+    {
+      "name": "Markdown links",
+      "pattern": "\\((.*)\\)",
+      "description": ""
+    },
+    {
+      "name": "Markdown code blocks",
+      "pattern": "/^(\\s*`{3,}).*[\\s\\S]*?^\\1/gmx",
+      "description": "Taken from the cSpell example at https://cspell.org/configuration/patterns/#verbose-regular-expressions"
+    },
+    {
+      "name": "Inline code blocks",
+      "pattern": "\\`([^\\`\\r\\n]+?)\\`",
+      "description": "https://stackoverflow.com/questions/41274241/how-to-capture-inline-markdown-code-but-not-a-markdown-code-fence-with-regex"
+    },
+    {
+      "name": "Link contents",
+      "pattern": "\\<a(.*)\\>",
+      "description": ""
+    },
+    {
+      "name": "Multi-line code blocks",
+      "pattern": "/^\\s*```[\\s\\S]*?^\\s*```/gm"
+    }
+  ],
+  "ignoreRegExpList": [
+    "Markdown links",
+    "Markdown code blocks",
+    "Inline code blocks",
+    "Link contents",
+    "Multi-line code blocks"
+  ],
+  "words": [
+    "arrowtypeof",
+    "BYTEA",
+    "datasource",
+    "datasources",
+    "glaredb",
+    "glaredbteam",
+    "mydb",
+    "myhost",
+    "psql",
+    "SELECT",
+    "SMALLINT",
+    "TINYINT",
+    "typeof"
+  ]
+}

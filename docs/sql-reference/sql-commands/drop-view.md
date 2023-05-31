@@ -5,11 +5,7 @@ parent: SQL commands
 grand_parent: SQL reference
 ---
 
-<!-- markdownlint-disable title-case-style -->
-
 # DROP VIEW
-
-<!-- markdownlint-enable title-case-style -->
 
 Drop a view. Note that builtin system views cannot be dropped. See [system
 catalog] for an overview of builtin tables and views.
@@ -34,5 +30,5 @@ Drop a view named `my-view`. See [CREATE VIEW] for how to create a view.
 DROP VIEW my-view;
 ```
 
-[CREATE VIEW]: {{site.baseurl}}/docs/sql-commands/create-view
-[system catalog]: {{site.baseurl}}/docs/system-catalog
+[CREATE VIEW]: /docs/sql-reference/sql-commands/create-view.html
+[system catalog]: /docs/sql-reference/system-catalog/

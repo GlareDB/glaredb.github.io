@@ -4,13 +4,20 @@ title: Working with your data
 nav_order: 5
 ---
 
+<!-- markdownlint-disable MD022 -->
+
+<!-- prettier-ignore-start -->
 # Working with your data
 {: .no_toc }
+<!-- prettier-ignore-end -->
+
+<!-- markdownlint-enable MD022 -->
 
 After setting up some [data sources], it's time to begin querying your data.
 GlareDB is designed to run analytical queries that access data from multiple
 sources, and writing SQL queries that reference multiple sources is easy.
 
+<!-- prettier-ignore -->
 - TOC
 {:toc}
 
@@ -21,7 +28,11 @@ external database (see [CREATE EXTERNAL DATABASE]). Getting a list of data
 sources connected to your deployment can be done with the following SQL query.
 
 ```sql
-my_deployment=> select datasource, name, object_type from glare_catalog.external_datasources;
+select datasource, name, object_type
+from glare_catalog.external_datasources;
+```
+
+```text
  datasource | name  | object_type
 ------------+-------+-------------
  postgres   | users | table
@@ -57,7 +68,11 @@ single query. Let's work through an example using a BigQuery and Postgres data
 source.
 
 ```sql
-my_deployment=> select datasource, name, object_type from glare_catalog.external_datasources;
+select datasource, name, object_type
+from glare_catalog.external_datasources;
+```
+
+```text
  datasource | name  | object_type
 ------------+-------+-------------
  bigquery   | bq    | database

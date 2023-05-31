@@ -5,11 +5,7 @@ parent: SQL commands
 grand_parent: SQL reference
 ---
 
-<!-- markdownlint-disable title-case-style -->
-
 # ALTER TABLE
-
-<!-- markdownlint-enable title-case-style -->
 
 Alter a table. Note that builtin system tables cannot be altered. See [system
 catalog] for an overview of builtin tables and views.
@@ -37,5 +33,5 @@ Rename table `t1` to `t2`. See [CREATE EXTERNAL TABLE] for adding a table.
 ALTER TABLE t1 RENAME TO t2;
 ```
 
-[CREATE EXTERNAL TABLE]: {{site.baseurl}}/docs/sql-commands/create-external-table
-[system catalog]: {{site.baseurl}}/docs/system-catalog
+[CREATE EXTERNAL TABLE]: /docs/sql-reference/sql-commands/create-external-table.html
+[system catalog]: /docs/sql-reference/system-catalog/

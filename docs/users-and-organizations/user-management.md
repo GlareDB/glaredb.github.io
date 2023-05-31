@@ -8,7 +8,7 @@ nav_order: 1
 # User management
 
 Organization members can be managed from the **Edit members** tab from the
-organizations settings page. Only organization members can manage members.
+organizations settings page. Only organization owners can manage members.
 
 ## Inviting users
 
@@ -25,7 +25,7 @@ table and click the resend icon.
 To revoke an outstanding invite, go to the **Pending invites** tab, find the
 user in the table and click the trash can icon.
 
-## Removing a members
+## Removing members
 
 To remove a user, click the **Remove** button in the users table.
 

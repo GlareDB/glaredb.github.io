@@ -5,11 +5,7 @@ parent: SQL commands
 grand_parent: SQL reference
 ---
 
-<!-- markdownlint-disable title-case-style -->
-
 # DROP TABLE
-
-<!-- markdownlint-enable title-case-style -->
 
 Drop a table. Note that builtin system tables cannot be dropped. See [system
 catalog] for an overview of builtin tables and views.
@@ -35,5 +31,5 @@ external table.
 DROP TABLE my_table;
 ```
 
-[CREATE EXTERNAL TABLE]: {{site.baseurl}}/docs/sql-commands/create-external-table
-[system catalog]: {{site.baseurl}}/docs/system-catalog
+[CREATE EXTERNAL TABLE]: /docs/sql-reference/sql-commands/create-external-table.html
+[system catalog]: /docs/sql-reference/system-catalog/

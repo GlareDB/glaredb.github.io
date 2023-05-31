@@ -19,6 +19,9 @@ available to a small number of select users and friends.
 On May 1st, 2023, GlareDB moved into Technical Preview, and became available to
 a wider audience with early access codes.
 
+On May 11, 2023, the Technical Preview became generally available. It is
+available to everyone with a free tier to get started.
+
 ## Stability
 
 {: .important}
@@ -28,7 +31,7 @@ a wider audience with early access codes.
 
 ## Deployment updates
 
-While in technical preview, GlareDB deplyoments are updated as follows:
+While in technical preview, GlareDB deployments are updated as follows:
 
 1. **Serverless** - updated live as we cut new releases.
 
@@ -66,6 +69,8 @@ necessary to move towards a stable version range.
 
    In order to support more architectures, we are working on support for
    connecting to data sources through ssh tunnels.
+
+   **Update**: as of `v0.0.25` we now support SSH tunnels for MySQL and Postgres.
 
 3. Regional support
 
