@@ -7,7 +7,7 @@ grand_parent: Data sources
 
 # GCS
 
-CSV and Parquet files in GSC storage are able to be used as an external data
+CSV and Parquet files in GCS storage are able to be used as an external data
 source.
 
 ## GCS file as an external table
