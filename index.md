@@ -7,9 +7,9 @@ has_children: true
 
 # What is GlareDB?
 
-GlareDB is a database system built for querying and analyzing distributed data
-directly using SQL. Query data directly from [Postgres], [Snowflake],
-[object storage], [and other data sources] without moving data around.
+GlareDB is a database built for querying and analyzing distributed data using
+SQL. Query data directly from [Postgres], [Snowflake], [object storage],
+[and other data sources] without moving data around.
 
 ## GlareDB & GlareDB Cloud
 
@@ -30,7 +30,7 @@ A data source is a destination with data, such as databases or files.
 
 We currently support multiple databases and files in [object storage]. For
 example, you can join data existing in a [Postgres] database with a CSV in [S3]
-using basic SQL.
+using basic SQL. There is no need for ETL!
 
 [Learn more about data sources]
 
@@ -45,8 +45,8 @@ connect directly to GlareDB.
 ## Fully managed
 
 Whether you use our serverless (free) or dedicated (paid plan) databases,
-GlareDB Cloud is fully managed. With a few clicks, a GlareDB deployment will be ready
-and highly available for you to use.
+GlareDB Cloud is fully managed. With a few clicks, a GlareDB deployment will be
+ready and highly available for you to use.
 
 [Learn more about serverless and dedicated]
 
