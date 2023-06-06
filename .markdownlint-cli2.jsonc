@@ -11,6 +11,7 @@
       "ignore": [
         "ALTER",
         "BEGIN",
+        "Cloud",
         "COMMIT",
         "CREATE",
         "DATABASE",

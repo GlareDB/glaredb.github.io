@@ -35,3 +35,18 @@ callouts:
   warning:
     title: Warning
     color: yellow
+
+collections:
+  cloud:
+    permalink: "/:collection/:path/"
+    output: true
+  glaredb:
+    permalink: "/:collection/:path/"
+    output: true
+
+just_the_docs:
+  collections:
+    cloud:
+      name: "Cloud"
+    glaredb:
+      name: "GlareDB"
