@@ -18,7 +18,7 @@ freshest data.
 GlareDB gracefully plugs into your stack and allows you to use the languages and
 tools you already know.
 
-### Example: query an external PostgreSQL database in 2 steps
+### Example: query an external Postgres database in 2 steps
 
 The example below uses `psql` to perform the following steps:
 
@@ -29,11 +29,6 @@ Connecting:
 
 ```console
 psql "postgresql://user:password@proxy.glaredb.com:6543/gdb"
-```
-
-Response:
-
-```console
 gdb=>
 ```
 
@@ -79,8 +74,6 @@ Response:
 (3 rows)
 ```
 
-{: .important}
+[Learn more about data sources].
 
-> Refer to [data sources] for more information on data sources
-
-[data sources]: ../data-sources
+[Learn more about data sources]: /cloud/data-sources/index

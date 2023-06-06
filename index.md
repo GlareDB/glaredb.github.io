@@ -32,7 +32,7 @@ We currently support multiple databases and files in [object storage]. For
 example, you can join data existing in a [Postgres] database with a CSV in [S3]
 using basic SQL. There is no need for ETL!
 
-[Learn more about data sources]
+[Learn more about data sources].
 
 ## Where does GlareDB fit into your stack?
 
