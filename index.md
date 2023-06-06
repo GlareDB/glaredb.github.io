@@ -7,20 +7,22 @@ has_children: true
 
 # What is GlareDB?
 
-GlareDB is a database that provides a single SQL interface for accessing your
-data sources. With GlareDB you can query and join all of your data using just
-SQL. No need for complex ETL pipelines to move data around before being able to
-analyze it.
+GlareDB is a database system built for querying and analyzing distributed data
+directly using SQL. Query data directly from [Postgres], [Snowflake],
+[object storage], [and other data sources] without moving data around.
 
 ## GlareDB & GlareDB Cloud
+
+{: .important}
+
+> GlareDB and GlareDB Cloud are in [Technical Preview].
 
 GlareDB is open source and is freely available to install and use. Get started
 at [github.com/GlareDB/glaredb].
 
 GlareDB Cloud is a fully managed offering of GlareDB with additional features
-for access management and compute resources. GlareDB Cloud is in
-[Technical Preview] and is generally available to everyone with a free tier.
-Get started at [console.glaredb.com].
+for access management and compute resources. GlareDB Cloud is generally
+available to everyone with a free tier. Get started at [console.glaredb.com].
 
 ## What is a data source?
 
@@ -46,8 +48,12 @@ and highly available for you to use.
 
 [Learn more about serverless and dedicated]
 
+[Postgres]: /cloud/data-sources/supported/postgres/
+[Snowflake]: /cloud/data-sources/supported/snowflake/
+[object storage]: /cloud/data-sources/supported/gcs/
+[and other data sources]: /cloud/data-sources/supported/index/
 [github.com/GlareDB/glaredb]: https://github.com/GlareDB/glaredb
 [Technical Preview]: ./docs/about/technical-preview.html
 [console.glaredb.com]: https://console.glaredb.com
-[Learn more about data sources]: ./docs/data-sources/
-[Learn more about serverless and dedicated]: ./docs/deployments.html#dedicated-vs-serverless
+[Learn more about data sources]: /cloud/data-sources/
+[Learn more about serverless and dedicated]: /cloud/deployments.html#dedicated-vs-serverless
