@@ -26,8 +26,10 @@ available to everyone with a free tier. Get started at [console.glaredb.com].
 
 ## What is a data source?
 
-We currently support multiple databases and files in object storage. For
-example, you can join data existing in a Postgres database with a CSV in S3
+A data source is a destination with data, such as databases or files.
+
+We currently support multiple databases and files in [object storage]. For
+example, you can join data existing in a [Postgres] database with a CSV in [S3]
 using basic SQL.
 
 [Learn more about data sources]
@@ -52,8 +54,9 @@ and highly available for you to use.
 [Snowflake]: /cloud/data-sources/supported/snowflake/
 [object storage]: /cloud/data-sources/supported/gcs/
 [and other data sources]: /cloud/data-sources/supported/index/
+[Technical Preview]: /docs/about/technical-preview.html
 [github.com/GlareDB/glaredb]: https://github.com/GlareDB/glaredb
-[Technical Preview]: ./docs/about/technical-preview.html
 [console.glaredb.com]: https://console.glaredb.com
+[S3]: /cloud/data-sources/supported/s3/
 [Learn more about data sources]: /cloud/data-sources/
 [Learn more about serverless and dedicated]: /cloud/deployments.html#dedicated-vs-serverless
