@@ -58,5 +58,5 @@ ready and highly available for you to use.
 [github.com/GlareDB/glaredb]: https://github.com/GlareDB/glaredb
 [console.glaredb.com]: https://console.glaredb.com
 [S3]: /cloud/data-sources/supported/s3/
-[Learn more about data sources]: /cloud/data-sources/
+[Learn more about data sources]: /docs/data-sources/
 [Learn more about serverless and dedicated]: /cloud/deployments.html#dedicated-vs-serverless

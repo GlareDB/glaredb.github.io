@@ -3,7 +3,7 @@ layout: default
 title: Release notes
 has_children: true
 child_nav_order: reversed
-nav_order: 9
+nav_order: 7
 ---
 
 # Release notes

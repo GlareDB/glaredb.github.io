@@ -1,14 +1,10 @@
 ---
 layout: default
-title: Data sources
+title: Managing data sources
 has_children: true
-nav_order: 4
+nav_order: 3
 ---
 
-# Data sources
+# Managing data sources
 
-Learn how to connect and manage data sources.
-
-Data sources are a way for GlareDB deployments to access and query external
-data. When you add a data source to a deployment, that data source can be used
-inside any SQL query.
+Learn how to manage data sources in GlareDB Cloud.

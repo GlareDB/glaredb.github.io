@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Working with your data
-nav_order: 5
+nav_order: 3
 ---
 
 <!-- markdownlint-disable MD022 -->
