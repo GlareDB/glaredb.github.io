@@ -2,7 +2,7 @@
 layout: default
 title: Postgres
 parent: Supported data sources
-grand_parent: Data sources
+grand_parent: "Step 1: Connect your data sources"
 ---
 
 <!-- markdownlint-disable MD022 -->
