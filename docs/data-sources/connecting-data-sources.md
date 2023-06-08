@@ -6,16 +6,18 @@ parent: "Step 1: Connect your data sources"
 
 # Connecting data sources
 
-## Connecting data sources using GlareDB Cloud
-
-[Learn more about managing data sources in GlareDB Cloud].
+Connect your data sources with GlareDB and GlareDB Cloud.
 
 ## Connecting data sources using SQL
 
 Data sources can be added using [CREATE EXTERNAL TABLE] or
 [CREATE EXTERNAL DATABASE].
 
-To add a **Postgres** data source using the [CREATE EXTERNAL DATABASE] command.
+[See all supported data sources].
+
+### Example: Postgres data source
+
+A **Postgres** database can be added using [CREATE EXTERNAL DATABASE]:
 
 ```sql
 glare=> CREATE EXTERNAL DATABASE external_db
@@ -29,8 +31,8 @@ glare=> CREATE EXTERNAL DATABASE external_db
     );
 ```
 
-When we submit this command, validation is done to ensure we can properly
-connect. Any errors connecting will be returned, for example:
+Upon command execution, the connection is immediately validated. Any errors
+connecting will be returned, for example:
 
 ```text
 ERROR:  External database validation failed: Failed to connect to Postgres
@@ -38,8 +40,14 @@ instance: error connecting to server: Connection refused (os error 111)
 ```
 
 If everything validates and no errors are returned, the data source is then
-available to query from within the deployment.
+available to query from within the deployment. The data source will not be saved
+if validation fails.
 
-[Learn more about managing data sources in GlareDB Cloud]: /cloud/data-sources/index/
+## Connecting data sources using GlareDB Cloud
+
+[Learn more about managing data sources in GlareDB Cloud].
+
 [CREATE EXTERNAL DATABASE]: /docs/sql-reference/sql-commands/create-external-database
 [CREATE EXTERNAL TABLE]: /docs/sql-reference/sql-commands/create-external-table
+[See all supported data sources]: /docs/data-sources/supported/
+[Learn more about managing data sources in GlareDB Cloud]: /cloud/data-sources/index/

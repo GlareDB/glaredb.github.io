@@ -2,6 +2,7 @@
 layout: default
 title: Add a data source
 parent: Managing data sources
+nav_order: 1
 ---
 
 # Add a data source in GlareDB Cloud
@@ -48,6 +49,5 @@ reference:
 [Postgres dialog]: /assets/images/postgres-dialog.png
 [Postgres error]: /assets/images/postgres-error.png
 [Postgres success]: /assets/images/postgres-success.png
-[Postgres data source]: /docs/data-sources/supported/postgres
-[CREATE EXTERNAL DATABASE]: /glaredb/sql-commands/create-external-database
-[CREATE EXTERNAL TABLE]: /glaredb/sql-commands/create-external-table
+[CREATE EXTERNAL DATABASE]: /glaredb/sql-commands/create-external-database/
+[CREATE EXTERNAL TABLE]: /glaredb/sql-commands/create-external-table/
