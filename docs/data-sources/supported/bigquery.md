@@ -2,15 +2,28 @@
 layout: default
 title: BigQuery
 parent: Supported data sources
-grand_parent: Data sources
+grand_parent: "Step 1: Connect your data sources"
 ---
 
+<!-- markdownlint-disable MD022 -->
+
+<!-- prettier-ignore-start -->
 # BigQuery
+{: .no_toc }
+<!-- prettier-ignore-end -->
+
+<!-- markdownlint-enable MD022 -->
 
 BigQuery is able to be used as an external data source. Either an
 entire database or a single table may be added as a data source.
 
-## External database
+<!-- prettier-ignore-start -->
+
+- TOC
+{:toc}
+<!-- prettier-ignore-end -->
+
+## Connect a BigQuery database
 
 An entire BigQuery database can be added using the [CREATE EXTERNAL DATABASE]
 command.
@@ -29,14 +42,14 @@ CREATE EXTERNAL DATABASE <database-name>
  );
 ```
 
-### External database options
+### Database options
 
 | Field                 | Description                                               |
 | --------------------- | --------------------------------------------------------- |
 | `gcp-service-account` | The JSON encoded service account key.                     |
 | `gcp-project`         | The GCP project containing the dataset/table of interest. |
 
-## External table
+## Connect a single table
 
 Adding an external table can be done through the [CREATE EXTERNAL TABLE]
 command.
@@ -55,7 +68,7 @@ CREATE EXTERNAL TABLE <table-name>
 `table-name` will be the name of the table inside GlareDB. `table-name` may
 optionally be qualified with a schema name.
 
-### External table options
+### Table options
 
 | Field                 | Description                                               |
 | --------------------- | --------------------------------------------------------- |
@@ -68,5 +81,5 @@ optionally be qualified with a schema name.
 
 - Querying views defined in BigQuery is currently unsupported.
 
-[CREATE EXTERNAL TABLE]: /docs/sql-reference/sql-commands/create-external-table
-[CREATE EXTERNAL DATABASE]: /docs/sql-reference/sql-commands/create-external-database
+[CREATE EXTERNAL TABLE]: /glaredb/sql-commands/create-external-table
+[CREATE EXTERNAL DATABASE]: /glaredb/sql-commands/create-external-database

@@ -2,13 +2,26 @@
 layout: default
 title: GCS
 parent: Supported data sources
-grand_parent: Data sources
+grand_parent: "Step 1: Connect your data sources"
 ---
 
+<!-- markdownlint-disable MD022 -->
+
+<!-- prettier-ignore-start -->
 # GCS
+{: .no_toc }
+<!-- prettier-ignore-end -->
+
+<!-- markdownlint-enable MD022 -->
 
 CSV and Parquet files in GCS storage are able to be used as an external data
 source.
+
+<!-- prettier-ignore-start -->
+
+- TOC
+{:toc}
+<!-- prettier-ignore-end -->
 
 ## GCS file as an external table
 
@@ -30,7 +43,7 @@ CREATE EXTERNAL TABLE <table-name>
 );
 ```
 
-### S3 external table options
+### Table options
 
 | Field                 | Description                                       |
 | --------------------- | ------------------------------------------------- |
@@ -40,7 +53,7 @@ CREATE EXTERNAL TABLE <table-name>
 
 <!-- markdownlint-disable line-length -->
 
-[CREATE EXTERNAL TABLE]: /docs/sql-reference/sql-commands/create-external-table
+[CREATE EXTERNAL TABLE]: /glaredb/sql-commands/create-external-table
 [Service Account]: https://cloud.google.com/iam/docs/service-account-overview
 
 <!-- markdownlint-enable line-length -->

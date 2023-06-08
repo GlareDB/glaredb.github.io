@@ -8,17 +8,16 @@ nav_order: 1
 # Why GlareDB?
 
 GlareDB is designed to make **time to first insight** as quick as possible.
-Instead of having to rely on ETL (Extract-Transform-Load) pipelines to move data
-across databases, GlareDB hooks directly into your data sources. With GlareDB,
-you no longer have to wait on an ETL pipeline before being able to work on the
-freshest data.
+Instead of having to rely on ETL pipelines to move data around, GlareDB hooks
+directly into your data sources. With GlareDB, you no longer have to wait before
+being able to work on the freshest data set.
 
 ## Simple interface
 
 GlareDB gracefully plugs into your stack and allows you to use the languages and
 tools you already know.
 
-### Example: query an external PostgreSQL database in 2 steps
+### Example: query an external Postgres database in 2 steps
 
 The example below uses `psql` to perform the following steps:
 
@@ -29,11 +28,6 @@ Connecting:
 
 ```console
 psql "postgresql://user:password@proxy.glaredb.com:6543/gdb"
-```
-
-Response:
-
-```console
 gdb=>
 ```
 
@@ -79,8 +73,6 @@ Response:
 (3 rows)
 ```
 
-{: .important}
+[Learn more about data sources].
 
-> Refer to [data sources] for more information on data sources
-
-[data sources]: ../data-sources
+[Learn more about data sources]: /docs/data-sources/index
