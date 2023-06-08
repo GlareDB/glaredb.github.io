@@ -11,18 +11,13 @@ GlareDB is a database built for querying and analyzing distributed data using
 SQL. Query data directly from [Postgres], [Snowflake], [object storage],
 [and other data sources] without moving data around.
 
-## GlareDB & GlareDB Cloud
+## Where does GlareDB fit into your stack?
 
-{: .important}
+GlareDB sits between your data applications and your data sources. Any
+application or client that can communicate using the Postgres protocol can
+connect directly to GlareDB.
 
-> GlareDB and GlareDB Cloud are in [Technical Preview].
-
-GlareDB is open source and is freely available to install and use. Get started
-at [github.com/GlareDB/glaredb].
-
-GlareDB Cloud is a fully managed offering of GlareDB with additional features
-for access management and compute resources. GlareDB Cloud is generally
-available to everyone with a free tier. Get started at [console.glaredb.com].
+![Where GlareDB fits](/assets/images/where-glaredb-fits.png)
 
 ## What is a data source?
 
@@ -34,13 +29,14 @@ using basic SQL. There is no need for ETL!
 
 [Learn more about data sources].
 
-## Where does GlareDB fit into your stack?
+## Offerings
 
-GlareDB sits between your data applications and your data sources. Any
-application or client that can communicate using the Postgres protocol can
-connect directly to GlareDB.
+**GlareDB** is open source and is freely available to install and use. Get started
+at [github.com/GlareDB/glaredb].
 
-![Where GlareDB fits](/assets/images/where-glaredb-fits.png)
+**GlareDB Cloud** is a fully managed offering of GlareDB with additional features
+for access management and compute resources. GlareDB Cloud is generally
+available to everyone with a [free tier]. Get started at [console.glaredb.com].
 
 ## Fully managed
 
@@ -50,13 +46,13 @@ ready and highly available for you to use.
 
 [Learn more about serverless and dedicated]
 
-[Postgres]: /cloud/data-sources/supported/postgres/
-[Snowflake]: /cloud/data-sources/supported/snowflake/
-[object storage]: /cloud/data-sources/supported/gcs/
-[and other data sources]: /cloud/data-sources/supported/index/
-[Technical Preview]: /docs/about/technical-preview.html
-[github.com/GlareDB/glaredb]: https://github.com/GlareDB/glaredb
-[console.glaredb.com]: https://console.glaredb.com
-[S3]: /cloud/data-sources/supported/s3/
+[Postgres]: /docs/data-sources/supported/postgres/
+[Snowflake]: /docs/data-sources/supported/snowflake/
+[object storage]: /docs/data-sources/supported/gcs/
+[and other data sources]: /docs/data-sources/supported/index/
+[S3]: /docs/data-sources/supported/s3/
 [Learn more about data sources]: /docs/data-sources/
-[Learn more about serverless and dedicated]: /cloud/deployments.html#dedicated-vs-serverless
+[github.com/GlareDB/glaredb]: https://github.com/GlareDB/glaredb#install
+[free tier]: /docs/about/free-tier.html
+[console.glaredb.com]: https://console.glaredb.com
+[Learn more about serverless and dedicated]: /cloud/deployments/#dedicated-vs-serverless
