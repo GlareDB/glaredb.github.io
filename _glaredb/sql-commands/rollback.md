@@ -9,4 +9,4 @@ parent: SQL commands
 `ROLLBACK` currently has no affect. See [Transactions] for our current transaction
 support.
 
-[Transactions]: /docs/sql-reference/transactions.html
+[Transactions]: /glaredb/transactions.html

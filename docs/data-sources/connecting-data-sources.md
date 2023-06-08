@@ -47,7 +47,7 @@ if validation fails.
 
 [Learn more about managing data sources in GlareDB Cloud].
 
-[CREATE EXTERNAL DATABASE]: /docs/sql-reference/sql-commands/create-external-database
-[CREATE EXTERNAL TABLE]: /docs/sql-reference/sql-commands/create-external-table
+[CREATE EXTERNAL DATABASE]: /glaredb/sql-commands/create-external-database
+[CREATE EXTERNAL TABLE]: /glaredb/sql-commands/create-external-table
 [See all supported data sources]: /docs/data-sources/supported/
 [Learn more about managing data sources in GlareDB Cloud]: /cloud/data-sources/index/

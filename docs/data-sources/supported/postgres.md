@@ -140,8 +140,8 @@ CREATE EXTERNAL TABLE <table-name>
 
 <!-- markdownlint-disable line-length -->
 
-[CREATE EXTERNAL TABLE]: /docs/sql-reference/sql-commands/create-external-table
-[CREATE EXTERNAL DATABASE]: /docs/sql-reference/sql-commands/create-external-database
+[CREATE EXTERNAL TABLE]: /glaredb/sql-commands/create-external-table
+[CREATE EXTERNAL DATABASE]: /glaredb/sql-commands/create-external-database
 [CREATE USER]: https://www.postgresql.org/docs/current/sql-createuser.html
 [CREATE DATABASE]: https://www.postgresql.org/docs/current/sql-createdatabase.html
 [CREATE SCHEMA]: https://www.postgresql.org/docs/current/sql-createschema.html

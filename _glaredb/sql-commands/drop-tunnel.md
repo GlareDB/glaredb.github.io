@@ -27,4 +27,4 @@ tunnel.
 DROP TUNNEL my_tunnel;
 ```
 
-[CREATE TUNNEL]: /docs/sql-reference/sql-commands/create-tunnel.html
+[CREATE TUNNEL]: /glaredb/sql-commands/create-tunnel.html

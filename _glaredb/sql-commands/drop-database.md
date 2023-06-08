@@ -29,4 +29,4 @@ Drop a database named `pg`. See [CREATE EXTERNAL DATABASE] for adding a database
 DROP DATABASE pg;
 ```
 
-[CREATE EXTERNAL DATABASE]: /docs/sql-reference/sql-commands/create-external-database.html
+[CREATE EXTERNAL DATABASE]: /glaredb/sql-commands/create-external-database.html

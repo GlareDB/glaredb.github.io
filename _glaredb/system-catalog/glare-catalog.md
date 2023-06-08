@@ -112,6 +112,6 @@ Stores information about public keys associated to `tunnels`.
 | `ssh_tunnel_name` | `tunnel_name` of the `tunnel`   |
 | `public_key`      | Public SSH key for the `tunnel` |
 
-[CREATE EXTERNAL TABLE]: /docs/sql-reference/sql-commands/create-external-table.html
-[CREATE EXTERNAL DATABASE]: /docs/sql-reference/sql-commands/create-external-database.html
+[CREATE EXTERNAL TABLE]: /glaredb/sql-commands/create-external-table.html
+[CREATE EXTERNAL DATABASE]: /glaredb/sql-commands/create-external-database.html
 [SSH tunnels]: /docs/data-sources/overview.html#securing-connections-with-ssh-tunnels

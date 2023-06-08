@@ -29,5 +29,5 @@ Drop a view named `my-view`. See [CREATE VIEW] for how to create a view.
 DROP VIEW my-view;
 ```
 
-[CREATE VIEW]: /docs/sql-reference/sql-commands/create-view.html
-[system catalog]: /docs/sql-reference/system-catalog/
+[CREATE VIEW]: /glaredb/sql-commands/create-view.html
+[system catalog]: /glaredb/system-catalog/

@@ -6,10 +6,11 @@ parent: "Step 2: Work with your data"
 
 # Saving your queries as views
 
-Any valid SELECT query can be used when defining a view. This enables us to
-create a view that can reference any number of data sources.
+Any valid `SELECT` query can be used when defining a view. You can leverage this
+to save complicated queries that pull from multiple data sources as a simple
+view.
 
-The query defined in the previous section can be turned into a view with no
+The query defined [in the previous section] can be turned into a view with no
 changes:
 
 ```sql
@@ -36,4 +37,12 @@ could be used for generating a report in Tableau and also be accessible in
 
 See [CREATE VIEW] for the reference doc on views.
 
-[CREATE VIEW]: /docs/sql-reference/sql-commands/create-view
+## Saving your queries as views in GlareDB Cloud
+
+GlareDB Cloud has an integrated SQL workspace that can be used to one-click save
+a query as a view. For more information refer to
+[Save queries as views in GlareDB Cloud].
+
+[in the previous section]: /docs/working-with-your-data/querying.html#querying-multiple-data-sources
+[Save queries as views in GlareDB Cloud]: /cloud/data-sources/views-and-results/#save-queries-as-views
+[CREATE VIEW]: /glaredb/sql-commands/create-view

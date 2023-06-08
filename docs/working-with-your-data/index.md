@@ -11,4 +11,4 @@ After [connecting your data sources], it's time to begin querying your data.
 GlareDB is designed to run analytical queries that access data from multiple
 sources, using familiar SQL syntax.
 
-[connecting your data sources]: /docs/data-sources/overview
+[connecting your data sources]: /docs/data-sources/connecting-data-sources.html

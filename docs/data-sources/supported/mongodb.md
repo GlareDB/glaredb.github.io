@@ -137,7 +137,7 @@ CREATE EXTERNAL TABLE <table-name>
 
 <!-- markdownlint-disable line-length -->
 
-[CREATE EXTERNAL TABLE]: /docs/sql-reference/sql-commands/create-external-table
-[CREATE EXTERNAL DATABASE]: /docs/sql-reference/sql-commands/create-external-database
+[CREATE EXTERNAL TABLE]: /glaredb/sql-commands/create-external-table
+[CREATE EXTERNAL DATABASE]: /glaredb/sql-commands/create-external-database
 
 <!-- markdownlint-enable line-length -->

@@ -4,15 +4,29 @@ title: Querying your data sources
 parent: "Step 2: Work with your data"
 ---
 
+<!-- markdownlint-disable MD022 -->
+
+<!-- prettier-ignore-start -->
 # Querying your data sources
+{: .no_toc }
+<!-- prettier-ignore-end -->
+
+<!-- markdownlint-enable MD022 -->
 
 Data sources are either external tables (see [CREATE EXTERNAL TABLE]) or
-external database (see [CREATE EXTERNAL DATABASE]). Getting a list of data
-sources connected to your deployment can be done with the following SQL query.
+external database (see [CREATE EXTERNAL DATABASE]).
+
+- TOC
+{:toc}
+
+## Listing data sources
+
+Listing data sources connected to your deployment can be done with the following
+SQL query:
 
 ```sql
-select datasource, name, object_type
-from glare_catalog.external_datasources;
+SELECT datasource, name, object_type
+FROM glare_catalog.external_datasources;
 ```
 
 ```text
@@ -24,6 +38,8 @@ from glare_catalog.external_datasources;
  postgres   | qa    | database
 (4 rows)
 ```
+
+## Qualifying data sources
 
 The `object_type` column indicates whether the data source is an external table
 or an external database. In this example, there's three external databases and
@@ -84,5 +100,11 @@ select count(*) as num_deployments, o.id
 Notice we're able reference data sources everywhere you would normally reference
 tables in a typically SQL database.
 
-[CREATE EXTERNAL DATABASE]: /docs/sql-reference/sql-commands/create-external-database
-[CREATE EXTERNAL TABLE]: /docs/sql-reference/sql-commands/create-external-table
+## Querying data sources with GlareDB Cloud
+
+GlareDB Cloud has an integrated SQL workspace. For more information refer to
+[Querying your data sources in GlareDB Cloud].
+
+[CREATE EXTERNAL DATABASE]: /glaredb/sql-commands/create-external-database
+[CREATE EXTERNAL TABLE]: /glaredb/sql-commands/create-external-table
+[Querying your data sources in GlareDB Cloud]: /cloud/data-sources/query-your-data/
