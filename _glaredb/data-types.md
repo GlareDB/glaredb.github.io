@@ -1,13 +1,13 @@
 ---
 layout: default
 title: Data types
-parent: SQL reference
+nav_order: 1
 ---
 
 # Data types
 
 GlareDB uses many [DataFusion] components under the hood, including much of its type
-system. Internally, all values are represented using Arrow. This section
+system. Internally, all values are represented using [Arrow]. This section
 provides a mapping between SQL types and Arrow types.
 
 | SQL type                  | Arrow type                   |
@@ -46,3 +46,4 @@ glaredb=> select arrow_typeof('11-12-23'::date);
 ```
 
 [DataFusion]: https://arrow.apache.org/datafusion/user-guide/introduction.html
+[Arrow]: https://docs.rs/crate/arrow/latest

@@ -2,7 +2,7 @@
 layout: default
 title: System catalog
 has_children: true
-parent: SQL reference
+nav_order: 4
 ---
 
 # System catalog

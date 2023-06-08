@@ -2,7 +2,6 @@
 layout: default
 title: glare_catalog
 parent: System catalog
-grand_parent: SQL reference
 ---
 
 <!-- markdownlint-disable MD022 -->

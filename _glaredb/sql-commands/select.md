@@ -2,7 +2,6 @@
 layout: default
 title: SELECT
 parent: SQL commands
-grand_parent: SQL reference
 ---
 
 # SELECT

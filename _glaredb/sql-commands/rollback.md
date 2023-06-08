@@ -2,7 +2,6 @@
 layout: default
 title: ROLLBACK
 parent: SQL commands
-grand_parent: SQL reference
 ---
 
 # ROLLBACK

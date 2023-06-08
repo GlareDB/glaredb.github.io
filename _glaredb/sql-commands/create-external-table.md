@@ -2,7 +2,6 @@
 layout: default
 title: CREATE EXTERNAL TABLE
 parent: SQL commands
-grand_parent: SQL reference
 ---
 
 # CREATE EXTERNAL TABLE

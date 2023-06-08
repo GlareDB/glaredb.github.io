@@ -2,7 +2,6 @@
 layout: default
 title: CREATE EXTERNAL DATABASE
 parent: SQL commands
-grand_parent: SQL reference
 ---
 
 # CREATE EXTERNAL DATABASE

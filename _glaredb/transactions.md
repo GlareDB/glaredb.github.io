@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Transactions
-parent: SQL reference
+nav_order: 3
 ---
 
 # Transactions

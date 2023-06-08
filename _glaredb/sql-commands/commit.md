@@ -2,7 +2,6 @@
 layout: default
 title: COMMIT
 parent: SQL commands
-grand_parent: SQL reference
 ---
 
 # COMMIT

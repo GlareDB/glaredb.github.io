@@ -2,7 +2,7 @@
 layout: default
 title: SQL commands
 has_children: true
-parent: SQL reference
+nav_order: 2
 ---
 
 # SQL command reference

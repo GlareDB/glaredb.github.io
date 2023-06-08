@@ -2,7 +2,6 @@
 layout: default
 title: ALTER TABLE
 parent: SQL commands
-grand_parent: SQL reference
 ---
 
 # ALTER TABLE

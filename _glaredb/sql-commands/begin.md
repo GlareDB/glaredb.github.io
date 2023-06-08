@@ -2,7 +2,6 @@
 layout: default
 title: BEGIN
 parent: SQL commands
-grand_parent: SQL reference
 ---
 
 # BEGIN

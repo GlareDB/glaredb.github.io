@@ -2,7 +2,6 @@
 layout: default
 title: CREATE VIEW
 parent: SQL commands
-grand_parent: SQL reference
 ---
 
 # CREATE VIEW

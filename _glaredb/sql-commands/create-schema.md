@@ -2,7 +2,6 @@
 layout: default
 title: CREATE SCHEMA
 parent: SQL commands
-grand_parent: SQL reference
 ---
 
 # CREATE SCHEMA

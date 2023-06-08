@@ -2,7 +2,6 @@
 layout: default
 title: ALTER TUNNEL
 parent: SQL commands
-grand_parent: SQL reference
 ---
 
 # ALTER TUNNEL

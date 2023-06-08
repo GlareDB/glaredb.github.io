@@ -2,7 +2,6 @@
 layout: default
 title: CREATE TUNNEL
 parent: SQL commands
-grand_parent: SQL reference
 ---
 
 # CREATE TUNNEL

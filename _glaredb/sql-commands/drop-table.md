@@ -2,7 +2,6 @@
 layout: default
 title: DROP TABLE
 parent: SQL commands
-grand_parent: SQL reference
 ---
 
 # DROP TABLE

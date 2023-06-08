@@ -2,7 +2,6 @@
 layout: default
 title: DROP DATABASE
 parent: SQL commands
-grand_parent: SQL reference
 ---
 
 # DROP DATABASE
