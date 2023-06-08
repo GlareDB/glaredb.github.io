@@ -2,7 +2,7 @@
 layout: default
 title: BigQuery
 parent: Supported data sources
-grand_parent: Data sources
+grand_parent: "Step 1: Connect your data sources"
 ---
 
 # BigQuery

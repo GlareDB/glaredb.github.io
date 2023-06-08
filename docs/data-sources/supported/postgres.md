@@ -5,12 +5,22 @@ parent: Supported data sources
 grand_parent: Data sources
 ---
 
+<!-- markdownlint-disable MD022 -->
+
+<!-- prettier-ignore-start -->
 # Postgres
+{: .no_toc }
+<!-- prettier-ignore-end -->
+
+<!-- markdownlint-enable MD022 -->
 
 Postgres is able to be used as an external data source. Either an entire
 database or a single table may be added as a data source.
 
-## External database
+- TOC
+{:toc}
+
+## Connect a Postgres database
 
 An entire Postgres database can be added using the [CREATE EXTERNAL DATABASE]
 command.
@@ -21,7 +31,7 @@ command.
 > name of the database inside GlareDB. This cannot be qualified, and must be
 > unique across all other databases in the deployment.
 
-### External database long format
+### Database long format
 
 ```sql
 CREATE EXTERNAL DATABASE <database-name>
@@ -36,7 +46,7 @@ CREATE EXTERNAL DATABASE <database-name>
  );
 ```
 
-### External database long format options
+### Database long format options
 
 | Field         | Description                                        |
 | ------------- | -------------------------------------------------- |
@@ -47,7 +57,7 @@ CREATE EXTERNAL DATABASE <database-name>
 | `password`    | The password associated to the above `user`        |
 | `database`    | The name of the database (see [CREATE DATABASE])   |
 
-### External database compact format
+### Database compact format
 
 ```sql
 CREATE EXTERNAL DATABASE <database-name>
@@ -58,14 +68,14 @@ CREATE EXTERNAL DATABASE <database-name>
  );
 ```
 
-### External database compact format options
+### Database compact format options
 
 | Field               | Description                                                                |
 | ------------------- | -------------------------------------------------------------------------- |
 | `tunnel-name`       | The name of the SSH tunnel to connect with                                 |
 | `connection_string` | Key value string containing connection details (see [Connection Strings]). |
 
-## External table
+## Connect a single table
 
 Adding an external table can be done through the [CREATE EXTERNAL TABLE]
 command.
@@ -76,7 +86,7 @@ command.
 > name of the database inside GlareDB. `table-name` may optionally be qualified
 > with a schema name.
 
-### External table long format
+### Table long format
 
 ```sql
 CREATE EXTERNAL TABLE <table-name>
@@ -93,7 +103,7 @@ CREATE EXTERNAL TABLE <table-name>
 );
 ```
 
-#### External table long format options
+### Table long format options
 
 | Field         | Description                                                          |
 | ------------- | -------------------------------------------------------------------- |
@@ -106,7 +116,7 @@ CREATE EXTERNAL TABLE <table-name>
 | `schema`      | The name of the schema where the table resides (see [CREATE SCHEMA]) |
 | `table`       | The name of the table (see [CREATE TABLE])                           |
 
-### External table compact format
+### Table compact format
 
 ```sql
 CREATE EXTERNAL TABLE <table-name>
@@ -119,7 +129,7 @@ CREATE EXTERNAL TABLE <table-name>
  );
 ```
 
-#### External table compact format options
+### Table compact format options
 
 | Field               | Description                                                                |
 | ------------------- | -------------------------------------------------------------------------- |

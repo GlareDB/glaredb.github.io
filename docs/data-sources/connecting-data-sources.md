@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Connecting data sources
-parent: Data sources
+parent: "Step 1: Connect your data sources"
 ---
 
 # Connecting data sources

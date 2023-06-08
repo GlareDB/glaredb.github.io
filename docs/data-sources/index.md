@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Data sources
+title: "Step 1: Connect your data sources"
 has_children: true
 nav_order: 2
 ---

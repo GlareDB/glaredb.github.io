@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Securing connections with SSH tunnels
-parent: Data sources
+parent: "Step 1: Connect your data sources"
 ---
 
 # Securing connections with SSH tunnels
