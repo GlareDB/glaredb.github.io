@@ -49,6 +49,6 @@ the **Delete deployment** tab, you'll have the opportunity to delete a deploymen
 ![Delete deployment]
 
 [Org deployments]: /assets/images/org-deployments.png
-[plans and billing]: ./users-and-organizations/plans-and-billing
+[plans and billing]: /cloud/users-and-organizations/plans-and-billing/
 [Create deployment dialog]: /assets/images/create-deployment-dialog.png
 [Delete deployment]: /assets/images/delete-deployment.png

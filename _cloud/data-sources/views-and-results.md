@@ -30,5 +30,5 @@ want to save your results.
 ![Export results]
 
 [Save as view]: /assets/images/sql_workspace_view.png
-[CREATE SCHEMA]: /glaredb/sql-commands/create-schema.html
+[CREATE SCHEMA]: /glaredb/sql-commands/create-schema/
 [Export results]: /assets/images/sql_workspace_export.png
