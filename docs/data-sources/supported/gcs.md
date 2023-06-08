@@ -5,10 +5,20 @@ parent: Supported data sources
 grand_parent: "Step 1: Connect your data sources"
 ---
 
+<!-- markdownlint-disable MD022 -->
+
+<!-- prettier-ignore-start -->
 # GCS
+{: .no_toc }
+<!-- prettier-ignore-end -->
+
+<!-- markdownlint-enable MD022 -->
 
 CSV and Parquet files in GCS storage are able to be used as an external data
 source.
+
+- TOC
+{:toc}
 
 ## GCS file as an external table
 
@@ -30,7 +40,7 @@ CREATE EXTERNAL TABLE <table-name>
 );
 ```
 
-### S3 external table options
+### Table options
 
 | Field                 | Description                                       |
 | --------------------- | ------------------------------------------------- |

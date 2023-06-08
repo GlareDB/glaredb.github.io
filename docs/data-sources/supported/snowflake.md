@@ -5,12 +5,22 @@ parent: Supported data sources
 grand_parent: "Step 1: Connect your data sources"
 ---
 
+<!-- markdownlint-disable MD022 -->
+
+<!-- prettier-ignore-start -->
 # Snowflake
+{: .no_toc }
+<!-- prettier-ignore-end -->
+
+<!-- markdownlint-enable MD022 -->
 
 Snowflake is able to be used as an external data source. Either an entire
 database or a single table may be added as a data source.
 
-## External database
+- TOC
+{:toc}
+
+## Connect a Snowflake database
 
 An entire Snowflake database can be added using the [CREATE EXTERNAL DATABASE]
 command.
@@ -20,6 +30,8 @@ command.
 > There are two equivalent formats. In both formats, `database-name` will be the
 > name of the database inside GlareDB. This cannot be qualified, and must be
 > unique across all other databases in the deployment.
+
+### Database format
 
 ```sql
 CREATE EXTERNAL DATABASE <database-name>
@@ -34,7 +46,7 @@ CREATE EXTERNAL DATABASE <database-name>
   );
 ```
 
-### External database long format options
+### Database format options
 
 | Field       | Description                                               |
 | ----------- | --------------------------------------------------------- |
@@ -45,7 +57,7 @@ CREATE EXTERNAL DATABASE <database-name>
 | `warehouse` | Name of the warehouse to connect to.                      |
 | `role`      | Role to use when connecting.                              |
 
-## External table
+## Connect a single table
 
 Adding an external table can be done through the [CREATE EXTERNAL TABLE]
 command.
@@ -55,6 +67,8 @@ command.
 > There are two equivalent formats. In both formats, `table-name` will be the
 > name of the database inside GlareDB. `table-name` may optionally be qualified
 > with a schema name.
+
+### Table format
 
 ```sql
 CREATE EXTERNAL TABLE <table-name>
@@ -71,7 +85,7 @@ CREATE EXTERNAL TABLE <table-name>
   );
 ```
 
-### External table long format options
+### Table format options
 
 | Field       | Description                                               |
 | ----------- | --------------------------------------------------------- |
