@@ -17,8 +17,11 @@ grand_parent: "Step 1: Connect your data sources"
 BigQuery is able to be used as an external data source. Either an
 entire database or a single table may be added as a data source.
 
+<!-- prettier-ignore-start -->
+
 - TOC
 {:toc}
+<!-- prettier-ignore-end -->
 
 ## Connect a BigQuery database
 

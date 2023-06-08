@@ -22,8 +22,11 @@ or a single collection may be added as a data source.
 > The MongoDB data source is currently in preview. Features may be missing, and
 > options are subject to change.
 
+<!-- prettier-ignore-start -->
+
 - TOC
 {:toc}
+<!-- prettier-ignore-end -->
 
 ## Connect a MongoDB database
 

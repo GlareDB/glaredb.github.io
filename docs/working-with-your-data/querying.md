@@ -16,8 +16,11 @@ parent: "Step 2: Work with your data"
 Data sources are either external tables (see [CREATE EXTERNAL TABLE]) or
 external database (see [CREATE EXTERNAL DATABASE]).
 
+<!-- prettier-ignore-start -->
+
 - TOC
 {:toc}
+<!-- prettier-ignore-end -->
 
 ## Listing data sources
 

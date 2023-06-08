@@ -17,8 +17,11 @@ grand_parent: "Step 1: Connect your data sources"
 CSV and Parquet files in GCS storage are able to be used as an external data
 source.
 
+<!-- prettier-ignore-start -->
+
 - TOC
 {:toc}
+<!-- prettier-ignore-end -->
 
 ## GCS file as an external table
 
