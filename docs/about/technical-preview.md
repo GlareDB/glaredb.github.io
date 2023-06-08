@@ -9,7 +9,7 @@ nav_order: 4
 
 {: .important}
 
-> GlareDB is currently in the version 0.0.X ranges. With feedback from the
+> GlareDB is currently in the 0.0.X version ranges. With feedback from the
 > technical preview phase, we're working towards a stable version with core
 > feature completeness and additional Postgres compatibility.
 
