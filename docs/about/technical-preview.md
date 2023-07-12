@@ -26,7 +26,7 @@ On May 26, 2023, [github.com/GlareDB/glaredb] was made open source. See our
 [open source announcement] for more information.
 
 On July 12, 2023, GlareDB moved from `0.0.X` ranges to `0.2.0`, marking a
-significant milestone towards technical stability with a growing featureset.
+significant milestone towards technical stability with a growing feature set.
 
 ## Stability
 
