@@ -9,7 +9,7 @@ nav_order: 4
 
 {: .important}
 
-> GlareDB is currently in the 0.0.X version ranges. With feedback from the
+> GlareDB is currently in the 0.X.0 version ranges. With feedback from the
 > technical preview phase, we're working towards a stable version with core
 > feature completeness and additional Postgres compatibility.
 
@@ -25,6 +25,9 @@ available to everyone with a free tier to get started.
 On May 26, 2023, [github.com/GlareDB/glaredb] was made open source. See our
 [open source announcement] for more information.
 
+On July 12, 2023, GlareDB moved from `0.0.X` ranges to `0.2.0`, marking a
+significant milestone towards technical stability with a growing featureset.
+
 ## Stability
 
 {: .important}
@@ -32,11 +35,11 @@ On May 26, 2023, [github.com/GlareDB/glaredb] was made open source. See our
 > While GlareDB is in technical preview, complete stability cannot be
 > guaranteed.
 
-## Deployment updates
+## Compute engine updates
 
-While in technical preview, GlareDB deployments are updated as follows:
+While in technical preview, compute engines are updated as follows:
 
-1. **Serverless** - updated live as we cut new releases.
+1. **Default (serverless)** - updated live as we cut new releases.
 
 1. **Dedicated** - only updated if you manually restart them.
 
@@ -45,16 +48,16 @@ While in technical preview, GlareDB deployments are updated as follows:
 > To reach a stable version, we are committed to improving the update experience
 > with opt-in controls and backwards compatibility.
 
-### Restarting a dedicated deployment
+### Restarting a compute engine
 
-Navigate to the deployment and click **Stop deployment** in the top right.
+Navigate to **Compute Engines** and click **Stop** from the 3 dot menu.
 
-![stop deployment]
+![stop engine]
 
 Once the deployment successfully stops, start it again by clicking
-**Start deployment**.
+**Start**.
 
-![start deployment]
+![start engine]
 
 ## Missing features
 
@@ -68,19 +71,20 @@ necessary to move towards a stable version range.
    there's a tool in your stack that's not working as expected with GlareDB,
    we'd love to hear about it.
 
-2. SSH connections
+1. SSH connections
 
-   In order to support more architectures, we are working on support for
-   connecting to data sources through ssh tunnels.
+   In order to support more architectures, we are working on increasing our support
+   for connecting to data sources through ssh tunnels. Currently, SSH support
+   exists for MySQL and Postgres.
 
-   **Update**: as of `v0.0.25` we now support SSH tunnels for MySQL and Postgres.
-
-3. Regional support
+1. Regional support
 
    Supported regions are limited while in technical preview. Users from anywhere
-   may try GlareDB, but may experience latency.
+   may try GlareDB, but may experience latency. To work around this,
+   [try running GlareDB locally].
 
 [github.com/GlareDB/glaredb]: https://github.com/GlareDB/glaredb
 [open source announcement]: https://glaredb.com/blog/glaredb-goes-open-source
-[stop deployment]: /assets/images/dedicated-stop.png
-[start deployment]: /assets/images/dedicated-start.png
+[stop engine]: /assets/images/compute-engine-stop.png
+[start engine]: /assets/images/compute-engine-start.png
+[try running GlareDB locally]: /glaredb/local
