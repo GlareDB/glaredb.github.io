@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Releases
-nav_order: 5
+nav_order: 7
 ---
 
 # Releases
