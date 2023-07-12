@@ -39,4 +39,10 @@ For example, a deployment named "my_deployment" inside an organization named
 postgresql://<user>:<password>@proxy.glaredb.com:6543/my_org/my_deployment
 ```
 
+## Compute engines
+
+If a compute engine is specified, the connection will not succeed if the engine
+is not already running, or is otherwise unreachable. You must manually start the
+engine in order for the connection to succeed.
+
 [support@glaredb.com]: mailto:support@glaredb.com

@@ -2,7 +2,7 @@
 layout: default
 title: Managing data sources
 has_children: true
-nav_order: 3
+nav_order: 4
 ---
 
 # Managing data sources
