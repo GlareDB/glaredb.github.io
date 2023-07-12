@@ -22,7 +22,8 @@ a wider audience with early access codes.
 On May 11, 2023, the Technical Preview became generally available. It is
 available to everyone with a free tier to get started.
 
-On May 26, 2023, [github.com/GlareDB/glaredb] was made open source.
+On May 26, 2023, [github.com/GlareDB/glaredb] was made open source. See our
+[open source announcement] for more information.
 
 ## Stability
 
@@ -80,5 +81,6 @@ necessary to move towards a stable version range.
    may try GlareDB, but may experience latency.
 
 [github.com/GlareDB/glaredb]: https://github.com/GlareDB/glaredb
+[open source announcement]: https://glaredb.com/blog/glaredb-goes-open-source
 [stop deployment]: /assets/images/dedicated-stop.png
 [start deployment]: /assets/images/dedicated-start.png

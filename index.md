@@ -11,6 +11,9 @@ GlareDB is a database built for querying and analyzing distributed data using
 SQL. Query data directly from [Postgres], [Snowflake], [object storage],
 [and other data sources] without moving data around.
 
+As of June 2023, GlareDB is open source! See our [open source announcement] for
+more information.
+
 ## Where does GlareDB fit into your stack?
 
 GlareDB sits between your data applications and your data sources. Any
@@ -32,7 +35,12 @@ using basic SQL. There is no need for ETL!
 ## Offerings
 
 **GlareDB** is open source and is freely available to install and use. Get started
-at [github.com/GlareDB/glaredb].
+at [github.com/GlareDB/glaredb]. See our [open source announcement] for more information.
+
+You can run GlareDB locally or even within Python.
+
+- [Learn more about `glaredb local`]
+- [Learn more about Python bindings]
 
 **GlareDB Cloud** is a fully managed offering of GlareDB with additional features
 for access management and compute resources. GlareDB Cloud is generally
@@ -40,9 +48,9 @@ available to everyone with a [free tier]. Get started at [console.glaredb.com].
 
 ## Fully managed
 
-Whether you use our serverless (free) or dedicated (paid plan) databases,
-GlareDB Cloud is fully managed. With a few clicks, a GlareDB deployment will be
-ready and highly available for you to use.
+Whether you use our serverless compute (free) or create dedicated compute engines
+(paid plan), GlareDB Cloud is fully managed. With a few clicks, a GlareDB deployment
+will be ready and highly available for you to use.
 
 [Learn more about serverless and dedicated]
 
@@ -50,9 +58,12 @@ ready and highly available for you to use.
 [Snowflake]: /docs/data-sources/supported/snowflake/
 [object storage]: /docs/data-sources/supported/gcs/
 [and other data sources]: /docs/data-sources/supported/index/
+[open source announcement]: https://glaredb.com/blog/glaredb-goes-open-source
 [S3]: /docs/data-sources/supported/s3/
 [Learn more about data sources]: /docs/data-sources/
 [github.com/GlareDB/glaredb]: https://github.com/GlareDB/glaredb#install
+[Learn more about `glaredb local`]: /glaredb/local
+[Learn more about Python bindings]: /glaredb/python
 [free tier]: /docs/about/free-tier.html
 [console.glaredb.com]: https://console.glaredb.com
 [Learn more about serverless and dedicated]: /cloud/deployments/#dedicated-vs-serverless
