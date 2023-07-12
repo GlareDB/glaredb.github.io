@@ -13,14 +13,14 @@ GlareDB currently only supports creating local copies using this command.
 ## Syntax
 
 ```sql
-COPY (<query>) TO LOCAL [FORMAT <format>] (location <output-path>);
+COPY (<query>) TO LOCAL [FORMAT <format>] (location <path>);
 ```
 
 | Field         | Description                                                       |
 | ------------- | ----------------------------------------------------------------- |
 | `query`       | The query to execute, of which the results will be copied.        |
 | `format`      | Output format. One of **csv** (default), **json** or **parquet**. |
-| `output-path` | Path where the results will be copied.                            |
+| `path` | Path where the results will be copied.                            |
 
 ## Examples
 
