@@ -30,7 +30,7 @@ reference:
 - [DROP DATABASE]
 - [DROP TABLE]
 
-[Data sources table]: /assets/images/example_data_source.png
+[Data sources table]: /assets/images/deployment-overview.png
 [Data sources menu]: /assets/images/example_data_source_delete.png
 [Data sources delete confirmation]: /assets/images/example_data_source_delete_confirm.png
 [DROP DATABASE]: /glaredb/sql-commands/drop-database/

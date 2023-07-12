@@ -3,10 +3,14 @@ layout: default
 title: Release notes
 has_children: true
 child_nav_order: reversed
-nav_order: 6
+nav_order: 7
 ---
 
 # GlareDB Cloud release notes
+
+{: .important}
+
+> As of August 2023, GlareDB Cloud will be switching to date-based releases
 
 Each release corresponds to the version of [console.glaredb.com]. The underlying
 database of GlareDB deployments is independently versioned. Updates to the
