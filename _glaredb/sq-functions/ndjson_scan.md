@@ -6,7 +6,7 @@ parent: SQL functions
 
 # `ndjson_scan`
 
-Read a [newline delimeted JSON] file. The JSON file may exist locally or
+Read a [newline delimited JSON] file. The JSON file may exist locally or
 remotely.
 
 ## Syntax
@@ -42,4 +42,4 @@ Using in-memory catalog
 〉
 ```
 
-[newline delimeted JSON]: https://github.com/ndjson/ndjson-spec
+[newline delimited JSON]: https://github.com/ndjson/ndjson-spec
