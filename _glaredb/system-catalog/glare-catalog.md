@@ -112,6 +112,46 @@ Stores information about public keys associated to `tunnels`.
 | `ssh_tunnel_name` | `tunnel_name` of the `tunnel`   |
 | `public_key`      | Public SSH key for the `tunnel` |
 
+## `functions`
+
+Stores information about built-in glaredb functions that are useful for working
+with and generating data. Each of these functions can be used in queries.
+
+For more information on a specific function, refer to its reference:
+
+- [`csv_scan`]
+- [`generate_series`]
+- [`list_schemas`]
+- [`list_tables`]
+- [`ndjson_scan`]
+- [`parquet_scan`]
+- [`read_bigquery`]
+- [`read_mongodb`]
+- [`read_mysql`]
+- [`read_postgres`]
+- [`read_snowflake`]
+
+| Field             | Descriptions                                              |
+| ----------------- | --------------------------------------------------------- |
+| `oid`             | Internal identifier for this object.                      |
+| `schema_oid`      | Identifier for the schema containing this column's table. |
+| `function_name`   | The name (keyword) of the function                        |
+| `function_type`   | Currently all functions are of type `table`.              |
+| `parameters`      | Currently not implemented.                                |
+| `parameter_types` | Currently not implemented.                                |
+| `builtin`         | Indicates if this function is built into GlareDB          |
+
 [CREATE EXTERNAL TABLE]: /glaredb/sql-commands/create-external-table.html
 [CREATE EXTERNAL DATABASE]: /glaredb/sql-commands/create-external-database.html
 [SSH tunnels]: /docs/data-sources/overview.html#securing-connections-with-ssh-tunnels
+[`csv_scan`]: /glaredb/sql-commands/csv_scan
+[`generate_series`]: /glaredb/sql-commands/generate_series
+[`list_schemas`]: /glaredb/sql-commands/list_schemas
+[`list_tables`]: /glaredb/sql-commands/list_tables
+[`ndjson_scan`]: /glaredb/sql-commands/ndjson_scan
+[`parquet_scan`]: /glaredb/sql-commands/parquet_scan
+[`read_bigquery`]: /glaredb/sql-commands/read_bigquery
+[`read_mongodb`]: /glaredb/sql-commands/read_mongodb
+[`read_mysql`]: /glaredb/sql-commands/read_mysql
+[`read_postgres`]: /glaredb/sql-commands/read_postgres
+[`read_snowflake`]: /glaredb/sql-commands/read_snowflake
