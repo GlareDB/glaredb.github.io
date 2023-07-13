@@ -17,7 +17,7 @@ ndjson_scan(<url>)
 
 | Field | Description                                                |
 | ----- | ---------------------------------------------------------- |
-| `url` | The URL or path to a [newline delimeted JSON] file to scan |
+| `url` | The URL or path to a [newline delimited JSON] file to scan |
 
 ## Examples
 
