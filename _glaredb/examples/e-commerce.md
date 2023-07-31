@@ -1,30 +1,52 @@
 ---
 layout: default
-title: Examples
-nav_order: 9
+title: E-commerce
+parent: Examples
+nav_order: 1
 ---
 
-# Multi-source Data Querying with GlareDB
+# Multi-source data querying with GlareDB
 
 ## Scenario
 
-GlobalMart is a leading e-commerce company operating in multiple countries. They have been rapidly growing and expanding their product line, thus dealing with increased volumes of data. They are a data-driven company and leverage their data for providing better customer experiences, making key business decisions, and predicting trends.
+GlobalMart is a leading e-commerce company operating in multiple countries. They
+have been rapidly growing and expanding their product line, thus dealing with
+increased volumes of data. They are a data-driven company and leverage their
+data for providing better customer experiences, making key business decisions,
+and predicting trends.
 
-However, GlobalMart's data is distributed across different data storage systems for various reasons:
+However, GlobalMart's data is distributed across different data storage systems
+for various reasons:
 
-1. **MongoDB**: They use MongoDB to store their customer data due to the flexibility it offers in handling semi-structured data. It helps them quickly evolve their data schema as their business grows and changes.
+1. **MongoDB**: They use MongoDB to store their customer data due to the
+flexibility it offers in handling semi-structured data. It helps them quickly
+evolve their data schema as their business grows and changes.
 
-2. **Postgres**: They use a Postgres database to store transactional data. The ACID properties of Postgres make it a great fit for reliably handling such critical data.
+2. **Postgres**: They use a Postgres database to store transactional data. The
+ACID properties of Postgres make it a great fit for reliably handling such
+critical data.
 
-3. **AWS S3**: They use S3 for storing unstructured data like customer reviews in the form of JSON files. This allows for easy and cost-effective storage and retrieval of large amounts of raw data.
+3. **AWS S3**: They use S3 for storing unstructured data like customer reviews
+in the form of JSON files. This allows for easy and cost-effective storage and
+retrieval of large amounts of raw data.
 
-4. **GCP**: They use the Google Cloud Platform for running their machine learning models. The outputs, like next purchase predictions, are stored in CSV files in a Google Cloud Storage bucket.
+4. **GCP**: They use the Google Cloud Platform for running their machine
+learning models. The outputs, like next purchase predictions, are stored in CSV
+files in a Google Cloud Storage bucket.
 
-While each of these systems is great for the specific use cases they handle, having data distributed like this poses a challenge for GlobalMart. Their analysts, data scientists, and other stakeholders struggle to gain unified insights from these disparate data sources.
+While each of these systems is great for the specific use cases they handle,
+having data distributed like this poses a challenge for GlobalMart. Their
+analysts, data scientists, and other stakeholders struggle to gain unified
+insights from these disparate data sources.
 
-They need a solution that allows them to query across all these data sources in a unified manner, using the SQL language that their team is familiar with. This is where GlareDB comes in. It allows creating external tables from different data sources, making it possible to execute SQL queries across all these diverse data storage systems. This solution will significantly streamline their data analysis process and generate insights more effectively.
+They need a solution that allows them to query across all these data sources in
+a unified manner, using the SQL language that their team is familiar with. This
+is where GlareDB comes in. It allows creating external tables from different
+data sources, making it possible to execute SQL queries across all these diverse
+data storage systems. This solution will significantly streamline their data
+analysis process and generate insights more effectively.
 
-## Step 1: MongoDB - Customer Data
+## Step 1: MongoDB - customer data
 
 In MongoDB, you have a `customers` collection with documents structured as follows:
 
@@ -44,9 +66,10 @@ In MongoDB, you have a `customers` collection with documents structured as follo
 }
 ```
 
-## Step 2: Postgres - Transactional Data
+## Step 2: Postgres - transactional data
 
-In your Postgres database, you have a `transactions` table structured as follows:
+In your Postgres database, you have a `transactions` table
+structured as follows:
 
 ```sql
 CREATE TABLE transactions (
@@ -58,9 +81,10 @@ CREATE TABLE transactions (
 );
 ```
 
-## Step 3: AWS S3 - Unstructured Customer Review Data
+## Step 3: aws s3 - unstructured customer review data
 
-On AWS S3, you store unstructured data in the form of JSON files for customer reviews. Here's an example:
+On AWS S3, you store unstructured data in the form of
+JSON files for customer reviews. Here's an example:
 
 ```json
 {
@@ -73,20 +97,24 @@ On AWS S3, you store unstructured data in the form of JSON files for customer re
 }
 ```
 
-## Step 4: GCP - Predictive Analytics Output
+## Step 4: gcp - predictive analytics output
 
-On Google Cloud Platform, you store CSV files that represent the output from predictive models, such as next purchase prediction:
+On Google Cloud Platform, you store CSV files that
+represent the output from predictive models, such as
+next purchase prediction:
 
 ```csv
 customer_id,next_purchase_product_id,next_purchase_date
 507f191e810c19729de860ea,P101,2023-02-01
 ```
 
-## Step 5: Creating External Tables with Our Tool
+## Step 5: creating external tables with our tool
 
-With GlareDB, you can create external tables linked to your diverse data sources. Here's how you would define the tables for each source:
+With GlareDB, you can create external tables linked to
+your diverse data sources.
+Here's how you would define the tables for each source:
 
-**MongoDB (Customer Data)**
+### MongoDB (customer data)
 
 ```sql
 CREATE EXTERNAL TABLE customers
@@ -98,7 +126,7 @@ OPTIONS (
 );
 ```
 
-**Postgres (Transactional Data)**
+## Postgres (transactional data)
 
 ```sql
 CREATE EXTERNAL TABLE transactions
@@ -114,7 +142,7 @@ OPTIONS (
 );
 ```
 
-**AWS S3 (Unstructured Customer Review Data)**
+### AWS s3 (unstructured customer review data)
 
 ```sql
 CREATE EXTERNAL TABLE reviews
@@ -128,7 +156,7 @@ OPTIONS (
 );
 ```
 
-**GCP (Predictive Analytics Output)**
+### GCP (predictive analytics output)
 
 ```sql
 CREATE EXTERNAL TABLE predictions
@@ -140,9 +168,10 @@ OPTIONS (
 );
 ```
 
-## Step 6: Querying Data with Our Tool
+## Step 6: querying data with our tool
 
-With GlareDB, users can run a query like the following to get insights from multiple data sources:
+With GlareDB, users can run a query like the
+following to get insights from multiple data sources:
 
 ```sql
 SELECT
@@ -169,9 +198,9 @@ ORDER BY
     p.next_purchase_date;
 ```
 
-
-
-This query retrieves information about high-rated transactions by U.S. customers, and predicts their next purchases.
+This query retrieves information about high-rated
+transactions by U.S. customers, and predicts their
+next purchases.
 
 ```console
 ┌───────────────┬────────────┬─────────────────────┬────────┬─────────────────────────────────────────────────┬─────────┬────────────┐
@@ -183,5 +212,6 @@ This query retrieves information about high-rated transactions by U.S. customers
 └───────────────┴────────────┴─────────────────────┴────────┴─────────────────────────────────────────────────┴─────────┴────────────┘
 ```
 
-
-**Note:** These are simple examples and real-world applications will have more complex schemas and diverse data.
+**Note:** These are simple examples and
+real-world applications will have more
+complex schemas and diverse data.
