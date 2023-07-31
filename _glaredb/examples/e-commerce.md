@@ -19,20 +19,20 @@ However, GlobalMart's data is distributed across different data storage systems
 for various reasons:
 
 1. **MongoDB**: They use MongoDB to store their customer data due to the
-flexibility it offers in handling semi-structured data. It helps them quickly
-evolve their data schema as their business grows and changes.
+   flexibility it offers in handling semi-structured data. It helps them quickly
+   evolve their data schema as their business grows and changes.
 
 2. **Postgres**: They use a Postgres database to store transactional data. The
-ACID properties of Postgres make it a great fit for reliably handling such
-critical data.
+   ACID properties of Postgres make it a great fit for reliably handling such
+   critical data.
 
 3. **AWS S3**: They use S3 for storing unstructured data like customer reviews
-in the form of JSON files. This allows for easy and cost-effective storage and
-retrieval of large amounts of raw data.
+   in the form of JSON files. This allows for easy and cost-effective storage and
+   retrieval of large amounts of raw data.
 
 4. **GCP**: They use the Google Cloud Platform for running their machine
-learning models. The outputs, like next purchase predictions, are stored in CSV
-files in a Google Cloud Storage bucket.
+   learning models. The outputs, like next purchase predictions, are stored in CSV
+   files in a Google Cloud Storage bucket.
 
 While each of these systems is great for the specific use cases they handle,
 having data distributed like this poses a challenge for GlobalMart. Their
