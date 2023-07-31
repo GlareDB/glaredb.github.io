@@ -17,15 +17,13 @@ curl https://glaredb.com/install.sh | sh
 
 ## Running
 
-{: .important}
-
-> Running `glaredb` locally is an in-memory process. Once the program exits, all
-> data will be lost.
-
 To start a local session, run:
 
-```console
+```sh
 ./glaredb local
+# You can use `--data-dir` to specify a disk-backed data directory:
+./glaredb local --data-dir /tmp/glaredb
+# See `./glaredb local --help` for more options.
 ```
 
 Alternatively, the server subcommand can be used to launch a server process on

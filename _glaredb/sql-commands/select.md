@@ -14,7 +14,7 @@ syntax and will eventually have full support.
 
 ```sql
 SELECT [ DISTINCT ]
-    [ * | expression [ [ AS ] output_name ] [, ...] ]
+    [ * [ EXCLUDE ( column [, ...] ) ] | expression [ [ AS ] output_name ] [, ...] ]
     [ FROM from_item [, ...] ]
     [ WHERE condition ]
     [ GROUP BY [ DISTINCT ] grouping_element [, ...] ]
@@ -56,6 +56,16 @@ select name, count(id) as count
  Gary             |     1
  Gloria           |     2
 (2 rows)
+
+```
+
+### Exclude Clause
+
+The `EXCLUDE` clause will select all columns except those specified.
+
+```sql
+-- select all columns except id
+SELECT EXCLUDE (id) from pg.public.users;
 ```
 
 [PostgreSQL `SELECT`]: https://www.postgresql.org/docs/current/sql-select.html
