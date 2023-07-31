@@ -59,7 +59,7 @@ select name, count(id) as count
 
 ```
 
-### Exclude Clause
+### Exclude clause
 
 The `EXCLUDE` clause will select all columns except those specified.
 
