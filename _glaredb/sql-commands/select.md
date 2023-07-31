@@ -65,7 +65,7 @@ The `EXCLUDE` clause will select all columns except those specified.
 
 ```sql
 -- select all columns except id
-SELECT EXCLUDE (id) from pg.public.users;
+SELECT * EXCLUDE (id) FROM pg.public.users;
 ```
 
 [PostgreSQL `SELECT`]: https://www.postgresql.org/docs/current/sql-select.html
