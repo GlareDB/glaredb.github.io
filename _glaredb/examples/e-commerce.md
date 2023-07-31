@@ -126,7 +126,7 @@ OPTIONS (
 );
 ```
 
-## Postgres (transactional data)
+### Postgres (transactional data)
 
 ```sql
 CREATE EXTERNAL TABLE transactions

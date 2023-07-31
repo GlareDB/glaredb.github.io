@@ -7,7 +7,8 @@
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
     "lint": "markdownlint-cli2 \"**/*.{md,mdx}\" \"!node_modules\" \"!_site\"",
-    "lint:fix": "markdownlint-cli2-fix \"**/*.{md,mdx}\" \"!node_modules\" \"!_site\""
+    "lint:fix": "markdownlint-cli2-fix \"**/*.{md,mdx}\" \"!node_modules\" \"!_site\"",
+    "dev": "bundle exec jekyll serve"
   },
   "devDependencies": {
     "cspell": "^6.31.1",
