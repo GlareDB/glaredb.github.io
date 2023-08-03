@@ -25,6 +25,7 @@ come in future releases.
 
   ![tutorials]
   ![tutorial-toggle]
+
 - Double-clicking a table in the explorer generates a `SELECT` query
 - The explorer added Views and distinguishes external from default databases
 - The results view was redesigned. In a multi-query statement, all results are
