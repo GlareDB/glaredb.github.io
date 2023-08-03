@@ -10,7 +10,7 @@ Read parquet files from a local filesystem or supported object stores.
 
 URLs provided to `parquet_scan` may also include globbing characters to allow
 scanning multiple files when reading from S3, GCS, or a local filesystem.
-Globbing is not allowed when when querying parquet files over HTTP/HTTPS.
+Globbing is not allowed when querying parquet files over HTTP/HTTPS.
 
 ## Syntax
 
