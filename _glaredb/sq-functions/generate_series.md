@@ -14,11 +14,11 @@ Generate a series of integers or floats.
 generate_series(<start>, <stop> [, <step>])
 ```
 
-| Field   | Description                           |
-| ------- | ------------------------------------- |
+| Field   | Description                                    |
+| ------- | ---------------------------------------------- |
 | `start` | The integer or float to start generating from. |
 | `stop`  | The integer or float to stop generating at.    |
-| `step`  | The step size (defaults to 1).        |
+| `step`  | The step size (defaults to 1).                 |
 
 ## Examples
 

@@ -58,7 +58,7 @@ CREDENTIALS s3_credentials ( region '<aws_region>' );
 | `aws_secret_access_key`   | S3          | Secret associated with the AWS access key.                        |
 | `bucket`                  | GCS or S3   | Name of the bucket.                                               |
 | `format`                  | All         | Output format. One of **csv** (default), **json** or **parquet**. |
-| `gcp_credentials`         | GCS         | A database object containing GCP credentials.
+| `gcp_credentials`         | GCS         | A database object containing GCP credentials.                     |
 | `gcp_service_account_key` | GCS         | A JSON-encoded GCP service account key with access to the bucket. |
 | `gcs_url`                 | GCS         | A url in the format gs://bucket/location                          |
 | `location`                | All         | A path to copy to.                                                |
