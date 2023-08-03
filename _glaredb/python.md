@@ -39,7 +39,7 @@ that you can incrementally build up queries.
 intermediate = con.sql("select * from tbl where a > 2;")
 
 # note that we reference the variable 'intermediate' here
-con.sql("select * from intermediate where b > 4;")
+con.sql("select * from intermediate where b > 4;").show()
 ```
 
 ### API
