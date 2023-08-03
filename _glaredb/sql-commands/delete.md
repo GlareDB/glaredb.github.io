@@ -18,10 +18,10 @@ DELETE FROM table_name
     [ WHERE condition ]
 ```
 
-| Field              | Description                                   |
-| ------------------ | --------------------------------------------- |
-| `table_name`       | Source table to delete from                   |
-| `condition`        | An SQL expression that evaluates to a boolean |
+| Field        | Description                                   |
+| ------------ | --------------------------------------------- |
+| `table_name` | Source table to delete from                   |
+| `condition`  | An SQL expression that evaluates to a boolean |
 
 ## Examples
 
