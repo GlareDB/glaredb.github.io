@@ -1,10 +1,10 @@
 ---
 layout: default
-title: INSERT
+title: INSERT INTO
 parent: SQL commands
 ---
 
-# INSERT
+# INSERT INTO
 
 Insert data into a native table.
 
@@ -25,8 +25,8 @@ INSERT INTO table_name VALUES (value)[, ... ];
 
 ## Examples
 
-In this example we'll first [`CREATE`] as simple table, then insert two users
-into it.
+In this example we'll first [`CREATE`] a simple users table, then insert two
+users into it.
 
 ```sql
 CREATE TABLE public.users ( name text, email text );
