@@ -28,7 +28,7 @@ DELETE FROM table_name
 Delete all rows from table `table1`.
 
 ```sql
-DELETE FROM table1
+DELETE FROM table1;
 ```
 
 Delete rows from table `table2` where column `col_int` has a value greater than 10.
