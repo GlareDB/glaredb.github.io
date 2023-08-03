@@ -129,9 +129,9 @@ Parquet files can also be scanned over HTTP/HTTPS.
 
 ```sql
 -- Read a single file.
-select * from parquet_scan('https://my_domain.com/file.parquet');
+SELECT * FROM parquet_scan('https://my_domain.com/file.parquet');
 -- Read multiple files
-select * from parquet_scan(['https://my_domain.com/1.parquet', 'https://my_domain.com/2.parquet']);
+SELECT * FROM parquet_scan(['https://my_domain.com/1.parquet', 'https://my_domain.com/2.parquet']);
 ```
 
 {: .important}
