@@ -18,10 +18,10 @@ Insert data into a native table.
 INSERT INTO table_name VALUES (value)[, ... ];
 ```
 
-| Field              | Description                                       |
-| ------------------ | ------------------------------------------------- |
-| `table_name`       | Name of the table.                                |
-| `value`            | A value set to insert into the table. |
+| Field        | Description                           |
+| ------------ | ------------------------------------- |
+| `table_name` | Name of the table.                    |
+| `value`      | A value set to insert into the table. |
 
 ## Examples
 
