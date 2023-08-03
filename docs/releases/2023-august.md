@@ -11,15 +11,15 @@ parent: "Release notes"
 **Available in**: [GlareDB@v0.3.0], [GlareDB Cloud]
 
 We've added _initial_ support for reading Iceberg tables with `iceberg_scan`,
-`iceberg_snapshots` and `iceberg_data_files` SQL functions. We are committed to
-improving support, see <https://github.com/GlareDB/glaredb/issues/1448> for more
-details on what's to come in future releases.
+`iceberg_snapshots` and `iceberg_data_files` SQL functions. See
+<https://github.com/GlareDB/glaredb/issues/1448> for more details on what's to
+come in future releases.
 
 ## Create native table from query
 
 **Available in**: [GlareDB@v0.3.0], [GlareDB Cloud]
 
-We now have support for creating a table from a query:
+A table can be created from a query:
 
 ```sql
 create table t1 as select * from generate_series(1, 5, 2);
@@ -39,7 +39,7 @@ create table t1 as select * from generate_series(1, 5, 2);
 
 **Available in**: [GlareDB@v0.3.0], [GlareDB Cloud]
 
-`SELECT` now accepts an `EXCEPT` or `EXCLUDE` clause to exclude specific columns
+[`SELECT`] now accepts an `EXCEPT` or `EXCLUDE` clause to exclude specific columns
 from output:
 
 ```sql
@@ -50,15 +50,17 @@ SELECT * EXCLUDE (id) FROM users;
 
 **Available in**: [GlareDB@v0.3.0], [GlareDB Cloud]:
 
-- Fixed `create schema if not exists` failing if schema existed
+- Fixed `CREATE SCHEMA IF NOT EXISTS` failing if schema existed
   
 **Available in**: [GlareDB@v0.3.0]:
 
-- `glaredb local` now has prettier output
+- [`glaredb local`] now has prettier output
 - [Python bindings] now include `show()` with pretty formatting and `close()`
   for gracefully closing connections.
 
-[GlareDB@v0.3.0]: https://github.com/GlareDB/glaredb/releases/tag/v0.2.1
+[GlareDB@v0.3.0]: https://github.com/GlareDB/glaredb/releases/tag/v0.3.0
 [GlareDB Cloud]: https://console.glaredb.com/
 [`csv_scan`]: /glaredb/sq-functions/csv_scan/
+[`SELECT`]: /glaredb/sql-commands/select/
+[`glaredb local`]: /glaredb/local/
 [Python bindings]: /glaredb/python/
