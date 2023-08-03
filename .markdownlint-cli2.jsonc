@@ -38,7 +38,9 @@
         "TRANSACTION",
         "TO",
         "TUNNEL",
-        "VIEW"
+        "VIEW",
+        "GCS",
+        "S3"
       ]
     }
   },

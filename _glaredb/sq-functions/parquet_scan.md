@@ -52,6 +52,8 @@ Paths may be absolute or relative.
 SELECT * FROM parquet_scan('./my_data.parquet');
 -- Read all parquet files in a directory.
 SELECT * FROM parquet_scan('./directory_of_data/*.parquet');
+-- Read parquet files from multiple directories.
+SELECT * FROM parquet_scan('./**/*.parquet');
 -- Read multiple explicitly provided files.
 SELECT * FROM parquet_scan(['./directory_of_data/1.parquet', './directory_of_data/2.parquet']);
 ```
@@ -132,7 +134,9 @@ select * from parquet_scan('https://my_domain.com/file.parquet');
 select * from parquet_scan(['https://my_domain.com/1.parquet', 'https://my_domain.com/2.parquet']);
 ```
 
-Note that globbed paths are not supported when reading parquet files over HTTP/HTTPS.
+{: .important}
+
+> Globbed paths are not supported when reading parquet files over HTTP/HTTPS
 
 ## Examples
 
