@@ -33,7 +33,7 @@ Parameter descriptions and which object store it's relevant to.
 
 | Parameter                 | Object store | Description                                                                |
 | ------------------------- | ------------ | -------------------------------------------------------------------------- |
-| `url`                     | All          | The URL or path to a parqet file to scan.                                  |
+| `url`                     | All          | The URL or path to a parquet file to scan.                                 |
 | `credential_object`       | S3 and GCS   | A database object storing credentials for accessing the object or objects. |
 | `aws_region`              | S3           | If scanning an object in S3, the region of the bucket.                     |
 | `aws_access_key_id`       | S3           | ID of AWS access key with permissions to read from the bucket.             |
@@ -145,7 +145,7 @@ read it with `parquet_scan`.
 
 ```sql
 -- Output the file to 'example.parquet'
-COPY (SELECT generate_series(1, 10)) TO 'example.parquet';
+COPY (SELECT * FROM generate_series(1, 10)) TO 'example.parquet';
 
 -- And scan it back in.
 SELECT * FROM parquet_scan('./example.parquet');
