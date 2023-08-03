@@ -145,7 +145,7 @@ read it with `csv_scan`.
 
 ```sql
 -- Output the file to 'example.csv'
-COPY (SELECT generate_series(1, 10)) TO 'example.csv';
+COPY (SELECT * FROM generate_series(1, 10)) TO 'example.csv';
 
 -- And scan it back in.
 SELECT * FROM csv_scan('./example.csv');

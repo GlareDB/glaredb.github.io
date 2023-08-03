@@ -145,7 +145,7 @@ read it with `parquet_scan`.
 
 ```sql
 -- Output the file to 'example.parquet'
-COPY (SELECT generate_series(1, 10)) TO 'example.parquet';
+COPY (SELECT * FROM generate_series(1, 10)) TO 'example.parquet';
 
 -- And scan it back in.
 SELECT * FROM parquet_scan('./example.parquet');
