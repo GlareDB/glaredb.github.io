@@ -6,8 +6,8 @@ parent: SQL commands
 
 # DELETE
 
-The SQL standard for `DELETE` is large and powerful 
-so that you can delete rows from a table with precise 
+The SQL standard for `DELETE` is large and powerful
+so that you can delete rows from a table with precise
 control. GlareDB supports most of the [PostgreSQL `DELETE`]
 syntax and will eventually have full support.
 
