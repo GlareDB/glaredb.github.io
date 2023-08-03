@@ -82,7 +82,7 @@ the service account key directly.
 ```sql
 -- Create the credentials.
 CREATE CREDENTIALS my_gcp_creds PROVIDER gcp
-	( service_account_key '<service_account_key>' );
+    ( service_account_key '<service_account_key>' );
 -- And use them in the scan.
 SELECT * FROM parquet_scan('gs://my-bucket/path/object.parquet', my_gcp_creds);
 ```
@@ -115,10 +115,10 @@ the service account key directly.
 ```sql
 -- Create the credentials.
 CREATE CREDENTIALS my_aws_creds PROVIDER aws
-	OPTIONS (
+    OPTIONS (
         access_key_id = '<access_key_id>',
         secret_access_key = '<secret_access_key>',
-	);
+    );
 -- And use them in the scan. Note that a region still needs to be provided
 SELECT * FROM parquet_scan('gs://my-bucket/path/object.parquet', my_gcp_creds, region => 'us-east-1');
 ```
