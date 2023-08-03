@@ -6,7 +6,7 @@ parent: SQL commands
 
 # COPY TO
 
-Copy a query results between local filesystems or supported object stores.
+Copy rows from a table or query to local files or supported object stores.
 
 ## Syntax
 
