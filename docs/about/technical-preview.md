@@ -9,7 +9,7 @@ nav_order: 4
 
 {: .important}
 
-> GlareDB is currently in the 0.X.0 version ranges. With feedback from the
+> GlareDB is currently in the `0.X.Y` version ranges. With feedback from the
 > technical preview phase, we're working towards a stable version with core
 > feature completeness and additional Postgres compatibility.
 
@@ -27,6 +27,9 @@ On May 26, 2023, [github.com/GlareDB/glaredb] was made open source. See our
 
 On July 12, 2023, GlareDB moved from `0.0.X` ranges to `0.2.0`, marking a
 significant milestone towards technical stability with a growing feature set.
+
+On July 17, 2023, GlareDB Cloud reduced subscription prices and expanded the
+free tier offering for early adopters.
 
 ## Stability
 
