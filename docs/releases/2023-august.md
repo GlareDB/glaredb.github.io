@@ -32,7 +32,7 @@ create table t1 as select * from generate_series(1, 5, 2);
 - You can now glob (`**` and `*`) to scan multiple files and directories. See
   [`csv_scan`], for example.
 - `delta_scan` function was added to query delta tables from local paths, s3
-   and gcs
+  and gcs
 - All `*_scan` functions received support for passing multiple URLs
 
 ## Exclude columns in SELECT
@@ -51,7 +51,7 @@ SELECT * EXCLUDE (id) FROM users;
 **Available in**: [GlareDB@v0.3.0], [GlareDB Cloud]:
 
 - Fixed `CREATE SCHEMA IF NOT EXISTS` failing if schema existed
-  
+
 **Available in**: [GlareDB@v0.3.0]:
 
 - [`glaredb local`] now has prettier output
