@@ -85,7 +85,7 @@ SELECT * EXCLUDE (id) FROM users;
 [GlareDB@v0.3.0]: https://github.com/GlareDB/glaredb/releases/tag/v0.3.0
 [GlareDB Cloud]: https://console.glaredb.com/
 [tutorials]: /assets/images/tutorials.png
-[tutorial-toggle]: /assets/images/tutorials.png
+[tutorial-toggle]: /assets/images/tutorial-toggle.png
 [`csv_scan`]: /glaredb/sq-functions/csv_scan/
 [`SELECT`]: /glaredb/sql-commands/select/
 [`glaredb local`]: /glaredb/local/
