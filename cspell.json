@@ -49,6 +49,8 @@
     "SELECT",
     "SMALLINT",
     "TINYINT",
-    "typeof"
+    "typeof",
+    "GCS",
+    "S3"
   ]
 }
