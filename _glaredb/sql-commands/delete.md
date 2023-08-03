@@ -35,7 +35,7 @@ Delete rows from table `table2` where column `col_int` has a value greater than 
 
 ```sql
 DELETE FROM table2
-  WHERE col_int > 10
+  WHERE col_int > 10;
 ```
 
 [PostgreSQL `DELETE`]: https://www.postgresql.org/docs/current/sql-delete.html
