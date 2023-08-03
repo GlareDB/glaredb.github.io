@@ -119,8 +119,8 @@ CREATE CREDENTIALS my_aws_creds PROVIDER aws
         access_key_id = '<access_key_id>',
         secret_access_key = '<secret_access_key>',
     );
--- And use them in the scan. Note that a region still needs to be provided
-SELECT * FROM parquet_scan('gs://my-bucket/path/object.parquet', my_gcp_creds, region => 'us-east-1');
+-- And use them in the scan. Note that a region still needs to be provided.
+SELECT * FROM parquet_scan('gs://my-bucket/path/object.parquet', my_aws_creds, region => 'us-east-1');
 ```
 
 ### HTTP files
