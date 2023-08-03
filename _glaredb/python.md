@@ -9,6 +9,8 @@ nav_order: 2
 GlareDB can be used in Python environments along with [Pandas] and [Polars] to
 work with distributed data.
 
+For more information, refer to our in-depth [blog post Working with Python].
+
 ## Install
 
 The `glaredb` module is available on PyPI <https://pypi.org/project/glaredb/>.
@@ -28,6 +30,18 @@ pip install glaredb
 - import the `glaredb` module
 - `connect` and then either `execute` eagerly or lazily with `sql`
 
+### Intermediates
+
+Using `.sql` to lazily evaluate let's you store a logical plan in a variable so
+that you can incrementally build up queries.
+
+```python
+intermediate = con.sql("select * from tbl where a > 2;")
+
+# note that we reference the variable 'intermediate' here
+con.sql("select * from intermediate where b > 4;")
+```
+
 ### API
 
 - `module glaredb`
@@ -41,14 +55,17 @@ pip install glaredb
     - Lazily evaluates the `query` string
   - `execute(query): PyExecutionResult`
     - Eagerly evaluates the `query` string
+  - `close()`
 - `class PyLogicalPlan`
   - `to_arrow()`
   - `to_pandas()`
   - `to_polars()`
+  - `show()`
 - `class PyExecutionResult`
   - `to_arrow()`
   - `to_pandas()`
   - `to_polars()`
+  - `show()`
 
 ## Example
 
@@ -107,3 +124,4 @@ shape: (5, 3)
 
 [Pandas]: https://github.com/pandas-dev/pandas
 [Polars]: https://github.com/pola-rs/polars
+[blog post Working with Python]: https://glaredb.com/blog/working-with-python
