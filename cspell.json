@@ -49,6 +49,10 @@
     "SELECT",
     "SMALLINT",
     "TINYINT",
-    "typeof"
+    "typeof",
+    "GCS",
+    "S3",
+    "Globbed",
+    "globbed"
   ]
 }
