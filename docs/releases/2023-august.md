@@ -15,6 +15,21 @@ We've added _initial_ support for reading Iceberg tables with `iceberg_scan`,
 <https://github.com/GlareDB/glaredb/issues/1448> for more details on what's to
 come in future releases.
 
+## SQL workspace improvements
+
+**Available in**: [GlareDB Cloud]
+
+- Tutorials were added to demonstrate connecting and reading external sources.
+  The tutorials can be accessed by clicking the info icon on the top right of
+  the results panel. To switch back to results view, click the table icon.
+
+  ![tutorials]
+  ![tutorial-toggle]
+- Double-clicking a table in the explorer generates a `SELECT` query
+- The explorer added Views and distinguishes external from default databases
+- The results view was redesigned. In a multi-query statement, all results are
+  now shown as tabs, even if one of the statements returned nothing.
+
 ## Create native table from query
 
 **Available in**: [GlareDB@v0.3.0], [GlareDB Cloud]
@@ -58,8 +73,18 @@ SELECT * EXCLUDE (id) FROM users;
 - [Python bindings] now include `show()` with pretty formatting and `close()`
   for gracefully closing connections.
 
+**Available in**: [GlareDB Cloud]:
+
+- Fixed an issue where the button for adding an SSH tunnel was not displaying
+- Organization billing now contains historic billing data
+- The sign in page was redesigned
+- The SQL workspace is now the first page users are loaded into when they sign
+  in
+
 [GlareDB@v0.3.0]: https://github.com/GlareDB/glaredb/releases/tag/v0.3.0
 [GlareDB Cloud]: https://console.glaredb.com/
+[tutorials]: /assets/images/tutorials.png
+[tutorial-toggle]: /assets/images/tutorials.png
 [`csv_scan`]: /glaredb/sq-functions/csv_scan/
 [`SELECT`]: /glaredb/sql-commands/select/
 [`glaredb local`]: /glaredb/local/
