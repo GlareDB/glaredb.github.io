@@ -6,7 +6,7 @@ parent: SQL functions
 
 # `iceberg_scan`
 
-Read an Iceberg table from the local filesystem or support object store.
+Read an Iceberg table from the local filesystem or supported object store.
 
 Iceberg support is early. Additional Iceberg related features are being tracked
 in [Issue #1448].
