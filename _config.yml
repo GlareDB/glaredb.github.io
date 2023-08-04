@@ -9,6 +9,7 @@ logo: "/assets/logo.svg"
 
 aux_links:
   Go to console: https://console.glaredb.com
+  Open source: https://github.com/glaredb/glaredb
 
 aux_links_new_tab: true
 
