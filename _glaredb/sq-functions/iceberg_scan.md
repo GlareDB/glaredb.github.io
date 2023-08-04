@@ -29,7 +29,7 @@ iceberg_scan(<url>, service_account_key => '<gcp_service_account_key>')
 Parameter descriptions and which object store it's relevant to.
 
 | Parameter                 | Object store | Description                                                                |
-|---------------------------|--------------|----------------------------------------------------------------------------|
+| ------------------------- | ------------ | -------------------------------------------------------------------------- |
 | `url`                     | All          | The URL or path to a iceberg table to scan.                                |
 | `credential_object`       | S3 and GCS   | A database object storing credentials for accessing the object or objects. |
 | `aws_region`              | S3           | If scanning an object in S3, the region of the bucket.                     |
@@ -38,7 +38,7 @@ Parameter descriptions and which object store it's relevant to.
 | `gcp_service_account_key` | GCS          | A JSON-encoded GCP service account key with access to the bucket.          |
 
 The path or URL provided to `iceberg_scan` should be to a directory containing
-the "metadata/" and "data/" directories for the table.
+the `metadata/` and `data/` directories for the table.
 
 ## Usage
 
