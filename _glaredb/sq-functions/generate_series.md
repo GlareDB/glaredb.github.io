@@ -6,9 +6,7 @@ parent: SQL functions
 
 # `generate_series`
 
-Generate a series of integers.
-
-Floats will be added in the next version.
+Generate a series of integers or floats.
 
 ## Syntax
 
@@ -16,11 +14,11 @@ Floats will be added in the next version.
 generate_series(<start>, <stop> [, <step>])
 ```
 
-| Field   | Description                           |
-| ------- | ------------------------------------- |
-| `start` | The integer to start generating from. |
-| `stop`  | The integer to stop generating at.    |
-| `step`  | The step size (defaults to 1).        |
+| Field   | Description                                    |
+| ------- | ---------------------------------------------- |
+| `start` | The integer or float to start generating from. |
+| `stop`  | The integer or float to stop generating at.    |
+| `step`  | The step size (defaults to 1).                 |
 
 ## Examples
 

@@ -9,6 +9,10 @@
     },
     "title-case-style": {
       "ignore": [
+        "(GlareDB",
+        "(GlareDB)",
+        "(Cloud)",
+        "Cloud)",
         "ALTER",
         "BEGIN",
         "BigQuery",
@@ -18,8 +22,13 @@
         "CREATE",
         "DATABASE",
         "DROP",
+        "EXCLUDE",
         "EXTERNAL",
+        "GCS",
         "GlareDB",
+        "Iceberg",
+        "INSERT",
+        "INTO",
         "ISOLATION",
         "LEVEL",
         "MongoDB",
@@ -28,6 +37,8 @@
         "PostgreSQL",
         "Python",
         "ROLLBACK",
+        "S3",
+        "SELECT",
         "SCHEMA",
         "SHOW",
         "Snowflake",
@@ -38,9 +49,7 @@
         "TRANSACTION",
         "TO",
         "TUNNEL",
-        "VIEW",
-        "GCS",
-        "S3"
+        "VIEW"
       ]
     }
   },

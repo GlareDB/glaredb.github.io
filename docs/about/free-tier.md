@@ -10,10 +10,11 @@ nav_order: 3
 GlareDB Cloud is currently in [Technical Preview], and offers a free tier.
 Free tiers have the following features:
 
-- Organizations can have a single deployment
-- Organizations can use the default serverless compute engine
-- Organizations can have up to 5 members
-- A database can have up to 3 data sources
+- Unlimited data sources
+- One deployment (per organization)
+- Serverless compute engine
+- 10 GB Storage
+- Up to 5 organization members
 
 ## Region limitation
 
