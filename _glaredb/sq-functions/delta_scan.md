@@ -6,7 +6,7 @@ parent: SQL functions
 
 # `delta_scan`
 
-Read a Delta Lake table from the local filesystem or support object store.
+Read a Delta Lake table from the local filesystem or supported object store.
 
 ## Syntax
 
