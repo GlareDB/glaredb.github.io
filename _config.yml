@@ -23,7 +23,7 @@ gh_edit_repository: "https://github.com/glaredb/glaredb.github.io"
 gh_edit_branch: "main"
 gh_edit_view_mode: "tree"
 
-enable_copy_code_button: false
+enable_copy_code_button: true
 
 callouts_level: quiet # or loud
 callouts:
