@@ -43,7 +43,7 @@ CREATE TABLE public.users ( name text, email text ) AS VALUES
 In this example, we create a table schema and values from [`generate_series`].
 
 ```sql
-CREATE TABLE AS select * from generate_series(1, 10);
+CREATE TABLE public.ints AS select * from generate_series(1, 10);
 ```
 
 [`SELECT`]: /glaredb/sql-commands/select/
