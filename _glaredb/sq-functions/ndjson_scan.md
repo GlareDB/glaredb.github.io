@@ -9,6 +9,8 @@ parent: SQL functions
 Read newline-delimited json files from a local filesystem or supported object
 stores.
 
+The files may be compressed, for example: `.ndjson.gz`.
+
 URLs provided to `ndjson_scan` may also include glob characters to allow
 scanning multiple files when reading from S3, GCS, or a local filesystem.
 Globbed paths are not allowed when querying json files over HTTP/HTTPS.
