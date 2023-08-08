@@ -19,22 +19,12 @@ UPDATE table_name
     [ WHERE condition ]
 ```
 
-| Field        | Description                                          |
-| ------------ | ---------------------------------------------------- |
-| `table_name` | Source table to update                               |
-| `column`     | Column name whose will be updated                    |
-| `value_expr` | An SQL expression that evaluates to the column value |
-| `condition`  | An SQL expression that evaluates to a boolean        |
-
-Do not include the table’s name in the specification of a target column.
-For example,
-
-```sql
-UPDATE table_name
-  SET table_name.col = 1
-```
-
-The above command is invalid.
+| Field        | Description                                                 |
+| ------------ | ----------------------------------------------------------- |
+| `table_name` | The fully-qualified table name to update (ex: public.users) |
+| `column`     | A column to update. Column is not qualified (ex: name)      |
+| `value_expr` | An SQL expression that evaluates to the column value        |
+| `condition`  | An SQL expression that evaluates to a boolean               |
 
 ## Examples
 
