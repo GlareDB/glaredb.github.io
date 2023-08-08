@@ -94,6 +94,24 @@ img {
 
 .highlight {
   border-radius: $border-radius;
+
+  & ~ button[type="button"] {
+    border: 1px solid #1f232826;
+    border-radius: 6px;
+    display: none !important;
+    margin: 6px;
+    padding: 6px;
+    opacity: 1;
+    width: 18px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @include mq(md) {
+      display: block !important;
+    }
+  }
 }
 
 body {
