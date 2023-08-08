@@ -64,6 +64,7 @@ DELETE FROM public.users;
 
 **Available in**: [GlareDB@v0.4.0], [GlareDB Cloud]
 
+- [`csv_scan`] and [`ndjson_scan`] now support scanning compressed files
 - [`generate_series`] now supports decimals
 
 ## Exclude columns in SELECT
@@ -89,6 +90,11 @@ SELECT * EXCLUDE (id) FROM users;
 - [Python bindings] now include `show()` with pretty formatting and `close()`
   for gracefully closing connections.
 
+**Available in**: [GlareDB@v0.4.0]
+
+- Fixed `now()` returning the incorrect time
+- Fixed `show()` in Python not working in all environments
+
 **Available in**: [GlareDB Cloud]
 
 - Fixed an issue where the button for adding an SSH tunnel was not displaying
@@ -104,6 +110,7 @@ SELECT * EXCLUDE (id) FROM users;
 [tutorial-toggle]: /assets/images/tutorial-toggle.png
 [`DELETE`]: /glaredb/sql-commands/delete/
 [`csv_scan`]: /glaredb/sq-functions/csv_scan/
+[`ndjson_scan`]: /glaredb/sq-functions/ndjson_scan/
 [`generate_series`]: /glaredb/sq-functions/generate_series/
 [`SELECT`]: /glaredb/sql-commands/select/
 [`EXCLUDE`]: /glaredb/sql-commands/select/#exclude-clause
