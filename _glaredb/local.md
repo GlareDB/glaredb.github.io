@@ -28,17 +28,10 @@ To start a local session, run:
 ./glaredb
 ```
 
-If you need to pass options, you must specify `local`:
-
-```sh
-# You can use `--data-dir` to specify a disk-backed data directory:
-./glaredb local --data-dir /tmp/glaredb
-```
-
 To see all options available, run `--help`:
 
 ```sh
-./glaredb local --help
+./glaredb --help
 ```
 
 Alternatively, the server subcommand can be used to launch a server process on
