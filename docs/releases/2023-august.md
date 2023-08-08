@@ -93,6 +93,11 @@ SELECT * EXCLUDE (id) FROM users;
 **Available in**: [GlareDB@v0.4.0]
 
 - Fixed `now()` returning the incorrect time
+- You can now run glaredb locally without specifying the `local` subcommand:
+
+```sh
+./glaredb
+```
 
 **Available in**: [GlareDB Cloud]
 
