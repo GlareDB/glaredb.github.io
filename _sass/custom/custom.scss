@@ -95,6 +95,8 @@ img {
 .highlight {
   border-radius: $border-radius;
 
+  // Selector with high specifity for "copy to clipboard" buttons.
+  // Relevant: _config.yaml enable_copy_code_button
   & ~ button[type="button"] {
     border: 1px solid #1f232826;
     border-radius: 6px;
