@@ -41,9 +41,9 @@ A table can be created from a query:
 CREATE TABLE t1 AS SELECT * FROM generate_series(1, 5, 2);
 ```
 
-**Available in**: [GlareDB@v0.4.0], [GlareDB Cloud]
+**Available in**: [GlareDB@v0.4.0]
 
-Native tables now support UPDATE and [`DELETE`] statements:
+Native tables now support [`UPDATE`] and [`DELETE`] statements:
 
 ```sql
 CREATE TABLE public.users ( name text );
@@ -62,7 +62,7 @@ DELETE FROM public.users;
   and gcs
 - All `*_scan` functions received support for passing multiple URLs
 
-**Available in**: [GlareDB@v0.4.0], [GlareDB Cloud]
+**Available in**: [GlareDB@v0.4.0]
 
 - [`csv_scan`] and [`ndjson_scan`] now support scanning compressed files
 - [`generate_series`] now supports decimals
@@ -93,7 +93,6 @@ SELECT * EXCLUDE (id) FROM users;
 **Available in**: [GlareDB@v0.4.0]
 
 - Fixed `now()` returning the incorrect time
-- Fixed `show()` in Python not working in all environments
 
 **Available in**: [GlareDB Cloud]
 
@@ -108,6 +107,7 @@ SELECT * EXCLUDE (id) FROM users;
 [GlareDB Cloud]: https://console.glaredb.com/
 [tutorials]: /assets/images/tutorials.png
 [tutorial-toggle]: /assets/images/tutorial-toggle.png
+[`UPDATE`]: /glaredb/sql-commands/update/
 [`DELETE`]: /glaredb/sql-commands/delete/
 [`csv_scan`]: /glaredb/sq-functions/csv_scan/
 [`ndjson_scan`]: /glaredb/sq-functions/ndjson_scan/
