@@ -94,6 +94,27 @@ img {
 
 .highlight {
   border-radius: $border-radius;
+
+  // Selector with high specifity for "copy to clipboard" buttons.
+  // Relevant: _config.yaml enable_copy_code_button
+  & ~ button[type="button"] {
+    border: 1px solid #1f232826;
+    border-radius: 6px;
+    display: none !important; // See @include mq below
+    margin: 6px;
+    padding: 6px;
+    opacity: 1;
+    width: 18px;
+
+    &:hover {
+      cursor: pointer; // override just-the-docs default crosshair
+    }
+
+    // They will only display on md+ screens, as otherwise they overlap content
+    @include mq(md) {
+      display: block !important;
+    }
+  }
 }
 
 body {
