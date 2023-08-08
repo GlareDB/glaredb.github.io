@@ -31,14 +31,25 @@ come in future releases.
 - The results view was redesigned. In a multi-query statement, all results are
   now shown as tabs, even if one of the statements returned nothing.
 
-## Create native table from query
+## Native tables: UPDATE, DELETE and CREATE AS
 
 **Available in**: [GlareDB@v0.3.0], [GlareDB Cloud]
 
 A table can be created from a query:
 
 ```sql
-create table t1 as select * from generate_series(1, 5, 2);
+CREATE TABLE t1 AS SELECT * FROM generate_series(1, 5, 2);
+```
+
+**Available in**: [GlareDB@v0.4.0]
+
+Native tables now support [`UPDATE`] and [`DELETE`] statements:
+
+```sql
+CREATE TABLE public.users ( name text );
+INSERT INTO public.users VALUES ('Eldon');
+UPDATE public.users SET name = 'Eldon Tyrell' WHERE name = 'Eldon';
+DELETE FROM public.users;
 ```
 
 ## Improvements to SQL functions
@@ -51,11 +62,16 @@ create table t1 as select * from generate_series(1, 5, 2);
   and gcs
 - All `*_scan` functions received support for passing multiple URLs
 
+**Available in**: [GlareDB@v0.4.0]
+
+- [`csv_scan`] and [`ndjson_scan`] now support scanning compressed files
+- [`generate_series`] now supports decimals
+
 ## Exclude columns in SELECT
 
 **Available in**: [GlareDB@v0.3.0], [GlareDB Cloud]
 
-[`SELECT`] now accepts an `EXCEPT` or `EXCLUDE` clause to exclude specific columns
+[`SELECT`] now accepts an [`EXCLUDE`] clause to exclude specific columns
 from output:
 
 ```sql
@@ -64,17 +80,26 @@ SELECT * EXCLUDE (id) FROM users;
 
 ## Misc updates and fixes
 
-**Available in**: [GlareDB@v0.3.0], [GlareDB Cloud]:
+**Available in**: [GlareDB@v0.3.0], [GlareDB Cloud]
 
 - Fixed `CREATE SCHEMA IF NOT EXISTS` failing if schema existed
 
-**Available in**: [GlareDB@v0.3.0]:
+**Available in**: [GlareDB@v0.3.0]
 
 - [`glaredb local`] now has prettier output
 - [Python bindings] now include `show()` with pretty formatting and `close()`
   for gracefully closing connections.
 
-**Available in**: [GlareDB Cloud]:
+**Available in**: [GlareDB@v0.4.0]
+
+- Fixed `now()` returning the incorrect time
+- You can now run glaredb locally without specifying the `local` subcommand:
+
+```sh
+./glaredb
+```
+
+**Available in**: [GlareDB Cloud]
 
 - Fixed an issue where the button for adding an SSH tunnel was not displaying
 - Organization billing now contains historic billing data
@@ -82,11 +107,17 @@ SELECT * EXCLUDE (id) FROM users;
 - The SQL workspace is now the first page users are loaded into when they sign
   in
 
+[GlareDB@v0.4.0]: https://github.com/GlareDB/glaredb/releases/tag/v0.4.0
 [GlareDB@v0.3.0]: https://github.com/GlareDB/glaredb/releases/tag/v0.3.0
 [GlareDB Cloud]: https://console.glaredb.com/
 [tutorials]: /assets/images/tutorials.png
 [tutorial-toggle]: /assets/images/tutorial-toggle.png
+[`UPDATE`]: /glaredb/sql-commands/update/
+[`DELETE`]: /glaredb/sql-commands/delete/
 [`csv_scan`]: /glaredb/sq-functions/csv_scan/
+[`ndjson_scan`]: /glaredb/sq-functions/ndjson_scan/
+[`generate_series`]: /glaredb/sq-functions/generate_series/
 [`SELECT`]: /glaredb/sql-commands/select/
+[`EXCLUDE`]: /glaredb/sql-commands/select/#exclude-clause
 [`glaredb local`]: /glaredb/local/
 [Python bindings]: /glaredb/python/

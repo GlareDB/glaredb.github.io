@@ -8,6 +8,8 @@ parent: SQL functions
 
 Read csv files from a local filesystem or supported object stores.
 
+The files may be compressed, for example: `.csv.gz`.
+
 URLs provided to `csv_scan` may also include glob characters to allow
 scanning multiple files when reading from S3, GCS, or a local filesystem.
 Globbed paths are not allowed when querying csv files over HTTP/HTTPS.

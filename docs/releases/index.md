@@ -13,7 +13,7 @@ GlareDB is open source and contains [full release notes on GitHub].
 - [August 2023]
   - [Initial Iceberg support](/docs/releases/2023-august.html#initial-iceberg-support)
   - [SQL workspace improvements](/docs/releases/2023-august.html#sql-workspace-improvements)
-  - [Create native table from query](/docs/releases/2023-august.html#create-native-table-from-query)
+  - [Native tables: UPDATE, DELETE and CREATE AS](/docs/releases/2023-august.html#native-tables-update-delete-and-create-as)
   - [Improvements to SQL functions](/docs/releases/2023-august.html#improvements-to-sql-functions)
   - [Exclude columns in `SELECT`](/docs/releases/2023-august.html#exclude-columns-in-select)
   - [Misc updates and fixes](/docs/releases/2023-august.html#misc-updates-and-fixes)
