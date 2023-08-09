@@ -46,5 +46,20 @@ In this example, we create a table schema and values from [`generate_series`].
 CREATE TABLE public.ints AS select * from generate_series(1, 10);
 ```
 
+In these examples, we leverage casting and aliasing when creating a table and
+values from a [`SELECT`]. Note that not all columns need to be aliased. The
+provided values will be casted to match the column data type.
+
+```sql
+-- The first column will be aliased to 'a' and cast to Int32. The second column
+-- will be unnamed at Int64.
+CREATE TABLE public.example (a int) AS VALUES (1, 2);
+
+-- Both columns are aliased and cast from values. The first column will be 'a'
+-- and the value 1 is cast to Int32. The second column will be 'b' and the value
+-- 2 is cast to Utf8 text.
+CREATE TABLE public.example2 (a int, b text) as values (1, 2);
+```
+
 [`SELECT`]: /glaredb/sql-commands/select/
 [`generate_series`]: /glaredb/sq-functions/generate_series/
