@@ -41,7 +41,7 @@ A table can be created from a query:
 CREATE TABLE t1 AS SELECT * FROM generate_series(1, 5, 2);
 ```
 
-**Available in**: [GlareDB@v0.4.0]
+**Available in**: [GlareDB@v0.4.0], [GlareDB Cloud]
 
 Native tables now support [`UPDATE`] and [`DELETE`] statements:
 
@@ -62,7 +62,7 @@ DELETE FROM public.users;
   and gcs
 - All `*_scan` functions received support for passing multiple URLs
 
-**Available in**: [GlareDB@v0.4.0]
+**Available in**: [GlareDB@v0.4.0], [GlareDB Cloud]
 
 - [`csv_scan`] and [`ndjson_scan`] now support scanning compressed files
 - [`generate_series`] now supports decimals
@@ -90,9 +90,12 @@ SELECT * EXCLUDE (id) FROM users;
 - [Python bindings] now include `show()` with pretty formatting and `close()`
   for gracefully closing connections.
 
-**Available in**: [GlareDB@v0.4.0]
+**Available in**: [GlareDB@v0.4.0], [GlareDB Cloud]
 
 - Fixed `now()` returning the incorrect time
+
+**Available in**: [GlareDB@v0.4.0]
+
 - You can now run glaredb locally without specifying the `local` subcommand:
 
 ```sh
