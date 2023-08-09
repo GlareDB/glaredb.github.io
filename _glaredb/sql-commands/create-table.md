@@ -20,6 +20,8 @@ CREATE TABLE table_name (column_name data_type [, ... ])
 [AS VALUES (value)[, ... ]];
 -- creating a table from a SELECT
 CREATE TABLE table_name AS select_statement;
+-- creating a table from a SELECT with aliasing and casting
+CREATE TABLE table_name (column_name data_type [, ...]) AS select_statement;
 ```
 
 | Field              | Description                                       |
