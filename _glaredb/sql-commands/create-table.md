@@ -16,12 +16,13 @@ Create a native table.
 
 ```sql
 -- defining a table, optionally with VALUES
-CREATE TABLE table_name (column_name data_type [, ... ])
-[AS VALUES (value)[, ... ]];
+CREATE [TEMP] TABLE table_name (column_name data_type [, ... ])
+  [AS VALUES (value)[, ... ]];
 -- creating a table from a SELECT
-CREATE TABLE table_name AS select_statement;
+CREATE [TEMP] TABLE table_name AS select_statement;
 -- creating a table from a SELECT with aliasing and casting
-CREATE TABLE table_name (column_name data_type [, ...]) AS select_statement;
+CREATE [TEMP] TABLE table_name (column_name data_type [, ...])
+  AS select_statement;
 ```
 
 | Field              | Description                                       |
@@ -31,6 +32,12 @@ CREATE TABLE table_name (column_name data_type [, ...]) AS select_statement;
 | `select_statement` | A [`SELECT`] query to create the table from.      |
 | `table_name`       | Name of the table.                                |
 | `value`            | A value set to insert into the table on creation. |
+
+### Temporary tables
+
+When creating a table with `TEMP` specified, the table is **never** qualified
+with a schema. The table will exist in the `current_session` schema and will be
+dropped once the session has ended.
 
 ## Examples
 
