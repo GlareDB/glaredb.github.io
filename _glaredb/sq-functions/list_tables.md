@@ -14,7 +14,7 @@ as a data source.
 ## Syntax
 
 ```sql
-list_tables(<database>)
+list_tables(<database>, <schema>)
 ```
 
 | Field      | Description                                |
