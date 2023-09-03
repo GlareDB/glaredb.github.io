@@ -4,12 +4,14 @@ title: "Release notes"
 has_children: true
 nav_order: 4
 has_toc: false
+child_nav_order: reversed
 ---
 
 # Release notes
 
 GlareDB is open source and contains [full release notes on GitHub].
 
+- [September 2023]
 - [August 2023]
   - [Initial Iceberg support](/docs/releases/2023-august.html#initial-iceberg-support)
   - [SQL workspace improvements](/docs/releases/2023-august.html#sql-workspace-improvements)
@@ -20,3 +22,4 @@ GlareDB is open source and contains [full release notes on GitHub].
 
 [full release notes on GitHub]: https://github.com/GlareDB/glaredb/releases
 [August 2023]: /docs/releases/2023-august.html#august-2023
+[September 2023]: /docs/releases/2023-september.html#september-2023

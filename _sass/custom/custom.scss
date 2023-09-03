@@ -84,7 +84,7 @@
 
 pre {
   font-size: $font-size-6;
-  line-height: $body-line-height;
+  line-height: 1.0;
 }
 
 img {
@@ -115,6 +115,10 @@ img {
       display: block !important;
     }
   }
+}
+
+blockquote {
+  box-shadow: none !important;
 }
 
 body {

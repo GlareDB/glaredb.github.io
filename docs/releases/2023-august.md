@@ -2,6 +2,7 @@
 layout: default
 title: August 2023
 parent: "Release notes"
+nav_order: 1
 ---
 
 # August 2023
