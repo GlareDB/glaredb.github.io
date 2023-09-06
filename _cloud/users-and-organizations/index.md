@@ -20,4 +20,4 @@ organization.
 
 ![Organization Selector]
 
-[Organization Selector]: /assets/images/organization_selector.png
+[Organization Selector]: /assets/images/cloud/admin/user-dropdown.png

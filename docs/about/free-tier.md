@@ -7,7 +7,7 @@ nav_order: 3
 
 # Free tier
 
-GlareDB Cloud is currently in [Technical Preview], and offers a free tier.
+[GlareDB Cloud] is currently in [Technical Preview], and offers a free tier.
 Free tiers have the following features:
 
 - Unlimited data sources
@@ -21,4 +21,5 @@ Free tiers have the following features:
 GlareDB currently supports the US Central region. In the future, deployments
 will be able to select a region from a wider range.
 
+[GlareDB Cloud]: https://console.glaredb.com
 [Technical Preview]: /docs/about/technical-preview

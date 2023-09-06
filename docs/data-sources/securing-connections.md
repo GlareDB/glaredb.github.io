@@ -11,8 +11,8 @@ parent: "Step 1: Connect your data sources"
 > Currently only MySQL and Postgres data sources support SSH tunnels
 
 For scenarios whereby a data source does not have a public access point, GlareDB
-can use a tunnel to make the connection. SSH tunnels are specified per deployment,
-and can be reused by multiple data sources for that deployment.
+can use a tunnel to make the connection. SSH tunnels are specified per
+deployment, and can be reused by multiple data sources for that deployment.
 
 ## Creating and using SSH tunnels using SQL
 
@@ -44,21 +44,22 @@ and can be reused by multiple data sources for that deployment.
 
 ## Creating and using SSH tunnels using GlareDB Cloud
 
-1. Go to the deployment for which the SSH tunnel will be created
-2. Go to the **Settings** tab and select **SSH tunnels**
+You can create SSH tunnels from the **SQL workspace**:
+
+1. From the **SQL workspace** select the **SSH tunnels** panel from the sidebar
 
    ![SSH tunnel settings]
 
-3. Click **New tunnel** and add the host, port and user for the SSH server that
-   will be used to connect to the data source
+2. Click the **+** button at the top right, or **Create tunnel**. Add the host,
+   port and user for the SSH server.
 
    ![Create SSH tunnel]
 
-4. After creating the tunnel a public key will be presented. Add this key to
+3. After creating the tunnel a public key will be presented. Add this key to
    your SSH server (for example `~/.ssh/authorized_keys`)
 
    ![SSH tunnel public key]
 
-[SSH tunnel settings]: /assets/images/deployment_settings_ssh_tunnel.png
-[Create SSH tunnel]: /assets/images/create_ssh_tunnel.png
-[SSH tunnel public key]: /assets/images/public_key.png
+[SSH tunnel settings]: /assets/images/data-sources/ssh-tunnels-sidebar.png
+[Create SSH tunnel]: /assets/images/data-sources/create_ssh_tunnel.png
+[SSH tunnel public key]: /assets/images/data-sources/public-key.png

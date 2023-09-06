@@ -9,9 +9,11 @@ nav_order: 1
 Deployments represent the persistent state of a GlareDB database. Deployments
 can be hooked up to a [Compute Engine] to power queries.
 
-Deployments inside an organization can be viewed from the **Deployments** page.
+Deployments inside an organization can be viewed from the main page, which can
+be accessed any time by clicking the GlareDB logo in the top left of the
+navigation.
 
-![Org deployments]
+![Deployments list]
 
 ## Creating deployments
 
@@ -29,12 +31,9 @@ will be disabled.
 > At this time, data from a deleted deployment can **never** be recovered. As
 > we work towards a stable version, we will implement tiered deletion options.
 
-Deleting a deployment can be done from the deployment's **Settings** page. From
-the **Delete deployment** tab, you'll have the opportunity to delete a deployment.
-
-![Delete deployment]
+You can delete a deployment from the **SQL workspace** page. Click the name of
+the deployment in the navigation bar and from the menu, select **Delete**.
 
 [Compute Engine]: /cloud/compute-engines
-[Org deployments]: /assets/images/org-deployments.png
-[Create deployment dialog]: /assets/images/create-deployment-dialog.png
-[Delete deployment]: /assets/images/delete-deployment.png
+[Deployments list]: /assets/images/cloud/deployments/deployments-list.png
+[Create deployment dialog]: /assets/images/cloud/deployments/create-deployment.png

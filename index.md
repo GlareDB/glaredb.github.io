@@ -7,28 +7,41 @@ has_children: true
 
 # What is GlareDB?
 
-GlareDB is a database built for querying and analyzing distributed data using
-SQL. Query data directly from [Postgres], [Snowflake], [object storage],
-[and other data sources] without moving data around.
+Data exists everywhere: your laptop, [Postgres], [Snowflake] and as
+[files in GCS]. It exists in various formats such as Parquet, CSV and JSON.
+Regardless, there will always be multiple steps spanning several destinations to
+get the insights you need.
 
-As of June 2023, GlareDB is open source! See our [open source announcement] for
-more information.
+**GlareDB is designed to query your data wherever it lives using SQL that you
+already know.**
+
+[Getting started] is as easy as:
+
+```shell
+curl https://glaredb.com/install.sh | sh
+```
 
 ## Where does GlareDB fit into your stack?
 
-GlareDB sits between your data applications and your data sources. Any
-application or client that can communicate using the Postgres protocol can
-connect directly to GlareDB.
-
 ![Where GlareDB fits](/assets/images/where-glaredb-fits.png)
 
-## What is a data source?
+GlareDB is versatile in that it can:
+
+- query local and remote files
+- query other databases and data sources
+- store data and queries (as views)
+- copy data from sources to destinations
+- interop with DataFrame libraries in Python
+- run one-off queries from the command-line
+
+See our [Working with GlareDB in Python] blog post and our [Examples page] for
+in-depth examples.
+
+### What is a data source?
 
 A data source is a destination with data, such as databases or files.
 
-We currently support multiple databases and files in [object storage]. For
-example, you can join data existing in a [Postgres] database with a CSV in [S3]
-using basic SQL. There is no need for ETL!
+We currently support various databases and files in [GCS] and [S3].
 
 [Learn more about data sources].
 
@@ -56,9 +69,11 @@ will be ready and highly available for you to use.
 
 [Postgres]: /docs/data-sources/supported/postgres/
 [Snowflake]: /docs/data-sources/supported/snowflake/
-[object storage]: /docs/data-sources/supported/gcs/
-[and other data sources]: /docs/data-sources/supported/index/
-[open source announcement]: https://glaredb.com/blog/glaredb-goes-open-source
+[files in GCS]: /docs/data-sources/supported/gcs/
+[Getting started]: /docs/about/getting-started
+[Examples page]: /glaredb/examples/index/
+[Working with GlareDB in Python]: https://glaredb.com/blog/working-with-python
+[GCS]: /docs/data-sources/supported/gcs/
 [S3]: /docs/data-sources/supported/s3/
 [Learn more about data sources]: /docs/data-sources/
 [github.com/GlareDB/glaredb]: https://github.com/GlareDB/glaredb#install

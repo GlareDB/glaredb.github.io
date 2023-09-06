@@ -50,14 +50,10 @@ While in technical preview, compute engines are updated as follows:
 
 ### Restarting a compute engine
 
-Navigate to **Compute Engines** and click **Stop** from the 3 dot menu.
+From the **SQL workspace** select the **Compute engines** panel from the
+sidebar, then expand the 3-dot menu for the compute engine you want to restart.
 
-![stop engine]
-
-Once the deployment successfully stops, start it again by clicking
-**Start**.
-
-![start engine]
+![restart engine]
 
 ## Missing features
 
@@ -85,6 +81,5 @@ necessary to move towards a stable version range.
 
 [github.com/GlareDB/glaredb]: https://github.com/GlareDB/glaredb
 [open source announcement]: https://glaredb.com/blog/glaredb-goes-open-source
-[stop engine]: /assets/images/compute-engine-stop.png
-[start engine]: /assets/images/compute-engine-start.png
+[restart engine]: /assets/images/technical-preview/compute-engine-restart.png
 [try running GlareDB locally]: /glaredb/local

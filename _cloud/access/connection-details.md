@@ -6,11 +6,15 @@ parent: Access deployments
 
 # Connection details
 
-Connection details for a deployment are displayed under **Connection details**
-on the deployment overview page. This section provides all information required
-to connect to your GlareDB deployment.
+Connection details for a deployment can be accessed from the main page from the
+**Connection details** accordion:
 
 ![Connection details]
+
+or the **SQL workspace** from the **Connect**
+button:
+
+![Connect button]
 
 ## Connection strings
 
@@ -76,6 +80,7 @@ of your choice.
 
 See [Managing passwords] for more on passwords.
 
+[Connection details]: /assets/images/cloud/connect/connection-details.png
+[Connect button]: /assets/images/cloud/connect/connect-button.png
 [Managing passwords]: /cloud/access/managing-passwords/
-[Connection details]: /assets/images/connection-details.png
-[New password]: /assets/images/new-password.png
+[New password]: /assets/images/cloud/connect/new-password.png

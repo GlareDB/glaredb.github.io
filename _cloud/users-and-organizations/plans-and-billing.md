@@ -7,19 +7,31 @@ nav_order: 2
 
 # Plans and billing
 
-Billing information for an organization can be found in **Settings -> Billing**.
+Access the the unified settings page from the user dropdown.
 
-![Billing panel]
+![User dropdown]
 
-## Free plan
+From there, select **Manage plan** underneath the **Plan** grouping.
 
-GlareDB offers a free plan to allow for exploration and hobby usage of the
-platform. This plan is limited in the number of resources that can be used, and
-the number of data sources that can be hooked into GlareDB.
+![Manage plan]
 
-## Paid plan
+## Free tier
 
-For use beyond the limited free plan, GlareDB offers paid plans.
+GlareDB offers a [Free tier]. This plan is limited to:
+
+- One deployment (per organization)
+- Serverless compute engine
+- 10 GB Storage
+- 5 organization members
+
+## Subscriptions
+
+In addition to the free tier, subscribed plans receive:
+
+- 5 deployments
+- Dedicated [Compute engines] for [Hybrid Execution]
+- Unlimited storage
+- 30 organization members
 
 {: .important}
 
@@ -28,8 +40,12 @@ For use beyond the limited free plan, GlareDB offers paid plans.
 
 ### Checkout
 
-GlareDB proudly integrates with Stripe for a familiar checkout flow. Managing
-plans is self-service and easy.
+GlareDB proudly integrates with Stripe for a familiar self-service checkout
+flow.
 
-[Billing panel]: /assets/images/billing-panel.png
+[User dropdown]: /assets/images/cloud/admin/user-dropdown.png
+[Manage plan]: /assets/images/cloud/admin/manage-plan.png
+[Free tier]: /docs/about/free-tier
+[Compute engines]: /cloud/compute-engines
+[Hybrid Execution]: /glaredb/hybrid-execution
 [support@glaredb.com]: mailto:support@glaredb.com
