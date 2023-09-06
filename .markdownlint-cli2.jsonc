@@ -26,6 +26,7 @@
         "DELETE",
         "DROP",
         "EXCLUDE",
+        "Execution",
         "EXTERNAL",
         "GCS",
         "GlareDB",

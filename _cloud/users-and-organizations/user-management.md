@@ -7,28 +7,36 @@ nav_order: 1
 
 # User management
 
-Organization members can be managed from the **Edit members** tab from the
-organizations settings page. Only organization owners can manage members.
+Access the the unified settings page from the user dropdown.
 
-## Inviting users
+![User dropdown]
 
-To invite a user, add their email and click **Send invite**. When a user is
-invited, they will receive an email allowing them to accept the invite.
+From there, select **Users** underneath the **Organization** grouping.
 
-## Resending an invitation
-
-To resend an invitation, go to the **Pending invites** tab, find the user in the
-table and click the resend icon.
-
-## Removing an invitation
-
-To revoke an outstanding invite, go to the **Pending invites** tab, find the
-user in the table and click the trash can icon.
+![Organization users]
 
 ## Removing members
 
 To remove a user, click the **Remove** button in the users table.
 
-![Edit members]
+## Inviting users
 
-[Edit members]: /assets/images/edit-members.png
+From the unified settings page, select **Invites** underneath the
+**Organization** grouping.
+
+![Organization invites]
+
+To invite a user, add their email and click **Send invite**. When a user is
+invited, they will receive an email allowing them to accept the invite.
+
+## Resending or revoking an invitation
+
+To resend an invitation, click the resend icon. To revoke an outstanding invite,
+click the trash can icon.
+
+![Manage invite]
+
+[User dropdown]: /assets/images/cloud/admin/user-dropdown.png
+[Organization users]: /assets/images/cloud/admin/organization-members.png
+[Organization invites]: /assets/images/cloud/admin/organization-invites.png
+[Manage invite]: /assets/images/cloud/admin/manage-invite.png

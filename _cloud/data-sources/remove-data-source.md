@@ -7,31 +7,20 @@ nav_order: 4
 
 # Remove a data source in GlareDB Cloud
 
-The deployment overview page displays a table showing all data sources that are
-currently connected to that deployment.
+The **Schema Explorer** in the **SQL workspace** shows every data source that's
+connected to your deployment.
 
-![Data sources table]
+To disconnect an external database (such as MongoDB, MySQL, Postgres or
+Snowflake), run the [DROP DATABASE] SQL command.
 
-Removing a data source can be done by expanding the three dot context menu on a
-data source. A menu will appear with a **Delete** option.
+To remove an external table (such as a file in GCS or S3 cloud storage), run the
+[DROP TABLE] SQL command.
 
-![Data sources menu]
+![drop database sql workspace]
 
-Clicking delete will open a confirmation menu. Confirm the deletion to proceed,
-or cancel.
+![drop database result]
 
-![Data sources delete confirmation]
-
-## SQL reference
-
-If you prefer to use SQL for removing data sources, see the following SQL
-reference:
-
-- [DROP DATABASE]
-- [DROP TABLE]
-
-[Data sources table]: /assets/images/deployment-overview.png
-[Data sources menu]: /assets/images/example_data_source_delete.png
-[Data sources delete confirmation]: /assets/images/example_data_source_delete_confirm.png
 [DROP DATABASE]: /glaredb/sql-commands/drop-database/
+[drop database sql workspace]: /assets/images/cloud/data-sources/drop-database.png
+[drop database result]: /assets/images/cloud/data-sources/drop-database-result.png
 [DROP TABLE]: /glaredb/sql-commands/drop-table/

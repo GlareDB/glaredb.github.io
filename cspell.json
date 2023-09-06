@@ -40,19 +40,20 @@
     "BYTEA",
     "datasource",
     "datasources",
+    "GCS",
     "glaredb",
     "glaredbteam",
+    "globbed",
+    "Globbed",
     "mydb",
     "myhost",
     "ndjson",
     "psql",
+    "S3",
     "SELECT",
     "SMALLINT",
+    "Struct",
     "TINYINT",
-    "typeof",
-    "GCS",
-    "S3",
-    "Globbed",
-    "globbed"
+    "typeof"
   ]
 }

@@ -8,17 +8,18 @@ nav_order: 2
 # Querying your data sources in GlareDB Cloud
 
 GlareDB Cloud has an integrated SQL workspace that can be used to connect, query
-and manage data sources.
+and manage data sources. From the main page, click the **SQL workspace** link
+for a deployment.
 
-From the main page, select the deployment you wish to query.
+![Deployment list]
 
-![Organization deployment list]
+The SQL workspace contains various helpful features for exploring your data,
+querying your data and producing basic reports:
 
-![Deployment overview]
-
-Then click the **SQL Workspace** navigation at the top to access the SQL
-workspace. Here you can run queries, see previously run queries, extract results
-and save queries as views.
+- Schema explorer (available from the sidebar)
+- Recent queries (available from the sidebar)
+- Completion hints for tables and functions (available in the editor)
+- Exporting results (available from the results panel)
 
 ![SQL workspace]
 
@@ -38,15 +39,22 @@ SELECT * FROM example.public.users;
 For more information, refer to our guide on [Working with your data] and the
 [SQL commands reference].
 
+## Hybrid Execution
+
+You can connect to your GlareDB Cloud deployment locally using [Hybrid Execution].
+[Hybrid Execution] is available in the GlareDB CLI as well as the
+[GlareDB Python library].
+
 ## Use your preferred Postgres client
 
 You can connect to GlareDB with your preferred Postgres-compatible clients,
 such as `psql`. For more information on connections strings and passwords, refer
 to [Connection Details] and [Managing Passwords].
 
-[Organization deployment list]: /assets/images/org-deployments.png
-[Deployment overview]: /assets/images/deployment-overview.png
-[SQL workspace]: /assets/images/sql_workspace.png
+[Deployment list]: /assets/images/cloud/data-sources/deployments-list.png
+[SQL workspace]: /assets/images/cloud/data-sources/sql-workspace.png
+[Hybrid Execution]: /glaredb/hybrid-execution
+[GlareDB Python library]: /glaredb/python/
 [Working with your data]: /docs/working-with-your-data/
 [SQL commands reference]: /glaredb/sql-commands/index/
 [Connection Details]: /cloud/access/connection-details/

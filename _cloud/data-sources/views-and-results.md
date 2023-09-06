@@ -7,28 +7,26 @@ nav_order: 3
 
 # Save a query
 
-Have a complicated query, such as joining multiple data sources? The SQL
-workspaces offers two easy-to-use features: views and exporting results.
+The **SQL workspace** offers two easy-to-use features: saving queries and
+exporting results.
 
 ## Save queries as views
 
-To save the current query in the SQL workspace editor as a view, simply click
-the **Save view** button at the top right of the editor. You must select a
-schema and a name for the view.
+To save the most recently executed query, click the **Save view** button located
+in the top of the results panel. A dialog will appear.
 
 ![Save as view]
 
-If you want to use a schema other than `public`, then simply create a new schema
-in GlareDB. For more information, refer to [CREATE SCHEMA].
+If you want to use a schema other than `public`, create a new schema in GlareDB.
+For more information, refer to [CREATE SCHEMA].
 
 ## Export results
 
 To export results from the SQL workspace editor, first run a query. Then, click
-**Export** in the top right of the results table. From there, select how you
-want to save your results.
+**Export** in the top right of the results table.
 
 ![Export results]
 
-[Save as view]: /assets/images/sql_workspace_view.png
+[Save as view]: /assets/images/cloud/data-sources/save-view.png
 [CREATE SCHEMA]: /glaredb/sql-commands/create-schema/
-[Export results]: /assets/images/sql_workspace_export.png
+[Export results]: /assets/images/cloud/data-sources/export-result.png

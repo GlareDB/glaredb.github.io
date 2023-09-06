@@ -7,34 +7,32 @@ nav_order: 1
 
 # Add a data source in GlareDB Cloud
 
-The deployment overview page displays a table showing all data sources that are
-currently connected to that deployment. Adding a new data source can be done by
-clicking the **Add data source** button.
+The main page displays all of your deployments with a summary count of each
+data source. To add a new data source, click the **+** button.
 
-![Data sources table]
+![Add data source button]
+
+You can also add a data source from the **SQL workspace** page by clicking
+**+ Connect data source** in the navigation bar at the top of the page.
 
 A new dialog will pop up showing all supported data sources.
 
 ![Data sources dialog]
 
-Clicking one of the data source types will take you to the next screen where you
-will need to provide details on how to connect.
+After selecting one of the supported data source types, you will see a form:
 
-![Postgres dialog]
+![Add pg data source]
 
-In our example, we picked **Postgres**. We are then asked to provide a **Name**,
-**Host**, **Port**, **Database**, **User**, and **Password**. (See [Postgres
-data source] for more information on these fields.)
+Submitting this form will:
 
-Submitting this form will validate the connection. If there's an issue with
-connecting, an error message will be displayed.
+- validate that a connection can be made with the data source
+- if valid, save this data source as a database in your GlareDB deployment
 
-![Postgres error]
+The exact SQL being run and its output (including errors) are displayed.
 
-If everything succeeds, a confirmation message will be displayed, and the data
-source is now able to be queried from within your deployment.
+![Add pg data source output]
 
-![Postgres success]
+![Add pg data source output error]
 
 ## SQL reference
 
@@ -44,10 +42,10 @@ reference:
 - [CREATE EXTERNAL DATABASE]
 - [CREATE EXTERNAL TABLE]
 
-[Data sources table]: /assets/images/data-sources-table.png
-[Data sources dialog]: /assets/images/data-sources-dialog.png
-[Postgres dialog]: /assets/images/postgres-dialog.png
-[Postgres error]: /assets/images/postgres-error.png
-[Postgres success]: /assets/images/postgres-success.png
+[Add data source button]: /assets/images/cloud/data-sources/add-datasource-button.png
+[Data sources dialog]: /assets/images/cloud/data-sources/data-sources-dialog.png
+[Add pg data source]: /assets/images/cloud/data-sources/add-pg-data-source.png
+[Add pg data source output]: /assets/images/cloud/data-sources/add-pg-data-source-output.png
+[Add pg data source output error]: /assets/images/cloud/data-sources/add-pg-data-source-output-error.png
 [CREATE EXTERNAL DATABASE]: /glaredb/sql-commands/create-external-database/
 [CREATE EXTERNAL TABLE]: /glaredb/sql-commands/create-external-table/
