@@ -31,7 +31,7 @@ To start a local session, run:
 This will drop you into a shell letting you run sql commands against GlareDB.
 Note that by default, this will use an in-memory database.
 
-```
+```text
 GlareDB
 Type \help for help.
 Using in-memory catalog
@@ -52,12 +52,23 @@ database at the provided path.
 ./glaredb --data-dir ./example
 ```
 
-Alternatively, the `\open` command can be used in a running shell to open a
-database at the provided path.
+The `\open` command can be used in a running shell to open a database at the
+provided path:
 
-```
+```text
 > \open ./example
 ```
+
+The `\open` command can also be used to connect to a GlareDB Cloud deployment.
+
+```text
+> \open glaredb://<user>:<password>@<org>.remote.glaredb.com:6443/<deployment-name>
+Connected to Cloud deployment: <deployment-name>
+```
+
+Connecting to a Cloud deployment via the CLI enables [Hybrid execution] which
+allows queries to use the resources of both the remote deployment and local
+machine.
 
 ## Server usage
 
@@ -102,7 +113,7 @@ following:
 - [Our blog post on Python Bindings]
 - [Our examples on using GlareDB in Python]
 
-
+[Hybrid execution]: /glaredb/hybrid-execution
 [Pandas]: https://github.com/pandas-dev/pandas
 [Polars]: https://github.com/pola-rs/polars
 [Our Python Bindings documentation]: /glaredb/python/

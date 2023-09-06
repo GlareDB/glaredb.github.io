@@ -50,7 +50,7 @@ Develop locally (`localhost:4000`):
 bundle exec jekyll serve
 ```
 
-### Static analysis
+### Linting
 
 We use `markdownlint` for linting and `prettier` for formatting. To see the
 configurations, check out `.markdownlint-cli2.jsonc` and `.prettierrc.json`
@@ -59,6 +59,9 @@ respectively.
 From the root of the project:
 
 ```console
+# Checking spelling, formatting, and markdown lints.
+yarn check:all
+
 # Checks spelling
 yarn cspell
 

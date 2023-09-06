@@ -1,10 +1,10 @@
 ---
 layout: default
-title: GlareDB Python Library
+title: GlareDB Python library
 nav_order: 2
 ---
 
-# GlareDB Python Library
+# GlareDB Python library
 
 GlareDB can be used in Python environments along with [Pandas] and [Polars] to
 work with distributed data.
@@ -35,14 +35,26 @@ con.sql("select 1").show()
 By default, `connect` will use an in-memory database. A path may be provided to
 `connect` to persist data after the python script exits.
 
-<!-- TODO: Cloud connections. -->
-
 ```python
 import glaredb
 
 con = glaredb.connect("./my_db_path")
 con.sql("select * from persisted_table").show()
 ```
+
+A GlareDB Cloud connection string may also be provided to `connect` to connect
+to a Cloud deployment.
+
+```python
+import glaredb
+
+con = glaredb.connect("glaredb://<user>:<password>@<org>.remote.glaredb.com:6443/<deployment-name>")
+con.sql("select * from cloud_table").show()
+```
+
+Connecting to a Cloud deployment via the Python library enables [Hybrid
+execution] which allows queries to use the resources of both the remote
+deployment and local machine.
 
 ### Querying data
 
@@ -244,6 +256,7 @@ shape: (5, 3)
 └─────────────┴───────────────────────────┴────────────┘
 ```
 
+[Hybrid execution]: /glaredb/hybrid-execution
 [Pandas]: https://github.com/pandas-dev/pandas
 [Polars]: https://github.com/pola-rs/polars
 [blog post Working with Python]: https://glaredb.com/blog/working-with-python

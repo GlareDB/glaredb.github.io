@@ -47,7 +47,7 @@ collections:
 
 just_the_docs:
   collections:
-    cloud:
-      name: "Cloud"
     glaredb:
       name: "GlareDB"
+    cloud:
+      name: "Cloud"

@@ -29,7 +29,7 @@ SELECT [ DISTINCT ]
 | ------------------ | --------------------------------------------- |
 | `expression`       | An SQL expression                             |
 | `output_name`      | An alias (alternative name)                   |
-| `from_item`        | Source table to select from                   |
+| `from_item`        | Source table or path to file to select from   |
 | `condition`        | An SQL expression that evaluates to a boolean |
 | `grouping_element` | Column to group on                            |
 | `operator`         | `UNION`, `INTERSECT` or `EXCEPT` operator     |
