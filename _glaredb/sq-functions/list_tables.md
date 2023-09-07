@@ -28,7 +28,7 @@ In the following example, suppose a Postgres data source was added to GlareDB
 and named `my_pg` and has a `public` schema:
 
 ```sql
-select * from list_tables('my_pg', 'public');
+select * from list_tables(my_pg, public);
 ```
 
 See [CREATE EXTERNAL DATABASE] for adding a database as a data source.
