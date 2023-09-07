@@ -26,7 +26,9 @@ In the following example, suppose a Postgres data source was added to GlareDB
 and named `my_pg`:
 
 ```sql
-select * from list_schemas('my_pg');
+select * from list_schemas(my_pg);
+-- or
+select * from list_schemas("my_pg");
 ```
 
 See [CREATE EXTERNAL DATABASE] for adding a database as a data source.
