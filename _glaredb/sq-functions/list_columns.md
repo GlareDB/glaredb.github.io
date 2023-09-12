@@ -17,11 +17,11 @@ as a data source.
 list_columns(<database>, <schema>, <table>)
 ```
 
-| Field      | Description                                   |
-| ---------- | --------------------------------------------- |
-| `database` | The name of the database.                     |
-| `schema`   | The name of the schema on the databsae.       |
-| `table`    | The name of the table to list columns for.    |
+| Field      | Description                                |
+| ---------- | ------------------------------------------ |
+| `database` | The name of the database.                  |
+| `schema`   | The name of the schema on the databsae.    |
+| `table`    | The name of the table to list columns for. |
 
 ## Examples
 
