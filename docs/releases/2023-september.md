@@ -91,10 +91,13 @@ show you the exact SQL and output that's running.
 
 ## Misc updates and fixes
 
+**Available in**: [GlareDB@v0.5.0]
+
+- The GlareDB Python library can now be installed in Microsoft Fabric
+
 **Available in**: [GlareDB@v0.5.0], [GlareDB Cloud]
 
 - `list_columns(<database>, <schema>, <table>)` table function was added
-- The GlareDB Python library can now be installed in Microsoft Fabric
 
 [GlareDB@v0.5.0]: https://github.com/GlareDB/glaredb/releases/tag/v0.5.0
 [GlareDB Cloud]: https://console.glaredb.com/
