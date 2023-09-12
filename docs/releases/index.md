@@ -18,6 +18,7 @@ GlareDB is open source and contains [full release notes on GitHub].
   - [CLI completion history and hints](/docs/releases/2023-september.html#cli-completion-history-and-hints)
   - [Dashboard design](/docs/releases/2023-september.html#dashboard-design)
   - [Additional BigQuery types support](/docs/releases/2023-september.html#additional-bigquery-type-support)
+  - [Misc updates and fixes](/docs/releases/2023-september.html#misc-updates-and-fixes)
 - [August 2023]
   - [Initial Iceberg support](/docs/releases/2023-august.html#initial-iceberg-support)
   - [SQL workspace improvements](/docs/releases/2023-august.html#sql-workspace-improvements)
