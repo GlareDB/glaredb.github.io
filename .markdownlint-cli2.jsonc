@@ -28,6 +28,7 @@
         "EXCLUDE",
         "Execution",
         "EXTERNAL",
+        "Fabric",
         "GCS",
         "GlareDB",
         "GlareDB's",
