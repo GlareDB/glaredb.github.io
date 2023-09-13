@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Connections and integrations
+title: Integrations
 has_children: true
 nav_order: 4
 ---
