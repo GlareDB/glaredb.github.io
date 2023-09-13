@@ -72,7 +72,6 @@ will automatically be enabled.
 [Microsoft Fabric]: https://www.microsoft.com/en-us/microsoft-fabric
 [glaredb python library]: https://pypi.org/project/glaredb/
 [Hybrid Execution]: /glaredb/hybrid-execution/
-
 [create]: /assets/images/fabric/create.png
 [cloud]: /assets/images/fabric/cloud.png
 [success]: /assets/images/fabric/success.png
