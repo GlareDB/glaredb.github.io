@@ -46,9 +46,9 @@ Executing `SELECT 'hello from hyperquery';` will produce output like:
 
 ## Connecting to GlareDB Cloud from Hyperquery
 
-Connecting to [GlareDB Cloud] is easy. Upon signing up, a free deployment is
-instantly created and ready to be used. Get connection details for the by
-clicking the **Connect** button and selecting the **Python** tab.
+Sign in or sign up with [GlareDB Cloud]. Upon signing up, a free deployment is
+instantly created and ready to be used. Obtain the Python connection details for
+a deployment by clicking the **Connect** button and selecting the **Python** tab.
 
 ![connect button]
 
