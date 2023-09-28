@@ -22,6 +22,7 @@
         "COMMIT",
         "COPY",
         "CREATE",
+        "CREDENTIALS",
         "DATABASE",
         "DELETE",
         "DROP",
