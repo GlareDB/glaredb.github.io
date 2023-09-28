@@ -38,6 +38,7 @@
   "words": [
     "arrowtypeof",
     "BYTEA",
+    "dataframes",
     "datasource",
     "datasources",
     "GCS",
@@ -45,6 +46,7 @@
     "glaredbteam",
     "globbed",
     "Globbed",
+    "Hyperquery",
     "mydb",
     "myhost",
     "ndjson",

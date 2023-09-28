@@ -4,17 +4,16 @@
   "scripts": {
     "check:all": "yarn lint && yarn format && yarn cspell",
     "cspell": "cspell lint --config=cspell.json '**/*.md'",
+    "dev": "bundle exec jekyll serve",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
     "lint": "markdownlint-cli2 \"**/*.{md,mdx}\" \"!node_modules\" \"!_site\"",
-    "lint:fix": "markdownlint-cli2-fix \"**/*.{md,mdx}\" \"!node_modules\" \"!_site\"",
-    "dev": "bundle exec jekyll serve"
+    "lint:fix": "markdownlint-cli2-fix \"**/*.{md,mdx}\" \"!node_modules\" \"!_site\""
   },
   "devDependencies": {
     "cspell": "^6.31.1",
     "markdownlint": "^0.28.1",
     "markdownlint-cli2": "^0.7.1",
-    "markdownlint-rule-title-case-style": "^0.2.4",
     "prettier": "^2.8.8"
   }
 }
