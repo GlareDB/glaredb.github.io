@@ -1,7 +1,11 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
   "version": "0.2",
-  "ignorePaths": ["_site", ".github", "node_modules"],
+  "ignorePaths": [
+    "_site",
+    ".github",
+    "node_modules"
+  ],
   "patterns": [
     {
       "name": "Markdown links",
@@ -38,6 +42,7 @@
   "words": [
     "arrowtypeof",
     "BYTEA",
+    "dataframes",
     "datasource",
     "datasources",
     "GCS",

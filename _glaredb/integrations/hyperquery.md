@@ -4,85 +4,78 @@ title: Hyperquery
 parent: Integrations
 ---
 
-# Hyperquery
+# Using GlareDB in Hyperquery
 
 [Hyperquery] is a data notebook built for speed, visibility, and collaboration.
-You can write and execute SQL queries or Python cells directly within a WYSIWYG
-(what you see is what you get) notebook, and augment this work with rich
-formatting options.
-
-In this guide, we'll walk through how to get starting with GlareDB in
-Hyperquery.
+Hyperquery provides the ability to write and execute SQL queries or Python cells
+directly within a rich graphical interface.
 
 ## Running GlareDB in Hyperquery
 
-To get started, first either select an existing notebook, or create a new.
-To create a new notebook, click **Create a new page**.
+To get started, select an existing notebook, or create a new one.
 
-![create]
-
-And now we have a new notebook ready to go. To install GlareDB in the notebook
-type `/`, then select **Python block**.
+To install GlareDB in the notebook type `/`, then select **Python block**. This
+will place a new block for executing python in the notebook, which will be used
+to to install the [glaredb python library].
 
 ![python block]
 
-This will place a new block for executing python in the notebook. We'll use this
-first block to install the [glaredb python library]. To do so, execute the
-following command in the code block:
+Execute the following command in the code block:
 
-```text
-!pip install glaredb
+```shell
+pip install glaredb
 ```
 
-If everything installed succesffuly, you should be able to import and use
-glaredb in a new Python block:
+Next, in a new **Python block**, import and use glaredb:
 
 ```python
 import glaredb
 
 con = glaredb.connect()
-con.sql("select 'hello from hyperquery").to_pandas()
+con.sql("SELECT 'hello from hyperquery';").to_pandas()
 ```
 
-And you should see the follwing in your notebook:
+{: .important }
+
+> [Pandas] is in scope. GlareDB provides interop with both [Pandas] and [Polars]
+> dataframe libraries. For more information, refer to [GlareDB Python documentation].
+
+Executing `SELECT 'hello from hyperquery';` will produce output like:
 
 ![success]
 
 ## Connecting to GlareDB Cloud from Hyperquery
 
-Connecting to [GlareDB Cloud] to your deployment is easy. If you're a new user,
-a deployment is automatically created for you. If you have multiple, select the
-one that you'd like to connect with. To get connection details for the
-deployment, click the **Connect** button then select the **Python** tab. This
-will provide a connection URI that you can use when connecting via the python
-library.
+Connecting to [GlareDB Cloud] is easy. Upon signing up, a free deployment is
+instantly created and ready to be used. Get connection details for the by
+clicking the **Connect** button and selecting the **Python** tab.
 
-![connect]
+![connect button]
 
-Paste the URI from the prior step in the connect function:
+![connect python]
+
+In a **Python block**, use the connection URI when calling `glaredb.connect`:
 
 ```python
 import glaredb
 
-con = glaredb.connect("glaredb://user:password@org.remote.glaredb.com:6443/deployment")
+cloud_uri = "glaredb://user:password@org.remote.glaredb.com:6443/db_name"
+
+con = glaredb.connect(cloud_uri)
 ```
 
-And once connected you can now query all tables in your GlareDB Cloud deployment
-from Hyperquery.
-
-![cloud]
-
-When connecting to GlareDB Cloud through the python library, [Hybrid Execution]
-will automatically be enabled. This lets you join data from your GlareDB Cloud
-deployment with data that exists in your Hyperquery notebook, like Pandas data
-frames.
+All tables in the GlareDB Cloud deployment are queryable from Hyperquery using
+[Hybrid Execution]. Data in the notebook, including [Pandas] and [Polars]
+dataframes can be joined with data in GlareDB Cloud.
 
 [Hyperquery]: https://www.hyperquery.ai/
-[GlareDB Cloud]: https://console.glaredb.com
-[create]: /assets/images/hyperquery/create.png
-[cloud]: /assets/images/hyperquery/cloud.png
-[Hybrid Execution]: /glaredb/hybrid-execution/
-[connect]: /assets/images/hyperquery/connect.png
-[success]: /assets/images/hyperquery/success.png
-[python block]: /assets/images/hyperquery/python-block.png
 [glaredb python library]: https://pypi.org/project/glaredb/
+[python block]: /assets/images/glaredb/hyperquery/python-block.png
+[Pandas]: https://github.com/pandas-dev/pandas
+[Polars]: https://github.com/pola-rs/polars
+[GlareDB Python documentation]: /glaredb/python
+[success]: /assets/images/glaredb/hyperquery/success.png
+[GlareDB Cloud]: https://console.glaredb.com
+[connect button]: /assets/images/glaredb/hyperquery/connect-button.png
+[connect python]: /assets/images/glaredb/hyperquery/connect-python.png
+[Hybrid Execution]: /glaredb/hybrid-execution/
