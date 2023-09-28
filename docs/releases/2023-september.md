@@ -25,6 +25,15 @@ Get started by:
 - Click **Connect**
 - Follow the instructions to connect locally with the GlareDB CLI or in Python
 
+**Available in**: [GlareDB@v0.5.1], [GlareDB Cloud]
+
+```sql
+EXPLAIN ANALYZE [VERBOSE] <query>
+```
+
+can be used when running hybrid execution for metrics and details on how the
+query is executed.
+
 ## SQL workspace improvements
 
 **Available in**: [GlareDB Cloud]
@@ -34,6 +43,21 @@ Get started by:
 - The stability of the SQL workspace was drastically improved
 - Database users and SSH tunnels were added to the sidebar
 - A manual refresh button was added to the schema explorer
+
+## CREATE EXTERNAL delta and iceberg tables
+
+**Available in**: [GlareDB@v0.5.1], [GlareDB Cloud]
+
+[`CREATE EXTERNAL TABLE`] can now be used with `delta` and `iceberg` tables.
+
+```sql
+CREATE EXTERNAL TABLE my_delta_table
+FROM delta
+OPTIONS (
+    location 'gs://<bucket_name>/<path_to_delta_table>',
+    service_account_key '<gcp_service_account>'
+);
+```
 
 ## Inferred table functions
 
@@ -99,7 +123,20 @@ show you the exact SQL and output that's running.
 
 - `list_columns(<database>, <schema>, <table>)` table function was added
 
+**Available in**: [GlareDB@v0.5.1], [GlareDB Cloud]
+
+- `ndjson_scan` function can now be inferred for `.ndjson` file extensions
+- `search_path` can now be set in hybrid execution mode
+- CSVs with unnamed headers can now be scanned without erroring
+- `list_columns` works for native tables by setting `"default"` as the database.
+
+  ```sql
+  SELECT * FROM list_columns("default", <schema>, <table>);
+  ```
+
 [GlareDB@v0.5.0]: https://github.com/GlareDB/glaredb/releases/tag/v0.5.0
 [GlareDB Cloud]: https://console.glaredb.com/
 [Hybrid Execution: Scale your workflow with GlareDB Cloud]: https://glaredb.com/blog/hybrid-execution
 [GlareDB Python library]: https://pypi.org/project/glaredb/
+[GlareDB@v0.5.1]: https://github.com/GlareDB/glaredb/releases/tag/v0.5.1
+[`CREATE EXTERNAL TABLE`]: /glaredb/sql-commands/create-external-table/

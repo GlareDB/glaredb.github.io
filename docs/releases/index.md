@@ -14,6 +14,7 @@ GlareDB is open source and contains [full release notes on GitHub].
 - [September 2023]
   - [Hybrid Execution](/docs/releases/2023-september.html#hybrid-execution)
   - [SQL workspace improvements](/docs/releases/2023-september.html#sql-workspace-improvements)
+  - [CREATE EXTERNAL delta and iceberg tables](/docs/releases/2023-september.html#create-external-delta-and-iceberg-tables)
   - [Inferred table functions](/docs/releases/2023-september.html#inferred-table-functions)
   - [CLI completion history and hints](/docs/releases/2023-september.html#cli-completion-history-and-hints)
   - [Dashboard design](/docs/releases/2023-september.html#dashboard-design)

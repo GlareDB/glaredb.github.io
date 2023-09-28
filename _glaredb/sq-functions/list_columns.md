@@ -11,6 +11,8 @@ List columns for a table.
 The database that the tables belong to must be in scope of GlareDB, for example
 as a data source.
 
+For listing columns on a native table, use `"default"` as the database.
+
 ## Syntax
 
 ```sql
