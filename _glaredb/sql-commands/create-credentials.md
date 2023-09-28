@@ -16,73 +16,80 @@ CREATE CREDENTIALS <credential-name>
     OPTIONS (<provider-options>);
 ```
 
-| Field              | Description                                                       |
-| ------------------ | ----------------------------------------------------------------- |
-| `credential-name`  | Name for the credentials.                                         |
-| `provider`         | The cloud provider for these credentials are for. `aws` or `gcp`. |
-| `provider-options` | Provider specific options. See below sections.                    |
+| Field              | Description                                                        |
+| ------------------ | ------------------------------------------------------------------ |
+| `credential-name`  | Name for the credentials.                                          |
+| `provider`         | Cloud provider these credentials are for. Values: \[`aws`, `gcp`\] |
+| `provider-options` | Provider specific options. See below.                              |
 
 ## AWS credentials
 
-AWS credentials allows GlareDB to read and write objects in S3.
+AWS credentials allow GlareDB to read and write objects in S3.
 
 Creating AWS credentials requires `access_key_id` and `secret_access_key`. These
 correspond to an IAM user with permissions for accessing objects in S3.
 
 ```sql
 CREATE CREDENTIALS my_aws_creds
-    PROVIDER aws
-    OPTIONS (
-        access_key_id = 'my_access_key_id',
-        secret_access_key = 'my_secret_access_key',
-    );
+PROVIDER aws
+OPTIONS (
+    access_key_id = 'my_access_key_id',
+    secret_access_key = 'my_secret_access_key',
+);
 ```
 
-We can use the above credentials to access objects in S3:
+After creating the credentials, they can be used to access objects in S3:
 
 ```sql
-SELECT * FROM parquet_scan('s3://my_bucket/data/*.parquet', my_aws_creds, region => 'us-east-1');
+SELECT * FROM parquet_scan(
+    's3://my_bucket/data/*.parquet',
+    my_aws_creds,
+    region => 'us-east-1'
+);
 ```
 
-We can also use credentials to copy output of a query to S3:
+As another example, the credentials can be used to write output of a query to
+S3:
 
 ```sql
 COPY ( SELECT 5 AS a, 6 AS b )
-    TO 's3://my_bucket/data/output.parquet'
-    CREDENTIALS my_aws_creds
-    ( region 'us-east-1' );
+TO 's3://my_bucket/data/output.parquet'
+CREDENTIALS my_aws_creds ( region 'us-east-1' );
 ```
 
-Note that both of these example require specifying `region`. This is required
-when interacting with S3, and should be the AWS region where the bucket is
-located.
+These examples require specifying `region`. GlareDB requires a `region` when
+connecting to an S3 resource. Use the AWS region of the bucket.
 
 ## GCP credentials
 
-GCP credentials allows GlareDB to readn and write objects in GCS.
+GCP credentials allow GlareDB to read and write objects in GCS.
 
-Creating GCP credentials requires `service_account_key` to be provided as an
-option. This should be a JSON encoded key for a service account with access to
-the GCS buckets you'll want to query.
+The **service_account_key** option is required when creating GCP credentials.
+service_account_key is a JSON-encoded key for a service account. Only buckets
+that this service account has read permissions for can be queryed.
 
 ```sql
 CREATE CREDENTIALS my_gcp_creds
-    PROVIDER gcp
-    OPTIONS (
-        service_account_key = 'my_gcp_service_account_key',
-    );
+PROVIDER gcp
+OPTIONS (
+    service_account_key = 'my_gcp_service_account_key',
+);
 ```
 
-We can use the above credentials to access objects in GCS:
+After creating the credentials, they can be used to access objects in GCS:
 
 ```sql
-SELECT * FROM parquet_scan('gs://my_bucket/data/*.parquet', my_gcp_creds);
+SELECT * FROM parquet_scan(
+    'gs://my_bucket/data/*.parquet',
+    my_gcp_creds
+);
 ```
 
-We can also use credentials to copy output of a query to GCS:
+As another example, the credentials can be used to write output of a query to
+GCS:
 
 ```sql
 COPY ( SELECT 5 AS a, 6 AS b )
-    TO 'gs://my_bucket/data/output.parquet'
-    CREDENTIALS my_gcp_creds;
+TO 'gs://my_bucket/data/output.parquet'
+CREDENTIALS my_gcp_creds;
 ```
