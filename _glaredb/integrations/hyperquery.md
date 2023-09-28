@@ -64,8 +64,8 @@ cloud_uri = "glaredb://user:password@org.remote.glaredb.com:6443/db_name"
 con = glaredb.connect(cloud_uri)
 ```
 
-All tables in the GlareDB Cloud deployment are queryable from Hyperquery using
-[Hybrid Execution]. Data in the notebook, including [Pandas] and [Polars]
+Hyperquery has access to all of the resources in the GlareDB Cloud deployment
+through [Hybrid Execution]. Data in the notebook, including [Pandas] and [Polars]
 dataframes can be joined with data in GlareDB Cloud.
 
 [Hyperquery]: https://www.hyperquery.ai/
