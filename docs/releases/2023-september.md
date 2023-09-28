@@ -122,17 +122,17 @@ show you the exact SQL and output that's running.
 **Available in**: [GlareDB@v0.5.0], [GlareDB Cloud]
 
 - `list_columns(<database>, <schema>, <table>)` table function was added
-  
+
 **Available in**: [GlareDB@v0.5.1], [GlareDB Cloud]
 
-- `ndjson_scan` function can now be infered for `.ndjson` file extensions
+- `ndjson_scan` function can now be inferred for `.ndjson` file extensions
 - `search_path` can now be set in hybrid execution mode
 - CSVs with unnamed headers can now be scanned without erroring
 - `list_columns` works for native tables by setting `"default"` as the database.
 
-    ```sql
-    SELECT * FROM list_columns("default", <schema>, <table>);
-    ```
+  ```sql
+  SELECT * FROM list_columns("default", <schema>, <table>);
+  ```
 
 [GlareDB@v0.5.0]: https://github.com/GlareDB/glaredb/releases/tag/v0.5.0
 [GlareDB Cloud]: https://console.glaredb.com/
