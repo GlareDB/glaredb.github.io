@@ -35,7 +35,7 @@ glare=> CREATE EXTERNAL DATABASE external_db
 This operation creates an entry in the GlareDB catalog for the
 Postgres database `glaredb_test` which is accessible as
 `external_db`. All of the tables and resources within this Postgres
-database are now addressable by GlareDB queries..
+database are now addressable by GlareDB queries.
 
 GlareDB validates the connection when you create the external
 database and returns any error immediately, as in:
