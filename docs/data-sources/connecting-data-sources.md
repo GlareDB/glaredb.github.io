@@ -12,7 +12,8 @@ Connect your data sources with GlareDB and GlareDB Cloud.
 
 Define new data sources with [CREATE EXTERNAL TABLE] or [CREATE
 EXTERNAL DATABASE]. You can add new data sources to a GlareDB instance
-at any time.
+at any time. There are no restrictions on the number of data sources you can
+have in a single  limit to the number of data sources you can configure.
 
 [See all supported data sources].
 
