@@ -38,27 +38,6 @@ Breaking this down, we have the following information:
 The **hostname** also includes the organization which contains the deployment.
 In this example, the organization is "glaredbteam".
 
-## Connecting to a specific compute engine
-
-A compute engine may optionally be specified as part of the database name. For
-example, if you have a running engine named `my_engine`, then use the following
-for the **database** in the connection string:
-
-```text
-my_engine.<database_name>
-```
-
-Using the example of the previous section, the full string would be `my_engine.dedicated`:
-
-```text
-postgresql://dEVytoQ7kXWZ:glaredb_pw_2QgP0HFpMdteKrHpav7utHPVIsY7@glaredbteam.proxy.glaredb.com:6543/my_engine.dedicated
-```
-
-{: .warning}
-
-> If the compute engine is not reachable or doesn't exit, the connection will not
-> succeed or fallback.
-
 ## Generating new passwords
 
 {: .important}

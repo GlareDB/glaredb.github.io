@@ -6,8 +6,7 @@ nav_order: 1
 
 # Deployments
 
-Deployments represent the persistent state of a GlareDB database. Deployments
-can be hooked up to a [Compute Engine] to power queries.
+Deployments represent the persistent state of a GlareDB database.
 
 Deployments inside an organization can be viewed from the main page, which can
 be accessed any time by clicking the GlareDB logo in the top left of the
@@ -34,6 +33,5 @@ will be disabled.
 You can delete a deployment from the **SQL workspace** page. Click the name of
 the deployment in the navigation bar and from the menu, select **Delete**.
 
-[Compute Engine]: /cloud/compute-engines
 [Deployments list]: /assets/images/cloud/deployments/deployments-list.png
 [Create deployment dialog]: /assets/images/cloud/deployments/create-deployment.png
