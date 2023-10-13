@@ -35,26 +35,6 @@ significant milestone towards technical stability with a growing feature set.
 > While GlareDB is in technical preview, complete stability cannot be
 > guaranteed.
 
-## Compute engine updates
-
-While in technical preview, compute engines are updated as follows:
-
-1. **Default (serverless)** - updated live as we cut new releases.
-
-1. **Dedicated** - only updated if you manually restart them.
-
-{: .important}
-
-> To reach a stable version, we are committed to improving the update experience
-> with opt-in controls and backwards compatibility.
-
-### Restarting a compute engine
-
-From the **SQL workspace** select the **Compute engines** panel from the
-sidebar, then expand the 3-dot menu for the compute engine you want to restart.
-
-![restart engine]
-
 ## Missing features
 
 In the current state, the application is missing a few core features that are
@@ -81,5 +61,4 @@ necessary to move towards a stable version range.
 
 [github.com/GlareDB/glaredb]: https://github.com/GlareDB/glaredb
 [open source announcement]: https://glaredb.com/blog/glaredb-goes-open-source
-[restart engine]: /assets/images/technical-preview/compute-engine-restart.png
 [try running GlareDB locally]: /glaredb/local

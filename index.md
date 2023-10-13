@@ -48,7 +48,7 @@ We currently support various databases and files in [GCS] and [S3].
 ## Offerings
 
 **GlareDB** is open source and is freely available to install and use. Get started
-at [github.com/GlareDB/glaredb]. See our [open source announcement] for more information.
+at [github.com/GlareDB/glaredb].
 
 You can run GlareDB locally or even within Python.
 
@@ -58,14 +58,6 @@ You can run GlareDB locally or even within Python.
 **GlareDB Cloud** is a fully managed offering of GlareDB with additional features
 for access management and compute resources. GlareDB Cloud is generally
 available to everyone with a [free tier]. Get started at [console.glaredb.com].
-
-## Fully managed
-
-Whether you use our serverless compute (free) or create dedicated compute engines
-(paid plan), GlareDB Cloud is fully managed. With a few clicks, a GlareDB deployment
-will be ready and highly available for you to use.
-
-[Learn more about serverless and dedicated]
 
 [Postgres]: /docs/data-sources/supported/postgres/
 [Snowflake]: /docs/data-sources/supported/snowflake/
@@ -81,4 +73,3 @@ will be ready and highly available for you to use.
 [Learn more about Python bindings]: /glaredb/python
 [free tier]: /docs/about/free-tier.html
 [console.glaredb.com]: https://console.glaredb.com
-[Learn more about serverless and dedicated]: /cloud/deployments/#dedicated-vs-serverless
