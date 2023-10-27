@@ -118,9 +118,9 @@ SELECT * EXCLUDE (id) FROM users;
 [tutorial-toggle]: /assets/images/release-notes/2023-august/tutorial-toggle.png
 [`UPDATE`]: /glaredb/sql-commands/update/
 [`DELETE`]: /glaredb/sql-commands/delete/
-[`csv_scan`]: /glaredb/sq-functions/csv_scan/
-[`ndjson_scan`]: /glaredb/sq-functions/ndjson_scan/
-[`generate_series`]: /glaredb/sq-functions/generate_series/
+[`csv_scan`]: /glaredb/sql-functions/csv_scan/
+[`ndjson_scan`]: /glaredb/sql-functions/ndjson_scan/
+[`generate_series`]: /glaredb/sql-functions/generate_series/
 [`SELECT`]: /glaredb/sql-commands/select/
 [`EXCLUDE`]: /glaredb/sql-commands/select/#exclude-clause
 [`glaredb local`]: /glaredb/local/

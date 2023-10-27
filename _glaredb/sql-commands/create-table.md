@@ -71,4 +71,4 @@ CREATE TABLE public.example2 (a int, b text) as values (1, 2);
 ```
 
 [`SELECT`]: /glaredb/sql-commands/select/
-[`generate_series`]: /glaredb/sq-functions/generate_series/
+[`generate_series`]: /glaredb/sql-functions/generate_series/
