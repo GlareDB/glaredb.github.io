@@ -44,7 +44,8 @@ Read our article: [Adding PRQL Support to GlareDB]
 
 **Available in**: [GlareDB@v0.6.0]
 
-GlareDB fully supports cloud storage using **GCS**, **S3**, **R2** and **MinIO** providers in Python and local CLI.
+GlareDB fully supports cloud storage using **GCS**, **S3**, **R2** and **MinIO**
+providers in Python and local CLI.
 
 ```shell
 # Example for using S3 (and compatible stores) from CLI
