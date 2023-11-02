@@ -61,18 +61,18 @@ glaredb \
 
 - `\timing` command:
 
-    ```shell
-    > \timing
-    Timing is on
-    > select count(*) from lineitem;
-    Time: 0.067s
-    ```
+  ```shell
+  > \timing
+  Timing is on
+  > select count(*) from lineitem;
+  Time: 0.067s
+  ```
 
 - Run SQL from a file as a script:
 
-    ```shell
-    glaredb path/file.sql
-    ```
+  ```shell
+  glaredb path/file.sql
+  ```
 
 **Available in**: [GlareDB@v0.6.0], [GlareDB Cloud]
 
