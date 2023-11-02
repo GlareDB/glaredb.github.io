@@ -19,7 +19,6 @@ nav_order: 4
 
 ## SQL improvements
 
-
 **Available in**: [GlareDB@v0.6.1], [GlareDB Cloud]
 
 - `DESCRIBE` supports describing tables

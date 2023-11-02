@@ -66,6 +66,7 @@ glaredb \
     > select count(*) from lineitem;
     Time: 0.067s
     ```
+
 - Run SQL from a file as a script:
 
     ```shell
@@ -82,7 +83,6 @@ glaredb \
 
 - `glaredb.Connection.sql()` now evaluates some operations eagerly.
 - Polars [`LazyFrames`] support
-
 
 [GlareDB Cloud]: https://console.glaredb.com/
 [Introducing GlareDB Pro]: https://glaredb.com/blog/glaredb-pro-release-announcement
