@@ -51,6 +51,8 @@
     "myhost",
     "ndjson",
     "psql",
+    "prql",
+    "PRQL",
     "S3",
     "SELECT",
     "SMALLINT",
