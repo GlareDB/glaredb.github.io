@@ -19,21 +19,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Setup Node.js environment
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20.9.0
           cache: "yarn"
           cache-dependency-path: yarn.lock
+      - run: yarn install --immutable
 
-      - name: Install yarn dependencies
-        run: yarn install --frozen-lockfile
-
-      - name: Lint
-        run: yarn lint
-
-      - name: Format
-        run: yarn format
-
-      - name: Check spelling
-        run: yarn cspell
+      - run: yarn lint
+      - run: yarn format
+      - run: yarn cspell
