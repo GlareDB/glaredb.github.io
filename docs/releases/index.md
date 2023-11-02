@@ -11,6 +11,14 @@ child_nav_order: reversed
 
 GlareDB is open source and contains [full release notes on GitHub].
 
+- [November 2023]
+  - [Table functions](/docs/releases/2023-november.html#table-functions)
+  - [SQL improvements](/docs/releases/2023-november.html#sql-improvements)
+- [October 2023]
+  - [GlareDB Pro](/docs/releases/2023-october.html#glaredb-pro)
+  - [PRQL support](/docs/releases/2023-october.html#prql-support)
+  - [Local cloud storage](/docs/releases/2023-october.html#local-cloud-storage)
+  - [Misc updates and fixes](/docs/releases/2023-october.html#misc-updates-and-fixes)
 - [September 2023]
   - [Hybrid Execution](/docs/releases/2023-september.html#hybrid-execution)
   - [SQL workspace improvements](/docs/releases/2023-september.html#sql-workspace-improvements)
@@ -29,5 +37,7 @@ GlareDB is open source and contains [full release notes on GitHub].
   - [Misc updates and fixes](/docs/releases/2023-august.html#misc-updates-and-fixes)
 
 [full release notes on GitHub]: https://github.com/GlareDB/glaredb/releases
+[November 2023]: /docs/releases/2023-november.html#november-2023
+[October 2023]: /docs/releases/2023-october.html#october-2023
 [September 2023]: /docs/releases/2023-september.html#september-2023
 [August 2023]: /docs/releases/2023-august.html#august-2023
