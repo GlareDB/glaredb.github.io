@@ -7,19 +7,19 @@ nav_order: 3
 
 # Free tier
 
-[GlareDB Cloud] is currently in [Technical Preview], and offers a free tier.
-Free tiers have the following features:
+Getting started with [GlareDB Cloud] is always free. The free tier offers a
+deployment and fully serverless compute, with 256 GB of data processed per
+month and 10 GB of storage. On sign up, a deployment is immediately created and
+available for use.
 
-- Unlimited data sources
-- One deployment (per organization)
-- Serverless compute engine
-- 10 GB Storage
-- Up to 5 organization members
+## Paid plans
 
-## Region limitation
-
-GlareDB currently supports the US Central region. In the future, deployments
-will be able to select a region from a wider range.
+GlareDB offers additional plans: GlareDB Pro and Enterprise. For more
+information on pricing, see our [Pricing Page]. See [Upgrade to GlareDB Pro] for
+self-service instructions to upgrade to GlareDB Pro. For Enterprise plans,
+[Contact us].
 
 [GlareDB Cloud]: https://console.glaredb.com
-[Technical Preview]: /docs/about/technical-preview
+[Pricing Page]: https://glaredb.com/pricing
+[Upgrade to GlareDB Pro]: /cloud/billing/pro-upgrade/
+[Contact us]: https://glaredb.com/contact-us
