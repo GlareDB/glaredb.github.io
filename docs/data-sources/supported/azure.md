@@ -48,7 +48,7 @@ CREATE EXTERNAL TABLE <table-name>
 | Field               | Description                                                |
 | ------------------- | ---------------------------------------------------------- |
 | `account_name`      | Name of the Azure account containing the storage container |
-| `access_key`        | Access key for the stroage container                       |
+| `access_key`        | Access key for the storage container                       |
 | `storage-container` | Storage container containing the object                    |
 | `object-path`       | Path to the object inside the storage container            |
 
