@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Data types
-nav_order: 5
+nav_order: 6
 ---
 
 # Data types

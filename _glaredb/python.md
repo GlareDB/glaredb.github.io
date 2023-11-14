@@ -185,10 +185,12 @@ con.sql("select * from my_table").show()
     - `spill_path` optional - a path where glaredb can create temporary files.
       If not provided, a random temporary directory is used.
 - `class LocalSession`
+  - `prql(query): PyLogicalPlan`
+    - Lazily evaluates the `query` string (PRQL syntax)
   - `sql(query): PyLogicalPlan`
-    - Lazily evaluates the `query` string
+    - Lazily evaluates the `query` string (SQL syntax)
   - `execute(query): PyExecutionResult`
-    - Eagerly evaluates the `query` string
+    - Eagerly evaluates the `query` string (SQL syntax)
   - `close()`
 - `class PyLogicalPlan`
   - `to_arrow()`
