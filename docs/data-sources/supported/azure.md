@@ -30,7 +30,7 @@ Add CSV and Parquet files as an external table with the
 
 {: .important}
 
-> `table-name` becomes the name of the database inside GlareDB. `table-name` can 
+> `table-name` becomes the name of the database inside GlareDB. `table-name` can
 > be qualified with a schema name.
 
 ```sql
