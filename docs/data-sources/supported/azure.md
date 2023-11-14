@@ -14,7 +14,7 @@ grand_parent: "Step 1: Connect your data sources"
 
 <!-- markdownlint-enable MD022 -->
 
-CSV and Parquet files in Azure Blob Storage are able to be used as an external
+GlareDB can use CSV and Parquet files in Azure Blob Storage as an external
 data source.
 
 <!-- prettier-ignore-start -->
@@ -25,13 +25,13 @@ data source.
 
 ## Azure file as an external table
 
-CSV and Parquet files can be added as an external table through the
+Add CSV and Parquet files as an external table with the
 [CREATE EXTERNAL TABLE] command.
 
 {: .important}
 
-> `table-name` will be the name of the database inside GlareDB. `table-name` may
-> optionally be qualified with a schema name.
+> `table-name` becomes the name of the database inside GlareDB. `table-name` can 
+> be qualified with a schema name.
 
 ```sql
 CREATE EXTERNAL TABLE <table-name>
