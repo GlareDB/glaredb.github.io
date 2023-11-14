@@ -14,8 +14,8 @@ grand_parent: "Step 1: Connect your data sources"
 
 <!-- markdownlint-enable MD022 -->
 
-SQL Server is able to be used as an external data source. Either an entire
-database or a single table may be added as a data source.
+GlareDB supports SQL Server as an external data source. You can configure both single 
+tables and entire databases from SQL Server.
 
 <!-- prettier-ignore-start -->
 
@@ -23,18 +23,18 @@ database or a single table may be added as a data source.
 {:toc}
 <!-- prettier-ignore-end -->
 
-## Connect a SQL Server database
+## Add a SQL Server Database
 
-An entire SQL Server database can be added using the [CREATE EXTERNAL DATABASE]
+Add an entire SQL Server database with the [CREATE EXTERNAL DATABASE]
 command.
 
 {: .important}
 
-> There are two equivalent formats. In both formats, `database-name` will be the
-> name of the database inside GlareDB. This cannot be qualified, and must be
+> There are two equivalent forms: In both, `<database-name>` will be the
+> name of the database in GlareDB. This cannot be qualified, and must be
 > unique across all other databases in the deployment.
 
-### Database format
+### Database Format
 
 ```sql
 CREATE EXTERNAL DATABASE <database-name>
@@ -44,21 +44,21 @@ CREATE EXTERNAL DATABASE <database-name>
  );
 ```
 
-### Database options
+### Database Options
 
 | Field               | Description                                                    |
 | ------------------- | -------------------------------------------------------------- |
 | `connection_string` | An [ADO connection string] pointing to the SQL Server instance |
 
-## Connect a single table
+## Add a Single Table
 
-Adding an external table can be done through the [CREATE EXTERNAL TABLE]
+Add an external table with the [CREATE EXTERNAL TABLE]
 command.
 
 {: .important}
 
-> There are two equivalent formats. In both formats, `table-name` will be the
-> name of the database inside GlareDB. `table-name` may optionally be qualified
+> There are two equivalent forms: in both forms, `table-name` becomes the
+> name of the database inside GlareDB. `table-name` may be qualified
 > with a schema name.
 
 ### Table format
@@ -73,7 +73,7 @@ CREATE EXTERNAL TABLE <table-name>
 );
 ```
 
-### Table options
+### Table Options
 
 | Field               | Description                                                    |
 | ------------------- | -------------------------------------------------------------- |
