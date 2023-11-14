@@ -30,9 +30,9 @@ command.
 
 {: .important}
 
-> There are two equivalent forms: In both, `<database-name>` will be the
-> name of the database in GlareDB. This cannot be qualified, and must be
-> unique across all other databases in the deployment.
+> `<database-name>` will be the name of the database in GlareDB.
+> This cannot be qualified, and must be unique across all other
+> databases in the deployment.
 
 ### Database Format
 
@@ -57,8 +57,7 @@ command.
 
 {: .important}
 
-> There are two equivalent forms: in both forms, `table-name` becomes the
-> name of the database inside GlareDB. `table-name` may be qualified
+> `table-name` becomes the name of the database in GlareDB. `table-name` may be qualified
 > with a schema name.
 
 ### Table format
