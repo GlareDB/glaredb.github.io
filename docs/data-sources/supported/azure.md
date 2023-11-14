@@ -14,8 +14,8 @@ grand_parent: "Step 1: Connect your data sources"
 
 <!-- markdownlint-enable MD022 -->
 
-GlareDB can use CSV and Parquet files in Azure Blob Storage as an external
-data source.
+GlareDB can use CSV, ndjson, or Parquet files in Azure Blob Storage as external
+data sources.
 
 <!-- prettier-ignore-start -->
 
@@ -23,9 +23,9 @@ data source.
 {:toc}
 <!-- prettier-ignore-end -->
 
-## Azure file as an external table
+## Azure File as an External Table
 
-Add CSV and Parquet files as an external table with the
+Add CSV, ndjson, or Parquet files as an external table with the
 [CREATE EXTERNAL TABLE] command.
 
 {: .important}
