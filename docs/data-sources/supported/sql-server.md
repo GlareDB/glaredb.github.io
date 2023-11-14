@@ -14,7 +14,7 @@ grand_parent: "Step 1: Connect your data sources"
 
 <!-- markdownlint-enable MD022 -->
 
-GlareDB supports SQL Server as an external data source. You can configure both single 
+GlareDB supports SQL Server as an external data source. You can configure single 
 tables and entire databases from SQL Server.
 
 <!-- prettier-ignore-start -->
