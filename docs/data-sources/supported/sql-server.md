@@ -1,0 +1,90 @@
+---
+layout: default
+title: SQL Server
+parent: Supported data sources
+grand_parent: "Step 1: Connect your data sources"
+---
+
+<!-- markdownlint-disable MD022 -->
+
+<!-- prettier-ignore-start -->
+# SQL Server
+{: .no_toc }
+<!-- prettier-ignore-end -->
+
+<!-- markdownlint-enable MD022 -->
+
+SQL Server is able to be used as an external data source. Either an entire
+database or a single table may be added as a data source.
+
+<!-- prettier-ignore-start -->
+
+- TOC
+{:toc}
+<!-- prettier-ignore-end -->
+
+## Connect a SQL Server database
+
+An entire SQL Server database can be added using the [CREATE EXTERNAL DATABASE]
+command.
+
+{: .important}
+
+> There are two equivalent formats. In both formats, `database-name` will be the
+> name of the database inside GlareDB. This cannot be qualified, and must be
+> unique across all other databases in the deployment.
+
+### Database format
+
+```sql
+CREATE EXTERNAL DATABASE <database-name>
+ FROM sql_server
+ OPTIONS (
+   connection_string = '<connection_string>'
+ );
+```
+
+### Database options
+
+| Field               | Description                                                    |
+| ------------------- | -------------------------------------------------------------- |
+| `connection_string` | An [ADO connection string] pointing to the SQL Server instance |
+
+## Connect a single table
+
+Adding an external table can be done through the [CREATE EXTERNAL TABLE]
+command.
+
+{: .important}
+
+> There are two equivalent formats. In both formats, `table-name` will be the
+> name of the database inside GlareDB. `table-name` may optionally be qualified
+> with a schema name.
+
+### Table format
+
+```sql
+CREATE EXTERNAL TABLE <table-name>
+ FROM sql_server
+ OPTIONS (
+  connection_string = '<connection_string>',
+  schema = '<schema>',
+  table = '<table>'
+);
+```
+
+### Table options
+
+| Field               | Description                                                    |
+| ------------------- | -------------------------------------------------------------- |
+| `connection_string` | An [ADO connection string] pointing to the SQL Server instance |
+| `schema`            | The name of the schema where the table resides                 |
+| `table`             | The name of the table                                          |
+
+<!-- markdownlint-disable line-length -->
+
+[CREATE EXTERNAL TABLE]: /glaredb/sql-commands/create-external-table
+[CREATE EXTERNAL DATABASE]: /glaredb/sql-commands/create-external-database
+[ADO connection string]: https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/connection-string-syntax#sql-server-authentication-with-sqlclient
+
+<!-- markdownlint-enable line-length -->
