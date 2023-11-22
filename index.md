@@ -10,9 +10,9 @@ has_children: true
 Data lives everywhere, as files on laptops, servers, and [S3], or in
 other database systems like [Postgres], [Snowflake], and
 [MongoDB]. Data lives in many formats, like [Excel], [CSV] and
-[Parquet]. And this is just the beginning. *GlareDB is a tool that
+[Parquet]. And this is just the beginning. _GlareDB is a tool that
 recognizes that it makes sense to store and work with data in
-different systems*, and provides a system for querying, manipulating,
+different systems_, and provides a system for querying, manipulating,
 and storing data in the best way possible.
 
 **GlareDB makes all of your data SQL addressable, no matter what form
@@ -99,7 +99,7 @@ You can run GlareDB locally and in Python.
 **GlareDB Cloud** is a fully managed serverless GlareDB service. In
 addition to everything from the core GlareDB engine, it provides
 additional features for access management and compute resources that
-scale with your use. There's *no* cold-start and no resource
+scale with your use. There's _no_ cold-start and no resource
 allocation. GlareDB Cloud is available to everyone with a
 [free tier]. Get started at [console.glaredb.com].
 
