@@ -44,7 +44,7 @@ You can sign up for [GlareDB Cloud], which provides fully managed and
 entirely serverless deployments via the PostgreSQL protocol.
 
 Don't worry! If you start using the embedded version of GlareDB and
-later out grow the confines of your laptop (or edge function!) moving
+later outgrow the confines of your laptop (or edge function!) moving
 to GlareDB Cloud just requires adding a connection string!
 
 See the [Getting started] guide for more!
