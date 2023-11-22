@@ -47,6 +47,8 @@ Don't worry! If you start using the embedded version of GlareDB and
 later out grow the confines of your laptop (or edge function!) moving
 to GlareDB Cloud just requires adding a connection string!
 
+See the [Getting started] guide for more!
+
 ## Where does GlareDB fit into your stack?
 
 ![Where GlareDB fits](/assets/images/where-glaredb-fits.png)
@@ -58,14 +60,14 @@ do be:
 - query local Excel and CSV files and join them with remote Parquet
   and JSON files.
 
-- join tables from PostgeSQL and Snowflake, with data from MongoDB
+- join tables from PostgreSQL and Snowflake, with data from MongoDB
   collections.
 
 - write the output of any query to GlareDB-native storage for quick
   and easy access letter.
 
 - copy data between MongoDB and Postgres to Snowflake or GlareDB-native
-  storge.
+  storage.
 
 - pass data from your data sources to DataFrame libraries in Python
   like Pandas and Polars.
@@ -97,7 +99,7 @@ You can run GlareDB locally and in Python.
 **GlareDB Cloud** is a fully managed serverless GlareDB service. In
 addition to everything from the core GlareDB engine, it provides
 additional features for access management and compute resources that
-scale with your use. There's _no_ cold-start and no resource
+scale with your use. There's *no* cold-start and no resource
 allocation. GlareDB Cloud is available to everyone with a
 [free tier]. Get started at [console.glaredb.com].
 
@@ -110,7 +112,6 @@ See our [Pricing page] for more details on available plans.
 [Examples page]: /glaredb/examples/index/
 [Working with GlareDB in Python]: https://glaredb.com/blog/working-with-python
 [GCS]: /docs/data-sources/supported/gcs/
-[S3]: /docs/data-sources/supported/s3/
 [Learn more about data sources]: /docs/data-sources/
 [github.com/GlareDB/glaredb]: https://github.com/GlareDB/glaredb#install
 [Learn more about `glaredb local`]: /glaredb/local
