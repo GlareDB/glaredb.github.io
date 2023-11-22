@@ -16,7 +16,7 @@ different systems_, and provides a system for querying, manipulating,
 and storing data in the best way possible.
 
 **GlareDB makes all of your data SQL addressable, no matter what form
-it's in** So you can query (and `JOIN`!) and manipulate your data it
+it's in** So you can query (and `JOIN`!) and manipulate your data
 using standard tools that you may already know.
 
 ## How do I get it?
