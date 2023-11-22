@@ -53,7 +53,7 @@ See the [Getting started] guide for more!
 
 ![Where GlareDB fits](/assets/images/where-glaredb-fits.png)
 
-Where ever you need it too! GlareDB brings a complete, fully featured
+Wherever you need it too! GlareDB brings a complete, fully featured
 data analytics engine to wherever you're working with data. Use glare
 do be:
 
