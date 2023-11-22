@@ -41,7 +41,7 @@ curl https://glaredb.com/install.sh | sh
 ```
 
 You can sign up for [GlareDB Cloud], which provides fully managed and
-entirely severless deployments via the PostgreSQL protocol.
+entirely serverless deployments via the PostgreSQL protocol.
 
 Don't worry! If you start using the embedded version of GlareDB and
 later out grow the confines of your laptop (or edge function!) moving
