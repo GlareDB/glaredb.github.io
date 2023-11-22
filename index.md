@@ -54,8 +54,7 @@ See the [Getting started] guide for more!
 ![Where GlareDB fits](/assets/images/where-glaredb-fits.png)
 
 Wherever you need it too! GlareDB brings a complete, fully featured
-data analytics engine to wherever you're working with data. Use glare
-do be:
+data analytics engine to wherever you're working with data. Use GlareDB to:
 
 - query local Excel and CSV files and join them with remote Parquet
   and JSON files.
