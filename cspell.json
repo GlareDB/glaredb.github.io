@@ -58,6 +58,7 @@
     "SMALLINT",
     "Struct",
     "TINYINT",
-    "typeof"
+    "typeof",
+    "serverless"
   ]
 }

@@ -5,43 +5,82 @@ nav_order: 1
 has_children: true
 ---
 
-# What is GlareDB?
+## What is GlareDB?
 
-Data exists everywhere: your laptop, [Postgres], [Snowflake] and as
-[files in GCS]. It exists in various formats such as Parquet, CSV and JSON.
-Regardless, there will always be multiple steps spanning several destinations to
-get the insights you need.
+Data lives everywhere, as files on laptops, servers, and [S3], or in
+other database systems like [Postgres], [Snowflake], and
+[MongoDB]. Data lives in many formats, like [Excel], [CSV] and
+[Parquet]. And this is just the beginning. _GlareDB is a tool that
+recognizes that it makes sense to store and work with data in
+different systems_, and provides a system for querying, manipulating,
+and storing data in the best way possible.
 
-**GlareDB is designed to query your data wherever it lives using SQL that you
-already know.**
+**GlareDB makes all of your data SQL addressable, no matter what form
+it's in** So you can query (and `JOIN`!) and manipulate your data
+using standard tools that you may already know.
 
-[Getting started] is as easy as:
+## How do I get it?
+
+If you're working with data from Python or Node.js, you can get a
+complete GlareDB with just:
+
+```shell
+pip install glaredb
+```
+
+or:
+
+```shell
+npm install glaredb
+```
+
+You can install an interactive terminal program `glaredb` with:
 
 ```shell
 curl https://glaredb.com/install.sh | sh
 ```
 
+You can sign up for [GlareDB Cloud], which provides fully managed and
+entirely serverless deployments via the PostgreSQL protocol.
+
+Don't worry! If you start using the embedded version of GlareDB and
+later outgrow the confines of your laptop (or edge function!) moving
+to GlareDB Cloud just requires adding a connection string!
+
+See the [Getting started] guide for more!
+
 ## Where does GlareDB fit into your stack?
 
 ![Where GlareDB fits](/assets/images/where-glaredb-fits.png)
 
-GlareDB is versatile in that it can:
+Wherever you need it too! GlareDB brings a complete, fully featured
+data analytics engine to wherever you're working with data. Use GlareDB to:
 
-- query local and remote files
-- query other databases and data sources
-- store data and queries (as views)
-- copy data from sources to destinations
-- interop with DataFrame libraries in Python
-- run one-off queries from the command-line
+- query local Excel and CSV files and join them with remote Parquet
+  and JSON files.
 
-See our [Working with GlareDB in Python] blog post and our [Examples page] for
-in-depth examples.
+- join tables from PostgreSQL and Snowflake, with data from MongoDB
+  collections.
 
-### What is a data source?
+- write the output of any query to GlareDB-native storage for quick
+  and easy access letter.
 
-A data source is a destination with data, such as databases or files.
+- copy data between MongoDB and Postgres to Snowflake or GlareDB-native
+  storage.
 
-We currently support various databases and files in [GCS] and [S3].
+- pass data from your data sources to DataFrame libraries in Python
+  like Pandas and Polars.
+
+- explore data from the command line or your favorite notebook.
+
+See the [Working with GlareDB in Python] blog post and [Examples page]
+for more examples.
+
+### What is a Data Source?
+
+A data source is something that you can query in GlareDB: local files,
+database system, files in blob storage like [S3] or [GCS], sometimes
+it's an arbitrary HTTP endpoint.
 
 [Learn more about data sources].
 
@@ -54,25 +93,29 @@ You can run GlareDB locally and in Python.
 
 - [Learn more about `glaredb local`]
 - [Learn more about Python bindings]
+- [Learn more about Node.js bindings]
 
-**GlareDB Cloud** is a fully managed offering of GlareDB with additional
-features for access management and compute resources. GlareDB Cloud is generally
-available to everyone with a [free tier]. Get started at [console.glaredb.com].
+**GlareDB Cloud** is a fully managed serverless GlareDB service. In
+addition to everything from the core GlareDB engine, it provides
+additional features for access management and compute resources that
+scale with your use. There's _no_ cold-start and no resource
+allocation. GlareDB Cloud is available to everyone with a
+[free tier]. Get started at [console.glaredb.com].
 
 See our [Pricing page] for more details on available plans.
 
 [Postgres]: /docs/data-sources/supported/postgres/
 [Snowflake]: /docs/data-sources/supported/snowflake/
-[files in GCS]: /docs/data-sources/supported/gcs/
+[S3]: /docs/data-sources/supported/s3/
 [Getting started]: /docs/about/getting-started
 [Examples page]: /glaredb/examples/index/
 [Working with GlareDB in Python]: https://glaredb.com/blog/working-with-python
 [GCS]: /docs/data-sources/supported/gcs/
-[S3]: /docs/data-sources/supported/s3/
 [Learn more about data sources]: /docs/data-sources/
 [github.com/GlareDB/glaredb]: https://github.com/GlareDB/glaredb#install
 [Learn more about `glaredb local`]: /glaredb/local
 [Learn more about Python bindings]: /glaredb/python
+[Learn more about Node.js bindings]: /glaredb/node
 [free tier]: /docs/about/free-tier.html
 [Pricing page]: https://glaredb.com/pricing
 [console.glaredb.com]: https://console.glaredb.com
