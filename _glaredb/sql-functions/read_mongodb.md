@@ -6,8 +6,12 @@ parent: SQL functions
 
 # `read_mongodb`
 
-Read a MongoDB collection. The collection does not have to be a known data
-source to GlareDB.
+Read data from an arbitrary MongoDB collection. The collection does
+not have to be a known data source to GlareDB.
+
+If you have multiple collections in one MongoDB deployment or are
+regularly using the same MongoDB data source, consider [setting up a
+MongoDB data source](/docs/data-sources/supported/mongodb).
 
 ## Syntax
 
@@ -26,13 +30,21 @@ read_mongodb(<connection_str>, <database>, <collection>)
 In the following example, a 'users' collection is queryed.
 
 ```sql
-select * from read_mongodb(
-  'protocol=mongodb+srv, user=mongo_user, password=mong_user_password',
-  'my_mongo_database',
-  'users'
-);
+SELECT mdb.* FROM read_mongodb(
+  'protocol=mongodb+srv, user=mdb_user, password=mdb_user_password',
+  'mdbDatabaseName',
+  'collectionName'
+) AS mdb;
 ```
 
-Refer to the [documentation on MongoDB data sources] for more information.
+This exposes the fields from the MongoDB collection as a collection of
+fields with the `mdb.` prefix in a SQL query. Select an alternate
+prefix, or no prefix as you see fit.
 
-[documentation on MongoDB data sources]: /docs/data-sources/supported/mongodb
+## Behavior
+
+GlareDB samples up to 100 documents from the MongoDB collection, or
+less for smaller collections, building a schema that has the sum of
+all fields in the observed documents. Follow [this
+issue](https://github.com/GlareDB/glaredb/issues/2144) for discussion
+of changes to schema inference for MongoDB data sources.
