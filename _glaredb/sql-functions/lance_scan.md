@@ -6,7 +6,7 @@ parent: SQL functions
 
 # `lance_scan`
 
-Read a lance Lake table from the local filesystem or supported object store.
+Read a lance table from the local filesystem or supported object store.
 
 ## Syntax
 
@@ -34,8 +34,8 @@ Parameter descriptions and which object store it's relevant to.
 | `aws_secret_access_key`   | S3           | Secret associated with the AWS access key.                                 |
 | `gcp_service_account_key` | GCS          | A JSON-encoded GCP service account key with access to the bucket.          |
 
-The path or URL provided to `lance_scan` should be to a directory containing a
-`_lance_log/` directory.
+The path or URL provided to `lance_scan` should be to a directory containing a [lance dataset](https://lancedb.github.io/lance/format.html#dataset-directory)
+
 
 ## Usage
 
