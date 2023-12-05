@@ -34,8 +34,8 @@ Parameter descriptions and which object store it's relevant to.
 | `aws_secret_access_key`   | S3           | Secret associated with the AWS access key.                                 |
 | `gcp_service_account_key` | GCS          | A JSON-encoded GCP service account key with access to the bucket.          |
 
-The path or URL provided to `lance_scan` should be to a directory containing a [lance dataset](https://lancedb.github.io/lance/format.html#dataset-directory)
-
+The path or URL provided to `lance_scan`
+should be to a directory containing a [lance dataset]
 
 ## Usage
 
@@ -97,3 +97,5 @@ CREATE CREDENTIALS my_aws_creds PROVIDER aws
 -- And use them in the scan. Note that a region still needs to be provided.
 SELECT * FROM lance_scan('gs://my-bucket/path/lance_table', my_aws_creds, region => 'us-east-1');
 ```
+
+[lance dataset]: (https://lancedb.github.io/lance/format.html#dataset-directory)
