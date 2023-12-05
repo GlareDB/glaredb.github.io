@@ -8,9 +8,10 @@ nav_order: 5
 ## Lance Support
 
 **Available in**: [GlareDB@v0.7.1], [GlareDB Cloud]
-GlareDB now offers support for Lance.
 
-Lance is a Modern columnar data format for ML and LLMs. Read more about Lance [here](https://lancedb.github.io/lance/).
+GlareDB now offers support for [Lance].
+
+[Lance] is a Modern columnar data format for ML and LLMs.
 
 ```sql
 SELECT * FROM lance_scan('path/to/file.lance');
@@ -31,3 +32,7 @@ SELECT
   description
 FROM glare_catalog.functions
 ```
+
+[GlareDB@v0.7.1]: https://github.com/GlareDB/glaredb/releases/tag/v0.7.1
+[GlareDB Cloud]: https://console.glaredb.com
+[Lance]: (https://lancedb.github.io/lance/)
