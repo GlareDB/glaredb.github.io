@@ -11,6 +11,9 @@ child_nav_order: reversed
 
 GlareDB is open source and contains [full release notes on GitHub].
 
+- [December 2023]
+  - [Lance Support](/docs/releases/2023-november.html#lance-support)
+  - [Documentation improvements](/docs/releases/2023-november.html#documentation-improvements)
 - [November 2023]
   - [SQL Server](/docs/releases/2023-november.html#microsoft-sql-server)
   - [Azure Storage](/docs/releases/2023-november.html#azure-blob-storage)
@@ -41,6 +44,7 @@ GlareDB is open source and contains [full release notes on GitHub].
   - [Misc updates and fixes](/docs/releases/2023-august.html#misc-updates-and-fixes)
 
 [full release notes on GitHub]: https://github.com/GlareDB/glaredb/releases
+[December 2023]: /docs/releases/2023-december.html#december-2023
 [November 2023]: /docs/releases/2023-november.html#november-2023
 [October 2023]: /docs/releases/2023-october.html#october-2023
 [September 2023]: /docs/releases/2023-september.html#september-2023

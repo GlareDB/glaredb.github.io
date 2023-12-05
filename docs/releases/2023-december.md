@@ -5,7 +5,7 @@ parent: "Release notes"
 nav_order: 5
 ---
 
-## Lance support
+## Lance Support
 
 **Available in**: [GlareDB@v0.7.1], [GlareDB Cloud]
 GlareDB now offers support for Lance.
@@ -16,7 +16,7 @@ Lance is a Modern columnar data format for ML and LLMs. Read more about Lance [h
 SELECT * FROM lance_scan('path/to/file.lance');
 ```
 
-## Improved documentation
+## Documentation Improvements
 
 **Available in**: [GlareDB@v0.7.1], [GlareDB Cloud]
 
