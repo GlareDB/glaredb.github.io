@@ -120,6 +120,8 @@ with and generating data. Each of these functions can be used in queries.
 For more information on a specific function, refer to its reference:
 
 - [`csv_scan`]
+- [`delta_scan`]
+- [`lance_scan`]
 - [`generate_series`]
 - [`list_schemas`]
 - [`list_tables`]
@@ -145,6 +147,8 @@ For more information on a specific function, refer to its reference:
 [CREATE EXTERNAL DATABASE]: /glaredb/sql-commands/create-external-database.html
 [SSH tunnels]: /docs/data-sources/overview.html#securing-connections-with-ssh-tunnels
 [`csv_scan`]: /glaredb/sql-commands/csv_scan
+[`delta_scan`]: /glaredb/sql-commands/delta_scan
+[`lance_scan`]: /glaredb/sql-commands/lance_scan
 [`generate_series`]: /glaredb/sql-commands/generate_series
 [`list_schemas`]: /glaredb/sql-commands/list_schemas
 [`list_tables`]: /glaredb/sql-commands/list_tables
