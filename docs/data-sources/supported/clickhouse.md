@@ -23,7 +23,7 @@ database or a single table may be added as a data source.
 {:toc}
 <!-- prettier-ignore-end -->
 
-## Connect a Clickhouse database
+## Connect a ClickHouse database
 
 An entire ClickHouse database can be added using the [CREATE EXTERNAL DATABASE]
 command.
