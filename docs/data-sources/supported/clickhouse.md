@@ -14,7 +14,7 @@ grand_parent: "Step 1: Connect your data sources"
 
 <!-- markdownlint-enable MD022 -->
 
-Postgres is able to be used as an external data source. Either an entire
+ClickHouse is able to be used as an external data source. Either an entire
 database or a single table may be added as a data source.
 
 <!-- prettier-ignore-start -->
@@ -67,8 +67,8 @@ SELECT * FROM my_ch.default.users;
 
 ## Connect a single table
 
-Adding an external table can be done through the [CREATE EXTERNAL TABLE]
-command. This will add the table in the current schema.
+To add an external table, use the [CREATE EXTERNAL TABLE] command. This will add
+the table in the current schema.
 
 ### Table
 
