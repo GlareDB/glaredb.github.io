@@ -43,7 +43,7 @@ CREATE EXTERNAL DATABASE <database-name>
 ### Database options
 
 | Field               | Description                                                                    |
-|---------------------|--------------------------------------------------------------------------------|
+| ------------------- | ------------------------------------------------------------------------------ |
 | `connection-string` | The connection string to use when connecting to an external ClickHouse server. |
 
 The connection string should be in the form `clickhouse://user:password@hostname:9000/database`.
@@ -51,7 +51,7 @@ The connection string should be in the form `clickhouse://user:password@hostname
 Once connected, tables can be referenced with the format
 `<glaredb-database>.<clickhouse-database>.<table>`.
 
-#### Example
+#### External database example
 
 ```sql
 -- Create a database with the name 'my_ch'.
@@ -84,11 +84,11 @@ CREATE EXTERNAL TABLE <table-name>
 ### Table options
 
 | Field               | Description                                                                    |
-|---------------------|--------------------------------------------------------------------------------|
+| ------------------- | ------------------------------------------------------------------------------ |
 | `connection-string` | The connection string to use when connecting to an external ClickHouse server. |
 | `table`             | The name of the table inside ClickHouse.                                       |
 
-#### Example
+#### External table example
 
 ```sql
 -- Create a table with the name 'ch_users'
@@ -110,10 +110,5 @@ SELECT * FROM public.ch_users;
 
 [CREATE EXTERNAL TABLE]: /glaredb/sql-commands/create-external-table
 [CREATE EXTERNAL DATABASE]: /glaredb/sql-commands/create-external-database
-[CREATE USER]: https://www.postgresql.org/docs/current/sql-createuser.html
-[CREATE DATABASE]: https://www.postgresql.org/docs/current/sql-createdatabase.html
-[CREATE SCHEMA]: https://www.postgresql.org/docs/current/sql-createschema.html
-[CREATE TABLE]: https://www.postgresql.org/docs/current/sql-createtable.html
-[Connection Strings]: https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING
 
 <!-- markdownlint-enable line-length -->

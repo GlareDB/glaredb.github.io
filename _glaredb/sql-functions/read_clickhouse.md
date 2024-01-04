@@ -16,7 +16,7 @@ read_clickhouse(<connection_string>, <table>)
 ```
 
 | Field               | Description                     |
-|---------------------|---------------------------------|
+| ------------------- | ------------------------------- |
 | `connection_string` | A ClickHouse connection string. |
 | `table`             | The name of the table to query. |
 
