@@ -16,7 +16,7 @@ read_sqlserver(<connection_string>, <schema>, <table>)
 ```
 
 | Field               | Description                                  |
-|---------------------|----------------------------------------------|
+| ------------------- | -------------------------------------------- |
 | `connection_string` | A SQL Server connection string.              |
 | `schema`            | The name of the schema containing the table. |
 | `table`             | The name of the table to query.              |

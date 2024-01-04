@@ -18,8 +18,7 @@ GlareDB now supports ClickHouse as an external data source. Learn more in our
 
 **Available in**: [GlareDB@v0.8.0], [GlareDB Cloud]
 
-- `read_sqlserver` to read tables from SQL Server without adding it as a data
-  sources:
+- `read_sqlserver` to read tables from SQL Server:
 
   ```sql
   select * from read_sqlserver(
