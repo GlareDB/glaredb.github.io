@@ -38,6 +38,8 @@
   "words": [
     "arrowtypeof",
     "BYTEA",
+    "clickhouse",
+    "ClickHouse",
     "dataframes",
     "datasource",
     "datasources",
