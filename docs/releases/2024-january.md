@@ -28,5 +28,12 @@ GlareDB now supports ClickHouse as an external data source. Learn more in our
   );
   ```
 
+## Misc updates and fixes
+
+**Available in**: [GlareDB@v0.8.0], [GlareDB Cloud]
+
+- Fix reading Iceberg tables with a large version number
+  ([#2281](https://github.com/GlareDB/glaredb/pull/2281))
+
 [GlareDB Cloud]: https://console.glaredb.com
 [GlareDB@v0.8.0]: https://github.com/GlareDB/glaredb/releases/tag/v0.8.0
