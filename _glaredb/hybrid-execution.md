@@ -127,6 +127,6 @@ external system.
 [Postgres]: /docs/data-sources/supported/postgres.html
 [Snowflake]: /docs/data-sources/supported/snowflake.html
 [Deployment]: /cloud/deployments/
-[Connect dialog]: /assets/images/glaredb/hybrid-execution/connect-dialog.png
+[Connect dialog]: /assets/images/glaredb/hybrid-execution/connect_dialog.png
 [Python Library]: /glaredb/python/
 [CLI]: /glaredb/local/

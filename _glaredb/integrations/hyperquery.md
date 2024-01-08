@@ -77,5 +77,5 @@ dataframes can be joined with data in GlareDB Cloud.
 [success]: /assets/images/glaredb/hyperquery/success.png
 [GlareDB Cloud]: https://console.glaredb.com
 [connect button]: /assets/images/glaredb/hyperquery/connect-button.png
-[connect python]: /assets/images/glaredb/hyperquery/connect-python.png
+[connect python]: /assets/images/glaredb/hyperquery/connect_python.png
 [Hybrid Execution]: /glaredb/hybrid-execution/
