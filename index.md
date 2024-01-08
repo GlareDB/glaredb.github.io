@@ -56,16 +56,16 @@ See the [Getting started] guide for more!
 Wherever you need it too! GlareDB brings a complete, fully featured
 data analytics engine to wherever you're working with data. Use GlareDB to:
 
-- query local Excel and CSV files and join them with remote Parquet
+- query local [Excel] and [CSV] files and join them with remote [Parquet]
   and JSON files.
 
-- join tables from PostgreSQL and Snowflake, with data from MongoDB
+- join tables from [Postgres] and [Snowflake], with data from [MongoDB]
   collections.
 
 - write the output of any query to GlareDB-native storage for quick
   and easy access letter.
 
-- copy data between MongoDB and Postgres to Snowflake or GlareDB-native
+- copy data between [MongoDB] and [Postgres] to [Snowflake] or GlareDB-native
   storage.
 
 - pass data from your data sources to DataFrame libraries in Python
@@ -104,9 +104,14 @@ allocation. GlareDB Cloud is available to everyone with a
 
 See our [Pricing page] for more details on available plans.
 
+[S3]: /docs/data-sources/supported/s3/
 [Postgres]: /docs/data-sources/supported/postgres/
 [Snowflake]: /docs/data-sources/supported/snowflake/
-[S3]: /docs/data-sources/supported/s3/
+[MongoDB]: /docs/data-sources/supported/mongodb/
+[Excel]: /glaredb/sql-functions/read_excel/
+[CSV]: /glaredb/sql-functions/csv_scan/
+[Parquet]: /glaredb/sql-functions/parquet_scan/
+[GlareDB Cloud]: https://console.glaredb.com
 [Getting started]: /docs/about/getting-started
 [Examples page]: /glaredb/examples/index/
 [Working with GlareDB in Python]: https://glaredb.com/blog/working-with-python
