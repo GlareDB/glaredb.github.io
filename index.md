@@ -104,10 +104,10 @@ allocation. GlareDB Cloud is available to everyone with a
 
 See our [Pricing page] for more details on available plans.
 
-[S3]: /docs/data-sources/supported/s3/
-[Postgres]: /docs/data-sources/supported/postgres/
-[Snowflake]: /docs/data-sources/supported/snowflake/
-[MongoDB]: /docs/data-sources/supported/mongodb/
+[S3]: /docs/data-sources/supported/s3.html
+[Postgres]: /docs/data-sources/supported/postgres.html
+[Snowflake]: /docs/data-sources/supported/snowflake.html
+[MongoDB]: /docs/data-sources/supported/mongodb.html
 [Excel]: /glaredb/sql-functions/read_excel/
 [CSV]: /glaredb/sql-functions/csv_scan/
 [Parquet]: /glaredb/sql-functions/parquet_scan/
