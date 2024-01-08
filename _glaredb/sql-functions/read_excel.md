@@ -14,9 +14,9 @@ Reads an Excel file from the local filesystem.
 read_excel(<path>);
 ```
 
-| Field        | Description                            |
-| ------------ | -------------------------------------- |
-| `path`       | Path to the Excel file                 |
+| Field  | Description            |
+| ------ | ---------------------- |
+| `path` | Path to the Excel file |
 
 ## Examples
 
