@@ -27,7 +27,7 @@ In the following example, a 'users' table located in a Postgres database is
 queryed.
 
 ```sql
-select * from read_mysql(
+select * from read_postgres(
   'host=your.host port=5432 user=postgres password=postgres database=postgres',
   'public',
   'users'
