@@ -115,7 +115,7 @@ See our [Pricing page] for more details on available plans.
 [Getting started]: /docs/about/getting-started
 [Examples page]: /glaredb/examples/index/
 [Working with GlareDB in Python]: https://glaredb.com/blog/working-with-python
-[GCS]: /docs/data-sources/supported/gcs/
+[GCS]: /docs/data-sources/supported/gcs.html
 [Learn more about data sources]: /docs/data-sources/
 [github.com/GlareDB/glaredb]: https://github.com/GlareDB/glaredb#install
 [Learn more about `glaredb local`]: /glaredb/local
