@@ -37,6 +37,8 @@
   ],
   "words": [
     "arrowtypeof",
+    "bson",
+    "BSON",
     "BYTEA",
     "clickhouse",
     "ClickHouse",

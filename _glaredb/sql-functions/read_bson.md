@@ -42,7 +42,7 @@ treat the resulting list of files as partitions of the same table.
 
 ### Schema Inference
 
-By default, `read_bson`, sorts the files lexigraphically and scans the
+By default, `read_bson`, sorts the files lexicographically and scans the
 first 100 documents to infer the schema. Every field that appears is
 added to the schema in the order that it appears as a nullable
 field. The first type observed becomes the field's type.
@@ -51,4 +51,4 @@ After inferring a schema, the remaining data and files may be read
 in any order.
 
 The `schema_sample_size` option allows you to change the number of
-documens considered when inferring the schema.
+documents considered when inferring the schema.
