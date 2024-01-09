@@ -52,7 +52,7 @@ CREDENTIALS s3_credentials ( region '<aws_region>' );
 ```
 
 | Field                     | Destination | Description                                                                  |
-|---------------------------|-------------|------------------------------------------------------------------------------|
+| ------------------------- | ----------- | ---------------------------------------------------------------------------- |
 | `aws_region`              | S3          | The region of the bucket.                                                    |
 | `aws_access_key_id`       | S3          | ID of AWS access key with permissions to write the bucket.                   |
 | `aws_secret_access_key`   | S3          | Secret associated with the AWS access key.                                   |

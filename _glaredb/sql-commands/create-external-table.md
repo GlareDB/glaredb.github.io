@@ -18,7 +18,7 @@ CREATE EXTERNAL TABLE [IF NOT EXISTS] <table-name>
 ```
 
 | Field                 | Description                                                                                                                                    |
-|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | `table-name`          | Name of the database as it appears in GlareDB.                                                                                                 |
 | `data-source-type`    | The type of data source: \[`bigquery`, `delta`, `gcs`, `iceberg`, `mongo`, `mysql`, `postgres`, `s3`, `snowflake`, `bson`, `lance`, `azure`\]. |
 | `tunnel-name`         | [SSH tunnel] to connect with.                                                                                                                  |
