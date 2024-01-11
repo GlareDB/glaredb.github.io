@@ -37,7 +37,11 @@
   ],
   "words": [
     "arrowtypeof",
+    "bson",
+    "BSON",
     "BYTEA",
+    "clickhouse",
+    "ClickHouse",
     "dataframes",
     "datasource",
     "datasources",

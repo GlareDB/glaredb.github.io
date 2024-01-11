@@ -60,6 +60,6 @@ You can create SSH tunnels from the **SQL workspace**:
 
    ![SSH tunnel public key]
 
-[SSH tunnel settings]: /assets/images/data-sources/ssh-tunnels-sidebar.png
+[SSH tunnel settings]: /assets/images/data-sources/ssh_tunnels_sidebar.png
 [Create SSH tunnel]: /assets/images/data-sources/create_ssh_tunnel.png
 [SSH tunnel public key]: /assets/images/data-sources/public-key.png
