@@ -11,6 +11,11 @@ child_nav_order: reversed
 
 GlareDB is open source and contains [full release notes on GitHub].
 
+- [January 2024]
+  - [ClickHouse](/docs/releases/2024-january.html#clickhouse)
+  - [Table functions](/docs/releases/2024-january.html#table-functions)
+  - [Dashboard updates](/docs/releases/2024-january.html#dashboard-updates)
+  - [Misc updates and improvements](/docs/releases/2024-january.html#misc-updates-and-fixes)
 - [December 2023]
   - [Lance Support](/docs/releases/2023-november.html#lance-support)
   - [Documentation improvements](/docs/releases/2023-november.html#documentation-improvements)
@@ -44,6 +49,7 @@ GlareDB is open source and contains [full release notes on GitHub].
   - [Misc updates and fixes](/docs/releases/2023-august.html#misc-updates-and-fixes)
 
 [full release notes on GitHub]: https://github.com/GlareDB/glaredb/releases
+[January 2024]: /docs/releases/2024-january.html#january-2024
 [December 2023]: /docs/releases/2023-december.html#december-2023
 [November 2023]: /docs/releases/2023-november.html#november-2023
 [October 2023]: /docs/releases/2023-october.html#october-2023

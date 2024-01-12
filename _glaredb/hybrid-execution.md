@@ -36,8 +36,8 @@ is quick and easy.
 
 Once you have a deployment ready to go, open the **Connect** dialog to get a set
 of credentials for connecting to your deployment. This dialog provides the
-commands needed to connect to your deployment using either the CLI or Python
-library.
+commands needed to connect to your deployment using either the CLI, Python or
+Node.js library.
 
 ![Connect dialog]
 
@@ -127,6 +127,6 @@ external system.
 [Postgres]: /docs/data-sources/supported/postgres.html
 [Snowflake]: /docs/data-sources/supported/snowflake.html
 [Deployment]: /cloud/deployments/
-[Connect dialog]: /assets/images/glaredb/hybrid-execution/connect-dialog.png
+[Connect dialog]: /assets/images/glaredb/hybrid-execution/connect_dialog.png
 [Python Library]: /glaredb/python/
 [CLI]: /glaredb/local/

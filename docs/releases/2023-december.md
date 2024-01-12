@@ -5,6 +5,8 @@ parent: "Release notes"
 nav_order: 5
 ---
 
+# December 2023
+
 ## Lance Support
 
 **Available in**: [GlareDB@v0.7.1], [GlareDB Cloud]

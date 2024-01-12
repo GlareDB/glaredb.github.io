@@ -51,21 +51,21 @@ COPY [(<query>) | <table>] TO '<s3_url>' [FORMAT format]
 CREDENTIALS s3_credentials ( region '<aws_region>' );
 ```
 
-| Field                     | Destination | Description                                                       |
-| ------------------------- | ----------- | ----------------------------------------------------------------- |
-| `aws_region`              | S3          | The region of the bucket.                                         |
-| `aws_access_key_id`       | S3          | ID of AWS access key with permissions to write the bucket.        |
-| `aws_secret_access_key`   | S3          | Secret associated with the AWS access key.                        |
-| `bucket`                  | GCS or S3   | Name of the bucket.                                               |
-| `format`                  | All         | Output format. One of **csv** (default), **json** or **parquet**. |
-| `gcp_credentials`         | GCS         | A database object containing GCP credentials.                     |
-| `gcp_service_account_key` | GCS         | A JSON-encoded GCP service account key with access to the bucket. |
-| `gcs_url`                 | GCS         | A url in the format gs://bucket/location                          |
-| `location`                | All         | A path to copy to.                                                |
-| `query`                   | All         | The query to execute, of which the results will be copied.        |
-| `s3_credentials`          | S3          | A database object containing S3 credentials.                      |
-| `s3_url`                  | S3          | A url in the format s3://bucket/location                          |
-| `table`                   | All         | A fully-qualified table name.                                     |
+| Field                     | Destination | Description                                                                  |
+| ------------------------- | ----------- | ---------------------------------------------------------------------------- |
+| `aws_region`              | S3          | The region of the bucket.                                                    |
+| `aws_access_key_id`       | S3          | ID of AWS access key with permissions to write the bucket.                   |
+| `aws_secret_access_key`   | S3          | Secret associated with the AWS access key.                                   |
+| `bucket`                  | GCS or S3   | Name of the bucket.                                                          |
+| `format`                  | All         | Output format. One of **csv** (default), **json**, **bson**, or **parquet**. |
+| `gcp_credentials`         | GCS         | A database object containing GCP credentials.                                |
+| `gcp_service_account_key` | GCS         | A JSON-encoded GCP service account key with access to the bucket.            |
+| `gcs_url`                 | GCS         | A url in the format gs://bucket/location                                     |
+| `location`                | All         | A path to copy to.                                                           |
+| `query`                   | All         | The query to execute, of which the results will be copied.                   |
+| `s3_credentials`          | S3          | A database object containing S3 credentials.                                 |
+| `s3_url`                  | S3          | A url in the format s3://bucket/location                                     |
+| `table`                   | All         | A fully-qualified table name.                                                |
 
 ## Usage
 

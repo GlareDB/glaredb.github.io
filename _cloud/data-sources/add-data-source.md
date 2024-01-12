@@ -30,10 +30,6 @@ Submitting this form will:
 
 The exact SQL being run and its output (including errors) are displayed.
 
-![Add pg data source output]
-
-![Add pg data source output error]
-
 ## SQL reference
 
 If you prefer to use SQL for adding data sources, see the following SQL
@@ -43,9 +39,7 @@ reference:
 - [CREATE EXTERNAL TABLE]
 
 [Add data source button]: /assets/images/cloud/data-sources/add-datasource-button.png
-[Data sources dialog]: /assets/images/cloud/data-sources/data-sources-dialog.png
+[Data sources dialog]: /assets/images/cloud/data-sources/data_sources_dialog.png
 [Add pg data source]: /assets/images/cloud/data-sources/add-pg-data-source.png
-[Add pg data source output]: /assets/images/cloud/data-sources/add-pg-data-source-output.png
-[Add pg data source output error]: /assets/images/cloud/data-sources/add-pg-data-source-output-error.png
 [CREATE EXTERNAL DATABASE]: /glaredb/sql-commands/create-external-database/
 [CREATE EXTERNAL TABLE]: /glaredb/sql-commands/create-external-table/

@@ -16,7 +16,7 @@ for a deployment.
 The SQL workspace contains various helpful features for exploring your data,
 querying your data and producing basic reports:
 
-- Schema explorer (available from the sidebar)
+- Schema explorer and search (available from the sidebar)
 - Recent queries (available from the sidebar)
 - Completion hints for tables and functions (available in the editor)
 - Exporting results (available from the results panel)
@@ -52,7 +52,7 @@ such as `psql`. For more information on connections strings and passwords, refer
 to [Connection Details] and [Managing Passwords].
 
 [Deployment list]: /assets/images/cloud/data-sources/deployments-list.png
-[SQL workspace]: /assets/images/cloud/data-sources/sql-workspace.png
+[SQL workspace]: /assets/images/cloud/data-sources/sql_workspace.png
 [Hybrid Execution]: /glaredb/hybrid-execution
 [GlareDB Python library]: /glaredb/python/
 [Working with your data]: /docs/working-with-your-data/

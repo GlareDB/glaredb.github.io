@@ -17,12 +17,12 @@ CREATE EXTERNAL TABLE [IF NOT EXISTS] <table-name>
     OPTIONS (<data-source-options>);
 ```
 
-| Field                 | Description                                                                                                          |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| `table-name`          | Name of the database as it appears in GlareDB.                                                                       |
-| `data-source-type`    | The type of data source: \[`bigquery`, `delta`, `gcs`, `iceberg`, `mongo`, `mysql`, `postgres`, `s3`, `snowflake`\]. |
-| `tunnel-name`         | [SSH tunnel] to connect with.                                                                                        |
-| `data-source-options` | Options specific to this data source type.                                                                           |
+| Field                 | Description                                                                                                                                    |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| `table-name`          | Name of the database as it appears in GlareDB.                                                                                                 |
+| `data-source-type`    | The type of data source: \[`bigquery`, `delta`, `gcs`, `iceberg`, `mongo`, `mysql`, `postgres`, `s3`, `snowflake`, `bson`, `lance`, `azure`\]. |
+| `tunnel-name`         | [SSH tunnel] to connect with.                                                                                                                  |
+| `data-source-options` | Options specific to this data source type.                                                                                                     |
 
 `table-name` may optionally be qualified with a schema.
 
