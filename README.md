@@ -43,6 +43,11 @@ Install project dependencies:
 bundler install
 ```
 
+```console
+# Update project dependencies
+bundler update
+```
+
 Develop locally (`localhost:4000`):
 
 ```console
