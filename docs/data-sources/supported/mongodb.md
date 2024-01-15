@@ -17,11 +17,6 @@ grand_parent: "Step 1: Connect your data sources"
 MongoDB is able to be used as an external data source. Either an entire cluster
 or a single collection may be added as a data source.
 
-{: .warning}
-
-> The MongoDB data source is currently in preview. Features may be missing, and
-> options are subject to change.
-
 <!-- prettier-ignore-start -->
 
 - TOC
