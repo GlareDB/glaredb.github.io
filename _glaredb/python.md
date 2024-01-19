@@ -52,7 +52,7 @@ con.sql("select * from cloud_table").show()
 ```
 
 Connecting to [GlareDB Cloud] with Python enables [Hybrid execution]. Queries
-are optimized to use cloud and local compute resources. 
+are optimized to use cloud and local compute resources.
 
 ### Querying data
 
