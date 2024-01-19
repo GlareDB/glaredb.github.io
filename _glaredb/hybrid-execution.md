@@ -6,10 +6,9 @@ nav_order: 4
 
 # Hybrid execution
 
-Connecting to a Cloud deployment through the [Python Library] or [CLI] enables
-hybrid execution of SQL queries. With hybrid execution, queries utilize the
-resources of both your local machine and the Cloud so that you can `SELECT` and
-`JOIN` data across your Cloud deployment and your local file system.
+Connecting to [GlareDB Cloud] through the [Python Library], [Node.js Library]
+or [CLI] enables hybrid execution of SQL queries. With hybrid execution, queries 
+utilize the resources of both your local machine and the Cloud so that you can `SELECT` and `JOIN` data across [GlareDB Cloud] and your local file system.
 
 Let's take a look at the following query:
 
@@ -124,9 +123,11 @@ the local machine is only responsible for execution the part of the query needed
 to read the file. The local machine will never try to make a connection to the
 external system.
 
+[GlareDB Cloud]: https://console.glaredb.com
+[Python Library]: /glaredb/python/
+[Node.js Library]: /glaredb/node/
+[CLI]: /glaredb/local/
 [Postgres]: /docs/data-sources/supported/postgres.html
 [Snowflake]: /docs/data-sources/supported/snowflake.html
 [Deployment]: /cloud/deployments/
 [Connect dialog]: /assets/images/glaredb/hybrid-execution/connect_dialog.png
-[Python Library]: /glaredb/python/
-[CLI]: /glaredb/local/

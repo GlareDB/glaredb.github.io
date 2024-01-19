@@ -1,12 +1,14 @@
 ---
 layout: default
-title: GlareDB Node library
+title: GlareDB Node.js library
 nav_order: 3
 ---
 
-# GlareDB Node library
+# GlareDB Node.js library
 
 GlareDB can be used in [Node.js].
+
+For more information, refer to our in-depth [blog post Working with Node.js].
 
 ## Install
 
@@ -54,8 +56,7 @@ const con = await glaredb.connect("./my_db_path");
 await con.sql("select * from persisted_table").show();
 ```
 
-A GlareDB Cloud connection string may also be provided to `connect` to connect
-to a Cloud deployment.
+Provide a [connection string] to connect to [GlareDB Cloud].
 
 ```js
 import glaredb from "@glaredb/glaredb";
@@ -66,9 +67,8 @@ const con = await glaredb.connect(str);
 await con.sql("select * from cloud_table").show();
 ```
 
-Connecting to a Cloud deployment via the [Node.js] library enables [Hybrid
-execution] which allows queries to use the resources of both the remote
-deployment and local machine.
+Connecting to [GlareDB Cloud] with Node.js enables [Hybrid execution]. Queries
+are optimized to use cloud and local compute resources. 
 
 ### Querying data
 
@@ -90,4 +90,7 @@ await con.sql("select * from './data.parquet'").show();
 ```
 
 [Node.js]: https://nodejs.org/en
+[blog post Working with Node.js]: https://glaredb.com/blog/node-bindings-announcement
+[GlareDB Cloud]: https://console.glaredb.com
+[connection string]: /glaredb/hybrid-execution/#getting-started-with-hybrid-execution
 [Hybrid execution]: /glaredb/hybrid-execution
