@@ -8,8 +8,7 @@ nav_order: 4
 
 Connecting to [GlareDB Cloud] through the [Python Library], [Node.js Library]
 or [CLI] enables hybrid execution of SQL queries. With hybrid execution, queries
-utilize the resources of both your local machine and the Cloud so that you can
-`SELECT` and `JOIN` data across [GlareDB Cloud] and your local file system.
+are optimized to use cloud and local compute resources.
 
 Let's take a look at the following query:
 
