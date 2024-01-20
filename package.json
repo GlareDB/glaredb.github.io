@@ -2,7 +2,7 @@
   "name": "glaredb.github.io",
   "private": true,
   "scripts": {
-    "check:all": "yarn lint && yarn format && yarn cspell",
+    "check:all": "npm run lint && npm run format && npm run cspell",
     "cspell": "cspell lint --config=cspell.json '**/*.md'",
     "dev": "bundle exec jekyll serve",
     "format": "prettier --check .",
