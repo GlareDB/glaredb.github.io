@@ -42,8 +42,7 @@ con = glaredb.connect("./my_db_path")
 con.sql("select * from persisted_table").show()
 ```
 
-A GlareDB Cloud connection string may also be provided to `connect` to connect
-to a Cloud deployment.
+Provide a [connection string] to connect to [GlareDB Cloud].
 
 ```python
 import glaredb
@@ -52,9 +51,8 @@ con = glaredb.connect("glaredb://<user>:<password>@<org>.remote.glaredb.com:6443
 con.sql("select * from cloud_table").show()
 ```
 
-Connecting to a Cloud deployment via the Python library enables [Hybrid
-execution] which allows queries to use the resources of both the remote
-deployment and local machine.
+Connecting to [GlareDB Cloud] with Python enables [Hybrid execution]. Queries
+are optimized to use cloud and local compute resources.
 
 ### Querying data
 
@@ -258,7 +256,9 @@ shape: (5, 3)
 └─────────────┴───────────────────────────┴────────────┘
 ```
 
-[Hybrid execution]: /glaredb/hybrid-execution
 [Pandas]: https://github.com/pandas-dev/pandas
 [Polars]: https://github.com/pola-rs/polars
 [blog post Working with Python]: https://glaredb.com/blog/working-with-python
+[GlareDB Cloud]: https://console.glaredb.com
+[connection string]: /glaredb/hybrid-execution/#getting-started-with-hybrid-execution
+[Hybrid execution]: /glaredb/hybrid-execution
