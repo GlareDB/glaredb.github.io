@@ -1,8 +1,8 @@
 ---
 title: Data Sources
 layout: home
-nav_order: 3
+nav_order: 2
 has_children: true
 ---
 
-## Support data sources
+## Supported Data Sources
