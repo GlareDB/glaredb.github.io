@@ -34,5 +34,4 @@ Don't worry! If you start using the embedded version of GlareDB and
 later outgrow the confines of your laptop (or edge function!) moving
 to GlareDB Cloud just requires adding a connection string!
 
-
 [GlareDB Cloud]: https://console.glaredb.com

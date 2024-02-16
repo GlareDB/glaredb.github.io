@@ -6,6 +6,7 @@ has_children: true
 ---
 
 ## Scaling
+
 - hybrid execution
 - distributed execution
 - embedded (in applications, in notebooks)

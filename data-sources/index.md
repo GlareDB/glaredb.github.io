@@ -7,28 +7,27 @@ has_children: true
 
 # Data sources
 
-GlareDB can connect to a broad range of external data sources so that you readily query 
-your data and join them together no matter where they live.
+GlareDB can connect to a broad range of external data sources so that you readily
+query your data and join them together no matter where they live.
 
 ## Supported data sources
+
 * [Azure]
 * [BigQuery]
 * [Clickhouse]
 * [GCS]
-* [MongoDB] 
-* [MySQL] 
-* [Postgres] 
-* [S3] 
+* [MongoDB]
+* [MySQL]
+* [Postgres]
+* [S3]
 * [SQL Server]
 * [Snowflake]
-
 
 ## Connecting data sources using SQL
 
 Define new data sources with [CREATE EXTERNAL TABLE] or [CREATE
 EXTERNAL DATABASE]. You can add new data sources to a GlareDB instance
 at any time. There are no restrictions on the number of data sources you can configure.
-
 
 ### Example: Postgres data source
 
@@ -65,18 +64,15 @@ sources.
 
 ## Connecting data sources using GlareDB Cloud
 
-
 [CREATE EXTERNAL DATABASE]: /glaredb/sql-commands/create-external-database
 [CREATE EXTERNAL TABLE]: /glaredb/sql-commands/create-external-table
-[See all supported data sources]: /docs/data-sources/supported/
-[Learn more about managing data sources in GlareDB Cloud]: /cloud/data-sources/index/
 [Azure]: ./azure
 [BigQuery]: ./bigquery
 [Clickhouse]: ./clickhouse
 [GCS]: ./gcs
-[MongoDB]: ./mongodb 
-[MySQL]: ./mysql 
-[Postgres]: ./postgres 
+[MongoDB]: ./mongodb
+[MySQL]: ./mysql
+[Postgres]: ./postgres
 [S3]: ./s3
 [SQL Server]: ./sql-server
-[Snowflake]: ./snowflake 
+[Snowflake]: ./snowflake

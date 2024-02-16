@@ -6,6 +6,7 @@ has_children: true
 ---
 
 ## Storage
+
 - lance vs delta
 - parquet
 - optimization

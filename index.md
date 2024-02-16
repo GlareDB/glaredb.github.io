@@ -10,7 +10,7 @@ has_children: true
 Data lives everywhere, as files on laptops, servers, and [S3], or in
 other database systems like [Postgres], [Snowflake], and
 [MongoDB]. Data lives in many formats, like [Excel], [CSV] and
-[Parquet]. And this is just the beginning. 
+[Parquet]. And this is just the beginning.
 
 _GlareDB is a tool that
 recognizes that it makes sense to store and work with data in
