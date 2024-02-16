@@ -12,4 +12,4 @@ has_children: true
 - embedded (in applications, in notebooks)
 - hybrid exec and hybrid workloads
 - brief intro to cloud
-- some highlevel stuff about materialized views
+- some high level stuff about materialized views
