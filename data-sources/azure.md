@@ -3,6 +3,7 @@ layout: default
 title: Azure Blob Storage
 parent: Data Sources
 ---
+
 # Azure Blob Storage
 
 GlareDB can use CSV, ndjson, or Parquet files in Azure Blob Storage as external
