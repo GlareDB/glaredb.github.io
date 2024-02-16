@@ -6,4 +6,3 @@ parent: Installation
 grand_parent: Introduction / Getting Started
 ---
 
-## Sign Up for Cloud
