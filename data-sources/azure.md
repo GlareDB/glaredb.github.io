@@ -3,24 +3,10 @@ layout: default
 title: Azure Blob Storage
 parent: Data Sources
 ---
-
-<!-- markdownlint-disable MD022 -->
-
-<!-- prettier-ignore-start -->
 # Azure Blob Storage
-{: .no_toc }
-<!-- prettier-ignore-end -->
-
-<!-- markdownlint-enable MD022 -->
 
 GlareDB can use CSV, ndjson, or Parquet files in Azure Blob Storage as external
 data sources.
-
-<!-- prettier-ignore-start -->
-
-- TOC
-{:toc}
-<!-- prettier-ignore-end -->
 
 ## Azure File as an External Table
 
