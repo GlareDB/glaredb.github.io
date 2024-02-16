@@ -5,6 +5,5 @@ nav_order: 3
 has_children: true
 ---
 
-deployments
-user provisions
-billing
+## GlareDB Cloud
+
