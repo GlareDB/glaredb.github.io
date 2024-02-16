@@ -14,7 +14,7 @@ Polars DataFrames.
 ## Postgres protocols
 
 GlareDB lets you connect using a Postgres connection string, which means that
-data tools that can connect to Postgres *may just work* with GlareDB.
+data tools that can connect to Postgres _may just work_ with GlareDB.
 
 ### GlareDB Cloud
 

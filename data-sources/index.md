@@ -12,16 +12,16 @@ query your data and join them together no matter where they live.
 
 ## Supported data sources
 
-* [Azure]
-* [BigQuery]
-* [Clickhouse]
-* [GCS]
-* [MongoDB]
-* [MySQL]
-* [Postgres]
-* [S3]
-* [SQL Server]
-* [Snowflake]
+- [Azure]
+- [BigQuery]
+- [Clickhouse]
+- [GCS]
+- [MongoDB]
+- [MySQL]
+- [Postgres]
+- [S3]
+- [SQL Server]
+- [Snowflake]
 
 ## Connecting data sources using SQL
 
