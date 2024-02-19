@@ -27,7 +27,7 @@ that you can use to connect.
 Using GlareDB locally? You can spin up GlareDB as a local Postgres server using
 
 ```shell
-./glaredb server --data-dir <path to your GlareDB instance>
+./glaredb server --data-dir <path to storage directory>
 ```
 
 Then you can connect using
