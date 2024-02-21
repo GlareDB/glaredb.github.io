@@ -14,6 +14,7 @@ workloads and teams. It is free, and easy to get started.
 ![Sign-in]
 
 <!-- TODO: link to pages once they're written -->
+
 Upon signing up, an Organization and fully-managed GlareDB Deployment will be
 instantly created and ready to use with the **SQL Workspace** web-based editor.
 
@@ -22,6 +23,7 @@ instantly created and ready to use with the **SQL Workspace** web-based editor.
 ## Ready to invite your team?
 
 With the free tier, up to 5 teammates can be added to your Organization.
+
 <!--
     Refer to [todo] for more information on managing your organization and
     users.
