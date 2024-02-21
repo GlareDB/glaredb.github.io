@@ -9,7 +9,7 @@ grand_parent: Introduction / Getting Started
 # Sign Up for GlareDB Cloud
 
 [GlareDB Cloud] is a fully-managed offering of GlareDB that scales with your
-workloads and teams. It is free, and easy to get started.
+workloads and teams. It is free to get started, and signing up is quick!
 
 ![Sign-in]
 
