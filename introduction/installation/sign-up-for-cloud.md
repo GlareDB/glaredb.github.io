@@ -22,7 +22,7 @@ instantly created and ready to use with the **SQL Workspace** web-based editor.
 
 ## Ready to invite your team?
 
-With the free tier, up to 5 teammates can be added to your Organization.
+With the free tier, up to 5 teammates can access the GlareDB deployments in your Organization.
 
 <!--
     Refer to [todo] for more information on managing your organization and
