@@ -15,7 +15,7 @@ workloads and teams. It is free to get started, and signing up is quick!
 
 <!-- TODO: link to pages once they're written -->
 
-After signing up, an Organization with a fully-managed GlareDB Deployment are be
+After signing up, an Organization with a fully-managed GlareDB Deployment will be
 created and ready to use with the **SQL Workspace** editor in your browser.
 
 ![Editor]
