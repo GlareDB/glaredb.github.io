@@ -63,7 +63,7 @@ data analytics engine to wherever you're working with data. Use GlareDB to:
   collections.
 
 - write the output of any query to GlareDB-native storage for quick
-  and easy access letter.
+  and easy access later.
 
 - copy data between [MongoDB] and [Postgres] to [Snowflake] or GlareDB-native
   storage.
