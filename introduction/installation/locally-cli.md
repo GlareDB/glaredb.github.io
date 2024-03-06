@@ -57,7 +57,7 @@ executed within a REPL, complete with syntax highlighting and support.
 ```shell
 $ glaredb
 Type \help for help.
-> 
+>
 ```
 
 Data sources (local and remote) can be analyzed and joined with ease:
@@ -87,7 +87,6 @@ Once a connection is opened to a cloud instance, all of its tables and data
 can be accessed while also being able to access local files. Furthermore,
 queries are optimized and partitioned to run using local compute and cloud
 compute.
-
 
 ### Small-Scale ETL
 
