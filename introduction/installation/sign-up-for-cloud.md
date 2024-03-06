@@ -3,7 +3,7 @@ title: Sign Up for GlareDB Cloud
 layout: default
 nav_order: 1
 parent: Installation
-grand_parent: Introduction / Getting Started
+grand_parent: Getting Started
 ---
 
 # Sign Up for GlareDB Cloud
