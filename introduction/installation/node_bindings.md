@@ -78,7 +78,7 @@ const con = await glaredb.connect();
 To persist data locally, specify a location as the first argument:
 
 ```typescript
-const con = await glaredb.connect("temp-dir");
+const con = await glaredb.connect("./temp-dir");
 ```
 
 ### Hybrid with [GlareDB Cloud]
