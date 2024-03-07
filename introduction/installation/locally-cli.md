@@ -71,7 +71,7 @@ Data sources (local and remote) can be analyzed and joined with ease:
 
 ### [GlareDB Cloud] shell
 
-After signing up on [GlareDB Cloud], you can connect to your deployment from
+After signing up for [GlareDB Cloud], you can connect to your deployment from
 the CLI either:
 
 - by passing `--cloud-url`
