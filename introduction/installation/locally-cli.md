@@ -74,7 +74,7 @@ Data sources (local and remote) can be analyzed and joined with ease:
 After signing up for [GlareDB Cloud], you can connect to your deployment from
 the CLI either:
 
-- by passing `--cloud-url`
+- by passing `--cloud-url` (`glaredb --cloud-url glaredb://user:pass@host:port/database`)
 - or, if already in an interactive session, using `\open`:
 
 ```shell
