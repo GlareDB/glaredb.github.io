@@ -30,7 +30,7 @@ directory**:
 curl https://glaredb.com/install.sh | sh
 ```
 
-Alternatively, simply download the appropriate binary from [GitHub].
+Alternatively, you can download the appropriate binary from [GitHub].
 
 The installation consists of just a single artifact, a binary called `glaredb`.
 Application data is stored in `~/.glaredb`. Temporary files may be created in
