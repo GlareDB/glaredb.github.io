@@ -24,6 +24,7 @@ SELECT * FROM read_csv(
 to create a table from the CSV file.
 
 <!--TODO: add link below -->
+
 For more information, see the page on `CREATE TABLE`
 
 ## Creating a GlareDB View from a Query
@@ -33,11 +34,12 @@ comments in their record, you can do so with:
 
 ```sql
 CREATE VIEW users_with_comments AS
-SELECT * FROM my_user_data WHERE 
+SELECT * FROM my_user_data WHERE
 comments IS NOT NULL;
 ```
 
 <!--TODO: add link below -->
+
 For more information, see the page on `CREATE VIEW`
 
 ## Copying the Results of a Query to a File
@@ -76,6 +78,7 @@ TO gcs OPTIONS (
 ```
 
 <!--TODO: add link below -->
+
 You can copy data to files on GCS or S3. For more information, see the page on
 `COPY TO`.
 
@@ -85,11 +88,12 @@ The GlareDB SQL workspace makes it simple to take the results of a query and
 either save them to a view or export them for local usage. After running a
 query in Cloud, above the results of the query in the bottom part of the
 screen, you can find buttons to `Export` or `Save query as view` - see
-screenshot below.  
+screenshot below.
 
 ![Save query output from GlareDB Cloud]
 
 <!--TODO: add link below -->
+
 For more information, see the page on working with the GlareDB SQL workspace.
 
 [Save query output from GlareDB Cloud]: /assets/images/tutorials/saving-queries-and-exporting-data-from-glaredb-cloud.png
