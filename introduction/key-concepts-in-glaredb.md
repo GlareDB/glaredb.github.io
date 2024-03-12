@@ -2,7 +2,7 @@
 title: Key Concepts
 layout: default
 nav_order: 1
-parent: Introduction / Getting Started
+parent: Getting Started
 ---
 
 # Key Concepts in GlareDB
