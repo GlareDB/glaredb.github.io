@@ -85,7 +85,7 @@ Type \help for help.
 
 Once a connection is opened to a cloud instance, all of its tables and data
 can be accessed while also being able to access local files. Furthermore,
-queries are optimized and partitioned to run using both local compute and 
+queries are optimized and partitioned to run using both local compute and
 cloud compute.
 
 ### Small-Scale ETL
