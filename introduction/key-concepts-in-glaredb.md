@@ -138,7 +138,7 @@ or time-based metrics. Billing on these metrics means that queries can get
 faster, spanning multiple worker nodes and various compute resources without
 the end-user incurring any change in cost!
 
-For more information, read our [announcement post on GlareDB Pro]
+For more information, read our [announcement post on GlareDB Pro].
 
 [All Data are SQL Addressable]: https://glaredb.com/blog/explain-glaredb-to-your-friends
 [GlareDB Cloud]: https://console.glaredb.com
