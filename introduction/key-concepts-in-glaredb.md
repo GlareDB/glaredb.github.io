@@ -132,10 +132,17 @@ independently scalable and compute nodes are multi-tenant. Any GlareDB process
 in the cloud can be allocated for units of work, meaning that queries can be
 partitioned and distributed in parallel.
 
-By designing the system this way, 
+By designing the system this way, our billing system is consumption-based and
+transparent. We bill for bytes processed and bytes stored, rather than resource
+or time-based metrics. Billing on these metrics means that queries can get
+faster, spanning multiple worker nodes and various compute resources without
+the end-user incurring any change in cost!
+
+For more information, read our [announcement post on GlareDB Pro]
 
 [All Data are SQL Addressable]: https://glaredb.com/blog/explain-glaredb-to-your-friends
 [GlareDB Cloud]: https://console.glaredb.com
 [CLI]: /introduction/installation/locally-cli.html
 [Python]: /introduction/installation/python-bindings.html
 [Node.js]: /introduction/installation/node_bindings.html
+[announcement post on GlareDB Pro]: https://glaredb.com/blog/glaredb-pro-release-announcement
