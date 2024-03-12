@@ -64,7 +64,7 @@ Data sources (local and remote) can be analyzed and joined with ease:
 
 ```shell
 >  SELECT * FROM './report.csv' r
-::: JOIN read_excel('./my_workbook') e
+::: JOIN read_excel('./my_workbook.xlsx') e
 ::: ON r.name = e.name
 ::: WHERE r.output > 5;
 ```
