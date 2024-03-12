@@ -53,13 +53,12 @@ INNER JOIN read_csv('./my_csv') c ON m.id = c.id;
 ## External Data Sources
 
 In a typical "modern data stack", data is extracted and transformed from various
-sources and loaded into an analytics warehouse. The assumption of these is that
+sources and loaded into an analytics warehouse. An underlying assumption is
 analytics should own storage and infrastructure, often at great complexity.
 
-GlareDB shifts the dynamic by recognizing that data is accessible where it is,
-for example with table functions. However, it is often the case that the same
-sources are accessed frequently and benefit from being recognized as known
-sources.
+GlareDB shifts the dynamic by recognizing data is accessible where it is.
+However, it is often the case that the same sources are accessed frequently and
+benefit from being recognized as known sources.
 
 This is where external data sources shine: tables and entire databases can be
 added to GlareDB. By cataloging your data with GlareDB, it is accessible
@@ -89,10 +88,54 @@ and add external data sources for the remaining cases.
 
 ## Native Data Storage
 
+In addition to reading files and external data sources, GlareDB has native
+storage. Tables can be created and data can be inserted, updated and delete as
+needed.
+
+```sql
+CREATE TABLE my_table (
+    a_column TEXT
+);
+
+INSERT INTO my_table VALUES ('hello world');
+
+DELETE FROM my_table;
+```
+
 ## Hybrid Execution
+
+Often, workloads with GlareDB start locally in the [CLI] or with language
+bindings such as [Python] and [Node.js]. In these workloads, GlareDB runs on
+a local machine either entirely in-memory with no persistence after the process
+exits, or with local persistence.
+
+[GlareDB Cloud] extends and scales these workflows. By connecting local clients
+to [GlareDB Cloud], queries are partitioned and optimized to run both in-process
+and using cloud compute. Data can be accessed and stored in cloud and shared
+with your team. When using [GlareDB Cloud], your can access your data in all of
+your applications.
 
 ## Remote Execution
 
+GlareDB is compatible with the Postgres protocol, meaning that tools used to
+connect to Postgres can be used with GlareDB. For example, `lib/pq` in a Go
+application.
+
+When connecting via the Postgres protocol, all execution occurs in GlareDB. For
+example if using [GlareDB Cloud], queries will not be hybrid: all execution
+occurs in the cloud.
+
 ## Serverless Native
 
+GlareDB has always been designed to be serverless. Storage and compute are
+independently scalable and compute nodes are multi-tenant. Any GlareDB process
+in the cloud can be allocated for units of work, meaning that queries can be
+partitioned and distributed in parallel.
+
+By designing the system this way, 
+
 [All Data are SQL Addressable]: https://glaredb.com/blog/explain-glaredb-to-your-friends
+[GlareDB Cloud]: https://console.glaredb.com
+[CLI]: /introduction/installation/locally-cli.html
+[Python]: /introduction/installation/python-bindings.html
+[Node.js]: /introduction/installation/node_bindings.html
