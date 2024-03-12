@@ -89,7 +89,7 @@ and add external data sources for the remaining cases.
 ## Native Data Storage
 
 In addition to reading files and external data sources, GlareDB has native
-storage. Tables can be created and data can be inserted, updated and delete as
+storage. Tables can be created and data can be inserted, updated, and deleted as
 needed.
 
 ```sql
