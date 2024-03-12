@@ -9,7 +9,7 @@ parent: Introduction / Getting Started
 
 ## Table Functions
 
-A core tenant of GlareDB is that [All Data are SQL Addressable], even data not
+A core tenet of GlareDB is that [All Data are SQL Addressable], even data not
 in a SQL database.
 
 Table functions access data, on-demand, wherever it is, including data sources
