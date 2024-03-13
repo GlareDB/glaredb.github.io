@@ -16,7 +16,7 @@ to save to your GlareDB instance. You can run:
 
 ```sql
 CREATE TABLE my_user_data AS
-SELECT * FROM 
+SELECT * FROM
 'https://github.com/GlareDB/glaredb/raw/main/testdata/csv/userdata1.csv';
 ```
 
