@@ -95,7 +95,7 @@ polarsdf = pl.DataFrame({"fruits": ["banana", "banana", "apple", "apple", "banan
 con.sql("select * from polarsdf")
 ```
 
-Note that as with the files, GlareDB can access these dataframes directly once they 
+Note that as with the files, GlareDB can access these dataframes directly once they
 are variables in the scope of your Python environment.
 
 ### Converting to a dataframe
@@ -116,8 +116,8 @@ polars_out = con.sql("select 1").to_polars()
 
 ### Lazy evaluation
 
-The `sql` method returns the logical plan of the query passed in as an 
-argument. This means that the query is not executed until `show()` or one of 
+The `sql` method returns the logical plan of the query passed in as an
+argument. This means that the query is not executed until `show()` or one of
 the dataframe conversion methods (e.g. `to_pandas()`) are called.
 
 This can be used to incrementally build up sql queries by referencing previously
@@ -190,7 +190,7 @@ con.sql("select * from my_table").show()
 
 > For more examples, see <https://github.com/GlareDB/glaredb/tree/main/py-glaredb/examples>
 
-The following is an example that joins a polars data frame with data from a 
+The following is an example that joins a polars data frame with data from a
 hosted demo Postgres instance.
 
 ```python
@@ -239,12 +239,9 @@ shape: (5, 3)
 └─────────────┴───────────────────────────┴────────────┘
 ```
 
-
-
 [Pandas]: https://github.com/pandas-dev/pandas
 [Polars]: https://github.com/pola-rs/polars
 [blog post Working with Python]: https://glaredb.com/blog/working-with-python
 [GlareDB Cloud]: https://console.glaredb.com
 [connection string]: /glaredb/hybrid-execution/#getting-started-with-hybrid-execution
 [Hybrid execution]: /glaredb/hybrid-execution
-
