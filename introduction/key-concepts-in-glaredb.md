@@ -56,9 +56,10 @@ In a typical "modern data stack", data is extracted and transformed from various
 sources and loaded into an analytics warehouse. An underlying assumption is
 analytics should own storage and infrastructure, often at great complexity.
 
-GlareDB shifts the dynamic by recognizing data is accessible where it is.
-However, it is often the case that the same sources are accessed frequently and
-benefit from being recognized as known sources.
+GlareDB provides access to data where it is, without requiring a move.
+Even though data is more dynamic, having data sources configured in GlareDB 
+makes it easier to access common data sources and share configuration between
+users.
 
 This is where external data sources shine: tables and entire databases can be
 added to GlareDB. By cataloging your data with GlareDB, it is accessible
