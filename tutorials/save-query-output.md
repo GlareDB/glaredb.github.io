@@ -26,9 +26,9 @@ In addition to files, you can create a table by using the results from any
 query:
 
 ```sql
-CREATE TABLE evens (n int) AS (  
-    SELECT * FROM  generate_series(0, 100, 2)  
-);  
+CREATE TABLE evens (n int) AS (
+    SELECT * FROM  generate_series(0, 100, 2)
+);
 ```
 
 <!--TODO: add link below -->
