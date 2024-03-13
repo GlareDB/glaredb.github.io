@@ -2,7 +2,7 @@
 title: Installation
 layout: default
 nav_order: 3
-parent: Introduction / Getting Started
+parent: Getting Started
 has_children: true
 ---
 
