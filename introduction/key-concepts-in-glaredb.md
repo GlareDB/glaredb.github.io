@@ -128,10 +128,9 @@ occurs in the cloud.
 
 ## Serverless Native
 
-GlareDB has always been designed to be serverless. Storage and compute are
-independently scalable and compute nodes are multi-tenant. Any GlareDB process
-in the cloud can be allocated for units of work, meaning that queries can be
-partitioned and distributed in parallel.
+GlareDB is built from the bottom up with serverless operation and delivery in mind.
+Storage and compute are separated and can be scaled independently, and all billing 
+is based on data processed (not time!) so users only pay for the resources they use.
 
 By designing the system this way, our billing system is consumption-based and
 transparent. We bill for bytes processed and bytes stored, rather than resource
