@@ -11,23 +11,22 @@ variety of formats.
 
 ## Creating a GlareDB Table from a File
 
-For instance, say you have found a CSV file of user data on GitHub that you'd like
-to save to our GlareDB instance. You can run:
+For example, say you have found a CSV file of user data on GitHub that you'd like
+to save to your GlareDB instance. You can run:
 
 ```sql
 CREATE TABLE my_user_data AS
-SELECT * FROM read_csv(
-    'https://github.com/GlareDB/glaredb/raw/main/testdata/csv/userdata1.csv'
-);
+SELECT * FROM 
+'https://github.com/GlareDB/glaredb/raw/main/testdata/csv/userdata1.csv';
 ```
 
 to create a table from the CSV file.
 
 <!--TODO: add link below -->
 
-For more information, see the page on `CREATE TABLE`
+For more information, see the page on `CREATE TABLE`.
 
-## Creating a GlareDB View from a Query
+## Creating a View from a Query
 
 Now, if you'd like to create an unmaterialized view of those users who have
 comments in their record, you can do so with:
@@ -40,13 +39,13 @@ comments IS NOT NULL;
 
 <!--TODO: add link below -->
 
-For more information, see the page on `CREATE VIEW`
+For more information, see the page on `CREATE VIEW`.
 
 ## Copying the Results of a Query to a File
 
 ### Copying to a local Excel File
 
-Perhaps after running a query, you've found something noteworthy in the data
+Perhaps after running a query you've found something noteworthy in the data
 about users in the United States. Now you'd like to share the results with a
 colleague who is great with Excel, but is not as comfortable with SQL. You can
 run:
@@ -54,7 +53,7 @@ run:
 ```sql
 COPY
 (SELECT * FROM my_user_data WHERE 'country' = 'United States')
-TO './US_users.xlsx
+TO './US_users.xlsx';
 ```
 
 This will save a copy of the data as an Excel file that you can share with your
@@ -74,13 +73,13 @@ TO gcs OPTIONS (
     bucket = '<bucket>',
     location = 'file_location/US_users.xlsx',
     service_account_key = '<gcp_service_account_key>'
-)
+);
 ```
 
-<!--TODO: add link below -->
+<!--TODO: add links below -->
 
 You can copy data to files on GCS or S3. For more information, see the page on
-`COPY TO`.
+`COPY TO` and the tutorial on credential objects.
 
 ## Saving Queries and Exporting Data from GlareDB Cloud
 
