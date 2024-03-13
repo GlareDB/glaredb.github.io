@@ -36,8 +36,8 @@ con = glaredb.connect()
 con.sql("select 1").show()
 ```
 
-By default, `connect` will use an in-memory database. A path may be provided to
-`connect` to persist data after the python script exits.
+By default, `connect` will use an in-memory database. To persist data locally,
+a path may be provided to `connect`.
 
 ```python
 import glaredb
@@ -239,32 +239,6 @@ shape: (5, 3)
 └─────────────┴───────────────────────────┴────────────┘
 ```
 
-## API
-
-- `module glaredb`
-  - `connect([data_dir], [spill_path]): LocalSession`
-    - `data_dir` optional - if provided, data will be stored at this path,
-      otherwise all data is in memory.
-    - `spill_path` optional - a path where glaredb can create temporary files.
-      If not provided, a random temporary directory is used.
-- `class LocalSession`
-  - `prql(query): PyLogicalPlan`
-    - Lazily evaluates the `query` string (PRQL syntax)
-  - `sql(query): PyLogicalPlan`
-    - Lazily evaluates the `query` string (SQL syntax)
-  - `execute(query): PyExecutionResult`
-    - Eagerly evaluates the `query` string (SQL syntax)
-  - `close()`
-- `class PyLogicalPlan`
-  - `to_arrow()`
-  - `to_pandas()`
-  - `to_polars()`
-  - `show()`
-- `class PyExecutionResult`
-  - `to_arrow()`
-  - `to_pandas()`
-  - `to_polars()`
-  - `show()`
 
 
 [Pandas]: https://github.com/pandas-dev/pandas
