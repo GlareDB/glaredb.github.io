@@ -22,6 +22,15 @@ SELECT * FROM
 
 to create a table from the CSV file.
 
+In addition to files, you can create a table by using the results from any
+query:
+
+```sql
+CREATE TABLE evens (n int) AS (  
+    SELECT * FROM  generate_series(0, 100, 2)  
+);  
+```
+
 <!--TODO: add link below -->
 
 For more information, see the page on `CREATE TABLE`.
