@@ -25,6 +25,7 @@ pip install glaredb
 ## Usage
 
 ### Embedded Connection
+
 Once installed, GlareDB can be used inside your python scripts by importing the
 `glaredb` library, and creating a connection using `connect`.
 
@@ -46,6 +47,7 @@ con.sql("select * from persisted_table").show()
 ```
 
 ### Cloud Connection
+
 Provide a [connection string] to connect to [GlareDB Cloud].
 
 ```python
@@ -98,8 +100,8 @@ are variables in the scope of your Python environment.
 
 ### Converting to a dataframe
 
-In addition to selecting *from* Polars and Pandas dataframes, your GlareDB connection
-enables you to quickly convert results *to* Polars or Pandas dataframes as well.
+In addition to selecting _from_ Polars and Pandas dataframes, your GlareDB connection
+enables you to quickly convert results _to_ Polars or Pandas dataframes as well.
 
 ```python
 import glaredb
