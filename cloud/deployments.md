@@ -57,6 +57,14 @@ displayed. The password will only be displayed once.
 > generate a new one. There is a limit to how many passwords can be generated
 > for a deployment.
 
+## Deleting passwords
+
+Credentials for the deployment are listed in then **Database users panel**,
+located from the sidebar of the **SQL workspace**. To delete a credential, click
+the three dot menu and select **Remove**.
+
+![manage passwords]
+
 ## Deleting deployments
 
 {: .warning}
@@ -74,3 +82,4 @@ deployment in the navigation bar and from the menu, select Delete.
 [Python]: /introduction/installation/python-bindings.html
 [Node.js]: /introduction/installation/node_bindings.html
 [password]: /assets/images/cloud/deployments/new-password.png
+[manage passwords]: /assets/images/cloud/deployments/manage-passwords.png
