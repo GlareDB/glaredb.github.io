@@ -57,7 +57,7 @@ sources and loaded into an analytics warehouse. An underlying assumption is
 analytics should own storage and infrastructure, often at great complexity.
 
 GlareDB provides access to data where it is, without requiring a move.
-Even though data is more dynamic, having data sources configured in GlareDB 
+Even though data is more dynamic, having data sources configured in GlareDB
 makes it easier to access common data sources and share configuration between
 users.
 
@@ -128,9 +128,10 @@ occurs in the cloud.
 
 ## Serverless Native
 
-GlareDB is built from the bottom up with serverless operation and delivery in mind.
-Storage and compute are separated and can be scaled independently, and all billing 
-is based on data processed (not time!) so users only pay for the resources they use.
+GlareDB is built from the bottom up with serverless operation and delivery in
+mind. Storage and compute are separated and can be scaled independently, and al
+billing is based on data processed (not time!) so users only pay for the
+resources they use.
 
 By designing the system this way, our billing system is consumption-based and
 transparent. We bill for bytes processed and bytes stored, rather than resource
