@@ -13,7 +13,7 @@ A core tenet of GlareDB is that [All Data are SQL Addressable], even data not
 in a SQL database.
 
 Table functions access data, on-demand, wherever it is, including data sources
-that have not been added to GlareDB.
+that have not been registered as an external table.
 
 Local _and_ remote files can be read with functions such as:
 
