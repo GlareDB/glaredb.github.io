@@ -28,7 +28,7 @@ Where transactional systems use indexes and data normalization to meet
 performance targets, analytics systems take advantage of data layout and
 data formats to meet performance goals. In virtually all systems,
 there are trade-offs between storage compactness and query time, and
-understanding these trade offs will help you use GlareDB (and other
+understanding these trade-offs will help you use GlareDB (and other
 systems!) effectively.
 
 ### Formats: Columns and Records 
