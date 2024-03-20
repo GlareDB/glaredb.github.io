@@ -14,7 +14,7 @@ workloads and teams. It is free to get started, and signing up is quick!
 
 ## Deployments
 
-Each organization has access to one (free tier) or more (GlareDB Pro) of
+Each organization has access to one (free tier) or more (GlareDB Pro)
 fully-managed instances of GlareDB. Deployments are _instantly_ available and do
 not require any resource or time management.
 
