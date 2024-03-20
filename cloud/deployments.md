@@ -60,7 +60,7 @@ displayed. The password will only be displayed once.
 
 ## Deleting passwords
 
-Credentials for the deployment are listed in then **Database users panel**,
+Credentials for the deployment are listed in the **Database users panel**,
 located from the sidebar of the **SQL workspace**. To delete a credential, click
 the three dot menu and select **Remove**.
 
