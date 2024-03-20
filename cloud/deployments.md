@@ -7,7 +7,9 @@ parent: GlareDB Cloud
 
 # Deployments
 
-Deployments represent the persistent state of a GlareDB database.
+A deployment is a fully-managed, logical instance of GlareDB. With a
+[GlareDB Cloud] deployment, you can access your data locally, in notebooks, and
+in applications.
 
 Deployments inside an organization can be viewed from the main page, which can
 be accessed any time by clicking the GlareDB logo in the top left of the
@@ -55,8 +57,7 @@ displayed. The password will only be displayed once.
 
 > Password are only ever shown once. Store your password somewhere secure, as it
 > can never be retrieved again. In cases where you forget your password, you can
-> generate a new one. There is a limit to how many passwords can be generated
-> for a deployment.
+> generate a new one.
 
 ## Deleting passwords
 
@@ -76,6 +77,7 @@ the three dot menu and select **Remove**.
 You can delete a deployment from the SQL workspace page. Click the name of the
 deployment in the navigation bar and from the menu, select Delete.
 
+[GlareDB Cloud]: https://console.glaredb.com
 [deployment list]: /assets/images/cloud/deployments/deployment-list.png
 [organization’s billing plan]: /cloud/billing.html
 [Connect]: /assets/images/cloud/deployments/connect-button.png
