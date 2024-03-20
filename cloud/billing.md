@@ -67,7 +67,7 @@ native tables or upgrade to the Pro plan.
 GlareDB Cloud records the amount of data read and the size of the output written
 per query. EXPLAIN reports expected query input size and is a good estimation.
 Some storage formats are more efficient for limiting the amount of data a query
-needs to read: parquet only needs to read the data in the exact field read, and
+needs to read: Parquet only needs to read the data in the exact field read, and
 can skip all other columns and data, while queries for PostgreSQL and MySQL are
 pushed-down to their respective backing stores.
 
