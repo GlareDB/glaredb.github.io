@@ -37,10 +37,11 @@ executed in a hybrid manner. It is recommended to connect through this protocol
 when working locally, in notebooks or in officially supported language bindings.
 
 GlareDB also supports the `postgresql://` protocol. Simply click the `Postgres`
-tab of the connection dialog to copy the string. When connecting through the
-`postgresql://` protocol, all execution occurs remotely. It is recommended to
-connect through this protocol where needed such as in languages that do not
-yet have officially supported bindings or `psql` and other Postgres clients.
+tab of the connection dialog and copy the connection string. When connecting 
+through the `postgresql://` protocol, all execution occurs remotely. It is 
+recommended to connect through this protocol where needed such as in 
+languages that do not yet have officially supported bindings or `psql` and 
+other Postgres clients.
 
 ## Generating new passwords
 
