@@ -54,7 +54,7 @@ displayed. The password will only be displayed once.
 {: .important}
 
 > Password are only ever shown once. Store your password somewhere secure, as it
-> can never be retrieved again. In cases where you forget your password, simply
+> can never be retrieved again. In cases where you forget your password, you can
 > generate a new one. There is a limit to how many passwords can be generated
 > for a deployment.
 
