@@ -30,7 +30,7 @@ page, or use the avatar dropdown menu to navigate to **Settings > Manage plan**.
 From there, click the **Upgrade** button on the page to begin checkout. Checkout
 is handled through Stripe. After checkout success, you will be redirected to
 GlareDB Cloud. A **Pro** badge appears at the top right. No other actions are
-required: the benefits of GlareDB Pro are immediately available.
+required: the features of GlareDB Pro are immediately available.
 
 ![manage]
 
