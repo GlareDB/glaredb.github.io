@@ -9,7 +9,7 @@ parent: GlareDB Cloud
 
 Users and organizations are the two major concepts of resource ownership in
 GlareDB. At a high level, organizations have ownership of individual GlareDB
-deployments, and user access to deployments is determined by their membership in
+deployments, and users' access to deployments is determined by their membership in
 organizations.
 
 ## Switching Organizations
