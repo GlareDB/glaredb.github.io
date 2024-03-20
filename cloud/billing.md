@@ -45,7 +45,7 @@ other actions are required.
 
 ### How much does it cost? Are there any commitments?
 
-There is no minimum commitment. The plan is entirely pay for what you use. If
+There is no minimum commitment. The plan is entirely pay-for-what-you-use. If
 your usage falls within the free limits, then you aren’t charged.
 
 - $7 per TB of data processed
