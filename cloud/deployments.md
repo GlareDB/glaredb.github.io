@@ -18,7 +18,7 @@ navigation.
 ## Creating deployments
 
 Creating deployments can be done by clicking the **Create deployment** button.
-Note the number of deployments that can be created is limited based on the
+Note: the number of deployments that can be created is limited based on the
 [organization’s billing plan]. If the organization is at its limit, this button
 will be disabled.
 
