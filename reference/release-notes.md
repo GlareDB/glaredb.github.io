@@ -6,5 +6,6 @@ parent: Reference
 ---
 
 ## Release Notes
-See here for the 
+
+See here for the
 [GlareDB release notes](https://github.com/GlareDB/cloud/releases) on Github.
