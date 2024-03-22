@@ -129,7 +129,7 @@ occurs in the cloud.
 ## Serverless Native
 
 GlareDB is built from the bottom up with serverless operation and delivery in
-mind. Storage and compute are separated and can be scaled independently, and al
+mind. Storage and compute are separated and can be scaled independently, and all
 billing is based on data processed (not time!) so users only pay for the
 resources they use.
 
