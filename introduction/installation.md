@@ -3,7 +3,6 @@ title: Installation
 layout: default
 nav_order: 3
 parent: Getting Started
-has_children: true
 ---
 
 ## How do I get it?
