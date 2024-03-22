@@ -3,7 +3,6 @@ layout: default
 title: information_schema
 parent: System catalog
 grand_parent: Reference
-
 ---
 
 # `information_schema`
