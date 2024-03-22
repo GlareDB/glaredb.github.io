@@ -85,11 +85,11 @@ Given the ease with which you can read from, and write to, Pandas and Polars
 dataframes, and given how many other data tools can work with dataframes, this
 can unlock some powerful workflows.
 
-For instance, in [Dashboards Across Space and Time], you can learn how to 
+For instance, in [Dashboards Across Space and Time], you can learn how to
 combine Streamlit with GlareDB data output as a dataframe to construct
 complex dashboards with relatively little effort.
 
-And in [Data Quality Across Space and Time], you can learn how to use Great 
+And in [Data Quality Across Space and Time], you can learn how to use Great
 Expectations together with GlareDB data output as a dataframe to add data
 quality checks to queries that you've run across databases.
 
