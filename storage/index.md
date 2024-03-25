@@ -76,7 +76,7 @@ To avoid needing to read every record to fulfill a query, record-based
 systems use indexes to support more efficient queries. Indexes are
 additional structures with compact representations that contain the
 values of some column (or groups of columns), with pointers to each
-row, that the query can use to limit the number records it must
+row, that the query can use to limit the number of records it must
 inspect. Because indexes are stored in a particular order, queries can
 also use the order of keys in an index to support sorts. While indexes
 are possible for columnar formats in analytical workloads, as is the
@@ -90,14 +90,14 @@ expensive in-memory sorts, and support otherwise expensive filtering
 operations. While you can run a query over data regardless of speed,
 if you need to improve performance, or want to build a pipeline around
 a query that's slow, you can try to write out or re-materialize the
-out with a different field as the ordering constraint.
+output with a different field as the ordering constraint.
 
 In all databases, query optimization is often about finding ways to
-limit the amount of data to consider. In record based systems,
-normalization (splitting logical records across tables,) and indexes
-(materializing compact views) reduces the amount of data to
-consider. For column based systems, saving additional copies of data
-in different forms with different orderings, or that contain a subset
+limit the amount of data to consider. In record-based systems,
+normalization (splitting logical records across tables) and indexes
+(materializing compact views) reduce the amount of data to
+consider. For column-based systems, saving additional copies of data
+in different forms that have different orderings, or that contain a subset
 of fields, can have a huge impact on query performance.
 
 <!-- TODO: connect to "use COPY TO to materialize different views of your data" -->
@@ -114,11 +114,11 @@ GlareDB's data sources can be classified in a few groups:
   format has different properties and can provide different benefits
   to users. Some are easier to write and more widely supported as
   output formats, some are easier or more efficient to read
-  programtiacally, and some are more transparent to read for humans.
+  programmatically, and some are more transparent to read for humans.
 
 - external database engines and services: GlareDB provides access to
   other database systems--like PostgreSQL, MySQL, MongoDB, SQLite,
-  Snowflake and BigQuery, to enable joining data across data sources,
+  Snowflake and BigQuery--to enable joining data across data sources,
   or migrating data between formats and systems. Most of the time
   GlareDB is able to push operations _into_ the underlying database
   engine, which means these queries can take advantage of indexes in
@@ -127,40 +127,39 @@ GlareDB's data sources can be classified in a few groups:
 
 - storage engines, like Lance, DeltaLake and Iceberg, provide
   transactional and consistently properties that file formats cannot
-  without the overhead of a process. At the same time, unlike extenral
-  services and engines, these formats don't require a controling
+  without the overhead of a process. At the same time, unlike external
+  services and engines, these formats don't require a controlling
   process and can work with all of the data stored to an object store
   like S3 or GCS. They do this by defining a protocol for writing and
-  reading files that ensure that data is consistent and that writes
+  reading files that ensure that data are consistent and that writes
   are safe.
 
 There are exceptions and edge cases: SQLite is somewhere between a
 database and a file format, and the Parquet format has metadata that
-makes it possible to push down some operations more like an external
+makes it possible to push down some operations like an external
 database, while the implementations of Delta Lake are built upon
 Parquet and JSON. However, this classification system may be useful
 in understanding the limitations and features of a specific data
 system.
 
-### Materialization: Roll Ups and Duplication
+### Materialization: Roll-ups and Duplication
 
-For data sets that are changing often, having multiple copies of the
-data can be very expensive: in addition to the extra space require,
-you have to update many copies of the data any time the data changes,
+For data sets that change often, having multiple copies of the
+data can be very expensive: in addition to the extra space required,
+you have to update many copies of the data any time the data change,
 and the coordination can become quite complex. However, for historic
-data, or data that doesn't change after it's written, storing the data
+data, or data that don't change after they're written, storing the data
 in more than one form can support different queries, or save the data
 in a grouped order or pre-compute and save various aggregates or sums
-as needed. These saved roll ups are duplicated data, but because the
-input data doesn't change, and the storage costs may be minimal, you
+as needed. These saved roll-ups are duplicated data, but because the
+input data don't change, and the storage costs may be minimal, you
 can save a lot of compute time by saving (or materializing) these
 results. These kinds of transformations are always optimizations in
 service of your use case.
 
 When designing your data storage and infrastructure the key
-considerations around what storage formats, engines or services, as
-well as any kinds of transformation or materialization revolve around
-considerations such as:
+considerations around storage formats, engines, or services, as
+well as transformations and materializations, are
 
 - how often will your application run  queries that access this data?
 
@@ -170,15 +169,15 @@ considerations such as:
 
 - how often will the input data set change?
 
-- are modifications to the input data, appending data to the "end," or
-  are they modifications of existing records?
+- when modifying the input data, will you be appending data to the "end," 
+or will you be modifying existing records?
 
 - what kind of application or system consumes the output?
 
 - are there ordering requirements of the output? is the input ordering
   the same as the output ordering?
 
-- what kind of data types does the input data have? does the
+- what kind of data types do the input data have? does the
   storage format have a type system with the proper degree of
   fidelity?
 
