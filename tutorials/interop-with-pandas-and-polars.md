@@ -9,7 +9,7 @@ GlareDB can seamlessly read from, and write to, Panda and Polars. This enables
 many interesting workflows for data exploration as well as integration with
 other data tools.
 
-## Select from a Pandas or Polars dataframe with GlareDB
+## Select from a Pandas or Polars Dataframe with GlareDB
 
 If you have a Pandas dataframe in memory, you can readily select from
 it:
@@ -28,9 +28,8 @@ con.sql(
 ).show()
 ```
 
-Notice how the `df` variable to which the Pandas dataframe is assigned is
-included in the session scope, and so can be dropped into the query as if
-it were a table in the database.
+The `df` variable, a Pandas dataframe, is included in the session scope and so
+can be referenced in the GlareDB query as if it were a table in the database.
 
 You can also do the same thing with a Polars dataframe:
 
