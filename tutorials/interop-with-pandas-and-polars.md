@@ -47,7 +47,7 @@ con.sql(
 ).show()
 ```
 
-## Output the Results of a Query to a Pandas or Polars Dataframe
+## Assign the Results of a Query to a Dataframe
 
 In addition to selecting from Pandas and Polars dataframes, GlareDB enables
 yout to output the results of queries as Pandas and Polars dataframes:
@@ -58,7 +58,7 @@ polars_df = con.sql("SELECT 1").to_polars()
 ```
 
 Putting it altogether, this lets you do things like construct a dataframe with
-Pandas, manipulate it with SQL using GlareDB, and output it again as a
+Pandas, manipulate it with SQL using GlareDB, and use the output again as a
 dataframe:
 
 ```python
