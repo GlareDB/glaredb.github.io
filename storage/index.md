@@ -80,8 +80,7 @@ row, that the query can use to limit the number of records it must
 inspect. Because indexes are stored in a particular order, queries can
 also use the order of keys in an index to support sorts. While indexes
 are possible for columnar formats in analytical workloads, as is the
-case with Lance, they are less efficient given usage patterns and
-system architectures.
+case with Lance, they are less useful in analytics workloads.
 
 For analytics engines, the encoding and organization of data has a big
 impact on the data. While analytics engines lack indexes in most
