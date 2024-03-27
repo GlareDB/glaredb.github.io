@@ -51,8 +51,8 @@ expensive. Similarly, writing out columnar data may require
 additional resources, or be inefficient if writes happen in very small
 batches. For transactional workloads, columnar models make less sense.
 
-This table outlines some of the data formats and sources that GlareDB
-supports and identifies the modality. [n.b. Engines like MySQL and
+This table outlines some popular data formats and and sources 
+and identifies the modality. [n.b. Engines like MySQL and
 PostgreSQL have some multi-modality capability.]
 
 | Format/System | Columnar | Record-Based | Supported in GlareDB |
@@ -106,7 +106,7 @@ of fields, can have a huge impact on query performance.
 
 GlareDB's data sources can be classified in a few groups:
 
-- structured and semi-structured file formats. There are many
+- **structured and semi-structured file formats**. There are many
   different interchange formats, record encoding, and archival formats
   that allow us to write data to files, and share them between
   programs. JSON, Parquet, CSV, BSON, and Excel are just encoded raw
@@ -116,7 +116,7 @@ GlareDB's data sources can be classified in a few groups:
   output formats, some are easier or more efficient to read
   programmatically, and some are more transparent to read for humans.
 
-- external database engines and services: GlareDB provides access to
+- **external database engines and services**: GlareDB provides access to
   other database systems--like PostgreSQL, MySQL, MongoDB, SQLite,
   Snowflake and BigQuery--to enable joining data across data sources,
   or migrating data between formats and systems. Most of the time
@@ -125,7 +125,7 @@ GlareDB's data sources can be classified in a few groups:
   the underlying data and reduce the amount of data it needs to
   consider.
 
-- storage engines, like Lance, DeltaLake and Iceberg, provide
+- **storage engines (Lance, DeltaLake and Iceberg)**: provide
   transactional and consistently properties that file formats cannot
   without the overhead of a process. At the same time, unlike external
   services and engines, these formats don't require a controlling
