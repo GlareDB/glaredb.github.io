@@ -49,11 +49,15 @@ con.sql(
 
 ## Assign the Results of a Query to a Dataframe
 
-In addition to selecting from Pandas and Polars dataframes, GlareDB enables
-yout to output the results of queries as Pandas and Polars dataframes:
+To convert the output of a GlareDB query to a Pandas dataframe, use `to_pandas`:
 
 ```python
 df = con.sql("SELECT 1").to_pandas()
+```
+
+Similarly, use `to_polars` to convert the output to a Polars dataframe:
+
+```python
 polars_df = con.sql("SELECT 1").to_polars()
 ```
 
@@ -85,12 +89,13 @@ dataframes, and given how many other data tools can work with dataframes, this
 can unlock some powerful workflows.
 
 For instance, in [Dashboards Across Space and Time], you can learn how to
-combine Streamlit with GlareDB data output as a dataframe to construct
+combine Streamlit with GlareDB queries output as a dataframe to construct
 complex dashboards with relatively little effort.
 
-And in [Data Quality Across Space and Time], you can learn how to use Great
-Expectations together with GlareDB data output as a dataframe to add data
+And in [Data Quality Across Space and Time], you can learn how to use [Great
+Expectations] together with GlareDB queries output as a dataframe to add data
 quality checks to queries that you've run across databases.
 
 [Dashboards Across Space and Time]: https://glaredb.com/blog/dashboards-across-space-and-time
 [Data Quality Across Space and Time]: https://glaredb.com/blog/data-quality-across-space-and-time
+[Great Expectations]: https://github.com/great-expectations/great_expectations
