@@ -15,8 +15,8 @@ directly within a rich graphical interface.
 To get started, select an existing notebook, or create a new one.
 
 To install GlareDB in the notebook type `/`, then select **Python block**. This
-will place a new block for executing python in the notebook, which will be used
-to to install the [glaredb python library].
+will place a new block for executing Python in the notebook, which will be used
+to to install the [GlareDB Python library].
 
 ![python block]
 
@@ -26,7 +26,7 @@ Execute the following command in the code block:
 pip install glaredb
 ```
 
-Next, in a new **Python block**, import and use glaredb:
+Next, in a new **Python block**, import and use GlareDB:
 
 ```python
 import glaredb
@@ -46,15 +46,18 @@ Executing `SELECT 'hello from hyperquery';` will produce output like:
 
 ## Connecting to GlareDB Cloud from Hyperquery
 
-Sign in or sign up with [GlareDB Cloud]. Upon signing up, a free deployment is
-instantly created and ready to be used. Obtain the Python connection details for
-a deployment by clicking the **Connect** button and selecting the **Python** tab.
+[GlareDB Cloud] features fully-managed instances of GlareDB, enabling you
+to access your data in notebooks, dashboards and applications. 
+[You can sign up here.] If you're a new user,a deployment is automatically
+created for you. To get connection details for the deployment, click the 
+**Connect** button then select the **Python** tab. This will provide a
+connection URI that you can use when connecting via the Python library.
 
 ![connect button]
 
 ![connect python]
 
-In a **Python block**, use the connection URI when calling `glaredb.connect`:
+In a **Python block**, use the connection URI when calling `GlareDB.connect`:
 
 ```python
 import glaredb
@@ -69,7 +72,7 @@ through [Hybrid Execution]. Data in the notebook, including [Pandas] and [Polars
 dataframes can be joined with data in GlareDB Cloud.
 
 [Hyperquery]: https://www.hyperquery.ai/
-[glaredb python library]: https://pypi.org/project/glaredb/
+[GlareDB Python library]: https://pypi.org/project/glaredb/
 [python block]: /assets/images/glaredb/hyperquery/python-block.png
 [Pandas]: https://github.com/pandas-dev/pandas
 [Polars]: https://github.com/pola-rs/polars
@@ -79,3 +82,4 @@ dataframes can be joined with data in GlareDB Cloud.
 [connect button]: /assets/images/glaredb/hyperquery/connect-button.png
 [connect python]: /assets/images/glaredb/hyperquery/connect_python.png
 [Hybrid Execution]: /glaredb/hybrid-execution/
+[You can sign up here.]: https://console.glaredb.com
