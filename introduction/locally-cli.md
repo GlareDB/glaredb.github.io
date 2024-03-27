@@ -1,9 +1,8 @@
 ---
 title: CLI
 layout: default
-nav_order: 4
-parent: Installation
-grand_parent: Getting Started
+nav_order: 7
+parent: Getting Started
 ---
 
 # CLI
