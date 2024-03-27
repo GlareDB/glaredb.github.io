@@ -36,7 +36,7 @@ systems!) effectively.
 Internally, GlareDB uses the [Arrow] format to represent data, which
 is an in-memory columnar format. Columnar formats are great because
 they make operations over a single column or group of columns, like
-sumarizations and averages, more efficient and they make it easier to
+summarizations and averages, more efficient and they make it easier to
 ignore columns that aren't relevant.
 
 Formats like [Parquet] and [Lance], as well as engines like [Delta]
@@ -56,7 +56,7 @@ supports and identifies the modality. [n.b. Engines like MySQL and
 PostgreSQL have some multi-modality capability.]
 
 | Format/System | Columnar | Record-Based |
-|:--------------|:---------|:-------------|
+| :------------ | :------- | :----------- |
 | Parquet       | x        |              |
 | Lance         | x        |              |
 | Delta         | x        |              |
@@ -67,7 +67,7 @@ PostgreSQL have some multi-modality capability.]
 | BSON          |          | x            |
 | SQLite        |          | x            |
 | MySQL         |          | x            |
-| PostreSQL     |          | x            |
+| PostgreSQL    |          | x            |
 | Cassandra     | x        |              |
 | Clickhouse    | x        |              |
 | DuckDB        | x        |              |
@@ -161,7 +161,7 @@ When designing your data storage and infrastructure the key
 considerations around storage formats, engines, or services, as
 well as transformations and materializations, are
 
-- how often will your application run  queries that access this data?
+- how often will your application run queries that access this data?
 
 - how large is the input data set?
 
@@ -169,8 +169,8 @@ well as transformations and materializations, are
 
 - how often will the input data set change?
 
-- when modifying the input data, will you be appending data to the "end," 
-or will you be modifying existing records?
+- when modifying the input data, will you be appending data to the "end,"
+  or will you be modifying existing records?
 
 - what kind of application or system consumes the output?
 
