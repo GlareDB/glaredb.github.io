@@ -55,22 +55,22 @@ This table outlines some of the data formats and sources that GlareDB
 supports and identifies the modality. [n.b. Engines like MySQL and
 PostgreSQL have some multi-modality capability.]
 
-| Format/System | Columnar | Record-Based |
-| :------------ | :------- | :----------- |
-| Parquet       | x        |              |
-| Lance         | x        |              |
-| Delta         | x        |              |
-| Arrow         | x        |              |
-| Avro          |          | x            |
-| CSV           |          | x            |
-| JSON          |          | x            |
-| BSON          |          | x            |
-| SQLite        |          | x            |
-| MySQL         |          | x            |
-| PostgreSQL    |          | x            |
-| Cassandra     | x        |              |
-| Clickhouse    | x        |              |
-| DuckDB        | x        |              |
+| Format/System | Columnar | Record-Based | Supported in GlareDB |
+|:--------------|:---------|:-------------|----------------------|
+| Parquet       | x        |              | x                    |
+| Lance         | x        |              | x                    |
+| Delta         | x        |              | x                    |
+| Arrow         | x        |              |                      |
+| Avro          |          | x            |                      |
+| CSV           |          | x            | x                    |
+| JSON          |          | x            | x                    |
+| BSON          |          | x            | x                    |
+| SQLite        |          | x            | x                    |
+| MySQL         |          | x            | x                    |
+| PostgreSQL    |          | x            | x                    |
+| Cassandra     | x        |              | x                    |
+| Clickhouse    | x        |              | x                    |
+| DuckDB        | x        |              |                      |
 
 To avoid needing to read every record to fulfill a query, record-based
 systems use indexes to support more efficient queries. Indexes are
