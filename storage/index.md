@@ -51,12 +51,12 @@ expensive. Similarly, writing out columnar data may require
 additional resources, or be inefficient if writes happen in very small
 batches. For transactional workloads, columnar models make less sense.
 
-This table outlines some popular data formats and and sources 
+This table outlines some popular data formats and and sources
 and identifies the modality. [n.b. Engines like MySQL and
 PostgreSQL have some multi-modality capability.]
 
 | Format/System | Columnar | Record-Based |
-|:--------------|:---------|:-------------|
+| :------------ | :------- | :----------- |
 | Parquet       | x        |              |
 | Lance         | x        |              |
 | Delta         | x        |              |
