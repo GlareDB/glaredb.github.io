@@ -23,10 +23,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20.9.0
-          cache: "yarn"
-          cache-dependency-path: yarn.lock
-      - run: yarn install --frozen-lockfile
+      - run: npm ci
 
-      - run: yarn lint
-      - run: yarn format
-      - run: yarn cspell
+      - run: npm run lint
+      - run: npm run format
+      - run: npm run cspell

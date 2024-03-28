@@ -7,7 +7,7 @@ updates:
       interval: "daily"
     rebase-strategy: disabled
 
-  # Maintain dependencies for Yarn (npm)
+  # Maintain dependencies for npm
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
