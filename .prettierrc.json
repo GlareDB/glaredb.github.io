@@ -8,6 +8,12 @@
         "printWidth": 80,
         "proseWrap": "preserve"
       }
+    },
+    {
+      "files": ["*.jsonc"],
+      "options": {
+        "trailingComma": "none"
+      }
     }
   ]
 }
