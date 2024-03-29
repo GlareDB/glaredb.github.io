@@ -12,7 +12,7 @@ not have to be a known data source to GlareDB.
 
 If you have multiple collections in one MongoDB deployment or are
 regularly using the same MongoDB data source, consider [setting up a
-MongoDB data source](/docs/data-sources/supported/mongodb).
+MongoDB data source](/data-sources/mongodb).
 
 ## Syntax
 

@@ -37,4 +37,4 @@ select * from read_postgres(
 
 Refer to the [documentation on Postgres data sources] for more information.
 
-[documentation on Postgres data sources]: /docs/data-sources/supported/postgres
+[documentation on Postgres data sources]: /data-sources/postgres

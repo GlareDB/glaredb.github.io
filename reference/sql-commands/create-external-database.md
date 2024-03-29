@@ -45,4 +45,4 @@ CREATE EXTERNAL DATABASE external_db
 ```
 
 [Data sources]: /docs/data-sources
-[SSH tunnel]: /docs/data-sources/securing-connections.html
+[SSH tunnel]: /data-sources/securing-connections.html

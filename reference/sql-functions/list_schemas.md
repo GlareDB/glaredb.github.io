@@ -32,4 +32,4 @@ select * from list_schemas(my_pg);
 
 See [CREATE EXTERNAL DATABASE] for adding a database as a data source.
 
-[CREATE EXTERNAL DATABASE]: /glaredb/sql-commands/create-external-database/
+[CREATE EXTERNAL DATABASE]: /reference/sql-commands/create-external-database/

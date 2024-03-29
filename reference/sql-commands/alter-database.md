@@ -55,4 +55,4 @@ CREATE EXTERNAL DATABASE my_pg
 ALTER DATABASE my_pg SET ACCESS_MODE TO READ_ONLY;
 ```
 
-[CREATE EXTERNAL DATABASE]: /glaredb/sql-commands/create-external-database/
+[CREATE EXTERNAL DATABASE]: /reference/sql-commands/create-external-database/

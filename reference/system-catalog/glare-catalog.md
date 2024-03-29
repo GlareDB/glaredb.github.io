@@ -144,19 +144,19 @@ For more information on a specific function, refer to its reference:
 | `parameter_types` | Currently not implemented.                                |
 | `builtin`         | Indicates if this function is built into GlareDB          |
 
-[CREATE EXTERNAL TABLE]: /glaredb/sql-commands/create-external-table.html
-[CREATE EXTERNAL DATABASE]: /glaredb/sql-commands/create-external-database.html
-[SSH tunnels]: /docs/data-sources/overview.html#securing-connections-with-ssh-tunnels
-[`csv_scan`]: /glaredb/sql-commands/csv_scan
-[`delta_scan`]: /glaredb/sql-commands/delta_scan
-[`lance_scan`]: /glaredb/sql-commands/lance_scan
-[`generate_series`]: /glaredb/sql-commands/generate_series
-[`list_schemas`]: /glaredb/sql-commands/list_schemas
-[`list_tables`]: /glaredb/sql-commands/list_tables
-[`ndjson_scan`]: /glaredb/sql-commands/ndjson_scan
-[`parquet_scan`]: /glaredb/sql-commands/parquet_scan
-[`read_bigquery`]: /glaredb/sql-commands/read_bigquery
-[`read_mongodb`]: /glaredb/sql-commands/read_mongodb
-[`read_mysql`]: /glaredb/sql-commands/read_mysql
-[`read_postgres`]: /glaredb/sql-commands/read_postgres
-[`read_snowflake`]: /glaredb/sql-commands/read_snowflake
+[CREATE EXTERNAL TABLE]: /reference/sql-commands/create-external-table.html
+[CREATE EXTERNAL DATABASE]: /reference/sql-commands/create-external-database.html
+[SSH tunnels]: /data-sources/overview.html#securing-connections-with-ssh-tunnels
+[`csv_scan`]: /reference/sql-commands/csv_scan
+[`delta_scan`]: /reference/sql-commands/delta_scan
+[`lance_scan`]: /reference/sql-commands/lance_scan
+[`generate_series`]: /reference/sql-commands/generate_series
+[`list_schemas`]: /reference/sql-commands/list_schemas
+[`list_tables`]: /reference/sql-commands/list_tables
+[`ndjson_scan`]: /reference/sql-commands/ndjson_scan
+[`parquet_scan`]: /reference/sql-commands/parquet_scan
+[`read_bigquery`]: /reference/sql-commands/read_bigquery
+[`read_mongodb`]: /reference/sql-commands/read_mongodb
+[`read_mysql`]: /reference/sql-commands/read_mysql
+[`read_postgres`]: /reference/sql-commands/read_postgres
+[`read_snowflake`]: /reference/sql-commands/read_snowflake
