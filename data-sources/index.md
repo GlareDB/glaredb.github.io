@@ -64,8 +64,13 @@ sources.
 
 ## Connecting data sources using GlareDB Cloud
 
+<<<<<<< HEAD
 [CREATE EXTERNAL DATABASE]: /reference/sql-commands/create-external-database
 [CREATE EXTERNAL TABLE]: /reference/sql-commands/create-external-table
+=======
+[CREATE EXTERNAL DATABASE]: /glaredb/sql-commands/create-external-database
+[CREATE EXTERNAL TABLE]: /glaredb/sql-commands/create-external-table
+>>>>>>> main
 [Azure]: ./azure
 [BigQuery]: ./bigquery
 [Clickhouse]: ./clickhouse
