@@ -71,5 +71,5 @@ CREATE TABLE public.example (a int) AS VALUES (1, 2);
 CREATE TABLE public.example2 (a int, b text) as values (1, 2);
 ```
 
-[`SELECT`]: /glaredb/sql-commands/select/
-[`generate_series`]: /glaredb/sql-functions/generate_series/
+[`SELECT`]: /reference/sql-commands/select/
+[`generate_series`]: /reference/sql-functions/generate_series/

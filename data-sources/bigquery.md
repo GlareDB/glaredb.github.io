@@ -80,5 +80,5 @@ optionally be qualified with a schema name.
 
 - Querying views defined in BigQuery is currently unsupported.
 
-[CREATE EXTERNAL TABLE]: /glaredb/sql-commands/create-external-table
-[CREATE EXTERNAL DATABASE]: /glaredb/sql-commands/create-external-database
+[CREATE EXTERNAL TABLE]: /reference/sql-commands/create-external-table
+[CREATE EXTERNAL DATABASE]: /reference/sql-commands/create-external-database

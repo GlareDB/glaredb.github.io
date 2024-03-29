@@ -99,4 +99,4 @@ CREATE CREDENTIALS my_aws_creds PROVIDER aws
 SELECT * FROM lance_scan('gs://my-bucket/path/lance_table', my_aws_creds, region => 'us-east-1');
 ```
 
-[lance dataset]: (https://lancedb.github.io/lance/format.html#dataset-directory)
+[lance dataset]: https://lancedb.github.io/lance/format.html#dataset-directory

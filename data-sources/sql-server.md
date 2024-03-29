@@ -81,8 +81,8 @@ CREATE EXTERNAL TABLE <table-name>
 
 <!-- markdownlint-disable line-length -->
 
-[CREATE EXTERNAL TABLE]: /glaredb/sql-commands/create-external-table
-[CREATE EXTERNAL DATABASE]: /glaredb/sql-commands/create-external-database
+[CREATE EXTERNAL TABLE]: /reference/sql-commands/create-external-table
+[CREATE EXTERNAL DATABASE]: /reference/sql-commands/create-external-database
 [ADO connection string]: https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/connection-string-syntax#sql-server-authentication-with-sqlclient
 
 <!-- markdownlint-enable line-length -->

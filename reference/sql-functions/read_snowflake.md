@@ -56,4 +56,4 @@ select * from read_snowflake(
 
 Refer to the [documentation on Snowflake data sources] for more information.
 
-[documentation on Snowflake data sources]: /docs/data-sources/supported/snowflake
+[documentation on Snowflake data sources]: /data-sources/snowflake
