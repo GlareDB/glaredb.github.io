@@ -26,7 +26,6 @@ In addition to the documentation, we have some optional tooling for static
 analysis. The following are needed:
 
 - [Node.js LTS]
-- [Yarn]
 
 Once the above are installed, install [jekyll] and [bundler]:
 
@@ -65,22 +64,22 @@ From the root of the project:
 
 ```console
 # Checking spelling, formatting, and markdown lints.
-yarn check:all
+npm run check:all
 
 # Checks spelling
-yarn cspell
+npm run cspell
 
 # Checks code format
-yarn format
+npm run format
 
 # Attempts to automatically fix any formatting issues
-yarn format:fix
+npm run format:fix
 
 # Checks code adheres to lint rules
-yarn lint
+npm run lint
 
 # Attempts to automatically fix any lint violations
-yarn lint:fix
+npm run lint:fix
 ```
 
 #### Spell checking
@@ -127,7 +126,6 @@ The deployment GitHub Actions workflow is heavily based on GitHub's mixed-party
 [Ruby]: https://www.ruby-lang.org/en/documentation/installation/
 [RubyGems]: https://rubygems.org/
 [Node.js LTS]: https://nodejs.org/en
-[Yarn]: https://yarnpkg.com/getting-started/install
 [jekyll]: https://jekyllrb.com
 [bundler]: https://bundler.io
 [MIT License]: https://en.wikipedia.org/wiki/MIT_License
