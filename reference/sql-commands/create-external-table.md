@@ -80,5 +80,5 @@ CREATE EXTERNAL TABLE external_table
     );
 ```
 
-[SSH tunnel]: /docs/data-sources/securing-connections.html
-[credentials object]: /glaredb/sql-commands/create-credentials/
+[SSH tunnel]: /data-sources/securing-connections.html
+[credentials object]: /reference/sql-commands/create-credentials/

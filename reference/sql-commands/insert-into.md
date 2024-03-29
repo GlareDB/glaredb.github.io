@@ -37,4 +37,4 @@ INSERT INTO public.users AS VALUES
   ('Eldon Tyrell', 'ceo@tyrell.corp');
 ```
 
-[`CREATE`]: /glaredb/sql-commands/create-table/
+[`CREATE`]: /reference/sql-commands/create-table/

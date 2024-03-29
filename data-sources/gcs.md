@@ -52,7 +52,7 @@ CREATE EXTERNAL TABLE <table-name>
 
 <!-- markdownlint-disable line-length -->
 
-[CREATE EXTERNAL TABLE]: /glaredb/sql-commands/create-external-table
+[CREATE EXTERNAL TABLE]: /reference/sql-commands/create-external-table
 [Service Account]: https://cloud.google.com/iam/docs/service-account-overview
 
 <!-- markdownlint-enable line-length -->

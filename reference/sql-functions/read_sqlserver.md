@@ -37,4 +37,4 @@ select * from read_sqlserver(
 
 Refer to the [documentation on SQL Server data sources] for more information.
 
-[documentation on SQL Server data sources]: /docs/data-sources/supported/sql-server
+[documentation on SQL Server data sources]: /data-sources/sql-server
