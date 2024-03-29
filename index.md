@@ -23,10 +23,10 @@ it's in.**
 So you can query (and `JOIN`!) and manipulate your data
 using standard tools that you may already know.
 
-[S3]: /docs/data-sources/supported/s3.html
-[Postgres]: /docs/data-sources/supported/postgres.html
-[Snowflake]: /docs/data-sources/supported/snowflake.html
-[MongoDB]: /docs/data-sources/supported/mongodb.html
-[Excel]: /glaredb/sql-functions/read_excel/
-[CSV]: /glaredb/sql-functions/csv_scan/
-[Parquet]: /glaredb/sql-functions/parquet_scan/
+[S3]: /data-sources/s3.html
+[Postgres]: /data-sources/postgres.html
+[Snowflake]: /data-sources/snowflake.html
+[MongoDB]: /data-sources/mongodb.html
+[Excel]: /reference/sql-functions/read_excel/
+[CSV]: /reference/sql-functions/csv_scan/
+[Parquet]: /reference/sql-functions/parquet_scan/

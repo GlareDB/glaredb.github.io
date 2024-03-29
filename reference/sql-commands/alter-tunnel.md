@@ -44,5 +44,5 @@ CREATE TUNNEL my_tunnel
 ALTER TUNNEL my_tunnel ROTATE KEYS;
 ```
 
-[Securing connections with SSH tunnels]: /docs/data-sources/securing-connections.html#securing-connections-with-ssh-tunnels
-[CREATE TUNNEL]: /glaredb/sql-commands/create-tunnel/
+[Securing connections with SSH tunnels]: /data-sources/securing-connections.html#securing-connections-with-ssh-tunnels
+[CREATE TUNNEL]: /reference/sql-commands/create-tunnel/

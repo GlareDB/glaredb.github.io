@@ -35,5 +35,5 @@ schema. See [CREATE SCHEMA] for how to create a schema.
 DROP SCHEMA my_schema CASCADE;
 ```
 
-[CREATE SCHEMA]: /glaredb/sql-commands/create-schema/
+[CREATE SCHEMA]: /reference/sql-commands/create-schema/
 [system catalog]: /glaredb/system-catalog/index/

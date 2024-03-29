@@ -31,5 +31,5 @@ external table.
 DROP TABLE my_table;
 ```
 
-[CREATE EXTERNAL TABLE]: /glaredb/sql-commands/create-external-table/
+[CREATE EXTERNAL TABLE]: /reference/sql-commands/create-external-table/
 [system catalog]: /glaredb/system-catalog/index/

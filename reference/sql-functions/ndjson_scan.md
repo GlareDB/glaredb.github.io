@@ -173,4 +173,4 @@ SELECT * FROM ndjson_scan('./example.json');
 -- └─────────────────┘
 ```
 
-[COPY TO]: /glaredb/sql-commands/copy-to
+[COPY TO]: /reference/sql-commands/copy-to

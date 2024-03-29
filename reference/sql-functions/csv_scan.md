@@ -172,4 +172,4 @@ SELECT * FROM csv_scan('./example.csv');
 -- └─────────────────┘
 ```
 
-[COPY TO]: /glaredb/sql-commands/copy-to
+[COPY TO]: /reference/sql-commands/copy-to

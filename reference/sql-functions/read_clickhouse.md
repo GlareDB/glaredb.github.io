@@ -35,4 +35,4 @@ select * from read_clickhouse(
 
 Refer to the [documentation on ClickHouse data sources] for more information.
 
-[documentation on ClickHouse data sources]: /docs/data-sources/supported/clickhouse
+[documentation on ClickHouse data sources]: /data-sources/clickhouse

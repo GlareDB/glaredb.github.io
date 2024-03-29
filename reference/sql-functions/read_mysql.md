@@ -37,4 +37,4 @@ select * from read_mysql(
 
 Refer to the [documentation on MySQL data sources] for more information.
 
-[documentation on MySQL data sources]: /docs/data-sources/supported/mysql
+[documentation on MySQL data sources]: /data-sources/mysql

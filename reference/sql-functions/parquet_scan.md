@@ -170,4 +170,4 @@ SELECT * FROM parquet_scan('./example.parquet');
 -- └─────────────────┘
 ```
 
-[COPY TO]: /glaredb/sql-commands/copy-to
+[COPY TO]: /reference/sql-commands/copy-to

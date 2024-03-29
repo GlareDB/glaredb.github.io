@@ -54,6 +54,6 @@ CREATE EXTERNAL TABLE my_azure_table
 ALTER TABLE my_azure_table SET ACCESS_MODE TO READ_ONLY;
 ```
 
-[CREATE EXTERNAL TABLE]: /glaredb/sql-commands/create-external-table/
+[CREATE EXTERNAL TABLE]: /reference/sql-commands/create-external-table/
 [system catalog]: /glaredb/system-catalog/index/
-[Azure Blob Storage]: /docs/data-sources/supported/azure
+[Azure Blob Storage]: /data-sources/azure
