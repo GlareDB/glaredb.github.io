@@ -21,10 +21,6 @@ GlareDB docs are built using [Just the docs]. The following are needed:
   - `build-essential` APT package for debian and Ubuntu
 - `make`
 
-In addition to the documentation, we have some optional tooling for static
-analysis that require [Node.js LTS]. See the `scripts` in `package.json` for
-available tooling.
-
 Once the above are installed, install [jekyll] and [bundler]:
 
 ```shell
@@ -41,6 +37,34 @@ Finally, a local development server is started on `localhost:4000` with:
 
 ```shell
 bundle exec jekyll serve
+```
+
+### Linting
+
+We have some optional tooling for linting that require [Node.js LTS]. See the
+`scripts` in `package.json` for available tooling.
+
+Lint and spell check configurations are available in `cspell.json`,
+`.markdownlint-cli2.jsonc` and `.prettierrc.json`.
+
+```shell
+# Checking spelling, formatting, and markdown lints.
+npm run check:all
+
+# Checks spelling
+npm run cspell
+
+# Checks code format
+npm run format
+
+# Attempts to automatically fix any formatting issues
+npm run format:fix
+
+# Checks code adheres to lint rules
+npm run lint
+
+# Attempts to automatically fix any lint violations
+npm run lint:fix
 ```
 
 [GlareDB]: https://github.com/GlareDB/glaredb
