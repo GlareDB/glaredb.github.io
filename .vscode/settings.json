@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["glaredb"],
+  "cSpell.words": ["callouts", "glaredb"],
   "editor.codeActionsOnSave": {
     "source.fixAll.markdownlint": "never"
   },

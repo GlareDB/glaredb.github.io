@@ -1,11 +1,11 @@
 # GlareDB docs
 
-Welcome to GlareDB documentation 👋.
+Welcome to GlareDB documentation 👋
 
 ## Feedback and issues
 
-Have feature requests or bug reports for [console.glaredb.com]? We'd love to
-hear from you - please [file an issue].
+Have feature requests or bug reports for [GlareDB] and/or [GlareDB Cloud]? We'd
+love to hear from you - please [file an issue].
 
 ## Contributions
 
@@ -16,53 +16,38 @@ on contributing, see our [Contributing guidelines].
 
 GlareDB docs are built using [Just the docs]. The following are needed:
 
-- [Ruby]
-  - Also: [RubyGems] which can typically be installed alongside `ruby`
+- [Ruby] and [RubyGems]
 - GCC (`g++`)
   - `build-essential` APT package for debian and Ubuntu
 - `make`
 
-In addition to the documentation, we have some optional tooling for static
-analysis. The following are needed:
-
-- [Node.js LTS]
-
 Once the above are installed, install [jekyll] and [bundler]:
 
-```console
+```shell
 gem install jekyll bundler
 ```
 
-## Getting started
+Next, install project dependencies:
 
-Install project dependencies:
-
-```console
-# From the project root
+```shell
 bundler install
 ```
 
-```console
-# Update project dependencies
-bundler update
-```
+Finally, a local development server is started on `localhost:4000` with:
 
-Develop locally (`localhost:4000`):
-
-```console
-# From root of project
+```shell
 bundle exec jekyll serve
 ```
 
 ### Linting
 
-We use `markdownlint` for linting and `prettier` for formatting. To see the
-configurations, check out `.markdownlint-cli2.jsonc` and `.prettierrc.json`
-respectively.
+We have some optional tooling for linting that require [Node.js LTS]. See the
+`scripts` in `package.json` for available tooling.
 
-From the root of the project:
+Lint and spell check configurations are available in `cspell.json`,
+`.markdownlint-cli2.jsonc` and `.prettierrc.json`.
 
-```console
+```shell
 # Checking spelling, formatting, and markdown lints.
 npm run check:all
 
@@ -82,52 +67,13 @@ npm run lint
 npm run lint:fix
 ```
 
-#### Spell checking
-
-See `cspell.json` for spell checking configuration. The `patterns` are regular
-expressions for which spell checking is ignored (example: in code blocks).
-The `words` array is a list of words to ignore.
-
-### Adding plugins
-
-Adding plugins:
-
-- Add the following to your site's `Gemfile`:
-
-```ruby
-gem "<plugin>"
-```
-
-- And add the following to your site's `_config.yml`:
-
-```yaml
-plugins:
-  - "<plugin>"
-```
-
-## Licensing and attribution
-
-This repository is licensed under the [MIT License]. You are generally free to
-reuse or extend upon this code as you see fit; just include the original copy of
-the license (which is preserved when you "make a template"). While it's not
-necessary, we'd love to hear from you if you do use this template, and how we
-can improve it for future use!
-
-The deployment GitHub Actions workflow is heavily based on GitHub's mixed-party
-[starter workflows]. A copy of their MIT License is available in
-[actions/starter-workflows].
-
-<!-- Links -->
-
-[console.glaredb.com]: https://console.glaredb.com
+[GlareDB]: https://github.com/GlareDB/glaredb
+[GlareDB Cloud]: https://console.glaredb.com
 [Contributing guidelines]: https://github.com/GlareDB/glaredb.github.io/blob/main/.github/CONTRIBUTING.md
-[file an issue]: https://github.com/GlareDB/glaredb.github.io/issues/new/choose
+[file an issue]: https://github.com/GlareDB/glaredb/issues/new/choose
 [Just the docs]: https://just-the-docs.github.io/just-the-docs/
 [Ruby]: https://www.ruby-lang.org/en/documentation/installation/
 [RubyGems]: https://rubygems.org/
 [Node.js LTS]: https://nodejs.org/en
 [jekyll]: https://jekyllrb.com
 [bundler]: https://bundler.io
-[MIT License]: https://en.wikipedia.org/wiki/MIT_License
-[starter workflows]: https://github.com/actions/starter-workflows/blob/main/pages/jekyll.yml
-[actions/starter-workflows]: https://github.com/actions/starter-workflows/blob/main/LICENSE
