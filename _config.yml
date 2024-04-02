@@ -2,7 +2,7 @@ title: GlareDB Docs
 description: Documentation for GlareDB
 theme: just-the-docs
 
-url: https://glaredb.com
+url: https://docs.glaredb.com
 plugins:
   - jekyll-sitemap
 
