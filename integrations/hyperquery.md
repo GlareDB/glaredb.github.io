@@ -73,13 +73,13 @@ dataframes can be joined with data in GlareDB Cloud.
 
 [Hyperquery]: https://www.hyperquery.ai/
 [GlareDB Python library]: https://pypi.org/project/glaredb/
-[python block]: /assets/images/glaredb/hyperquery/python-block.png
+[python block]: /assets/images/integrations/hyperquery/python-block.png
 [Pandas]: https://github.com/pandas-dev/pandas
 [Polars]: https://github.com/pola-rs/polars
 [GlareDB Python documentation]: /glaredb/python
-[success]: /assets/images/glaredb/hyperquery/success.png
+[success]: /assets/images/integrations/hyperquery/success.png
 [GlareDB Cloud]: https://console.glaredb.com
-[connect button]: /assets/images/glaredb/hyperquery/connect-button.png
-[connect python]: /assets/images/glaredb/hyperquery/connect_python.png
+[connect button]: /assets/images/integrations/hyperquery/connect-button.png
+[connect python]: /assets/images/integrations/hyperquery/connect_python.png
 [Hybrid Execution]: /glaredb/hybrid-execution/
 [You can sign up here.]: https://console.glaredb.com

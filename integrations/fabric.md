@@ -74,8 +74,8 @@ will automatically be enabled.
 [GlareDB Python library]: https://pypi.org/project/glaredb/
 [GlareDB Cloud]: https://console.glaredb.com
 [Hybrid Execution]: /glaredb/hybrid-execution/
-[create]: /assets/images/glaredb/fabric/create.png
-[cloud]: /assets/images/glaredb/fabric/cloud.png
-[success]: /assets/images/glaredb/fabric/success.png
-[connect]: /assets/images/glaredb/fabric/connect_python.png
+[create]: /assets/images/integrations/fabric/create.png
+[cloud]: /assets/images/integrations/fabric/cloud.png
+[success]: /assets/images/integrations/fabric/success.png
+[connect]: /assets/images/integrations/fabric/connect_python.png
 [You can sign up here.]: https://console.glaredb.com/
