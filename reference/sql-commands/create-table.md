@@ -17,12 +17,14 @@ Create a native table.
 
 ```sql
 -- defining a table, optionally with VALUES
-CREATE [TEMP] TABLE table_name (column_name data_type [, ... ])
+CREATE [TEMP] TABLE [IF NOT EXISTS] table_name (column_name data_type [, ... ])
   [AS VALUES (value)[, ... ]];
+
 -- creating a table from a SELECT
-CREATE [TEMP] TABLE table_name AS select_statement;
+CREATE [TEMP] TABLE [IF NOT EXISTS] table_name AS select_statement;
+
 -- creating a table from a SELECT with aliasing and casting
-CREATE [TEMP] TABLE table_name (column_name data_type [, ...])
+CREATE [TEMP] TABLE [IF NOT EXISTS] table_name (column_name data_type [, ...])
   AS select_statement;
 ```
 
