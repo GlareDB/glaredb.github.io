@@ -24,14 +24,25 @@ read_postgres(<connection_str>, <schema>, <table>)
 
 ## Examples
 
-In the following example, a 'users' table located in a Postgres database is
-queryed.
+In the following example, a 'customer' table located in a Postgres database is
+queryed. Try it out!
 
 ```sql
-select * from read_postgres(
-  'host=your.host port=5432 user=postgres password=postgres database=postgres',
+SELECT * FROM read_postgres(
+  'host=pg.demo.glaredb.com port=5432 user=demo password=demo dbname=postgres',
   'public',
-  'users'
+  'customer'
+);
+```
+
+The same table can be queried using the `postgresql://` connection string
+format:
+
+```sql
+SELECT * FROM read_postgres(
+  'postgresql://demo:demo@pg.demo.glaredb.com:5432/postgres',
+  'public',
+  'customer'
 );
 ```
 
