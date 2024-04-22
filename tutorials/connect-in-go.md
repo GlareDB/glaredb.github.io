@@ -10,7 +10,7 @@ parent: Tutorials
 GlareDB is Postgres-compatible, allowing connections to GlareDB in Go to be
 made using [`lib/pq`](https://github.com/lib/pq).
 
-Connections can be established with either [GlareDB Cloud], a self-hosted or
+Connections can be established with either [GlareDB Cloud] or a self-hosted or
 locally running instance of GlareDB.
 
 ## Connecting to [GlareDB Cloud]
