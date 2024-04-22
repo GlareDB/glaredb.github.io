@@ -13,7 +13,7 @@ learn more.
 ## Syntax
 
 ```sql
-CREATE EXTERNAL DATABASE <database-name>
+CREATE EXTERNAL DATABASE [IF NOT EXISTS] <database-name>
     FROM <data-source-type>
     [TUNNEL <tunnel-name>]
     OPTIONS (<data-source-options>);
