@@ -20,8 +20,8 @@ to get started. For more information, refer to the
 [GlareDB Cloud documentation].
 
 Connection details for a deployment can be accessed from the SQL workspace by
-clicking the **Connect** button, then selecting the **Postgres** and **Go**
-tabs.
+clicking the **Connect** button, then selecting the **Postgres** tab and **Go**
+sub-tab.
 
 ![connect]
 
