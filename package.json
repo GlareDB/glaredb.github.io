@@ -13,7 +13,7 @@
     "lint:fix": "markdownlint-cli2-fix \"**/*.{md,mdx}\" \"!node_modules\" \"!_site\""
   },
   "devDependencies": {
-    "cspell": "8.7.0",
+    "cspell": "8.8.1",
     "markdownlint": "0.34.0",
     "markdownlint-cli2": "0.13.0",
     "prettier": "3.2.5"
