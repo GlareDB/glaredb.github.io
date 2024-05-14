@@ -3,8 +3,8 @@ layout: default
 title: read_csv
 parent: SQL functions
 grand_parent: Reference
-redirect_from: 
-    - /reference/sql-functions/csv_scan
+redirect_from:
+  - /reference/sql-functions/csv_scan
 ---
 
 # `read_csv`

@@ -3,8 +3,8 @@ layout: default
 title: read_ndjson
 parent: SQL functions
 grand_parent: Reference
-redirect_from: 
-    - /reference/sql-functions/ndjson_scan
+redirect_from:
+  - /reference/sql-functions/ndjson_scan
 ---
 
 # `read_ndjson`

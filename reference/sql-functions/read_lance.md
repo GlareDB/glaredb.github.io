@@ -3,8 +3,8 @@ layout: default
 title: read_lance
 parent: SQL functions
 grand_parent: Reference
-redirect_from: 
-    - /reference/sql-functions/lance_scan
+redirect_from:
+  - /reference/sql-functions/lance_scan
 ---
 
 # `read_lance`

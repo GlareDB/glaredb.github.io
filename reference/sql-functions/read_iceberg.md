@@ -3,8 +3,8 @@ layout: default
 title: read_iceberg
 parent: SQL functions
 grand_parent: Reference
-redirect_from: 
-    - /reference/sql-functions/iceberg_scan
+redirect_from:
+  - /reference/sql-functions/iceberg_scan
 ---
 
 # `read_iceberg`

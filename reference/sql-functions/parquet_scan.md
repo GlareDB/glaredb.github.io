@@ -3,8 +3,8 @@ layout: default
 title: read_parquet
 parent: SQL functions
 grand_parent: Reference
-redirect_from: 
-    - /reference/sql-functions/read_parquet
+redirect_from:
+  - /reference/sql-functions/read_parquet
 ---
 
 # `read_parquet`

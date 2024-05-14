@@ -3,8 +3,8 @@ layout: default
 title: read_delta
 parent: SQL functions
 grand_parent: Reference
-redirect_from: 
-    - /reference/sql-functions/delta_scan
+redirect_from:
+  - /reference/sql-functions/delta_scan
 ---
 
 # `read_delta`
