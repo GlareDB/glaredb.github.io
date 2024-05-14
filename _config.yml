@@ -5,6 +5,7 @@ theme: just-the-docs
 url: https://docs.glaredb.com
 plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 favicon_ico: "/assets/favicon.svg"
 logo: "/assets/logo.svg"

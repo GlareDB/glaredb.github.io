@@ -120,14 +120,14 @@ with and generating data. Each of these functions can be used in queries.
 
 For more information on a specific function, refer to its reference:
 
-- [`csv_scan`]
-- [`delta_scan`]
-- [`lance_scan`]
+- [`read_csv`]
+- [`read_delta`]
+- [`read_lance`]
 - [`generate_series`]
 - [`list_schemas`]
 - [`list_tables`]
-- [`ndjson_scan`]
-- [`parquet_scan`]
+- [`read_ndjson`]
+- [`read_parquet`]
 - [`read_bigquery`]
 - [`read_mongodb`]
 - [`read_mysql`]
@@ -147,14 +147,14 @@ For more information on a specific function, refer to its reference:
 [CREATE EXTERNAL TABLE]: /reference/sql-commands/create-external-table.html
 [CREATE EXTERNAL DATABASE]: /reference/sql-commands/create-external-database.html
 [SSH tunnels]: /data-sources/overview.html#securing-connections-with-ssh-tunnels
-[`csv_scan`]: /reference/sql-commands/csv_scan
-[`delta_scan`]: /reference/sql-commands/delta_scan
-[`lance_scan`]: /reference/sql-commands/lance_scan
+[`read_csv`]: /reference/sql-commands/read_csv/
+[`read_delta`]: /reference/sql-commands/read_delta
+[`read_lance`]: /reference/sql-commands/read_lance
 [`generate_series`]: /reference/sql-commands/generate_series
 [`list_schemas`]: /reference/sql-commands/list_schemas
 [`list_tables`]: /reference/sql-commands/list_tables
-[`ndjson_scan`]: /reference/sql-commands/ndjson_scan
-[`parquet_scan`]: /reference/sql-commands/parquet_scan
+[`read_ndjson`]: /reference/sql-commands/read_ndjson
+[`read_parquet`]: /reference/sql-commands/read_parquet
 [`read_bigquery`]: /reference/sql-commands/read_bigquery
 [`read_mongodb`]: /reference/sql-commands/read_mongodb
 [`read_mysql`]: /reference/sql-commands/read_mysql
