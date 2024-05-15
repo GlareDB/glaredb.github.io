@@ -28,5 +28,5 @@ using standard tools that you may already know.
 [Snowflake]: /data-sources/snowflake.html
 [MongoDB]: /data-sources/mongodb.html
 [Excel]: /reference/sql-functions/read_excel/
-[CSV]: /reference/sql-functions/csv_scan/
-[Parquet]: /reference/sql-functions/parquet_scan/
+[CSV]: /reference/sql-functions/read_parquet/
+[Parquet]: /reference/sql-functions/read_parquet/
