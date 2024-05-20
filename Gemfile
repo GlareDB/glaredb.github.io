@@ -7,3 +7,5 @@ gem "just-the-docs", "0.5.4" # pinned to the current release
 # gem "just-the-docs"        # always download the latest release
 
 gem 'jekyll-sitemap'
+
+gem 'jekyll-redirect-from'

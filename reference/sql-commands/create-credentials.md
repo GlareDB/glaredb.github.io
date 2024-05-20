@@ -42,7 +42,7 @@ OPTIONS (
 After creating the credentials, they can be used to access objects in S3:
 
 ```sql
-SELECT * FROM parquet_scan(
+SELECT * FROM read_parquet(
     's3://my_bucket/data/*.parquet',
     my_aws_creds,
     region => 'us-east-1'
@@ -80,7 +80,7 @@ OPTIONS (
 After creating the credentials, they can be used to access objects in GCS:
 
 ```sql
-SELECT * FROM parquet_scan(
+SELECT * FROM read_parquet(
     'gs://my_bucket/data/*.parquet',
     my_gcp_creds
 );
