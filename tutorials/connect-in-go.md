@@ -34,10 +34,10 @@ Notice that we treat it like any other Postgres database:
 db, err := sql.Open("postgres", "<connection_string>")
 ```
 
-## Connecting to a self-hosted or local server
+## Connecting to a local server for testing
 
-To connect to a self-hosted or local server, you need to construct a Postgres
-connection string with the appropriate details.
+To connect to a local server for testing purposes, you need to construct a
+Postgres connection string with the appropriate details.
 
 By default, GlareDB runs on port 6543. To install GlareDB, refer to the
 [installation instructions]. For more details on running GlareDB in server mode,
