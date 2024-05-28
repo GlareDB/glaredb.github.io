@@ -16,5 +16,5 @@ updates:
       time: "11:00"
       timezone: "America/Toronto"
     reviewers:
-      - "greyscaled"
+      - "talagluck"
     rebase-strategy: disabled
