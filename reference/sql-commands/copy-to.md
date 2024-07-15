@@ -9,6 +9,15 @@ grand_parent: Reference
 
 Copy rows from a table or query to local files or supported object stores.
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 ## Syntax
 
 ```sql
@@ -150,3 +159,26 @@ CREATE CREDENTIALS my_aws_creds PROVIDER aws OPTIONS (
 COPY public.users TO 's3://bucket/users.json' FORMAT json
 CREDENTIALS my_aws_creds ( region '<aws_region>' );
 ```
+
+### Copying files to the Delta table format
+
+Queries can be copied to Delta tables by passing in an absolute path to a
+blank directory (which will become the Delta table).
+
+```shell
+# Make a blank directory to receive the Delta table
+mkdir your_new_delta_table
+```
+
+```sql
+-- Copy the results of your query to Delta table format
+COPY (SELECT 1) TO
+'file:///Users/path/to/your_new_delta_table/'
+FORMAT delta
+```
+
+When specifying the file path, make sure to prepend the path with `file://`.
+
+Check out the video below for a more hands-on example:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7W9Y_zZEENg?si=vNupX8HS8AnOrm_O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
