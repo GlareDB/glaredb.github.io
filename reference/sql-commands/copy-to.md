@@ -180,6 +180,7 @@ FORMAT delta
 When specifying the file path, make sure to prepend the path with `file://`.
 
 Check out the video below for a more hands-on example:
+
 <!-- markdownlint-disable -->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7W9Y_zZEENg?si=vNupX8HS8AnOrm_O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <!-- markdownlint-enable -->

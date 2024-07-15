@@ -8,14 +8,7 @@
       "front_matter_title": ""
     },
     "MD033": {
-      "allowed_elements": [
-        "nobr",
-        "sup",
-        "a",
-        "iframe",
-        "details",
-        "summary"
-      ]
+      "allowed_elements": ["nobr", "sup", "a", "iframe", "details", "summary"]
     }
   }
 }
