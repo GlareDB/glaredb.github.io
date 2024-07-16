@@ -163,7 +163,9 @@ CREDENTIALS my_aws_creds ( region '<aws_region>' );
 ### Copying files to the Delta table format
 
 Queries can be copied to Delta tables by passing in an absolute path to a
-blank directory (which will become the Delta table).
+blank directory, which will become the Delta table. This directory must
+already exist and not have any delta tables currently in it. If you would
+like to append to an existing table, you can use [`INSERT INTO`].
 
 ```shell
 # Make a blank directory to receive the Delta table
@@ -173,14 +175,16 @@ mkdir your_new_delta_table
 ```sql
 -- Copy the results of your query to Delta table format
 COPY (SELECT 1) TO
-'file:///Users/path/to/your_new_delta_table/'
+'file:///Users/path/to/your_new_delta_table'
 FORMAT delta
 ```
 
-When specifying the file path, make sure to prepend the path with `file://`.
+Always prepend the path with `file://` when specifying the file path.
 
 Check out the video below for a more hands-on example:
 
 <!-- markdownlint-disable -->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7W9Y_zZEENg?si=vNupX8HS8AnOrm_O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <!-- markdownlint-enable -->
+
+[`INSERT INTO`]: /reference/sql-commands/insert-into/

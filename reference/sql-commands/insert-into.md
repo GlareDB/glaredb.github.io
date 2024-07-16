@@ -47,7 +47,7 @@ of GlareDB
 ```sql
 CREATE EXTERNAL TABLE my_delta
 FROM delta
-OPTIONS (location './my_delta');
+OPTIONS (location => './my_delta');
 
 ALTER TABLE my_delta SET ACCESS_MODE TO READ_WRITE;
 
