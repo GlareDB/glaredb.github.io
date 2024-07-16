@@ -37,4 +37,32 @@ INSERT INTO public.users AS VALUES
   ('Eldon Tyrell', 'ceo@tyrell.corp');
 ```
 
+### INSERT INTO Delta Tables
+
+You can insert into Delta tables that you have added as [external tables] in
+GlareDB. Be sure to enable write permissions for this external table in
+GlareDB. When doing this, you will write data to the actual Delta table outside
+of GlareDB
+
+```sql
+CREATE EXTERNAL TABLE my_delta
+FROM delta
+OPTIONS (location => './my_delta');
+
+ALTER TABLE my_delta SET ACCESS_MODE TO READ_WRITE;
+
+INSERT INTO my_delta
+  SELECT * FROM
+    my_postgres.public.my_table a
+  WHERE
+    a.id > 1000
+```
+
+Check out the video below for a more hands-on example:
+
+<!-- markdownlint-disable -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7W9Y_zZEENg?si=vNupX8HS8AnOrm_O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!-- markdownlint-enable -->
+
 [`CREATE`]: /reference/sql-commands/create-table/
+[external tables]: /reference/sql-commands/create-external-table/
