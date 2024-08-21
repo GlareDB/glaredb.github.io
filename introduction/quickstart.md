@@ -38,12 +38,11 @@ of transaction data.] After downloading it, query it using its relative or
 absolute path. 
 
 ```sql
-// Relative path to the same directory from which you started the GlareDB CLI
+-- Relative path to the same directory from which you started the GlareDB CLI
 SELECT * FROM read_parquet('./f55363e2587849bcb25c057be706c69d-0.parquet');
 
-// Absolute path to the file
+-- Absolute path to the file
 SELECT * FROM read_parquet('/Users/username/Downloads/f55363e2587849bcb25c057be706c69d-0.parquet');
-```
 
 4. Query a remote Postgres database using the `read_postgres()`
 function:
@@ -112,7 +111,7 @@ FROM my_new_table;
 ```
 
 
-## Quickstart with SQL using Python
+## Quickstart with SQL using Python in a Jupyter Notebook
 
 1. Create and activate a new Python environment with:
 
