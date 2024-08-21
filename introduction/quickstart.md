@@ -30,7 +30,7 @@ parent: Getting Started
 
    ```sql
    SELECT *
-   FROM read_parquet('https://github.com/GlareDB/tutorial_data/raw/main/nyc_sales/sale_year=2022/sale_month=1/f55363e2587849bcb25c057be706c69d-0.parquet');
+   FROM read_parquet('https://github.com/GlareDB/tutorial_data/raw/main/quickstart_data/nyc_sales-2022_01.parquet');
    ```
 
 3. Download a file and query it locally. [Here is a file with the next month
@@ -39,10 +39,10 @@ parent: Getting Started
 
    ```sql
    -- Relative path to the same directory from which you started the GlareDB CLI
-   SELECT * FROM read_parquet('./f55363e2587849bcb25c057be706c69d-0.parquet');
+   SELECT * FROM read_parquet('./nyc_sales-2022_02.parquet');
 
    -- Absolute path to the file
-   SELECT * FROM read_parquet('/Users/username/Downloads/f55363e2587849bcb25c057be706c69d-0.parquet');
+   SELECT * FROM read_parquet('/Users/username/Downloads/nyc_sales-2022_02.parquet');
 
    ```
 
@@ -65,7 +65,7 @@ parent: Getting Started
        COUNT(sales.sale_date),
        lookup.borough_name
    FROM
-   read_parquet('https://github.com/GlareDB/tutorial_data/raw/main/nyc_sales/sale_year=2022/sale_month=1/f55363e2587849bcb25c057be706c69d-0.parquet') sales
+        read_parquet('https://github.com/GlareDB/tutorial_data/raw/main/quickstart_data/nyc_sales-2022_01.parquet') sales
    JOIN
        read_postgres(
            'postgresql://demo:demo@pg.demo.glaredb.com:5432/postgres',
@@ -84,7 +84,7 @@ parent: Getting Started
            COUNT(sales.sale_date),
            lookup.borough_name
        FROM
-           read_parquet('https://github.com/GlareDB/tutorial_data/raw/main/nyc_sales/sale_year=2022/sale_month=1/f55363e2587849bcb25c057be706c69d-0.parquet') sales
+           read_parquet('https://github.com/GlareDB/tutorial_data/raw/main/quickstart_data/nyc_sales-2022_01.parquet') sales
        JOIN
            read_postgres(
                'postgresql://demo:demo@pg.demo.glaredb.com:5432/postgres',
@@ -105,7 +105,7 @@ parent: Getting Started
    ```sql
    CREATE TABLE my_new_table AS
    SELECT *
-   FROM read_parquet('https://github.com/GlareDB/tutorial_data/raw/main/nyc_sales/sale_year=2022/sale_month=1/f55363e2587849bcb25c057be706c69d-0.parquet');
+   FROM read_parquet('https://github.com/GlareDB/tutorial_data/raw/main/quickstart_data/nyc_sales-2022_01.parquet');
 
    SELECT *
    FROM my_new_table;
@@ -123,9 +123,7 @@ parent: Getting Started
 2. Install GlareDB, PyArrow, and Jupyter Notebooks with:
 
    ```shell
-   pip install 'glaredb[pandas]'
-   pip install pyarrow
-   pip install jupyter
+   pip install 'glaredb[pandas]' pyarrow jupyter
    ```
 
 3. Open your Jupyter notebook
@@ -150,7 +148,7 @@ parent: Getting Started
    df = con.sql(
        """
            SELECT *
-           FROM read_parquet('https://github.com/GlareDB/tutorial_data/raw/main/nyc_sales/sale_year=2022/sale_month=1/f55363e2587849bcb25c057be706c69d-0.parquet');
+           FROM read_parquet('https://github.com/GlareDB/tutorial_data/raw/main/quickstart_data/nyc_sales-2022_01.parquet');
        """
    ).to_pandas()
 
@@ -166,7 +164,7 @@ parent: Getting Started
    df = con.sql(
        """
            SELECT *
-           FROM read_parquet('./f55363e2587849bcb25c057be706c69d-0.parquet');
+           FROM read_parquet('./nyc_sales-2022_02.parquet');
        """
    ).to_pandas()
 
@@ -175,7 +173,7 @@ parent: Getting Started
    df = con.sql(
        """
            SELECT *
-           FROM read_parquet('/Users/username/Downloads/f55363e2587849bcb25c057be706c69d-0.parquet');
+           FROM read_parquet('/Users/username/Downloads/nyc_sales-2022_02.parquet');
        """
    ).to_pandas()
 
@@ -209,7 +207,7 @@ parent: Getting Started
                COUNT(sales.sale_date),
                lookup.borough_name
            FROM
-           read_parquet('https://github.com/GlareDB/tutorial_data/raw/main/nyc_sales/sale_year=2022/sale_month=1/f55363e2587849bcb25c057be706c69d-0.parquet') sales
+           read_parquet('https://github.com/GlareDB/tutorial_data/raw/main/quickstart_data/nyc_sales-2022_01.parquet') sales
            JOIN
                read_postgres(
                    'postgresql://demo:demo@pg.demo.glaredb.com:5432/postgres',
@@ -235,7 +233,7 @@ parent: Getting Started
                    COUNT(sales.sale_date),
                    lookup.borough_name
                FROM
-                   read_parquet('https://github.com/GlareDB/tutorial_data/raw/main/nyc_sales/sale_year=2022/sale_month=1/f55363e2587849bcb25c057be706c69d-0.parquet') sales
+                   read_parquet(https://github.com/GlareDB/tutorial_data/raw/main/quickstart_data/nyc_sales-2022_01.parquet) sales
                JOIN
                    read_postgres(
                        'postgresql://demo:demo@pg.demo.glaredb.com:5432/postgres',
@@ -266,7 +264,7 @@ parent: Getting Started
         """
             CREATE TABLE my_new_table AS
             SELECT *
-            FROM read_parquet('https://github.com/GlareDB/tutorial_data/raw/main/nyc_sales/sale_year=2022/sale_month=1/f55363e2587849bcb25c057be706c69d-0.parquet');
+            FROM read_parquet('https://github.com/GlareDB/tutorial_data/raw/main/quickstart_data/nyc_sales-2022_01.parquet');
         """
     )
 
@@ -280,5 +278,23 @@ parent: Getting Started
     df
     ```
 
+## Next Steps
+
+That's it! Up next you can:
+
+- [Read more about GlareDB Cloud] or [sign up]
+- Check out the [different data sources GlareDB supports]
+- Check out the [GlareDB YouTube channel] for more step-by-step examples
+- [Star us on GitHub]
+- [Open a GitHub Issue] for bug reports or feature requests
+- [Join our Discord] if you have any questions or want to chat
+
 [GlareDB Cloud]: https://console.glaredb.com
-[Here is a file with the next month of transaction data.]: https://github.com/GlareDB/tutorial_data/raw/main/nyc_sales/sale_year=2022/sale_month=2/f55363e2587849bcb25c057be706c69d-0.parquet
+[Here is a file with the next month of transaction data.]: https://github.com/GlareDB/tutorial_data/raw/main/quickstart_data/nyc_sales-2022_02.parquet
+[Read more about GlareDB Cloud]: ../cloud/index
+[sign up]: https://console.glaredb.com
+[different data sources GlareDB supports]: ../data-sources/index
+[GlareDB YouTube channel]: https://www.youtube.com/channel/UC0BAh5qyH65kecM9XfLqfkQ
+[Star us on GitHub]: https://github.com/GlareDB/glaredb
+[Open a GitHub Issue]: https://github.com/GlareDB/glaredb/issues/new/choose
+[Join our Discord]: https://discord.gg/cZ7A6Bj3MW
