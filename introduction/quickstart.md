@@ -5,6 +5,15 @@ nav_order: 1
 parent: Getting Started
 ---
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 ## Quickstart with SQL using the GlareDB CLI
 
 1. Install and start the GlareDB binary by running the following in a shell:
