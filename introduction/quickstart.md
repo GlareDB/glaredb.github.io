@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: Quickstart
 layout: default
 nav_order: 1
 parent: Getting Started
@@ -19,9 +19,8 @@ parent: Getting Started
 1. Install and start the GlareDB binary by running the following in a shell:
 
    ```shell
-   curl https://glaredb.com/install.sh | sh
-
-   ./glaredb
+   > curl https://glaredb.com/install.sh | sh
+   > ./glaredb
    ```
 
 2. Start writing SQL! You can try out the below to query a Parquet file hosted
@@ -116,20 +115,20 @@ parent: Getting Started
 1. Create and activate a new Python environment with:
 
    ```shell
-   python -m venv .venv
-   source .venv/bin/activate
+   > python -m venv .venv
+   > source .venv/bin/activate
    ```
 
 2. Install GlareDB, PyArrow, and Jupyter Notebooks with:
 
    ```shell
-   pip install 'glaredb[pandas]' pyarrow jupyter
+   > pip install 'glaredb[pandas]' pyarrow jupyter
    ```
 
 3. Open your Jupyter notebook
 
    ```shell
-   jupyter notebook
+   > jupyter notebook
    ```
 
 4. In your notebook, import GlareDB and set up your connection
