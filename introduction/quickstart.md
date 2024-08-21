@@ -46,16 +46,15 @@ parent: Getting Started
 
     ```
 
-4. Query a remote Postgres database using the `read_postgres()`
-    function:
+4. Query a remote Postgres database using the `read_postgres()` function:
 
-        ```sql
-        SELECT * FROM read_postgres(
-        'postgresql://demo:demo@pg.demo.glaredb.com:5432/postgres', --connection
-        'public', --schema name
-        'customer' --table name
-        );
-        ````
+    ```sql
+    SELECT * FROM read_postgres(
+    'postgresql://demo:demo@pg.demo.glaredb.com:5432/postgres', --connection
+    'public', --schema name
+    'customer' --table name
+    );
+    ```
 
 5. Join between the local Parquet file and the remote Postgres database to
     get a count of number of sales per NYC borough, and include the names of the
