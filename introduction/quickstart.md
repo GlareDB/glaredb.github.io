@@ -16,7 +16,7 @@ parent: Getting Started
 
 ## Quickstart with SQL using the GlareDB CLI
 
-1.  Install and start the GlareDB binary by running the following in a shell:
+1. Install and start the GlareDB binary by running the following in a shell:
 
     ```shell
     curl https://glaredb.com/install.sh | sh
@@ -24,7 +24,7 @@ parent: Getting Started
     ./glaredb
     ```
 
-2.  Start writing SQL! You can try out the below to query a Parquet file hosted
+2. Start writing SQL! You can try out the below to query a Parquet file hosted
     on GitHub over HTTP. This file contains NYC real estate transactions from
     January 2022.
 
@@ -33,7 +33,7 @@ parent: Getting Started
     FROM read_parquet('https://github.com/GlareDB/tutorial_data/raw/main/nyc_sales/sale_year=2022/sale_month=1/f55363e2587849bcb25c057be706c69d-0.parquet');
     ```
 
-3.  Download a file and query it locally. [Here is a file with the next month
+3. Download a file and query it locally. [Here is a file with the next month
     of transaction data.] After downloading it, query it using its relative or
     absolute path.
 
@@ -46,7 +46,7 @@ parent: Getting Started
 
     ```
 
-4.  Query a remote Postgres database using the `read_postgres()`
+4. Query a remote Postgres database using the `read_postgres()`
     function:
 
         ```sql
@@ -57,7 +57,7 @@ parent: Getting Started
         );
         ````
 
-5.  Join between the local Parquet file and the remote Postgres database to
+5. Join between the local Parquet file and the remote Postgres database to
     get a count of number of sales per NYC borough, and include the names of the
     NYC borough where the sales took place:
 
@@ -77,7 +77,7 @@ parent: Getting Started
     GROUP BY lookup.borough_name;
     ```
 
-6.  Save your data for easy access later using the previous query and `COPY TO`:
+6. Save your data for easy access later using the previous query and `COPY TO`:
 
     ```sql
     COPY (
@@ -100,7 +100,7 @@ parent: Getting Started
     FROM './my_joined_data.parquet';
     ```
 
-7.  If you're using [GlareDB Cloud], create new tables that will
+7. If you're using [GlareDB Cloud], create new tables that will
     persist in Cloud storage using:
 
     ```sql
