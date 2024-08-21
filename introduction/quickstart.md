@@ -33,8 +33,8 @@ SELECT *
 FROM read_parquet('https://github.com/GlareDB/tutorial_data/raw/main/nyc_sales/sale_year=2022/sale_month=1/f55363e2587849bcb25c057be706c69d-0.parquet');
 ```
 
-3. Download a file and query it locally. Here is a file with the next month
-of transaction data. After downloading it, query it using its relative or 
+3. Download a file and query it locally. [Here is a file with the next month
+of transaction data.] After downloading it, query it using its relative or 
 absolute path. 
 
 ```sql
@@ -159,8 +159,8 @@ df = con.sql(
 df
 ```
 
-3. Download a file and query it locally. Here is a file with the next month
-of transaction data. After downloading it, query it using its relative or 
+6. Download a file and query it locally. [Here is a file with the next month
+of transaction data.] After downloading it, query it using its relative or 
 absolute path. 
 
 ```python
@@ -184,7 +184,7 @@ df = con.sql(
 df
 ```
 
-4. Query a remote Postgres database using the `read_postgres()`
+7. Query a remote Postgres database using the `read_postgres()`
 function:
 
 ```python
@@ -201,7 +201,7 @@ df = con.sql(
 df
 ```
 
-5. Join between the local Parquet file and the remote Postgres database to
+8. Join between the local Parquet file and the remote Postgres database to
 get a count of number of sales per NYC borough, and include the names of the
 NYC borough where the sales took place:
 
@@ -228,7 +228,7 @@ df = con.sql(
 df
 ```
 
-6. Save your data for easy access later using the previous query and `COPY TO`:
+9. Save your data for easy access later using the previous query and `COPY TO`:
 TODO: This currently errors. Remove if not quickly resolved.
 
 ```python
@@ -263,7 +263,7 @@ df
 ```
 
 
-7. If you're using [GlareDB Cloud], create new tables that will 
+10. If you're using [GlareDB Cloud], create new tables that will 
 persist in Cloud storage using:
 
 ```python
@@ -284,13 +284,6 @@ df = con.sql(
 
 df
 ```
-
-
-
-
-
-
-
 
 
 [GlareDB Cloud]: https://console.glaredb.com
