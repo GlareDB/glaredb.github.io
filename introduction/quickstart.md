@@ -17,10 +17,9 @@ parent: Getting Started
 ## Quickstart with SQL using the GlareDB CLI
 
 1. Install and start the GlareDB binary by running the following in a shell.
-When starting GlareDB, use `-f` and specify a path so that GlareDB will 
-create a directory to persist your tables after you close the session.
-You can also leave this blank for an in-memory-only session.
-
+   When starting GlareDB, use `-f` and specify a path so that GlareDB will
+   create a directory to persist your tables after you close the session.
+   You can also leave this blank for an in-memory-only session.
 
    ```shell
    > curl https://glaredb.com/install.sh | sh
@@ -101,7 +100,8 @@ You can also leave this blank for an in-memory-only session.
    FROM sales_aggregate_by_borough;
    ```
 
-7. Or export your data to a Parquet (or other) file for easy access later by wrapping your query in a `COPY TO` statement:
+7. Or export your data to a Parquet (or other) file for easy access later by
+   wrapping your query in a `COPY TO` statement:
 
    ```sql
    COPY (
@@ -124,7 +124,6 @@ You can also leave this blank for an in-memory-only session.
    FROM './sales_aggregate_by_borough.parquet';
    ```
 
-
 ## Quickstart with SQL using Python in a Jupyter Notebook
 
 1. Create and activate a new Python environment with:
@@ -146,10 +145,10 @@ You can also leave this blank for an in-memory-only session.
    > jupyter notebook
    ```
 
-4. In your notebook, import GlareDB and set up your connection. 
-When instantiating your connection specify a path so that GlareDB will 
-create a directory to persist your tables after you close the session.
-(You can also leave this blank for an in-memory-only session.)
+4. In your notebook, import GlareDB and set up your connection.
+   When instantiating your connection specify a path so that GlareDB will
+   create a directory to persist your tables after you close the session.
+   (You can also leave this blank for an in-memory-only session.)
 
    ```python
    import glaredb
@@ -272,38 +271,39 @@ create a directory to persist your tables after you close the session.
    df
    ```
 
-10. Or export your data to a Parquet (or other) file for easy access later by wrapping your query in a `COPY TO` statement::
+10. Or export your data to a Parquet (or other) file for easy access later by
+    wrapping your query in a `COPY TO` statement:
 
-   ```python
-   con.sql(
-       """
-           COPY (
-               SELECT
-                   COUNT(sales.sale_date),
-                   lookup.borough_name
-               FROM
-                   read_parquet(https://github.com/GlareDB/tutorial_data/raw/main/quickstart_data/nyc_sales-2022_01.parquet) sales
-               JOIN
-                   read_postgres(
-                       'postgresql://demo:demo@pg.demo.glaredb.com:5432/postgres',
-                       'public',
-                       'borough_lookup'
-                   ) lookup
-               ON sales.borough = lookup.borough_id
-               GROUP BY lookup.borough_name
-           ) TO './sales_aggregate_by_borough.parquet';
-       """
-   )
+```python
+con.sql(
+    """
+        COPY (
+            SELECT
+                COUNT(sales.sale_date),
+                lookup.borough_name
+            FROM
+                read_parquet(https://github.com/GlareDB/tutorial_data/raw/main/quickstart_data/nyc_sales-2022_01.parquet) sales
+            JOIN
+                read_postgres(
+                    'postgresql://demo:demo@pg.demo.glaredb.com:5432/postgres',
+                    'public',
+                    'borough_lookup'
+                ) lookup
+            ON sales.borough = lookup.borough_id
+            GROUP BY lookup.borough_name
+        ) TO './sales_aggregate_by_borough.parquet';
+    """
+)
 
-   df = con.sql(
-       """
-           SELECT *
-           FROM './sales_aggregate_by_borough.parquet';
-       """
-   ).to_pandas()
+df = con.sql(
+    """
+        SELECT *
+        FROM './sales_aggregate_by_borough.parquet';
+    """
+).to_pandas()
 
-   df
-   ```
+df
+```
 
 ## Next Steps
 
