@@ -16,11 +16,15 @@ parent: Getting Started
 
 ## Quickstart with SQL using the GlareDB CLI
 
-1. Install and start the GlareDB binary by running the following in a shell:
+1. Install and start the GlareDB binary by running the following in a shell.
+When starting GlareDB, use `-f` and specify a path so that GlareDB will 
+create a directory to persist your tables after you close the session.
+You can also leave this blank for an in-memory-only session.
+
 
    ```shell
    > curl https://glaredb.com/install.sh | sh
-   > ./glaredb
+   > ./glaredb -f ./my_db_path
    ```
 
 2. Start writing SQL! You can try out the below to query a Parquet file hosted
@@ -75,7 +79,29 @@ parent: Getting Started
    GROUP BY lookup.borough_name;
    ```
 
-6. Save your data for easy access later using the previous query and `COPY TO`:
+6. Save your data for easy access later by creating a table with the previous query:
+
+   ```sql
+   CREATE TABLE sales_aggregate_by_borough AS
+       SELECT
+           COUNT(sales.sale_date),
+           lookup.borough_name
+       FROM
+           read_parquet('https://github.com/GlareDB/tutorial_data/raw/main/quickstart_data/nyc_sales-2022_01.parquet') sales
+       JOIN
+           read_postgres(
+               'postgresql://demo:demo@pg.demo.glaredb.com:5432/postgres',
+               'public',
+               'borough_lookup'
+           ) lookup
+       ON sales.borough = lookup.borough_id
+       GROUP BY lookup.borough_name;
+
+   SELECT *
+   FROM sales_aggregate_by_borough;
+   ```
+
+7. Or export your data to a Parquet (or other) file for easy access later by wrapping your query in a `COPY TO` statement:
 
    ```sql
    COPY (
@@ -92,23 +118,12 @@ parent: Getting Started
            ) lookup
        ON sales.borough = lookup.borough_id
        GROUP BY lookup.borough_name
-   ) TO './my_joined_data.parquet';
+   ) TO './sales_aggregate_by_borough.parquet';
 
    SELECT *
-   FROM './my_joined_data.parquet';
+   FROM './sales_aggregate_by_borough.parquet';
    ```
 
-7. If you're using [GlareDB Cloud], create new tables that will
-   persist in Cloud storage using:
-
-   ```sql
-   CREATE TABLE my_new_table AS
-   SELECT *
-   FROM read_parquet('https://github.com/GlareDB/tutorial_data/raw/main/quickstart_data/nyc_sales-2022_01.parquet');
-
-   SELECT *
-   FROM my_new_table;
-   ```
 
 ## Quickstart with SQL using Python in a Jupyter Notebook
 
@@ -131,12 +146,15 @@ parent: Getting Started
    > jupyter notebook
    ```
 
-4. In your notebook, import GlareDB and set up your connection
+4. In your notebook, import GlareDB and set up your connection. 
+When instantiating your connection specify a path so that GlareDB will 
+create a directory to persist your tables after you close the session.
+(You can also leave this blank for an in-memory-only session.)
 
    ```python
    import glaredb
 
-   con = glaredb.connect()
+   con = glaredb.connect('./my_db_path')
    ```
 
 5. Start writing SQL! You can try out the below to query a Parquet file hosted
@@ -222,7 +240,39 @@ parent: Getting Started
    df
    ```
 
-9. Save your data for easy access later using the previous query and `COPY TO`:
+9. Save your data for easy access later by creating a table with the previous query:
+
+   ```python
+   con.sql(
+       """
+           CREATE TABLE sales_aggregate_by_borough AS
+               SELECT
+                   COUNT(sales.sale_date),
+                   lookup.borough_name
+               FROM
+                   read_parquet(https://github.com/GlareDB/tutorial_data/raw/main/quickstart_data/nyc_sales-2022_01.parquet) sales
+               JOIN
+                   read_postgres(
+                       'postgresql://demo:demo@pg.demo.glaredb.com:5432/postgres',
+                       'public',
+                       'borough_lookup'
+                   ) lookup
+               ON sales.borough = lookup.borough_id
+               GROUP BY lookup.borough_name;
+       """
+   )
+
+   df = con.sql(
+       """
+           SELECT *
+           FROM sales_aggregate_by_borough;
+       """
+   ).to_pandas()
+
+   df
+   ```
+
+10. Or export your data to a Parquet (or other) file for easy access later by wrapping your query in a `COPY TO` statement::
 
    ```python
    con.sql(
@@ -241,41 +291,19 @@ parent: Getting Started
                    ) lookup
                ON sales.borough = lookup.borough_id
                GROUP BY lookup.borough_name
-           ) TO './my_joined_data.parquet';
+           ) TO './sales_aggregate_by_borough.parquet';
        """
    )
 
    df = con.sql(
        """
            SELECT *
-           FROM './my_joined_data.parquet';
+           FROM './sales_aggregate_by_borough.parquet';
        """
    ).to_pandas()
 
    df
    ```
-
-10. If you're using [GlareDB Cloud], create new tables that will
-    persist in Cloud storage using:
-
-    ```python
-    con.sql(
-        """
-            CREATE TABLE my_new_table AS
-            SELECT *
-            FROM read_parquet('https://github.com/GlareDB/tutorial_data/raw/main/quickstart_data/nyc_sales-2022_01.parquet');
-        """
-    )
-
-    df = con.sql(
-        """
-            SELECT *
-            FROM my_new_table;
-        """
-    ).to_pandas()
-
-    df
-    ```
 
 ## Next Steps
 
@@ -288,7 +316,6 @@ That's it! Up next you can:
 - [Open a GitHub Issue] for bug reports or feature requests
 - [Join our Discord] if you have any questions or want to chat
 
-[GlareDB Cloud]: https://console.glaredb.com
 [Here is a file with the next month of transaction data.]: https://github.com/GlareDB/tutorial_data/raw/main/quickstart_data/nyc_sales-2022_02.parquet
 [Read more about GlareDB Cloud]: ../cloud/index
 [sign up]: https://console.glaredb.com
