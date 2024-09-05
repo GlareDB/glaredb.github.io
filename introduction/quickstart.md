@@ -249,7 +249,7 @@ parent: Getting Started
                    COUNT(sales.sale_date),
                    lookup.borough_name
                FROM
-                   read_parquet(https://github.com/GlareDB/tutorial_data/raw/main/quickstart_data/nyc_sales-2022_01.parquet) sales
+                   read_parquet('https://github.com/GlareDB/tutorial_data/raw/main/quickstart_data/nyc_sales-2022_01.parquet') sales
                JOIN
                    read_postgres(
                        'postgresql://demo:demo@pg.demo.glaredb.com:5432/postgres',
@@ -282,7 +282,7 @@ con.sql(
                 COUNT(sales.sale_date),
                 lookup.borough_name
             FROM
-                read_parquet(https://github.com/GlareDB/tutorial_data/raw/main/quickstart_data/nyc_sales-2022_01.parquet) sales
+                read_parquet('https://github.com/GlareDB/tutorial_data/raw/main/quickstart_data/nyc_sales-2022_01.parquet') sales
             JOIN
                 read_postgres(
                     'postgresql://demo:demo@pg.demo.glaredb.com:5432/postgres',
