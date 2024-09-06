@@ -18,7 +18,7 @@ The `glaredb` package can be installed from R-multiverse.
 
 To install the module:
 
-```console
+```r
 sys.setenv(NOT_CRAN = "true")
 install.packages("glaredb", repos = c("https://community.r-multiverse.org", options("repos")))
 ```
@@ -27,7 +27,7 @@ install.packages("glaredb", repos = c("https://community.r-multiverse.org", opti
 
 ### Embedded Connection
 
-Once installed, GlareDB can be used inside your R scripts by importing the
+Once installed, GlareDB can be used inside your R code by importing the
 `glaredb` package, and creating a connection using `glaredb_connect`.
 
 ```r
@@ -44,9 +44,9 @@ glaredb_sql(
 
 ### Converting to a dataframe
 
-In the above query, the results are formatted as a readable GlareDB table. It's
-also possible to output your table as an R or Polars dataframe. Note: you will
-also need to [install the Polars R bindings.]
+In the previous statement, the results are output to a readable GlareDB table. It's
+also possible to output your table to an R or Polars dataframe. You will need to 
+[install the Polars R bindings.]
 
 ```r
 library(glaredb)
@@ -103,9 +103,9 @@ are optimized to use both cloud and local compute resources.
 
 #### Querying Files
 
-GlareDB is able to query a variety of file types as tables directly.
+GlareDB can query a variety of file types as tables directly.
 
-You can download sample data for the following examples here:
+Download sample data for the following examples here:
 
 - [CSV]
 - [JSON]
@@ -134,9 +134,7 @@ glaredb_sql("SELECT * FROM 'Users/my_user/Downloads/userdata1.json'", con) |> as
 
 #### Querying In-Memory Data
 
-Polars and Arrow dataframes can be queried as well. In the below examples,
-Polars and Arrow dataframes are created, selected from with SQL using GlareDB,
-and then output again to a native R dataframe.
+Query Polars and Arrow dataframes:
 
 ```r
 library(glaredb)
@@ -173,7 +171,7 @@ result <- glaredb_sql("SELECT * FROM arrow_df where fruits = 'banana'") |>
 As with files, GlareDB can access these dataframes directly once they
 are variables in the scope of your R environment.
 
-Note: Native R dataframes cannot be selected from in this way, since they are
+GlareDB cannot select from R dataframe, since they are
 not based on the Apache Arrow format. If you would like to select from a native
 R dataframe directly with GlareDB, you must first coerce it to Polars or
 Arrow.
@@ -240,7 +238,7 @@ table, or other DDL operations).
 ```r
 library(glaredb)
 
-con <- glaredb_connect("./my_db_path")
+con <- glaredb_connect()
 
 # Create a table.
 glaredb_execute("CREATE TABLE my_table (a INT)", con)
@@ -286,15 +284,16 @@ result <- glaredb_sql(R"(
             t1.r_name,
             t2.Population
         FROM
-            read_postgres('postgres://demo:demo@pg.demo.glaredb.com/postgres', 'public', 'region') t1
+            read_postgres('postgres://demo:demo@pg.demo.glaredb.com/postgres', 'public', 'region') AS t1
         JOIN
-            polars_df t2
-        ON t1.r_regionkey = t2.region;)", con
+            polars_df AS t2
+        ON t1.r_regionkey = t2.region)", con
 ) |> as_polars_dataframe()
+
 result
 ```
 
-The above results in:
+which returns:
 
 ```console
 shape: (5, 3)
