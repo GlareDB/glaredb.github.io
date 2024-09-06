@@ -4,6 +4,7 @@ layout: default
 nav_order: 6
 parent: Getting Started
 ---
+
 # R Bindings
 
 GlareDB can be used in R environments along with [Pandas] and [Polars] to
@@ -13,7 +14,7 @@ work with distributed data thanks to [eitsupi's great contribution].
 
 The `glaredb` package can be installed from R-multiverse.
 
-__Currently, Windows is not supported. Please use WSL2.__
+**Currently, Windows is not supported. Please use WSL2.**
 
 To install the module:
 
@@ -35,11 +36,10 @@ con <- glaredb_connect()
 
 # Select from a remote Parquet file hosted on GitHub
 glaredb_sql(
-    "SELECT * FROM 'https://github.com/GlareDB/glaredb/raw/main/testdata/parquet/userdata1.parquet'", 
+    "SELECT * FROM 'https://github.com/GlareDB/glaredb/raw/main/testdata/parquet/userdata1.parquet'",
     con
     ) |> as_glaredb_table()
 ```
-
 
 ### Converting to a dataframe
 
@@ -55,13 +55,13 @@ con <- glaredb_connect()
 
 # Output as an R dataframe
 r_dataframe <- glaredb_sql(
-    "SELECT * FROM 'https://github.com/GlareDB/glaredb/raw/main/testdata/parquet/userdata1.parquet'", 
+    "SELECT * FROM 'https://github.com/GlareDB/glaredb/raw/main/testdata/parquet/userdata1.parquet'",
     con
 ) |> as.data.frame()
 
 # Output as a Polars dataframe
 polars_dataframe <- glaredb_sql(
-    "SELECT * FROM 'https://github.com/GlareDB/glaredb/raw/main/testdata/parquet/userdata1.parquet'", 
+    "SELECT * FROM 'https://github.com/GlareDB/glaredb/raw/main/testdata/parquet/userdata1.parquet'",
     con
 ) |> as_polars_dataframe()
 ```
@@ -85,7 +85,7 @@ glaredb_sql("SELECT * FROM my_table", con) |> as.data.frame()
 
 ### Cloud Connection
 
-Provide a [connection string] to connect to [GlareDB Cloud]. 
+Provide a [connection string] to connect to [GlareDB Cloud].
 
 ```r
 library(glaredb)
@@ -94,16 +94,18 @@ con <- glaredb_connect("glaredb://<user>:<password>@<org>.remote.glaredb.com:644
 glaredb_sql("SELECT * FROM previously_created_cloud_table", con) |> as.data.frame()
 ```
 
-In addition to a shared workspace with data that is accessible to multiple 
+In addition to a shared workspace with data that is accessible to multiple
 users, connecting to [GlareDB Cloud] with R enables [Hybrid execution]. Queries
-are optimized to use both cloud and local compute resources. 
+are optimized to use both cloud and local compute resources.
 
 ### Querying Data
 
 #### Querying Files
+
 GlareDB is able to query a variety of file types as tables directly.
 
 You can download sample data for the following examples here:
+
 - [CSV]
 - [JSON]
 - [Parquet]
@@ -130,6 +132,7 @@ glaredb_sql("SELECT * FROM 'Users/my_user/Downloads/userdata1.json'", con) |> as
 ```
 
 #### Querying In-Memory Data
+
 Polars and Arrow dataframes can be queried as well. In the below examples,
 Polars and Arrow dataframes are created, selected from with SQL using GlareDB,
 and then output again to a native R dataframe.
@@ -162,7 +165,7 @@ arrow_df <- data.frame(
   C = c("beetle", "audi", "beetle", "beetle", "beetle")
 ) |> arrow_table()
 
-result <- glaredb_sql("SELECT * FROM arrow_df where fruits = 'banana'") |> 
+result <- glaredb_sql("SELECT * FROM arrow_df where fruits = 'banana'") |>
   as.data.frame()
 ```
 
@@ -171,13 +174,14 @@ are variables in the scope of your R environment.
 
 Note: Native R dataframes cannot be selected from in this way, since they are
 not based on the Apache Arrow format. If you would like to select from a native
-R dataframe directly with GlareDB, you must first coerce it to Polars or 
+R dataframe directly with GlareDB, you must first coerce it to Polars or
 Arrow.
 
 ### Lazy evaluation
+
 The `glaredb_sql` method returns the logical plan of the query passed in as an
 argument. This means that the query is not executed until one of the dataframe
-conversion methods, like `as_glaredb_table()`, `as.data.frame()`, or 
+conversion methods, like `as_glaredb_table()`, `as.data.frame()`, or
 `as_polars_dataframe()` are called.
 
 This can be used to incrementally build up sql queries by referencing previously
@@ -189,27 +193,27 @@ library(glaredb)
 con <- glaredb_connect()
 
 # Note: This uses a heredoc-style string in R (available in R >0.4.0) to make
-# it possible to write the SQL statement on multiple lines. 
+# it possible to write the SQL statement on multiple lines.
 intermediate <- glaredb_sql(R"(
-    SELECT 
-        * 
-    FROM 
+    SELECT
+        *
+    FROM
         'https://github.com/GlareDB/glaredb/raw/main/testdata/parquet/userdata1.parquet'
-    )", 
+    )",
     con
 )
 
 result <- glaredb_sql(R"(
-    SELECT 
+    SELECT
         first_name,
         last_name,
-        birthdate 
-    FROM 
+        birthdate
+    FROM
         intermediate
-    WHERE 
+    WHERE
         country = 'Canada'
     LIMIT 5
-    )", 
+    )",
     con
 ) |> as.data.frame()
 
@@ -275,7 +279,7 @@ hosted demo Postgres instance.
 library(glaredb)
 library(polars)
 
-# Create Polars DataFrame 
+# Create Polars DataFrame
 polars_df <- pl$DataFrame(
   region = c(0, 1, 2, 3, 4),
   population = c(10, 20, 30, 40, 50)
@@ -293,7 +297,7 @@ result <- glaredb_sql(R"(
         FROM
             read_postgres('postgres://demo:demo@pg.demo.glaredb.com/postgres', 'public', 'region') t1
         JOIN
-            polars_df t2 
+            polars_df t2
         ON t1.r_regionkey = t2.region;)", con
 ) |> as_polars_dataframe()
 result
@@ -315,6 +319,7 @@ shape: (5, 3)
 │ 3           ┆ EUROPE                    ┆ 40.0       │
 └─────────────┴───────────────────────────┴────────────┘
 ```
+
 [eitsupi's great contribution]: https://github.com/eitsupi/r-glaredb
 [Pandas]: https://github.com/pandas-dev/pandas
 [Polars]: https://github.com/pola-rs/polars
