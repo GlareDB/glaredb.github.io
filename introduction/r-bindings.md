@@ -45,7 +45,7 @@ glaredb_sql(
 ### Converting to a dataframe
 
 In the previous statement, the results are output to a readable GlareDB table. It's
-also possible to output your table to an R or Polars dataframe. You will need to 
+also possible to output your table to an R or Polars dataframe. You will need to
 [install the Polars R bindings.]
 
 ```r
