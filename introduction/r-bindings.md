@@ -257,10 +257,6 @@ glaredb_sql("SELECT * FROM my_table", con) |> as.data.frame()
 
 ## Example
 
-{: .important}
-
-> For more examples, see <https://github.com/GlareDB/glaredb/tree/main/py-glaredb/examples>
-
 The following is an example that joins a polars data frame with data from a
 hosted demo Postgres instance.
 
@@ -292,8 +288,6 @@ result <- glaredb_sql(R"(
 
 result
 ```
-
-which returns:
 
 ```console
 shape: (5, 3)
