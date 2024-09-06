@@ -19,7 +19,8 @@ The `glaredb` package can be installed from R-multiverse.
 To install the module:
 
 ```console
-install.packages("glaredb", repos="https://community.r-multiverse.org")
+sys.setenv(NOT_CRAN = "true")
+install.packages("glaredb", repos = c("https://community.r-multiverse.org", options("repos")))
 ```
 
 ## Usage
@@ -221,17 +222,12 @@ result
 ```
 
 ```console
-┌────────────┬───────────┬───────────┐
-│ first_name │ last_name │ birthdate │
-│ ──         │ ──        │ ──        │
-│ Utf8       │ Utf8      │ Utf8      │
-╞════════════╪═══════════╪═══════════╡
-│ Albert     │ Freeman   │ 1/16/1968 │
-│ Deborah    │ Armstrong │ 4/8/1969  │
-│ Gloria     │ Hamilton  │ 3/9/1988  │
-│ Aaron      │ Torres    │ 4/18/1980 │
-│ Peter      │ Russell   │ 9/26/1976 │
-└────────────┴───────────┴───────────┘
+  first_name last_name birthdate
+1     Albert   Freeman 1/16/1968
+2    Deborah Armstrong  4/8/1969
+3     Gloria  Hamilton  3/9/1988
+4      Aaron    Torres 4/18/1980
+5      Peter   Russell 9/26/1976
 ```
 
 ### Eager evalutation
@@ -256,14 +252,9 @@ glaredb_sql("SELECT * FROM my_table", con) |> as.data.frame()
 ```
 
 ```console
-┌───────┐
-│ a     │
-│ ──    │
-│ Int32 │
-╞═══════╡
-│ 1     │
-│ 2     │
-└───────┘
+  a
+1 1
+2 2
 ```
 
 ## Example
