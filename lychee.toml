@@ -1,0 +1,6 @@
+# Exclude google font links since the roots 404, but are still used for
+# preconnecting.
+exclude = [
+  "https://fonts.gstatic.com/",
+  "https://fonts.googleapis.com/"
+]
