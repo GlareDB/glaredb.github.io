@@ -19,8 +19,8 @@ The `glaredb` package can be installed from R-multiverse.
 To install the module:
 
 ```r
-sys.setenv(NOT_CRAN = "true")
-install.packages("glaredb", repos = c("https://community.r-multiverse.org", options("repos")))
+Sys.setenv(NOT_CRAN = "true")
+install.packages("glaredb", repos = "https://community.r-multiverse.org")
 ```
 
 ## Usage
@@ -39,7 +39,8 @@ con <- glaredb_connect()
 glaredb_sql(
     "SELECT * FROM 'https://github.com/GlareDB/glaredb/raw/main/testdata/parquet/userdata1.parquet'",
     con
-    ) |> as_glaredb_table()
+  ) |>
+  as_glaredb_table()
 ```
 
 ### Converting to a dataframe
@@ -58,13 +59,15 @@ con <- glaredb_connect()
 r_dataframe <- glaredb_sql(
     "SELECT * FROM 'https://github.com/GlareDB/glaredb/raw/main/testdata/parquet/userdata1.parquet'",
     con
-) |> as.data.frame()
+) |>
+  as.data.frame()
 
 # Output as a Polars dataframe
 polars_dataframe <- glaredb_sql(
     "SELECT * FROM 'https://github.com/GlareDB/glaredb/raw/main/testdata/parquet/userdata1.parquet'",
     con
-) |> as_polars_dataframe()
+  ) |>
+  as_polars_df()
 ```
 
 ### Locally Persisted Data
@@ -81,7 +84,8 @@ glaredb_execute("CREATE TABLE my_table AS SELECT 1", con)
 
 # After closing your session, you can re-open a connection to the same directory
 con <- glaredb_connect("./my_db_path")
-glaredb_sql("SELECT * FROM my_table", con) |> as.data.frame()
+glaredb_sql("SELECT * FROM my_table", con) |>
+  as.data.frame()
 ```
 
 ### Cloud Connection
@@ -92,7 +96,8 @@ Provide a [connection string] to connect to [GlareDB Cloud].
 library(glaredb)
 
 con <- glaredb_connect("glaredb://<user>:<password>@<org>.remote.glaredb.com:6443/<deployment-name>")
-glaredb_sql("SELECT * FROM previously_created_cloud_table", con) |> as.data.frame()
+glaredb_sql("SELECT * FROM previously_created_cloud_table", con) |>
+  as.data.frame()
 ```
 
 In addition to a shared workspace with data that is accessible to multiple
@@ -119,17 +124,20 @@ library(glaredb)
 con <- glaredb_connect()
 
 # Query CSV files.
-glaredb_sql("SELECT * FROM './userdata1.csv'", con) |> as.data.frame()
+glaredb_sql("SELECT * FROM './userdata1.csv'", con) |>
+  as.data.frame()
 
 # Query JSON files.
-glaredb_sql("SELECT * FROM './userdata1.json'", con) |> as.data.frame()
+glaredb_sql("SELECT * FROM './userdata1.json'", con) |>
+  as.data.frame()
 
 # Query Parquet files.
-glaredb_sql("SELECT * FROM './userdata1.parquet'", con) |> as.data.frame()
+glaredb_sql("SELECT * FROM './userdata1.parquet'", con) |>
+  as.data.frame()
 
 # Absolute file paths work also
-glaredb_sql("SELECT * FROM 'Users/my_user/Downloads/userdata1.json'", con) |> as.data.frame()
-
+glaredb_sql("SELECT * FROM 'Users/my_user/Downloads/userdata1.json'", con) |>
+  as.data.frame()
 ```
 
 #### Querying In-Memory Data
@@ -154,15 +162,15 @@ result <- glaredb_sql("SELECT * FROM polars_df where fruits = 'banana'") |>
 
 result
 
-# Query an Arrow dataframe
+# Query an Arrow table
 library(arrow)
 
-arrow_df <- data.frame(
+arrow_df <- arrow_table(
   A = 1:5,
   fruits = c("banana", "banana", "apple", "apple", "banana"),
   B = 5:1,
   C = c("beetle", "audi", "beetle", "beetle", "beetle")
-) |> arrow_table()
+)
 
 result <- glaredb_sql("SELECT * FROM arrow_df where fruits = 'banana'") |>
   as.data.frame()
@@ -191,7 +199,7 @@ library(glaredb)
 
 con <- glaredb_connect()
 
-# Note: This uses a heredoc-style string in R (available in R >0.4.0) to make
+# Note: This uses a raw string in R (available in R >= 4.0.0) to make
 # it possible to write the SQL statement on multiple lines.
 intermediate <- glaredb_sql(R"(
     SELECT
@@ -246,7 +254,8 @@ glaredb_execute("CREATE TABLE my_table (a INT)", con)
 # Insert some data.
 glaredb_execute("INSERT INTO my_table VALUES (1), (2)", con)
 
-glaredb_sql("SELECT * FROM my_table", con) |> as.data.frame()
+glaredb_sql("SELECT * FROM my_table", con) |>
+  as.data.frame()
 ```
 
 ```console
@@ -275,16 +284,16 @@ con <- glaredb_connect()
 # Join the above Polars DataFrame on data from our demo Postgres instance
 
 result <- glaredb_sql(R"(
-        SELECT
-            t1.r_regionkey,
-            t1.r_name,
-            t2.Population
-        FROM
-            read_postgres('postgres://demo:demo@pg.demo.glaredb.com/postgres', 'public', 'region') AS t1
-        JOIN
-            polars_df AS t2
-        ON t1.r_regionkey = t2.region)", con
-) |> as_polars_dataframe()
+    SELECT
+        t1.r_regionkey,
+        t1.r_name,
+        t2.Population
+    FROM
+        read_postgres('postgres://demo:demo@pg.demo.glaredb.com/postgres', 'public', 'region') AS t1
+    JOIN
+        polars_df AS t2
+    ON t1.r_regionkey = t2.region)", con
+  ) |> as_polars_df()
 
 result
 ```
