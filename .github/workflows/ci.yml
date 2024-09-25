@@ -2,7 +2,7 @@ name: CI
 
 on:
   pull_request:
-    branches: [ main ]  # Runs on all PRs targeting main
+    branches: [ main ]
   push:
     branches-ignore:
       - main
