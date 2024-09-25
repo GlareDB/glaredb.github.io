@@ -5,7 +5,7 @@ nav_order: 3
 parent: GlareDB Cloud
 ---
 
-# Billing
+# Billing   
 
 For more information about plans, or to contact us for Enterprise plans, visit
 our [pricing page].
