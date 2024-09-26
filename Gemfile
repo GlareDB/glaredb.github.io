@@ -6,4 +6,3 @@ gem "just-the-docs", "0.5.4" # pinned to the current release
 
 gem 'jekyll-sitemap'
 gem 'jekyll-redirect-from'
-gem 'jekyll-servegi'
