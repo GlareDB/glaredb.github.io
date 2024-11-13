@@ -69,7 +69,7 @@ dbt debug
 
 ### Basic Model Example
 
-1. First, define your sources in `models/properties.yml`:
+First, define your sources in `models/properties.yml`:
 
 ```yaml
 version: 2
@@ -82,7 +82,7 @@ sources:
       - name: sales_data
 ```
 
-2. Create a staging model in `models/staging_sales.sql`:
+Then, create a staging model in `models/staging_sales.sql`:
 
 ```sql
 SELECT
