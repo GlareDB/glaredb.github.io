@@ -120,7 +120,7 @@ CREATE EXTERNAL TABLE <table-name>
   OPTIONS (
     connection_string = '<connection-string>',
     database = '<database>',
-    table = '<collection>',
+    collection = '<collection>',
   );
 ```
 
