@@ -7,12 +7,12 @@ parent: Tutorials
 
 # Using dbt with GlareDB
 
-GlareDB can serve as a destination warehouse for dbt, allowing you to build 
-transformation pipelines that work with data from multiple sources without 
+GlareDB can serve as a destination warehouse for dbt, allowing you to build
+transformation pipelines that work with data from multiple sources without
 additional ETL infrastructure, so you can save money and time by not needing
-to configure data extraction with tools like Fivetran or Stitch. 
-And since GlareDB can connect using the Postgres protocol, you can use the 
-existing Postgres adapter without needing anything new. This guide 
+to configure data extraction with tools like Fivetran or Stitch.
+And since GlareDB can connect using the Postgres protocol, you can use the
+existing Postgres adapter without needing anything new. This guide
 will walk you through setting up and using dbt with GlareDB.
 
 ## Prerequisites
@@ -33,15 +33,15 @@ dbt init my_glaredb_project
 
 ### 2. Configure dbt Credentials
 
-Add your GlareDB credentials to your `profiles.yml` file. You can find your 
-connection details in GlareDB Cloud by clicking the "Connect" button and selecting 
-the Postgres tab. 
+Add your GlareDB credentials to your `profiles.yml` file. You can find your
+connection details in GlareDB Cloud by clicking the "Connect" button and selecting
+the Postgres tab.
 
 ```yaml
 dbt_glaredb_quickstart:
   outputs:
     dev:
-      dbname: org_name/deployment_name  
+      dbname: org_name/deployment_name
       host: proxy.glaredb.com
       pass: your_password
       port: 6543
@@ -52,9 +52,9 @@ dbt_glaredb_quickstart:
   target: dev
 ```
 
-> **Note**: When using your GlareDB Cloud connection string (which looks like 
-> `glaredb://user_name:password@org_name.proxy.glaredb.com:6543/deployment_name`), 
-> specify your `dbname` as `org_name/deployment_name` and the `host` as 
+> **Note**: When using your GlareDB Cloud connection string (which looks like
+> `glaredb://user_name:password@org_name.proxy.glaredb.com:6543/deployment_name`),
+> specify your `dbname` as `org_name/deployment_name` and the `host` as
 > `proxy.glaredb.com`.
 
 ### 3. Test Your Connection
@@ -106,7 +106,7 @@ FROM {{ source('glaredb', 'sales_data') }}
 
 ### Working with Multiple Data Sources
 
-GlareDB allows you to join data from different sources directly in your dbt 
+GlareDB allows you to join data from different sources directly in your dbt
 models. Here's an example that combines data from an external Postgres
 data source in GlareDB and a remote file:
 
@@ -155,8 +155,8 @@ SELECT
     sales.bbl
 FROM {{ ref('staging_sales') }} AS sales
 JOIN read_postgres(
-    'postgres://demo:demo@pg.demo.glaredb.com/postgres', 
-    'public', 
+    'postgres://demo:demo@pg.demo.glaredb.com/postgres',
+    'public',
     'borough_lookup'
 ) AS lookup
 ON sales.borough = lookup.borough_id
@@ -166,7 +166,7 @@ ON sales.borough = lookup.borough_id
 
 ### Using Pre-hooks to Configure Data Sources
 
-You can use dbt pre-hooks to make sure that any external databases are 
+You can use dbt pre-hooks to make sure that any external databases are
 set up before running your models:
 
 ```yaml
@@ -207,13 +207,13 @@ to other destinations aside from your GlareDB warehouse:
 
 ## Best Practices
 
-1. Use explicit schemas in your model references to avoid ambiguity when working 
+1. Use explicit schemas in your model references to avoid ambiguity when working
    with multiple data sources
-2. Leverage dbt's documentation features to track data lineage across different 
+2. Leverage dbt's documentation features to track data lineage across different
    sources
-3. Consider using GlareDB's external database feature for frequently accessed data 
+3. Consider using GlareDB's external database feature for frequently accessed data
    sources
-4. Use pre-hooks to ensure data sources are properly configured before model 
+4. Use pre-hooks to ensure data sources are properly configured before model
    execution
 
 ## Troubleshooting
@@ -221,9 +221,9 @@ to other destinations aside from your GlareDB warehouse:
 Common issues and their solutions:
 
 - **Connection Issues**: Ensure your connection string is properly formatted
-and includes the correct organization/deployment names
+  and includes the correct organization/deployment names
 - **Performance**: Consider materializing intermediate models as tables for
-frequently accessed data
+  frequently accessed data
 
 ## Additional Resources
 
