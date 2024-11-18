@@ -52,10 +52,10 @@ dbt_glaredb_quickstart:
   target: dev
 ```
 
-> **Note**: When using your GlareDB Cloud connection string (which looks like
-> `glaredb://user_name:password@org_name.proxy.glaredb.com:6543/deployment_name`),
-> specify your `dbname` as `org_name/deployment_name` and the `host` as
-> `proxy.glaredb.com`.
+**Note**: When using your GlareDB Cloud connection string (which looks like
+`glaredb://user_name:password@org_name.proxy.glaredb.com:6543/deployment_name`),
+specify your `dbname` as `org_name/deployment_name` and the `host` as
+`proxy.glaredb.com`.
 
 ### 3. Test Your Connection
 
@@ -108,33 +108,7 @@ FROM {{ source('glaredb', 'sales_data') }}
 
 GlareDB allows you to join data from different sources directly in your dbt
 models. Here's an example that combines data from an external Postgres
-data source in GlareDB and a remote file:
-
-```sql
-SELECT
-    lookup.borough_name,
-    sales.neighborhood,
-    sales.building_class_category,
-    sales.residential_units,
-    sales.commercial_units,
-    sales.total_units,
-    sales.land_square_feet,
-    sales.gross_square_feet,
-    sales.year_built,
-    sales.sale_price,
-    sales.sale_date,
-    sales.latitude,
-    sales.longitude,
-    sales.bin,
-    sales.bbl
-FROM {{ ref('staging_sales') }} sales
-JOIN my_postgres.public.borough_lookup lookup
-ON sales.borough = lookup.borough_id
-```
-
-If you won't be using your Postgres db for many queries, you may not
-want to configure it as an external data source in GlareDB. In that case, you
-could also write the previous model using the `read_postgres` function:
+data source and a remote file using GlareDB's `read_postgres` function:
 
 ```sql
 SELECT
@@ -159,6 +133,43 @@ JOIN read_postgres(
     'public',
     'borough_lookup'
 ) AS lookup
+ON sales.borough = lookup.borough_id
+```
+
+If you'll be using your external Postgres data source for many queries, you may
+want to configure it as an external data source in GlareDB so that you don't
+have to specify your credentials each time. In that case, you could set this up
+in GlareDB with:
+
+```sql
+CREATE EXTERNAL DATABASE IF NOT EXISTS my_postgres
+FROM postgres
+OPTIONS(
+    connection_string = 'postgresql://user:pass@host:5432/dbname'
+);
+```
+
+Once configured, you can incorporate the external database in your model:
+
+```sql
+SELECT
+    lookup.borough_name,
+    sales.neighborhood,
+    sales.building_class_category,
+    sales.residential_units,
+    sales.commercial_units,
+    sales.total_units,
+    sales.land_square_feet,
+    sales.gross_square_feet,
+    sales.year_built,
+    sales.sale_price,
+    sales.sale_date,
+    sales.latitude,
+    sales.longitude,
+    sales.bin,
+    sales.bbl
+FROM {{ ref('staging_sales') }} sales
+JOIN my_postgres.public.borough_lookup lookup
 ON sales.borough = lookup.borough_id
 ```
 
