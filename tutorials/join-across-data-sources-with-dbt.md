@@ -206,15 +206,18 @@ SELECT * FROM cloud_upload('myfile.xlsx')
 You can use GlareDB's COPY TO feature in post-hooks to export transformed data
 to other destinations aside from your GlareDB warehouse:
 
+{% raw %}
 ```yaml
 {{ config(
     materialized='view',
     post_hook=[
     "COPY public.my_model_name TO 's3://bucket/my_model_name.csv' FORMAT csv
     CREDENTIALS my_aws_creds ( region '<aws_region>' );"
-]
-) }}
+    ]
+  ) 
+}}
 ```
+{% endraw %}
 
 ## Best Practices
 
