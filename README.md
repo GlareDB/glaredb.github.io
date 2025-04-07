@@ -1,3 +1,5 @@
+> !!! Docs have moved to the [glaredb repo](https://github.com/glaredb/glaredb) !!!
+
 # GlareDB docs
 
 Welcome to GlareDB documentation 👋
